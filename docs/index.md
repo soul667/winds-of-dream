@@ -1,21 +1,10 @@
-# Hello VitePress
-$1+1$
-
-## latex test
-`行内代码`
-$$\frac{1}{2}$$
-
-## 33
-> sss
-```shell
-sudo su
-```
-
-# 使用VitePress和Github搭建个人博客网站.md
-
+# 使用VitePress和Github搭建个人博客网站
+# 1 使用
 ```shell
 git clone git@github.com:soul667/winds-of-dream.git
 ```
+编写doc中的md文件即可。
+# 2 搭建(书写博客不必看)
 
 ## 搭建教程(搭建！)
 1. github 创建一个仓库
