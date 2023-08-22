@@ -65,3 +65,4 @@ sudo n stable
 + [【保姆级】VitePress 新建项目+部署Github Pages流程+常见报错处理](https://zhuanlan.zhihu.com/p/562139569)
 + [VitePress中文网教程](https://vitejs.cn/vitepress/guide/deploy.html#%E6%9E%84%E5%BB%BA%E6%96%87%E6%A1%A3)
 + [初探Travis CI: 实现VuePress自动化部署](https://www.olumel.top/docs/front-end-engineering/travis-ci-for-vuepress/)
+dff
