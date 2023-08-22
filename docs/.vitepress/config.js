@@ -91,7 +91,8 @@ const customElements = [
 ];
 
 export default {
-  base:"/winds-of-dream.github.io/",
+  base:"/winds-of-dream/",
+  title: 'winds-of-dream',
   markdown: {
     config: (md) => {
       md.use(mathjax3);
