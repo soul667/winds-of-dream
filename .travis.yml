@@ -5,7 +5,9 @@ install:
   - yarn install # npm ci
 script:
   - yarn docs:build # npm run docs:build
-  
+cache:
+  directories:
+    - "node_modules"
 deploy:
   provider: pages
   skip_cleanup: true
@@ -14,4 +16,4 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: true
   on:
-    branch: master
+    branch: main
