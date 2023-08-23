@@ -1,4 +1,6 @@
 import mathjax3 from 'markdown-it-mathjax3';
+import { getSideBar } from 'vitepress-plugin-autobar'
+import timeline from "vitepress-markdown-timeline";
 
 const customElements = [
   'math',
@@ -90,12 +92,19 @@ const customElements = [
   'mjx-assistive-mml',
 ];
 
+
 export default {
-  base:"/winds-of-dream/",
+  base: "/winds-of-dream/",
   title: 'winds-of-dream',
   markdown: {
+    
     config: (md) => {
       md.use(mathjax3);
+      md.use(timeline);
+      md.use(require('markdown-it-task-lists'));
+      md.use(require('markdown-it-footnote'));
+      md.use(require('markdown-it-imsize'));
+
     },
   },
   vue: {
@@ -105,5 +114,35 @@ export default {
       },
     },
   },
+  themeConfig: {
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: '创造卓越至美，翼舞机甲神威'
+    },
+    lastUpdated: {
+      text: 'Updated at',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    },
+    search: {
+      provider: 'local'
+    },
+    sidebar: getSideBar("./docs", {
+      ignoreMDFiles: ['index'],
+      ignoreDirectory: ['team','img'],
+    })
+    
+    // sidebar: [
+    //   {
+    //     text: 'Guide',
+    //     items: [
+    //       { text: 'Introduction', link: '/introduction' },
+    //       { text: 'Getting Started', link: '/getting-started' },
+    //     ]
+    //   }
+    // ]
+  }
 };
 

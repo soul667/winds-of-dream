@@ -8,6 +8,6 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/what-is-vitepress
+      link: /介绍/发布博客和使用
     
 ---

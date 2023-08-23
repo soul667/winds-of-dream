@@ -5,8 +5,9 @@
   "author": "winds-of-dream",
   "license": "MIT",
   "devDependencies": {
-    "markdown-it-mathjax3": "^4.3.2",
-    "vitepress": "^1.0.0-rc.4"
+    "vitepress": "^1.0.0-rc.4",
+    "vitepress-markdown-timeline": "^1.2.1",
+    "vitepress-plugin-autobar": "^1.0.8"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
@@ -14,6 +15,9 @@
     "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
-    "markdown-it-katex": "^2.0.3"
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-katex": "^2.0.3",
+    "markdown-it-mathjax3": "^4.3.2",
+    "markdown-it-task-lists": "^2.1.1"
   }
 }
