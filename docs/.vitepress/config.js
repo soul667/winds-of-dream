@@ -103,7 +103,6 @@ export default {
       md.use(timeline);
       md.use(require('markdown-it-task-lists'));
       md.use(require('markdown-it-footnote'));
-      md.use(require('markdown-it-imsize'));
 
     },
   },
