@@ -1,7 +1,0 @@
-<map id="Serial" name="Serial">
-<area shape="rect" id="Node000001" title=" " alt="" coords="102,93,161,119"/>
-<area shape="rect" id="Node000002" href="$structrm_1_1Serial_1_1ControlFrame.html" title=" " alt="" coords="5,5,116,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,42,87,68,114,91,110,95,83,71,67,45"/>
-<area shape="rect" id="Node000003" href="$structrm_1_1Serial_1_1FeedBackFrame.html" title=" " alt="" coords="140,5,267,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,44,176,71,150,95,146,91,172,68,190,41"/>
-</map>

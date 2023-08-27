@@ -1,9 +1,0 @@
-<map id="Get" name="Get">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,78,51,103"/>
-<area shape="rect" id="Node000002" href="$namespacehttplib.html#a444fd707097b48c4f4b415636c808b14" title=" " alt="" coords="99,29,263,69"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,82,93,70,95,75,52,87"/>
-<area shape="rect" id="Node000003" href="$classhttplib_1_1ClientImpl.html#a60c6ff12e43f6b19232d7deee9a75a3c" title=" " alt="" coords="158,118,203,143"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="52,94,145,119,144,124,50,99"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="151,29,150,20,154,11,165,5,181,3,199,6,209,13,206,17,197,11,181,8,166,10,158,14,155,21,157,28"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="155,120,150,110,152,100,163,94,181,91,202,95,211,104,207,108,200,100,181,97,165,99,157,103,155,109,160,117"/>
-</map>

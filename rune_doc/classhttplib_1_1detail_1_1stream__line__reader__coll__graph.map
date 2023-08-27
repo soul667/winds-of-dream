@@ -1,9 +1,0 @@
-<map id="stream_line_reader" name="stream_line_reader">
-<area shape="rect" id="Node000001" title=" " alt="" coords="55,123,203,148"/>
-<area shape="rect" id="Node000002" href="$classhttplib_1_1Stream.html" title=" " alt="" coords="5,5,75,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,42,66,70,85,97,112,120,109,125,81,100,61,73,47,45"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="99,5,159,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,44,132,123,127,123,127,44"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="252,5,311,31"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="281,45,272,74,254,101,231,117,205,127,203,122,228,112,250,97,267,71,276,43"/>
-</map>

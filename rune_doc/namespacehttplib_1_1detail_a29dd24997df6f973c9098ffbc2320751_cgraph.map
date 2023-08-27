@@ -1,6 +1,0 @@
-<map id="from_i_to_hex" name="from_i_to_hex">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,120,55"/>
-<area shape="rect" id="Node000002" href="$namespacehttplib_1_1detail.html#a4e123998023aa19d5b4606090c80830f" title=" " alt="" coords="168,29,277,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,39,154,39,154,45,120,45"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="196,31,190,21,193,11,204,5,223,3,245,6,254,15,251,19,242,11,223,8,206,10,197,15,195,20,200,28"/>
-</map>

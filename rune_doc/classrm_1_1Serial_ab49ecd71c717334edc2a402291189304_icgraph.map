@@ -1,9 +1,0 @@
-<map id="feedBack" name="feedBack">
-<area shape="rect" id="Node000001" title=" " alt="" coords="437,5,520,31"/>
-<area shape="rect" id="Node000002" href="$classrm_1_1Serial.html#a677e10b0ab574a5e4126bfa037cb0ba2" title=" " alt="" coords="287,5,389,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="423,21,390,21,390,15,423,15"/>
-<area shape="rect" id="Node000003" href="$classrm_1_1Run.html#a7ba7034afb9fed171e8a498e6f26b56f" title=" " alt="" coords="108,5,239,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="273,21,239,21,239,15,273,15"/>
-<area shape="rect" id="Node000004" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
-</map>

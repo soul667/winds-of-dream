@@ -1,7 +1,0 @@
-<map id="shutdown_socket" name="shutdown_socket">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,140,67"/>
-<area shape="rect" id="Node000002" href="$namespacehttplib_1_1detail.html#a6b1fa8db4ca9084b113000d385645eb5" title=" " alt="" coords="188,5,368,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,42,174,38,175,43,141,48"/>
-<area shape="rect" id="Node000003" href="$classhttplib_1_1ClientImpl.html#a37dcddfca8e97c3e9052743e39950c13" title=" " alt="" coords="246,70,310,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,61,233,74,232,79,140,66"/>
-</map>

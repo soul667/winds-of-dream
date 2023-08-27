@@ -1,6 +1,0 @@
-<map id="get_remote_ip_and_port" name="get_remote_ip_and_port">
-<area shape="rect" id="Node000001" title=" " alt="" coords="260,29,440,55"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="393,20,382,11,350,8,324,10,311,15,308,20,315,27,311,31,303,21,307,11,323,5,350,3,384,7,397,16"/>
-<area shape="rect" id="Node000002" href="$classhttplib_1_1detail_1_1SocketStream.html#aa2f42c37054e893b8c2cb1632adb923f" title=" " alt="" coords="5,22,212,62"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="246,45,212,45,212,39,246,39"/>
-</map>
