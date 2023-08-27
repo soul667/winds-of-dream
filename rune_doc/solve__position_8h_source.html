@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“创梦之翼2023步兵自瞄文档”: Others/SolvePosition/solve_position.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">“创梦之翼2023步兵自瞄文档”<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">xxx</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('solve__position_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">solve_position.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="solve__position_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;opencv2/opencv.hpp&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacerm.html">rm</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="classrm_1_1Solve.html">Solve</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  <span class="comment">// ToOpenCV4.2.0</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#a657eed02cb983497a06c5a45a43ab5d2">   10</a></span>  <span class="keyword">static</span> std::vector&lt;cv::Point3d&gt; <a class="code hl_variable" href="classrm_1_1Solve.html#a657eed02cb983497a06c5a45a43ab5d2">POINT_3D_OF_ARMOR_BIG</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#ae456131d6e4e336357deaf496090ca63">   11</a></span>  <span class="keyword">static</span> std::vector&lt;cv::Point3d&gt; <a class="code hl_variable" href="classrm_1_1Solve.html#ae456131d6e4e336357deaf496090ca63">POINT_3D_OF_ARMOR_SMALL</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#aba18813db87db7f551c8ce7884e9f928">   13</a></span>  <span class="keyword">static</span> std::vector&lt;cv::Point3f&gt; <a class="code hl_variable" href="classrm_1_1Solve.html#aba18813db87db7f551c8ce7884e9f928">POINT_3D_OF_RUNE_CENTER</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#aff036ced5f602d8e051b5ea8c6d42789">   14</a></span>  <span class="keyword">static</span> std::vector&lt;cv::Point3f&gt; <a class="code hl_variable" href="classrm_1_1Solve.html#aff036ced5f602d8e051b5ea8c6d42789">POINT_3D_OF_RUNE_BIG</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classrm_1_1Solve.html#a5b60bf8c037cb0ed9ba61d337a4f5dfb">init</a>(cv::Mat &amp;CAM_MATRIX, cv::Mat &amp;DISTORTION_COEFF);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classrm_1_1Solve.html#add06156025e674c41bec2fb7f502bf2d">solve</a>(std::vector&lt;cv::Point3f&gt; OBJECT_3D,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>             std::vector&lt;cv::Point2f&gt; OBJECT_2D);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classrm_1_1Solve.html#a38eec1f86ebeda3c801731d6dfcff6f7">Solve_Armor</a>(std::vector&lt;cv::Point2f&gt; OBJECT_2D);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  cv::Point3f <a class="code hl_function" href="classrm_1_1Solve.html#a62d3fe502f76f249004d07a4949ce913">get_real_Point3f</a>(<span class="keywordtype">double</span> pitch, <span class="keywordtype">double</span> yaw);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  cv::Point2f <a class="code hl_function" href="classrm_1_1Solve.html#aa0ab00baba7bfa339e0662a2b2c682d0">get_Point2f</a>(cv::Point3f input, <span class="keywordtype">float</span> pitch, <span class="keywordtype">float</span> yaw);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classrm_1_1Solve.html#aaaad5c2d3eba23c44a7bef2c8ea53ef3">get_distant</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  cv::Mat <a class="code hl_function" href="classrm_1_1Solve.html#a0112704bde43625338f75daf57f7f480">get_rVec</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  cv::Mat <a class="code hl_function" href="classrm_1_1Solve.html#a94b552ed291e997cebe58473c2ec60db">get_tVec</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#af7c9e1eca8a1bb22e2b3ca217af4bb8d">   26</a></span>  int32_t <a class="code hl_variable" href="classrm_1_1Solve.html#af7c9e1eca8a1bb22e2b3ca217af4bb8d">ArmorTypeCount</a> = 0;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#ad58126ce38aec97d6cc182460767698f">   27</a></span>  uint8_t <a class="code hl_variable" href="classrm_1_1Solve.html#ad58126ce38aec97d6cc182460767698f">AromrType</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#ae2210ddf89de29d73016efb915f20957">   28</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="classrm_1_1Solve.html#ae2210ddf89de29d73016efb915f20957">LightBarLenRatio</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#ac7c2d847741de29384dc15cc91ec430f">   29</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="classrm_1_1Solve.html#ac7c2d847741de29384dc15cc91ec430f">w_hRatio</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#ad92857d24aa8ecb7a1a01bad5bebbb14">   31</a></span>  cv::Mat <a class="code hl_variable" href="classrm_1_1Solve.html#ad92857d24aa8ecb7a1a01bad5bebbb14">_CAM_MATRIX</a>;       <span class="comment">// Camera Matrix</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#ab7a443e2da5b089bf67de8d7d85ff8ec">   32</a></span>  cv::Mat <a class="code hl_variable" href="classrm_1_1Solve.html#ab7a443e2da5b089bf67de8d7d85ff8ec">_DISTORTION_COEFF</a>; <span class="comment">// Distortion matrix</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   *    z  y</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   *    | /</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   *    |/______x</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   *    O</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="comment">// the unit of vector is mm</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#a68f7e5ee4a0012a58d190c9a862035b6">   43</a></span>  cv::Mat <a class="code hl_variable" href="classrm_1_1Solve.html#a68f7e5ee4a0012a58d190c9a862035b6">_rVec</a> = cv::Mat::zeros(3, 1, CV_64FC1 <span class="comment">/*ToOpenCV4.2.0*/</span>); <span class="comment">// init rvec</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#a5bb10ba47e1b2de55a55723802de47a8">   44</a></span>  cv::Mat <a class="code hl_variable" href="classrm_1_1Solve.html#a5bb10ba47e1b2de55a55723802de47a8">_tVec</a> = cv::Mat::zeros(3, 1, CV_64FC1 <span class="comment">/*ToOpenCV4.2.0*/</span>); <span class="comment">// init tvec</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#a695adb6c9728a7692fa7cb621b6acb09">   45</a></span>  cv::Mat <a class="code hl_variable" href="classrm_1_1Solve.html#a695adb6c9728a7692fa7cb621b6acb09">_rMat</a> = cv::Mat::zeros(3, 1, CV_64FC1 <span class="comment">/*ToOpenCV4.2.0*/</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classrm_1_1Solve.html#ae2957c9d7a27ff0f791ed0b0eb9a9c80">   46</a></span>  cv::Mat <a class="code hl_variable" href="classrm_1_1Solve.html#ae2957c9d7a27ff0f791ed0b0eb9a9c80">_RMat</a> = cv::Mat::zeros(3, 3, CV_64FC1);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+</div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="};">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classrm_1_1param__solve__pnp.html">   51</a></span><span class="keyword">class </span><a class="code hl_class" href="classrm_1_1param__solve__pnp.html">param_solve_pnp</a> {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="comment">/* data */</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classrm_1_1param__solve__pnp.html#a694fc8878aeb79b0ee61f772e9c70a07">   54</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classrm_1_1param__solve__pnp.html#a694fc8878aeb79b0ee61f772e9c70a07">readParams</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classrm_1_1param__solve__pnp.html#add4bcb26875e722a8b2f0c1a60db6b2f">   56</a></span>  <a class="code hl_function" href="classrm_1_1param__solve__pnp.html#add4bcb26875e722a8b2f0c1a60db6b2f">param_solve_pnp</a>(<span class="comment">/* args */</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classrm_1_1param__solve__pnp.html#a830fe51e516727aad4cb9c6359f3ce46">   57</a></span>  <a class="code hl_function" href="classrm_1_1param__solve__pnp.html#a830fe51e516727aad4cb9c6359f3ce46">~param_solve_pnp</a>();</div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="};">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structrm_1_1param__solve__pnp_1_1pam.html">   58</a></span>  <span class="keyword">static</span> <span class="keyword">struct </span><a class="code hl_struct" href="structrm_1_1param__solve__pnp_1_1pam.html">pam</a> {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structrm_1_1param__solve__pnp_1_1pam.html#a69e190ee1360c283717a364b4a82ca13">   59</a></span>    <span class="keyword">mutable</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="structrm_1_1param__solve__pnp_1_1pam.html#a69e190ee1360c283717a364b4a82ca13">RUNE_X_TOP</a> = 166.55; <span class="comment">// 填充率</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structrm_1_1param__solve__pnp_1_1pam.html#a69a60b8f581bafce07b9842ef3595070">   60</a></span>    <span class="keyword">mutable</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="structrm_1_1param__solve__pnp_1_1pam.html#a69a60b8f581bafce07b9842ef3595070">RUNE_Y_TOP</a> = 57.46;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structrm_1_1param__solve__pnp_1_1pam.html#a47171b4e93d9d037f3d5dc75093773b5">   61</a></span>    <span class="keyword">mutable</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="structrm_1_1param__solve__pnp_1_1pam.html#a47171b4e93d9d037f3d5dc75093773b5">RUNE_X_BOTTOM</a> = 175.75;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structrm_1_1param__solve__pnp_1_1pam.html#ae513a4f567ddf537429cf84889bc8eb9">   62</a></span>    <span class="keyword">mutable</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="structrm_1_1param__solve__pnp_1_1pam.html#ae513a4f567ddf537429cf84889bc8eb9">RUNE_Y_BOTTOM</a> = 47.67;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classrm_1_1param__solve__pnp.html#a4789a8a718381dc20a96f74989d709bf">   63</a></span>  } <a class="code hl_variable" href="classrm_1_1param__solve__pnp.html#a4789a8a718381dc20a96f74989d709bf">rune_pam</a>;</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>};</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>} <span class="comment">// namespace rm</span></div>
+<div class="ttc" id="aclassrm_1_1Solve_html"><div class="ttname"><a href="classrm_1_1Solve.html">rm::Solve</a></div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00006">solve_position.h:6</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_a0112704bde43625338f75daf57f7f480"><div class="ttname"><a href="classrm_1_1Solve.html#a0112704bde43625338f75daf57f7f480">rm::Solve::get_rVec</a></div><div class="ttdeci">cv::Mat get_rVec()</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8cpp_source.html#l00081">solve_position.cpp:81</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_a38eec1f86ebeda3c801731d6dfcff6f7"><div class="ttname"><a href="classrm_1_1Solve.html#a38eec1f86ebeda3c801731d6dfcff6f7">rm::Solve::Solve_Armor</a></div><div class="ttdeci">void Solve_Armor(std::vector&lt; cv::Point2f &gt; OBJECT_2D)</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8cpp_source.html#l00168">solve_position.cpp:168</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_a5b60bf8c037cb0ed9ba61d337a4f5dfb"><div class="ttname"><a href="classrm_1_1Solve.html#a5b60bf8c037cb0ed9ba61d337a4f5dfb">rm::Solve::init</a></div><div class="ttdeci">void init(cv::Mat &amp;CAM_MATRIX, cv::Mat &amp;DISTORTION_COEFF)</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8cpp_source.html#l00077">solve_position.cpp:77</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_a5bb10ba47e1b2de55a55723802de47a8"><div class="ttname"><a href="classrm_1_1Solve.html#a5bb10ba47e1b2de55a55723802de47a8">rm::Solve::_tVec</a></div><div class="ttdeci">cv::Mat _tVec</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00044">solve_position.h:44</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_a62d3fe502f76f249004d07a4949ce913"><div class="ttname"><a href="classrm_1_1Solve.html#a62d3fe502f76f249004d07a4949ce913">rm::Solve::get_real_Point3f</a></div><div class="ttdeci">cv::Point3f get_real_Point3f(double pitch, double yaw)</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8cpp_source.html#l00084">solve_position.cpp:84</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_a657eed02cb983497a06c5a45a43ab5d2"><div class="ttname"><a href="classrm_1_1Solve.html#a657eed02cb983497a06c5a45a43ab5d2">rm::Solve::POINT_3D_OF_ARMOR_BIG</a></div><div class="ttdeci">static std::vector&lt; cv::Point3d &gt; POINT_3D_OF_ARMOR_BIG</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00010">solve_position.h:10</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_a68f7e5ee4a0012a58d190c9a862035b6"><div class="ttname"><a href="classrm_1_1Solve.html#a68f7e5ee4a0012a58d190c9a862035b6">rm::Solve::_rVec</a></div><div class="ttdeci">cv::Mat _rVec</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00043">solve_position.h:43</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_a695adb6c9728a7692fa7cb621b6acb09"><div class="ttname"><a href="classrm_1_1Solve.html#a695adb6c9728a7692fa7cb621b6acb09">rm::Solve::_rMat</a></div><div class="ttdeci">cv::Mat _rMat</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00045">solve_position.h:45</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_a94b552ed291e997cebe58473c2ec60db"><div class="ttname"><a href="classrm_1_1Solve.html#a94b552ed291e997cebe58473c2ec60db">rm::Solve::get_tVec</a></div><div class="ttdeci">cv::Mat get_tVec()</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8cpp_source.html#l00082">solve_position.cpp:82</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_aa0ab00baba7bfa339e0662a2b2c682d0"><div class="ttname"><a href="classrm_1_1Solve.html#aa0ab00baba7bfa339e0662a2b2c682d0">rm::Solve::get_Point2f</a></div><div class="ttdeci">cv::Point2f get_Point2f(cv::Point3f input, float pitch, float yaw)</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8cpp_source.html#l00117">solve_position.cpp:117</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_aaaad5c2d3eba23c44a7bef2c8ea53ef3"><div class="ttname"><a href="classrm_1_1Solve.html#aaaad5c2d3eba23c44a7bef2c8ea53ef3">rm::Solve::get_distant</a></div><div class="ttdeci">double get_distant()</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8cpp_source.html#l00163">solve_position.cpp:163</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_ab7a443e2da5b089bf67de8d7d85ff8ec"><div class="ttname"><a href="classrm_1_1Solve.html#ab7a443e2da5b089bf67de8d7d85ff8ec">rm::Solve::_DISTORTION_COEFF</a></div><div class="ttdeci">cv::Mat _DISTORTION_COEFF</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00032">solve_position.h:32</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_aba18813db87db7f551c8ce7884e9f928"><div class="ttname"><a href="classrm_1_1Solve.html#aba18813db87db7f551c8ce7884e9f928">rm::Solve::POINT_3D_OF_RUNE_CENTER</a></div><div class="ttdeci">static std::vector&lt; cv::Point3f &gt; POINT_3D_OF_RUNE_CENTER</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00013">solve_position.h:13</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_ac7c2d847741de29384dc15cc91ec430f"><div class="ttname"><a href="classrm_1_1Solve.html#ac7c2d847741de29384dc15cc91ec430f">rm::Solve::w_hRatio</a></div><div class="ttdeci">float w_hRatio</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00029">solve_position.h:29</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_ad58126ce38aec97d6cc182460767698f"><div class="ttname"><a href="classrm_1_1Solve.html#ad58126ce38aec97d6cc182460767698f">rm::Solve::AromrType</a></div><div class="ttdeci">uint8_t AromrType</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00027">solve_position.h:27</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_ad92857d24aa8ecb7a1a01bad5bebbb14"><div class="ttname"><a href="classrm_1_1Solve.html#ad92857d24aa8ecb7a1a01bad5bebbb14">rm::Solve::_CAM_MATRIX</a></div><div class="ttdeci">cv::Mat _CAM_MATRIX</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00031">solve_position.h:31</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_add06156025e674c41bec2fb7f502bf2d"><div class="ttname"><a href="classrm_1_1Solve.html#add06156025e674c41bec2fb7f502bf2d">rm::Solve::solve</a></div><div class="ttdeci">void solve(std::vector&lt; cv::Point3f &gt; OBJECT_3D, std::vector&lt; cv::Point2f &gt; OBJECT_2D)</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8cpp_source.html#l00157">solve_position.cpp:157</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_ae2210ddf89de29d73016efb915f20957"><div class="ttname"><a href="classrm_1_1Solve.html#ae2210ddf89de29d73016efb915f20957">rm::Solve::LightBarLenRatio</a></div><div class="ttdeci">float LightBarLenRatio</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00028">solve_position.h:28</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_ae2957c9d7a27ff0f791ed0b0eb9a9c80"><div class="ttname"><a href="classrm_1_1Solve.html#ae2957c9d7a27ff0f791ed0b0eb9a9c80">rm::Solve::_RMat</a></div><div class="ttdeci">cv::Mat _RMat</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00046">solve_position.h:46</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_ae456131d6e4e336357deaf496090ca63"><div class="ttname"><a href="classrm_1_1Solve.html#ae456131d6e4e336357deaf496090ca63">rm::Solve::POINT_3D_OF_ARMOR_SMALL</a></div><div class="ttdeci">static std::vector&lt; cv::Point3d &gt; POINT_3D_OF_ARMOR_SMALL</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00011">solve_position.h:11</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_af7c9e1eca8a1bb22e2b3ca217af4bb8d"><div class="ttname"><a href="classrm_1_1Solve.html#af7c9e1eca8a1bb22e2b3ca217af4bb8d">rm::Solve::ArmorTypeCount</a></div><div class="ttdeci">int32_t ArmorTypeCount</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00026">solve_position.h:26</a></div></div>
+<div class="ttc" id="aclassrm_1_1Solve_html_aff036ced5f602d8e051b5ea8c6d42789"><div class="ttname"><a href="classrm_1_1Solve.html#aff036ced5f602d8e051b5ea8c6d42789">rm::Solve::POINT_3D_OF_RUNE_BIG</a></div><div class="ttdeci">static std::vector&lt; cv::Point3f &gt; POINT_3D_OF_RUNE_BIG</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00014">solve_position.h:14</a></div></div>
+<div class="ttc" id="aclassrm_1_1param__solve__pnp_html"><div class="ttname"><a href="classrm_1_1param__solve__pnp.html">rm::param_solve_pnp</a></div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00051">solve_position.h:51</a></div></div>
+<div class="ttc" id="aclassrm_1_1param__solve__pnp_html_a4789a8a718381dc20a96f74989d709bf"><div class="ttname"><a href="classrm_1_1param__solve__pnp.html#a4789a8a718381dc20a96f74989d709bf">rm::param_solve_pnp::rune_pam</a></div><div class="ttdeci">static struct rm::param_solve_pnp::pam rune_pam</div></div>
+<div class="ttc" id="aclassrm_1_1param__solve__pnp_html_a694fc8878aeb79b0ee61f772e9c70a07"><div class="ttname"><a href="classrm_1_1param__solve__pnp.html#a694fc8878aeb79b0ee61f772e9c70a07">rm::param_solve_pnp::readParams</a></div><div class="ttdeci">void readParams()</div></div>
+<div class="ttc" id="aclassrm_1_1param__solve__pnp_html_a830fe51e516727aad4cb9c6359f3ce46"><div class="ttname"><a href="classrm_1_1param__solve__pnp.html#a830fe51e516727aad4cb9c6359f3ce46">rm::param_solve_pnp::~param_solve_pnp</a></div><div class="ttdeci">~param_solve_pnp()</div></div>
+<div class="ttc" id="aclassrm_1_1param__solve__pnp_html_add4bcb26875e722a8b2f0c1a60db6b2f"><div class="ttname"><a href="classrm_1_1param__solve__pnp.html#add4bcb26875e722a8b2f0c1a60db6b2f">rm::param_solve_pnp::param_solve_pnp</a></div><div class="ttdeci">param_solve_pnp()</div></div>
+<div class="ttc" id="anamespacerm_html"><div class="ttname"><a href="namespacerm.html">rm</a></div><div class="ttdef"><b>Definition</b> <a href="armor_8cpp_source.html#l00005">armor.cpp:5</a></div></div>
+<div class="ttc" id="astructrm_1_1param__solve__pnp_1_1pam_html"><div class="ttname"><a href="structrm_1_1param__solve__pnp_1_1pam.html">rm::param_solve_pnp::pam</a></div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00058">solve_position.h:58</a></div></div>
+<div class="ttc" id="astructrm_1_1param__solve__pnp_1_1pam_html_a47171b4e93d9d037f3d5dc75093773b5"><div class="ttname"><a href="structrm_1_1param__solve__pnp_1_1pam.html#a47171b4e93d9d037f3d5dc75093773b5">rm::param_solve_pnp::pam::RUNE_X_BOTTOM</a></div><div class="ttdeci">double RUNE_X_BOTTOM</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00061">solve_position.h:61</a></div></div>
+<div class="ttc" id="astructrm_1_1param__solve__pnp_1_1pam_html_a69a60b8f581bafce07b9842ef3595070"><div class="ttname"><a href="structrm_1_1param__solve__pnp_1_1pam.html#a69a60b8f581bafce07b9842ef3595070">rm::param_solve_pnp::pam::RUNE_Y_TOP</a></div><div class="ttdeci">double RUNE_Y_TOP</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00060">solve_position.h:60</a></div></div>
+<div class="ttc" id="astructrm_1_1param__solve__pnp_1_1pam_html_a69e190ee1360c283717a364b4a82ca13"><div class="ttname"><a href="structrm_1_1param__solve__pnp_1_1pam.html#a69e190ee1360c283717a364b4a82ca13">rm::param_solve_pnp::pam::RUNE_X_TOP</a></div><div class="ttdeci">double RUNE_X_TOP</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00059">solve_position.h:59</a></div></div>
+<div class="ttc" id="astructrm_1_1param__solve__pnp_1_1pam_html_ae513a4f567ddf537429cf84889bc8eb9"><div class="ttname"><a href="structrm_1_1param__solve__pnp_1_1pam.html#ae513a4f567ddf537429cf84889bc8eb9">rm::param_solve_pnp::pam::RUNE_Y_BOTTOM</a></div><div class="ttdeci">double RUNE_Y_BOTTOM</div><div class="ttdef"><b>Definition</b> <a href="solve__position_8h_source.html#l00062">solve_position.h:62</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_19cfa4107752b02b78eaeca0e87f7fb4.html">Others</a></li><li class="navelem"><a class="el" href="dir_51e24d93d059680cc4bd8c7dba20c562.html">SolvePosition</a></li><li class="navelem"><a class="el" href="solve__position_8h.html">solve_position.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

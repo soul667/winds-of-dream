@@ -1,0 +1,10 @@
+<map id="update_state" name="update_state">
+<area shape="rect" id="Node000001" title="更新状态机状态，使用之前掩膜出来的流水灯" alt="" coords="5,70,112,95"/>
+<area shape="rect" id="Node000002" href="$classrm_1_1Result__Show.html#a2c678045d7985221cd232973e0f7ac8a" title=" " alt="" coords="160,5,343,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,67,170,47,172,52,103,72"/>
+<area shape="rect" id="Node000003" href="$classrm_1_1Wind.html#a682074f619089cb0a4c056dcdffd628a" title="给出平面坐标系上一个向量，x轴正向逆时针转到它所需的角度（0&#45;360）" alt="" coords="391,95,477,121"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,84,377,102,377,107,112,89"/>
+<area shape="rect" id="Node000004" href="$classrm_1_1Wind.html#a5f37e3e9ef3a3d33f8180bb961a9a6d4" title="得到两个角度差，以从x轴正向（不是相机坐标系），是二维笛卡尔坐标系。逆时针旋转为正。" alt="" coords="194,121,309,146"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="109,93,190,115,188,120,107,98"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="309,123,376,113,377,119,309,128"/>
+</map>

@@ -1,0 +1,47 @@
+<map id="read_content_core" name="read_content_core">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,237,148,262"/>
+<area shape="rect" id="Node000002" href="$structhttplib_1_1Request.html#ada97cc25c40596f5cbdea9e22a0d6517" title=" " alt="" coords="230,5,385,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,235,94,200,117,151,151,100,171,76,194,55,216,43,218,47,198,59,175,80,155,103,122,154,98,202,85,237"/>
+<area shape="rect" id="Node000003" href="$structhttplib_1_1Request.html#a9f1078a3e7919136a3f37dcb71561ce8" title=" " alt="" coords="229,69,385,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="84,235,127,179,158,147,195,119,215,109,217,113,197,124,162,151,131,182,88,238"/>
+<area shape="rect" id="Node000004" href="$structhttplib_1_1Request.html#a9eda42d7ff0b37a4c810fd11f8b63a27" title=" " alt="" coords="226,133,389,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="97,234,141,209,195,183,215,175,217,180,197,188,144,214,100,239"/>
+<area shape="rect" id="Node000005" href="$classhttplib_1_1detail_1_1MultipartFormDataParser.html#a8ca0e76fa665125f1e50bd1ed8dbd213" title=" " alt="" coords="215,197,399,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="148,237,201,229,202,235,149,242"/>
+<area shape="rect" id="Node000006" href="$classhttplib_1_1detail_1_1MultipartFormDataParser.html#a58913caeb67068797faefbf18d52ee20" title=" " alt="" coords="219,261,395,301"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="149,257,206,265,205,270,148,262"/>
+<area shape="rect" id="Node000010" href="$namespacehttplib_1_1detail.html#aea985a3042de5702f7b1f56da9a80bf1" title=" " alt="" coords="229,349,386,389"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="102,260,197,311,255,341,252,345,195,316,100,264"/>
+<area shape="rect" id="Node000011" href="$namespacehttplib_1_1detail.html#ab26c8271598d49da42a6b11f5460fdf6" title=" " alt="" coords="234,437,381,477"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="88,261,130,325,161,364,198,399,244,429,241,433,194,403,157,368,126,328,83,264"/>
+<area shape="rect" id="Node000020" href="$classhttplib_1_1detail_1_1MultipartFormDataParser.html#af9c5087f9404f1b904a6f6d0f38e69fd" title=" " alt="" coords="196,501,419,541"/>
+<area shape="poly" id="edge25_Node000001_Node000020" title=" " alt="" coords="83,262,94,305,116,366,150,431,172,461,198,487,204,492,201,496,194,491,168,465,145,434,111,368,89,307,78,263"/>
+<area shape="rect" id="Node000007" href="$namespacehttplib_1_1detail.html#a154c8da680d5f7124511865853e22bab" title=" " alt="" coords="479,269,661,294"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="396,279,465,279,465,284,396,284"/>
+<area shape="rect" id="Node000008" href="$namespacehttplib_1_1detail.html#a3600032b8bec075690d2f35d4e5f1a40" title=" " alt="" coords="754,269,898,294"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="661,279,740,279,740,284,661,284"/>
+<area shape="rect" id="Node000009" href="$namespacehttplib_1_1detail.html#a9da6fa66c270e03df2064aa24c52c6ed" title=" " alt="" coords="979,261,1107,301"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="899,279,965,279,965,284,899,284"/>
+<area shape="poly" id="edge10_Node000010_Node000010" title=" " alt="" coords="264,350,262,340,269,330,284,325,307,323,334,326,349,333,346,338,333,331,307,328,285,330,272,335,267,341,270,348"/>
+<area shape="poly" id="edge21_Node000011_Node000011" title=" " alt="" coords="264,438,262,428,269,418,284,413,307,411,334,414,349,421,346,426,333,419,307,416,285,418,272,423,267,429,270,436"/>
+<area shape="rect" id="Node000012" href="$namespacehttplib_1_1detail.html#ac2ec1e68b90e0b3a0a706aa67d3e5794" title=" " alt="" coords="500,345,640,385"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="358,435,466,395,489,387,490,392,468,400,360,440"/>
+<area shape="rect" id="Node000013" href="$namespacehttplib_1_1detail.html#a44767eeb196ca0b3b763cbf7b39361d0" title=" " alt="" coords="467,433,673,473"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="381,454,453,452,453,458,381,459"/>
+<area shape="rect" id="Node000015" href="$namespacehttplib_1_1detail.html#a3d5ba283417336b51eb7886ef7a627ca" title=" " alt="" coords="487,521,653,561"/>
+<area shape="poly" id="edge17_Node000011_Node000015" title=" " alt="" coords="381,475,419,487,501,514,500,519,418,492,379,480"/>
+<area shape="rect" id="Node000018" href="$namespacehttplib_1_1detail.html#a4c5253f6fd053ff050f0d14c6ec1ce1a" title=" " alt="" coords="489,612,651,652"/>
+<area shape="poly" id="edge22_Node000011_Node000018" title=" " alt="" coords="382,467,420,487,438,508,446,529,453,550,469,571,511,603,508,607,465,575,449,552,441,531,434,511,417,491,380,472"/>
+<area shape="poly" id="edge13_Node000012_Node000012" title=" " alt="" coords="522,346,520,336,527,326,544,321,570,319,600,322,616,329,614,334,598,327,570,324,545,326,530,331,525,337,528,344"/>
+<area shape="poly" id="edge16_Node000013_Node000013" title=" " alt="" coords="522,434,520,424,527,414,544,409,570,407,600,410,616,417,614,422,598,415,570,412,545,414,530,419,525,425,528,432"/>
+<area shape="rect" id="Node000014" href="$namespacehttplib_1_1detail.html#a07964c2da334b036caf1a533a2e97f22" title=" " alt="" coords="757,431,895,471"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="674,450,743,449,743,454,674,455"/>
+<area shape="poly" id="edge20_Node000015_Node000015" title=" " alt="" coords="522,522,520,512,527,502,544,497,570,495,600,498,616,505,614,510,598,503,570,500,545,502,530,507,525,513,528,520"/>
+<area shape="rect" id="Node000016" href="$classhttplib_1_1detail_1_1decompressor.html#a2102385de02e4d9d0c31b20afe99638c" title=" " alt="" coords="721,495,931,535"/>
+<area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="653,530,708,524,708,530,654,535"/>
+<area shape="rect" id="Node000017" href="$classhttplib_1_1detail_1_1decompressor.html#a3e3db569abb3e42d00f2c7288e00800a" title=" " alt="" coords="721,559,931,599"/>
+<area shape="poly" id="edge19_Node000015_Node000017" title=" " alt="" coords="654,551,708,559,707,564,653,556"/>
+<area shape="poly" id="edge24_Node000018_Node000018" title=" " alt="" coords="522,612,520,602,527,593,544,587,570,585,600,588,616,595,614,600,598,593,570,591,545,593,530,597,525,603,528,611"/>
+<area shape="rect" id="Node000019" href="$classhttplib_1_1Stream.html#a947476f03b5e378bbb404a304a5f700c" title=" " alt="" coords="748,623,904,649"/>
+<area shape="poly" id="edge23_Node000018_Node000019" title=" " alt="" coords="651,631,734,632,734,637,651,636"/>
+</map>

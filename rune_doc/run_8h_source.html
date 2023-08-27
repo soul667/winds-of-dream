@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“创梦之翼2023步兵自瞄文档”: Run/run.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">“创梦之翼2023步兵自瞄文档”<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">xxx</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('run_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">run.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="run_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;opencv2/opencv.hpp&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;atomic&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;condition_variable&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;thread&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;CameraApi.h&quot;</span> <span class="comment">//相机SDK的API头文件</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// #include &quot;Others/Camera/RMVideoCapture.hpp&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="armor_8hpp.html">Armor/armor.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="data__frame_8h.html">Others/DataFrame/data_frame.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="trajectory_8h.html">Others/Trajectory/trajectory.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="Serial_8h.html">Serials/Serial.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="wind_8hpp.html">rune/wind.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// ToOpenCV4.2.0</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="NewSerials_8hpp.html">NewSerials/NewSerials.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;opencv2/highgui/highgui_c.h&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;opencv2/imgproc/imgproc_c.h&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;opencv2/imgproc/types_c.h&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacerm.html">rm</a> {</div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="classrm_1_1Run.html">Run</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_function" href="classrm_1_1Run.html#a13e94df3b35eb8d54c12d9f67dad4841">Run</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a32fb1041656ca7885a0613dfc90ad8dd">   31</a></span>  <a class="code hl_function" href="classrm_1_1Run.html#a32fb1041656ca7885a0613dfc90ad8dd">~Run</a>() {}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#af54d9443ff95b8dd5f78f3f1b73378d0">   32</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classrm_1_1Run.html#af54d9443ff95b8dd5f78f3f1b73378d0">define_init</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classrm_1_1Run.html#aee8048628ff2b5c026c9e15acdcaacb8">init</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classrm_1_1Run.html#a1fe91292d7d5e00d35744a41f5cf98a0">producer</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classrm_1_1Run.html#a34fcd32bc19052117fcca6360468d032">consumer</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classrm_1_1Run.html#a24c552d2bd8a432d9984e4ef72456585">recorder</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#if (!USE_NEW_SERIAL)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classrm_1_1Run.html#a7ba7034afb9fed171e8a498e6f26b56f">listener</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classrm_1_1Run.html#a28a6eb3558d5c53bebbb61431ab87bcb">publisher</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classrm_1_1Run.html#aa69b8216a93e3ca13041002e6516774f">updater</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  int8_t <a class="code hl_function" href="classrm_1_1Run.html#ae4673c151f52c54f2aeb9df507aecb36">CamInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  int32_t <a class="code hl_function" href="classrm_1_1Run.html#a0f47f93e2bf012064e4e3afbdfac9da1">float_rounding</a>(<span class="keywordtype">float</span> raw);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  uint32_t <a class="code hl_function" href="classrm_1_1Run.html#a5897617171fac1331ea560a2f911e9cf">unsigned_float_rounding</a>(<span class="keywordtype">float</span> raw);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#ac4dbfff6e425ea5882397eab6b390a03">   46</a></span>  <a class="code hl_struct" href="structrm_1_1Frame.html">Frame</a> <a class="code hl_variable" href="classrm_1_1Run.html#ac4dbfff6e425ea5882397eab6b390a03">imgF</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a71e2537ae4ad335977f1b2bfa989a795">   48</a></span>  <a class="code hl_enumeration" href="namespacerm.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> <a class="code hl_variable" href="classrm_1_1Run.html#a71e2537ae4ad335977f1b2bfa989a795">_MODE</a> = <a class="code hl_enumvalue" href="namespacerm.html#a46c8a310cf4c094f8c80e1cb8dc1f911a5f718056accfd79f440a386a1da1cd8f">HIT_RUNE_MAX</a>; <span class="comment">// AUTO_AIM HIT_RUNE_MIN HIT_RUNE_MAX WIND_DEBUG;</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a4c66c5264ab3c2a5674ca2e9c0ee50c6">   49</a></span>  cv::Mat <a class="code hl_variable" href="classrm_1_1Run.html#a4c66c5264ab3c2a5674ca2e9c0ee50c6">RecordBuf</a> = cv::Mat(cv::Size(<a class="code hl_define" href="define_8h.html#a241aeeb764887ae5e3de58b98f04b16d">WIDTH</a>, <a class="code hl_define" href="define_8h.html#aed89bd71aee8be823e8a20ec4e093c1e">HEIGHT</a>), CV_8UC3);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a353205124ecd6e6f657a997bb1a130e4">   50</a></span>  std::mutex <a class="code hl_variable" href="classrm_1_1Run.html#a353205124ecd6e6f657a997bb1a130e4">RecordMux</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a34872fc59d7336403171ff89b95ad5a4">   51</a></span>  std::condition_variable <a class="code hl_variable" href="classrm_1_1Run.html#a34872fc59d7336403171ff89b95ad5a4">RecordCV</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="run_8h.html#a6150d827b7935f8d90322502d1f77bb2">   52</a></span><span class="preprocessor">#define RecordFPS 60</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a4d69690e2897ce44c283724b99939f3c">   53</a></span>  <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="classrm_1_1Run.html#a4d69690e2897ce44c283724b99939f3c">RecordWaitPeriod</a> = 1000.0 / <a class="code hl_define" href="run_8h.html#a6150d827b7935f8d90322502d1f77bb2">RecordFPS</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#ab0fb41271f28166e5435804ffe24435f">   55</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="classrm_1_1Run.html#ab0fb41271f28166e5435804ffe24435f">Mode_Change_Flag</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#ab7d1bd30abd7ba4836cbd8d3c966a101">   56</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="classrm_1_1Run.html#ab7d1bd30abd7ba4836cbd8d3c966a101">CameraSetExposureTime_set</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a810ea9b497e0522018aed34c6152acab">   57</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="classrm_1_1Run.html#a810ea9b497e0522018aed34c6152acab">receieve_flag</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#ae216a04959bab8a0dc98321ca993258e">   58</a></span>  <a class="code hl_enumeration" href="namespacerm.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> <a class="code hl_variable" href="classrm_1_1Run.html#ae216a04959bab8a0dc98321ca993258e">LAST_MODE</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a46ca91109c732e5c7fa0e8a1bca30a8c">   59</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classrm_1_1Run.html#a46ca91109c732e5c7fa0e8a1bca30a8c">_EXPO</a> = 0;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a3619e628cd5800740c6c8eab6af9da74">   60</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classrm_1_1Run.html#a3619e628cd5800740c6c8eab6af9da74">_FPS</a> = 330;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#abc0955aff2d247f028c8d8bb646dee8d">   61</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classrm_1_1Run.html#abc0955aff2d247f028c8d8bb646dee8d">_WIDTH</a> = 640;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a517c3af7ec95ed856d8787ac5403ae9f">   62</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classrm_1_1Run.html#a517c3af7ec95ed856d8787ac5403ae9f">_HEIGHT</a> = 480;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a756e88b1ca721732c7296e5e8bd81cc8">   64</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="classrm_1_1Run.html#a756e88b1ca721732c7296e5e8bd81cc8">ArmorExposureTime_ms</a> = 2;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a13d43ca3e215501505f61ef26e444aa0">   65</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="classrm_1_1Run.html#a13d43ca3e215501505f61ef26e444aa0">RuneExposureTime_ms</a> = 0.5;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#aa67b1044d1760ce748ee6af9e0509673">   67</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="classrm_1_1Run.html#aa67b1044d1760ce748ee6af9e0509673">_transmit_time</a> = 0;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#af1c7ccafed07144c435bca6657aba434">   68</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="classrm_1_1Run.html#af1c7ccafed07144c435bca6657aba434">bullet_speed</a> = 28;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#if (USE_NEW_SERIAL)</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <a class="code hl_struct" href="structFutureRM_1_1Serials_1_1ControlFrame.html">FutureRM::Serials::ControlFrame</a> <a class="code hl_variable" href="classrm_1_1Run.html#a2fe50416d089c95a39e8cf9673f2beb6">Control_data</a>; <span class="comment">// send</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <a class="code hl_struct" href="structFutureRM_1_1Serials_1_1ControlFrame.html">FutureRM::Serials::ControlFrame</a> zero_reset_data = {0};</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <a class="code hl_struct" href="structFutureRM_1_1Serials_1_1FeedBackFrame.html">FutureRM::Serials::FeedBackFrame</a> FeedBack_data; <span class="comment">// receive</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a2fe50416d089c95a39e8cf9673f2beb6">   74</a></span>  <a class="code hl_struct" href="structrm_1_1Serial_1_1ControlFrame.html">Serial::ControlFrame</a> <a class="code hl_variable" href="classrm_1_1Run.html#a2fe50416d089c95a39e8cf9673f2beb6">Control_data</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a425fe9d21435f00e3e6847f345635283">   76</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="classrm_1_1Run.html#a425fe9d21435f00e3e6847f345635283">_sendflg</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a1f20b698775c0c118272c2ef7935845b">   77</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="classrm_1_1Run.html#a1f20b698775c0c118272c2ef7935845b">STM32_Online</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="comment">// uint32_t ErrorExist = 0;</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a03183e762fde29204e2ceb8930ace84b">   80</a></span>  std::atomic_uint32_t <a class="code hl_variable" href="classrm_1_1Run.html#a03183e762fde29204e2ceb8930ace84b">ErrorExist</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="comment">// std::atomic_ ErrorExist;</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#if (html_debug)</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  std::atomic_int64_t x_hit{0};</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  std::atomic_int64_t y_hit{0};</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  std::atomic_int64_t z_hit{0};</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  std::atomic_int64_t nx;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  std::atomic_int64_t ny;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  std::atomic_int64_t nz;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  std::atomic&lt;double&gt; theta_four_points;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  std::atomic&lt;double&gt; theta_rect;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  std::atomic&lt;double&gt; theta_final;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  std::atomic&lt;double&gt; d_angle;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="comment">// std::atomic_int64_t theta;</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="comment">// std::atomic_int64_t vtheta;</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  std::atomic&lt;double&gt; vtheta_html;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordtype">void</span> server();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a1a1719caa288b74368ffa7aa8b579fa7">  101</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="classrm_1_1Run.html#a1a1719caa288b74368ffa7aa8b579fa7">FrameTimeStamp</a>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a13fee6b5dc626a998e46ee4a523be508">  102</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="classrm_1_1Run.html#a13fee6b5dc626a998e46ee4a523be508">camTimeStamp</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a842e105c78128bc1616790b1e85dac17">  104</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classrm_1_1Run.html#a842e105c78128bc1616790b1e85dac17">iCameraCounts</a> = 1;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#add17d8b271c4d2d6a57d1786ef1962c6">  105</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classrm_1_1Run.html#add17d8b271c4d2d6a57d1786ef1962c6">iStatus</a> = -1;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#ad84682a23e2bd017301149d917d9014b">  106</a></span>  tSdkCameraDevInfo <a class="code hl_variable" href="classrm_1_1Run.html#ad84682a23e2bd017301149d917d9014b">tCameraEnumList</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a54518aadff5ecdd33dd18ac99be35702">  107</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classrm_1_1Run.html#a54518aadff5ecdd33dd18ac99be35702">hCamera</a>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a45ab1640b0788065bf3cb9a7a5253273">  108</a></span>  tSdkCameraCapbility <a class="code hl_variable" href="classrm_1_1Run.html#a45ab1640b0788065bf3cb9a7a5253273">tCapability</a>; <span class="comment">// 设备描述信息</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a7781537bb4e833f85a02bcba48f061b1">  109</a></span>  tSdkFrameHead <a class="code hl_variable" href="classrm_1_1Run.html#a7781537bb4e833f85a02bcba48f061b1">sFrameInfo</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#acd60a6ceb04572a3c177718671e73e2f">  110</a></span>  BYTE *<a class="code hl_variable" href="classrm_1_1Run.html#acd60a6ceb04572a3c177718671e73e2f">pbyBuffer</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a60e297eb1dd638785bf144e8bdd26943">  111</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classrm_1_1Run.html#a60e297eb1dd638785bf144e8bdd26943">iDisplayFrames</a> = 10000;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#adc44e172252b6dc61206f6cf26a05165">  112</a></span>  IplImage *<a class="code hl_variable" href="classrm_1_1Run.html#adc44e172252b6dc61206f6cf26a05165">iplImage</a> = NULL;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#adf7dff2c57c0da9a4a2b70e3e815be31">  113</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classrm_1_1Run.html#adf7dff2c57c0da9a4a2b70e3e815be31">channel</a> = 3;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a91135e35dc2602ea605da54401a33cc0">  114</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="classrm_1_1Run.html#a91135e35dc2602ea605da54401a33cc0">g_pRgbBuffer</a>; <span class="comment">// 处理后数据缓存区</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a2c880b117b88b159cf7e7d892901a777">  117</a></span>  std::chrono::time_point&lt;std::chrono::high_resolution_clock&gt; <a class="code hl_variable" href="classrm_1_1Run.html#a2c880b117b88b159cf7e7d892901a777">_startTime</a>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a1302cf337733d1d6705545520bdf7c1e">  119</a></span>  std::timed_mutex <a class="code hl_variable" href="classrm_1_1Run.html#a1302cf337733d1d6705545520bdf7c1e">_mutex</a>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a2915ffb6faf1677d178868f94bce9acd">  120</a></span>  std::timed_mutex <a class="code hl_variable" href="classrm_1_1Run.html#a2915ffb6faf1677d178868f94bce9acd">_mutex_Log</a>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#ae8a00dbba8ba7bec9e11975939258c61">  121</a></span>  std::timed_mutex <a class="code hl_variable" href="classrm_1_1Run.html#ae8a00dbba8ba7bec9e11975939258c61">_mutex_update</a>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#af60caf463fdfaa3dee012436ee77eec0">  123</a></span>  <a class="code hl_class" href="classrm_1_1FrameBuffer.html">FrameBuffer</a> <a class="code hl_variable" href="classrm_1_1Run.html#af60caf463fdfaa3dee012436ee77eec0">_buffer</a>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a28e3027fe2b202a7bd44a9f642bfcdde">  124</a></span>  <a class="code hl_class" href="classrm_1_1Bag__FrameBuffer.html">Bag_FrameBuffer</a> <a class="code hl_variable" href="classrm_1_1Run.html#a28e3027fe2b202a7bd44a9f642bfcdde">_bag_buffer</a>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <span class="comment">// std::vector &lt;FeedBackFrame&gt; _FeedBackData_Buffer;</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#af45c075786c0c9955ff6d91aa3c7fb4f">  126</a></span>  <a class="code hl_class" href="classrm_1_1Result__Show.html">Result_Show</a> <a class="code hl_variable" href="classrm_1_1Run.html#af45c075786c0c9955ff6d91aa3c7fb4f">RS</a>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <span class="comment">// RMVideoCapture _RMVideoCapture;</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#ae3c4f9fcc13a1daf46eb8d0c54a04118">  128</a></span>  cv::VideoCapture <a class="code hl_variable" href="classrm_1_1Run.html#ae3c4f9fcc13a1daf46eb8d0c54a04118">_Test</a>;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#ad3e2ef399e035d920f6ffb6eb0f7a229">  130</a></span>  <a class="code hl_class" href="classrm_1_1Armor.html">Armor</a> <a class="code hl_variable" href="classrm_1_1Run.html#ad3e2ef399e035d920f6ffb6eb0f7a229">_Armor</a>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#a502b52b3cfc0d218b5e219cc00f78c38">  131</a></span>  <a class="code hl_class" href="classrm_1_1Wind.html">Wind</a> <a class="code hl_variable" href="classrm_1_1Run.html#a502b52b3cfc0d218b5e219cc00f78c38">_Wind</a>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#ab75cb142b14c5a068712da7afce69f10">  132</a></span>  <a class="code hl_class" href="classrm_1_1GimbalContrl.html">GimbalContrl</a> <a class="code hl_variable" href="classrm_1_1Run.html#ab75cb142b14c5a068712da7afce69f10">_Bullet</a>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">#if (USE_NEW_SERIAL)</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <a class="code hl_class" href="classFutureRM_1_1Serials.html">FutureRM::Serials</a> <a class="code hl_variable" href="classrm_1_1Run.html#ab1e614ff1e78ce01e3868f6eca0ed3ea">_Serial</a>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#ab1e614ff1e78ce01e3868f6eca0ed3ea">  136</a></span>  <a class="code hl_class" href="classrm_1_1Serial.html">Serial</a> <a class="code hl_variable" href="classrm_1_1Run.html#ab1e614ff1e78ce01e3868f6eca0ed3ea">_Serial</a>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="classrm_1_1Run.html#afde78882bcaaa59d5d9cb438c7c842e4">  138</a></span>  uint32_t <a class="code hl_variable" href="classrm_1_1Run.html#afde78882bcaaa59d5d9cb438c7c842e4">temp_Armor_ImageFrame_timeStamp</a>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>};</div>
+</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>} <span class="comment">// namespace rm</span></div>
+<div class="ttc" id="aNewSerials_8hpp_html"><div class="ttname"><a href="NewSerials_8hpp.html">NewSerials.hpp</a></div></div>
+<div class="ttc" id="aSerial_8h_html"><div class="ttname"><a href="Serial_8h.html">Serial.h</a></div></div>
+<div class="ttc" id="aarmor_8hpp_html"><div class="ttname"><a href="armor_8hpp.html">armor.hpp</a></div></div>
+<div class="ttc" id="aclassFutureRM_1_1Serials_html"><div class="ttname"><a href="classFutureRM_1_1Serials.html">FutureRM::Serials</a></div><div class="ttdef"><b>Definition</b> <a href="NewSerials_8hpp_source.html#l00019">NewSerials.hpp:19</a></div></div>
+<div class="ttc" id="aclassrm_1_1Armor_html"><div class="ttname"><a href="classrm_1_1Armor.html">rm::Armor</a></div><div class="ttdef"><b>Definition</b> <a href="armor_8hpp_source.html#l00021">armor.hpp:21</a></div></div>
+<div class="ttc" id="aclassrm_1_1Bag__FrameBuffer_html"><div class="ttname"><a href="classrm_1_1Bag__FrameBuffer.html">rm::Bag_FrameBuffer</a></div><div class="ttdef"><b>Definition</b> <a href="data__frame_8h_source.html#l00055">data_frame.h:56</a></div></div>
+<div class="ttc" id="aclassrm_1_1FrameBuffer_html"><div class="ttname"><a href="classrm_1_1FrameBuffer.html">rm::FrameBuffer</a></div><div class="ttdef"><b>Definition</b> <a href="data__frame_8h_source.html#l00024">data_frame.h:25</a></div></div>
+<div class="ttc" id="aclassrm_1_1GimbalContrl_html"><div class="ttname"><a href="classrm_1_1GimbalContrl.html">rm::GimbalContrl</a></div><div class="ttdoc">The class can make a transformation: the 3D position of enemy --&gt; pitch,yaw angle of gimbal....</div><div class="ttdef"><b>Definition</b> <a href="trajectory_8h_source.html#l00035">trajectory.h:36</a></div></div>
+<div class="ttc" id="aclassrm_1_1Result__Show_html"><div class="ttname"><a href="classrm_1_1Result__Show.html">rm::Result_Show</a></div><div class="ttdef"><b>Definition</b> <a href="opencv__owns_8hpp_source.html#l00012">opencv_owns.hpp:13</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html"><div class="ttname"><a href="classrm_1_1Run.html">rm::Run</a></div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00028">run.h:28</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a03183e762fde29204e2ceb8930ace84b"><div class="ttname"><a href="classrm_1_1Run.html#a03183e762fde29204e2ceb8930ace84b">rm::Run::ErrorExist</a></div><div class="ttdeci">std::atomic_uint32_t ErrorExist</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00080">run.h:80</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a0f47f93e2bf012064e4e3afbdfac9da1"><div class="ttname"><a href="classrm_1_1Run.html#a0f47f93e2bf012064e4e3afbdfac9da1">rm::Run::float_rounding</a></div><div class="ttdeci">int32_t float_rounding(float raw)</div><div class="ttdef"><b>Definition</b> <a href="run_8cpp_source.html#l00926">run.cpp:926</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a1302cf337733d1d6705545520bdf7c1e"><div class="ttname"><a href="classrm_1_1Run.html#a1302cf337733d1d6705545520bdf7c1e">rm::Run::_mutex</a></div><div class="ttdeci">std::timed_mutex _mutex</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00119">run.h:119</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a13d43ca3e215501505f61ef26e444aa0"><div class="ttname"><a href="classrm_1_1Run.html#a13d43ca3e215501505f61ef26e444aa0">rm::Run::RuneExposureTime_ms</a></div><div class="ttdeci">float RuneExposureTime_ms</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00065">run.h:65</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a13e94df3b35eb8d54c12d9f67dad4841"><div class="ttname"><a href="classrm_1_1Run.html#a13e94df3b35eb8d54c12d9f67dad4841">rm::Run::Run</a></div><div class="ttdeci">Run()</div><div class="ttdef"><b>Definition</b> <a href="run_8cpp_source.html#l00051">run.cpp:51</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a13fee6b5dc626a998e46ee4a523be508"><div class="ttname"><a href="classrm_1_1Run.html#a13fee6b5dc626a998e46ee4a523be508">rm::Run::camTimeStamp</a></div><div class="ttdeci">float camTimeStamp</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00102">run.h:102</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a1a1719caa288b74368ffa7aa8b579fa7"><div class="ttname"><a href="classrm_1_1Run.html#a1a1719caa288b74368ffa7aa8b579fa7">rm::Run::FrameTimeStamp</a></div><div class="ttdeci">float FrameTimeStamp</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00101">run.h:101</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a1f20b698775c0c118272c2ef7935845b"><div class="ttname"><a href="classrm_1_1Run.html#a1f20b698775c0c118272c2ef7935845b">rm::Run::STM32_Online</a></div><div class="ttdeci">bool STM32_Online</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00077">run.h:77</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a1fe91292d7d5e00d35744a41f5cf98a0"><div class="ttname"><a href="classrm_1_1Run.html#a1fe91292d7d5e00d35744a41f5cf98a0">rm::Run::producer</a></div><div class="ttdeci">void producer()</div><div class="ttdef"><b>Definition</b> <a href="run_8cpp_source.html#l00186">run.cpp:186</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a24c552d2bd8a432d9984e4ef72456585"><div class="ttname"><a href="classrm_1_1Run.html#a24c552d2bd8a432d9984e4ef72456585">rm::Run::recorder</a></div><div class="ttdeci">void recorder()</div><div class="ttdef"><b>Definition</b> <a href="run_8cpp_source.html#l00702">run.cpp:702</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a28a6eb3558d5c53bebbb61431ab87bcb"><div class="ttname"><a href="classrm_1_1Run.html#a28a6eb3558d5c53bebbb61431ab87bcb">rm::Run::publisher</a></div><div class="ttdeci">void publisher()</div><div class="ttdef"><b>Definition</b> <a href="run_8cpp_source.html#l00846">run.cpp:846</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a28e3027fe2b202a7bd44a9f642bfcdde"><div class="ttname"><a href="classrm_1_1Run.html#a28e3027fe2b202a7bd44a9f642bfcdde">rm::Run::_bag_buffer</a></div><div class="ttdeci">Bag_FrameBuffer _bag_buffer</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00124">run.h:124</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a2915ffb6faf1677d178868f94bce9acd"><div class="ttname"><a href="classrm_1_1Run.html#a2915ffb6faf1677d178868f94bce9acd">rm::Run::_mutex_Log</a></div><div class="ttdeci">std::timed_mutex _mutex_Log</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00120">run.h:120</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a2c880b117b88b159cf7e7d892901a777"><div class="ttname"><a href="classrm_1_1Run.html#a2c880b117b88b159cf7e7d892901a777">rm::Run::_startTime</a></div><div class="ttdeci">std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; _startTime</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00117">run.h:117</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a2fe50416d089c95a39e8cf9673f2beb6"><div class="ttname"><a href="classrm_1_1Run.html#a2fe50416d089c95a39e8cf9673f2beb6">rm::Run::Control_data</a></div><div class="ttdeci">Serial::ControlFrame Control_data</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00074">run.h:74</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a32fb1041656ca7885a0613dfc90ad8dd"><div class="ttname"><a href="classrm_1_1Run.html#a32fb1041656ca7885a0613dfc90ad8dd">rm::Run::~Run</a></div><div class="ttdeci">~Run()</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00031">run.h:31</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a34872fc59d7336403171ff89b95ad5a4"><div class="ttname"><a href="classrm_1_1Run.html#a34872fc59d7336403171ff89b95ad5a4">rm::Run::RecordCV</a></div><div class="ttdeci">std::condition_variable RecordCV</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00051">run.h:51</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a34fcd32bc19052117fcca6360468d032"><div class="ttname"><a href="classrm_1_1Run.html#a34fcd32bc19052117fcca6360468d032">rm::Run::consumer</a></div><div class="ttdeci">void consumer()</div><div class="ttdef"><b>Definition</b> <a href="run_8cpp_source.html#l00346">run.cpp:346</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a353205124ecd6e6f657a997bb1a130e4"><div class="ttname"><a href="classrm_1_1Run.html#a353205124ecd6e6f657a997bb1a130e4">rm::Run::RecordMux</a></div><div class="ttdeci">std::mutex RecordMux</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00050">run.h:50</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a3619e628cd5800740c6c8eab6af9da74"><div class="ttname"><a href="classrm_1_1Run.html#a3619e628cd5800740c6c8eab6af9da74">rm::Run::_FPS</a></div><div class="ttdeci">int _FPS</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00060">run.h:60</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a425fe9d21435f00e3e6847f345635283"><div class="ttname"><a href="classrm_1_1Run.html#a425fe9d21435f00e3e6847f345635283">rm::Run::_sendflg</a></div><div class="ttdeci">bool _sendflg</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00076">run.h:76</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a45ab1640b0788065bf3cb9a7a5253273"><div class="ttname"><a href="classrm_1_1Run.html#a45ab1640b0788065bf3cb9a7a5253273">rm::Run::tCapability</a></div><div class="ttdeci">tSdkCameraCapbility tCapability</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00108">run.h:108</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a46ca91109c732e5c7fa0e8a1bca30a8c"><div class="ttname"><a href="classrm_1_1Run.html#a46ca91109c732e5c7fa0e8a1bca30a8c">rm::Run::_EXPO</a></div><div class="ttdeci">int _EXPO</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00059">run.h:59</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a4c66c5264ab3c2a5674ca2e9c0ee50c6"><div class="ttname"><a href="classrm_1_1Run.html#a4c66c5264ab3c2a5674ca2e9c0ee50c6">rm::Run::RecordBuf</a></div><div class="ttdeci">cv::Mat RecordBuf</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00049">run.h:49</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a4d69690e2897ce44c283724b99939f3c"><div class="ttname"><a href="classrm_1_1Run.html#a4d69690e2897ce44c283724b99939f3c">rm::Run::RecordWaitPeriod</a></div><div class="ttdeci">const double RecordWaitPeriod</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00053">run.h:53</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a502b52b3cfc0d218b5e219cc00f78c38"><div class="ttname"><a href="classrm_1_1Run.html#a502b52b3cfc0d218b5e219cc00f78c38">rm::Run::_Wind</a></div><div class="ttdeci">Wind _Wind</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00131">run.h:131</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a517c3af7ec95ed856d8787ac5403ae9f"><div class="ttname"><a href="classrm_1_1Run.html#a517c3af7ec95ed856d8787ac5403ae9f">rm::Run::_HEIGHT</a></div><div class="ttdeci">int _HEIGHT</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00062">run.h:62</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a54518aadff5ecdd33dd18ac99be35702"><div class="ttname"><a href="classrm_1_1Run.html#a54518aadff5ecdd33dd18ac99be35702">rm::Run::hCamera</a></div><div class="ttdeci">int hCamera</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00107">run.h:107</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a5897617171fac1331ea560a2f911e9cf"><div class="ttname"><a href="classrm_1_1Run.html#a5897617171fac1331ea560a2f911e9cf">rm::Run::unsigned_float_rounding</a></div><div class="ttdeci">uint32_t unsigned_float_rounding(float raw)</div><div class="ttdef"><b>Definition</b> <a href="run_8cpp_source.html#l00936">run.cpp:936</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a60e297eb1dd638785bf144e8bdd26943"><div class="ttname"><a href="classrm_1_1Run.html#a60e297eb1dd638785bf144e8bdd26943">rm::Run::iDisplayFrames</a></div><div class="ttdeci">int iDisplayFrames</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00111">run.h:111</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a71e2537ae4ad335977f1b2bfa989a795"><div class="ttname"><a href="classrm_1_1Run.html#a71e2537ae4ad335977f1b2bfa989a795">rm::Run::_MODE</a></div><div class="ttdeci">Mode _MODE</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00048">run.h:48</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a756e88b1ca721732c7296e5e8bd81cc8"><div class="ttname"><a href="classrm_1_1Run.html#a756e88b1ca721732c7296e5e8bd81cc8">rm::Run::ArmorExposureTime_ms</a></div><div class="ttdeci">float ArmorExposureTime_ms</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00064">run.h:64</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a7781537bb4e833f85a02bcba48f061b1"><div class="ttname"><a href="classrm_1_1Run.html#a7781537bb4e833f85a02bcba48f061b1">rm::Run::sFrameInfo</a></div><div class="ttdeci">tSdkFrameHead sFrameInfo</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00109">run.h:109</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a7ba7034afb9fed171e8a498e6f26b56f"><div class="ttname"><a href="classrm_1_1Run.html#a7ba7034afb9fed171e8a498e6f26b56f">rm::Run::listener</a></div><div class="ttdeci">void listener()</div><div class="ttdef"><b>Definition</b> <a href="run_8cpp_source.html#l00749">run.cpp:749</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a810ea9b497e0522018aed34c6152acab"><div class="ttname"><a href="classrm_1_1Run.html#a810ea9b497e0522018aed34c6152acab">rm::Run::receieve_flag</a></div><div class="ttdeci">bool receieve_flag</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00057">run.h:57</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a842e105c78128bc1616790b1e85dac17"><div class="ttname"><a href="classrm_1_1Run.html#a842e105c78128bc1616790b1e85dac17">rm::Run::iCameraCounts</a></div><div class="ttdeci">int iCameraCounts</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00104">run.h:104</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_a91135e35dc2602ea605da54401a33cc0"><div class="ttname"><a href="classrm_1_1Run.html#a91135e35dc2602ea605da54401a33cc0">rm::Run::g_pRgbBuffer</a></div><div class="ttdeci">unsigned char * g_pRgbBuffer</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00114">run.h:114</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_aa67b1044d1760ce748ee6af9e0509673"><div class="ttname"><a href="classrm_1_1Run.html#aa67b1044d1760ce748ee6af9e0509673">rm::Run::_transmit_time</a></div><div class="ttdeci">float _transmit_time</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00067">run.h:67</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_aa69b8216a93e3ca13041002e6516774f"><div class="ttname"><a href="classrm_1_1Run.html#aa69b8216a93e3ca13041002e6516774f">rm::Run::updater</a></div><div class="ttdeci">void updater()</div><div class="ttdef"><b>Definition</b> <a href="run_8cpp_source.html#l00888">run.cpp:888</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_ab0fb41271f28166e5435804ffe24435f"><div class="ttname"><a href="classrm_1_1Run.html#ab0fb41271f28166e5435804ffe24435f">rm::Run::Mode_Change_Flag</a></div><div class="ttdeci">bool Mode_Change_Flag</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00055">run.h:55</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_ab1e614ff1e78ce01e3868f6eca0ed3ea"><div class="ttname"><a href="classrm_1_1Run.html#ab1e614ff1e78ce01e3868f6eca0ed3ea">rm::Run::_Serial</a></div><div class="ttdeci">Serial _Serial</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00136">run.h:136</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_ab75cb142b14c5a068712da7afce69f10"><div class="ttname"><a href="classrm_1_1Run.html#ab75cb142b14c5a068712da7afce69f10">rm::Run::_Bullet</a></div><div class="ttdeci">GimbalContrl _Bullet</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00132">run.h:132</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_ab7d1bd30abd7ba4836cbd8d3c966a101"><div class="ttname"><a href="classrm_1_1Run.html#ab7d1bd30abd7ba4836cbd8d3c966a101">rm::Run::CameraSetExposureTime_set</a></div><div class="ttdeci">bool CameraSetExposureTime_set</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00056">run.h:56</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_abc0955aff2d247f028c8d8bb646dee8d"><div class="ttname"><a href="classrm_1_1Run.html#abc0955aff2d247f028c8d8bb646dee8d">rm::Run::_WIDTH</a></div><div class="ttdeci">int _WIDTH</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00061">run.h:61</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_ac4dbfff6e425ea5882397eab6b390a03"><div class="ttname"><a href="classrm_1_1Run.html#ac4dbfff6e425ea5882397eab6b390a03">rm::Run::imgF</a></div><div class="ttdeci">Frame imgF</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00046">run.h:46</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_acd60a6ceb04572a3c177718671e73e2f"><div class="ttname"><a href="classrm_1_1Run.html#acd60a6ceb04572a3c177718671e73e2f">rm::Run::pbyBuffer</a></div><div class="ttdeci">BYTE * pbyBuffer</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00110">run.h:110</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_ad3e2ef399e035d920f6ffb6eb0f7a229"><div class="ttname"><a href="classrm_1_1Run.html#ad3e2ef399e035d920f6ffb6eb0f7a229">rm::Run::_Armor</a></div><div class="ttdeci">Armor _Armor</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00130">run.h:130</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_ad84682a23e2bd017301149d917d9014b"><div class="ttname"><a href="classrm_1_1Run.html#ad84682a23e2bd017301149d917d9014b">rm::Run::tCameraEnumList</a></div><div class="ttdeci">tSdkCameraDevInfo tCameraEnumList</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00106">run.h:106</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_adc44e172252b6dc61206f6cf26a05165"><div class="ttname"><a href="classrm_1_1Run.html#adc44e172252b6dc61206f6cf26a05165">rm::Run::iplImage</a></div><div class="ttdeci">IplImage * iplImage</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00112">run.h:112</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_add17d8b271c4d2d6a57d1786ef1962c6"><div class="ttname"><a href="classrm_1_1Run.html#add17d8b271c4d2d6a57d1786ef1962c6">rm::Run::iStatus</a></div><div class="ttdeci">int iStatus</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00105">run.h:105</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_adf7dff2c57c0da9a4a2b70e3e815be31"><div class="ttname"><a href="classrm_1_1Run.html#adf7dff2c57c0da9a4a2b70e3e815be31">rm::Run::channel</a></div><div class="ttdeci">int channel</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00113">run.h:113</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_ae216a04959bab8a0dc98321ca993258e"><div class="ttname"><a href="classrm_1_1Run.html#ae216a04959bab8a0dc98321ca993258e">rm::Run::LAST_MODE</a></div><div class="ttdeci">Mode LAST_MODE</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00058">run.h:58</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_ae3c4f9fcc13a1daf46eb8d0c54a04118"><div class="ttname"><a href="classrm_1_1Run.html#ae3c4f9fcc13a1daf46eb8d0c54a04118">rm::Run::_Test</a></div><div class="ttdeci">cv::VideoCapture _Test</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00128">run.h:128</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_ae4673c151f52c54f2aeb9df507aecb36"><div class="ttname"><a href="classrm_1_1Run.html#ae4673c151f52c54f2aeb9df507aecb36">rm::Run::CamInit</a></div><div class="ttdeci">int8_t CamInit(void)</div><div class="ttdef"><b>Definition</b> <a href="run_8cpp_source.html#l00065">run.cpp:65</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_ae8a00dbba8ba7bec9e11975939258c61"><div class="ttname"><a href="classrm_1_1Run.html#ae8a00dbba8ba7bec9e11975939258c61">rm::Run::_mutex_update</a></div><div class="ttdeci">std::timed_mutex _mutex_update</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00121">run.h:121</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_aee8048628ff2b5c026c9e15acdcaacb8"><div class="ttname"><a href="classrm_1_1Run.html#aee8048628ff2b5c026c9e15acdcaacb8">rm::Run::init</a></div><div class="ttdeci">bool init()</div><div class="ttdef"><b>Definition</b> <a href="run_8cpp_source.html#l00122">run.cpp:122</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_af1c7ccafed07144c435bca6657aba434"><div class="ttname"><a href="classrm_1_1Run.html#af1c7ccafed07144c435bca6657aba434">rm::Run::bullet_speed</a></div><div class="ttdeci">float bullet_speed</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00068">run.h:68</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_af45c075786c0c9955ff6d91aa3c7fb4f"><div class="ttname"><a href="classrm_1_1Run.html#af45c075786c0c9955ff6d91aa3c7fb4f">rm::Run::RS</a></div><div class="ttdeci">Result_Show RS</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00126">run.h:126</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_af54d9443ff95b8dd5f78f3f1b73378d0"><div class="ttname"><a href="classrm_1_1Run.html#af54d9443ff95b8dd5f78f3f1b73378d0">rm::Run::define_init</a></div><div class="ttdeci">bool define_init()</div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_af60caf463fdfaa3dee012436ee77eec0"><div class="ttname"><a href="classrm_1_1Run.html#af60caf463fdfaa3dee012436ee77eec0">rm::Run::_buffer</a></div><div class="ttdeci">FrameBuffer _buffer</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00123">run.h:123</a></div></div>
+<div class="ttc" id="aclassrm_1_1Run_html_afde78882bcaaa59d5d9cb438c7c842e4"><div class="ttname"><a href="classrm_1_1Run.html#afde78882bcaaa59d5d9cb438c7c842e4">rm::Run::temp_Armor_ImageFrame_timeStamp</a></div><div class="ttdeci">uint32_t temp_Armor_ImageFrame_timeStamp</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00138">run.h:138</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html"><div class="ttname"><a href="classrm_1_1Serial.html">rm::Serial</a></div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00039">Serial.h:39</a></div></div>
+<div class="ttc" id="aclassrm_1_1Wind_html"><div class="ttname"><a href="classrm_1_1Wind.html">rm::Wind</a></div><div class="ttdef"><b>Definition</b> <a href="wind_8hpp_source.html#l00020">wind.hpp:20</a></div></div>
+<div class="ttc" id="adata__frame_8h_html"><div class="ttname"><a href="data__frame_8h.html">data_frame.h</a></div></div>
+<div class="ttc" id="adefine_8h_html_a241aeeb764887ae5e3de58b98f04b16d"><div class="ttname"><a href="define_8h.html#a241aeeb764887ae5e3de58b98f04b16d">WIDTH</a></div><div class="ttdeci">#define WIDTH</div><div class="ttdef"><b>Definition</b> <a href="define_8h_source.html#l00029">define.h:29</a></div></div>
+<div class="ttc" id="adefine_8h_html_aed89bd71aee8be823e8a20ec4e093c1e"><div class="ttname"><a href="define_8h.html#aed89bd71aee8be823e8a20ec4e093c1e">HEIGHT</a></div><div class="ttdeci">#define HEIGHT</div><div class="ttdef"><b>Definition</b> <a href="define_8h_source.html#l00030">define.h:30</a></div></div>
+<div class="ttc" id="anamespacerm_html"><div class="ttname"><a href="namespacerm.html">rm</a></div><div class="ttdef"><b>Definition</b> <a href="armor_8cpp_source.html#l00005">armor.cpp:5</a></div></div>
+<div class="ttc" id="anamespacerm_html_a46c8a310cf4c094f8c80e1cb8dc1f911"><div class="ttname"><a href="namespacerm.html#a46c8a310cf4c094f8c80e1cb8dc1f911">rm::Mode</a></div><div class="ttdeci">Mode</div><div class="ttdef"><b>Definition</b> <a href="define__use_8hpp_source.html#l00028">define_use.hpp:28</a></div></div>
+<div class="ttc" id="anamespacerm_html_a46c8a310cf4c094f8c80e1cb8dc1f911a5f718056accfd79f440a386a1da1cd8f"><div class="ttname"><a href="namespacerm.html#a46c8a310cf4c094f8c80e1cb8dc1f911a5f718056accfd79f440a386a1da1cd8f">rm::HIT_RUNE_MAX</a></div><div class="ttdeci">@ HIT_RUNE_MAX</div><div class="ttdef"><b>Definition</b> <a href="define__use_8hpp_source.html#l00028">define_use.hpp:28</a></div></div>
+<div class="ttc" id="arun_8h_html_a6150d827b7935f8d90322502d1f77bb2"><div class="ttname"><a href="run_8h.html#a6150d827b7935f8d90322502d1f77bb2">RecordFPS</a></div><div class="ttdeci">#define RecordFPS</div><div class="ttdef"><b>Definition</b> <a href="run_8h_source.html#l00052">run.h:52</a></div></div>
+<div class="ttc" id="astructFutureRM_1_1Serials_1_1ControlFrame_html"><div class="ttname"><a href="structFutureRM_1_1Serials_1_1ControlFrame.html">FutureRM::Serials::ControlFrame</a></div><div class="ttdoc">Sending to the downstream machine</div><div class="ttdef"><b>Definition</b> <a href="NewSerials_8hpp_source.html#l00049">NewSerials.hpp:49</a></div></div>
+<div class="ttc" id="astructFutureRM_1_1Serials_1_1FeedBackFrame_html"><div class="ttname"><a href="structFutureRM_1_1Serials_1_1FeedBackFrame.html">FutureRM::Serials::FeedBackFrame</a></div><div class="ttdoc">Receiving from the downstream machine</div><div class="ttdef"><b>Definition</b> <a href="NewSerials_8hpp_source.html#l00072">NewSerials.hpp:72</a></div></div>
+<div class="ttc" id="astructrm_1_1Frame_html"><div class="ttname"><a href="structrm_1_1Frame.html">rm::Frame</a></div><div class="ttdef"><b>Definition</b> <a href="define__use_8hpp_source.html#l00014">define_use.hpp:14</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1ControlFrame_html"><div class="ttname"><a href="structrm_1_1Serial_1_1ControlFrame.html">rm::Serial::ControlFrame</a></div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00044">Serial.h:44</a></div></div>
+<div class="ttc" id="atrajectory_8h_html"><div class="ttname"><a href="trajectory_8h.html">trajectory.h</a></div></div>
+<div class="ttc" id="awind_8hpp_html"><div class="ttname"><a href="wind_8hpp.html">wind.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_7cef0f1793d3a175c8320802e5a24f89.html">Run</a></li><li class="navelem"><a class="el" href="run_8h.html">run.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

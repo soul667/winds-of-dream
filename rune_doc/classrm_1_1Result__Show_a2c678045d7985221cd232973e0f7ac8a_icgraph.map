@@ -1,0 +1,20 @@
+<map id="double_to_str" name="double_to_str">
+<area shape="rect" id="Node000001" title=" " alt="" coords="732,80,843,105"/>
+<area shape="rect" id="Node000002" href="$classrm_1_1Wind.html#aed283c2f71bf3cabaa496966638c725e" title="找到一些我们定义的特征形状，如中心点，T，moon" alt="" coords="513,5,681,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="750,76,683,44,649,33,651,28,685,40,753,71"/>
+<area shape="rect" id="Node000006" href="$classrm_1_1Armor.html#a90b8bab6ebefb60dd6ae0fdd2143f630" title=" " alt="" coords="319,129,444,155"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="756,115,722,132,685,145,621,155,557,158,444,153,444,147,557,153,621,149,683,139,720,127,753,110"/>
+<area shape="rect" id="Node000007" href="$classrm_1_1Wind.html#aa0dcd03083db9f051a6df17ad9ad2063" title="识别扇叶，给出扇叶的特征五点二维坐标（图像坐标系下）" alt="" coords="513,55,681,80"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="718,86,681,81,681,76,719,81"/>
+<area shape="rect" id="Node000008" href="$classrm_1_1Wind.html#ad8da6effe8118a08d206d816ed75285b" title="更新状态机状态，使用之前掩膜出来的流水灯" alt="" coords="509,104,684,129"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="719,104,684,108,684,103,718,99"/>
+<area shape="rect" id="Node000003" href="$classrm_1_1Wind.html#ae3a55099a1a48782a45cbde27ec7465d" title="能量机关的主入口" alt="" coords="301,80,461,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="534,37,510,45,413,82,411,77,508,39,532,32"/>
+<area shape="rect" id="Node000004" href="$classrm_1_1Run.html#a34fcd32bc19052117fcca6360468d032" title=" " alt="" coords="108,105,253,131"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="288,107,254,111,253,106,287,102"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,105,60,131"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,121,60,121,60,115,94,115"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="305,136,253,129,254,124,305,130"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="499,81,462,86,461,81,499,76"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="495,108,461,104,462,99,496,103"/>
+</map>

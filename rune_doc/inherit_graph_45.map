@@ -1,0 +1,9 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,108,56"/>
+<area shape="rect" id="Node000001" href="$structrm_1_1Light.html" title=" " alt="" coords="193,5,248,31"/>
+<area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="121,31,193,19,194,25,122,36"/>
+<area shape="rect" id="Node000002" href="$structrm_1_1Wind_1_1Moon__use.html" title="存储moon形状的类" alt="" coords="156,55,285,80"/>
+<area shape="poly" id="edge7_Node000000_Node000002" title=" " alt="" coords="122,50,156,55,155,60,121,55"/>
+<area shape="rect" id="Node000003" href="$structrm_1_1Wind_1_1Center__use.html" title="中心点使用的类" alt="" coords="333,55,469,80"/>
+<area shape="poly" id="edge8_Node000002_Node000003" title=" " alt="" coords="299,65,333,65,333,70,299,70"/>
+</map>

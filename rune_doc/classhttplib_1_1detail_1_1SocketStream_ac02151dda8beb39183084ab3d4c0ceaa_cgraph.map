@@ -1,0 +1,9 @@
+<map id="get_local_ip_and_port" name="get_local_ip_and_port">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,169,62"/>
+<area shape="rect" id="Node000002" href="$namespacehttplib_1_1detail.html#af4d529d0004f6b871efed3385061bb49" title=" " alt="" coords="217,29,360,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,47,203,47,203,52,169,52"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="253,30,251,20,257,11,270,5,289,3,311,6,323,13,320,17,309,11,289,8,271,10,260,15,256,21,258,28"/>
+<area shape="rect" id="Node000003" href="$namespacehttplib_1_1detail.html#a4cacdfd300ffbe98456ff9761adc4214" title=" " alt="" coords="408,29,547,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="360,47,394,47,394,52,360,52"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="442,30,440,20,446,11,458,5,477,3,499,6,511,13,509,17,498,11,477,8,460,10,449,15,445,21,447,28"/>
+</map>
