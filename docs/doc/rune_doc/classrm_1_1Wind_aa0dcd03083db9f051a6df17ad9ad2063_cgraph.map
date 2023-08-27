@@ -1,0 +1,14 @@
+<map id="match_wind" name="match_wind">
+<area shape="rect" id="Node000001" title="识别扇叶，给出扇叶的特征五点二维坐标（图像坐标系下）" alt="" coords="5,85,107,111"/>
+<area shape="rect" id="Node000002" href="$classrm_1_1Wind.html#ac3cadc5057bfb418cd420a8830af2a00" title=" " alt="" coords="216,5,276,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,83,154,48,202,29,204,34,156,52,83,88"/>
+<area shape="rect" id="Node000004" href="$classrm_1_1Wind.html#a682074f619089cb0a4c056dcdffd628a" title="给出平面坐标系上一个向量，x轴正向逆时针转到它所需的角度（0&#45;360）" alt="" coords="548,31,635,56"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="107,90,534,46,535,52,107,96"/>
+<area shape="rect" id="Node000005" href="$classrm_1_1Result__Show.html#a2c678045d7985221cd232973e0f7ac8a" title=" " alt="" coords="155,106,337,146"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="107,103,142,108,141,113,107,108"/>
+<area shape="rect" id="Node000006" href="$namespacerm.html#a0f340613936e30ef9f5f70003f4b5be2" title=" " alt="" coords="183,171,309,196"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="76,109,112,132,156,156,178,164,176,169,154,160,109,137,73,113"/>
+<area shape="rect" id="Node000003" href="$classrm_1_1Wind.html#a5f37e3e9ef3a3d33f8180bb961a9a6d4" title="得到两个角度差，以从x轴正向（不是相机坐标系），是二维笛卡尔坐标系。逆时针旋转为正。" alt="" coords="385,5,500,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="276,15,371,15,371,21,276,21"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="500,25,535,31,534,36,500,30"/>
+</map>

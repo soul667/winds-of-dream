@@ -1,0 +1,1100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“创梦之翼2023步兵自瞄文档”: Tracker类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">“创梦之翼2023步兵自瞄文档”<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">xxx</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classrm_1_1Tracker.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classrm_1_1Tracker-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Tracker类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="tracker_8hpp_source.html">tracker.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Tracker 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrm_1_1Tracker__coll__graph.png" border="0" usemap="#aTracker_coll__map" alt="Collaboration graph"/></div>
+<map name="aTracker_coll__map" id="aTracker_coll__map">
+<area shape="rect" title=" " alt="" coords="277,196,345,221"/>
+<area shape="rect" href="classrm_1_1ExtendedKalmanFilter.html" title=" " alt="" coords="5,93,172,119"/>
+<area shape="poly" title=" " alt="" coords="113,126,143,149,178,170,229,188,277,199,276,205,228,193,176,174,140,153,110,130"/>
+<area shape="rect" title=" " alt="" coords="225,5,283,31"/>
+<area shape="poly" title=" " alt="" coords="244,44,233,80,231,99,235,118,247,141,264,162,297,194,294,198,260,166,243,144,230,120,226,99,227,79,239,42"/>
+<area shape="rect" href="structrm_1_1Armor__.html" title=" " alt="" coords="317,93,386,119"/>
+<area shape="poly" title=" " alt="" coords="279,38,340,91,336,95,276,42"/>
+<area shape="poly" title=" " alt="" coords="325,129,315,144,310,171,312,196,306,196,304,170,310,142,321,126"/>
+<area shape="rect" href="structrm_1_1Roi__rect.html" title=" " alt="" coords="410,93,485,119"/>
+<area shape="poly" title=" " alt="" coords="441,133,429,154,412,174,380,193,346,204,345,199,377,188,408,170,425,151,436,130"/>
+<area shape="rect" title=" " alt="" coords="422,5,473,31"/>
+<area shape="poly" title=" " alt="" coords="450,45,450,93,445,93,445,45"/>
+<area shape="rect" href="classrm_1_1MaxQueue.html" title=" " alt="" coords="517,93,609,119"/>
+<area shape="poly" title=" " alt="" coords="560,133,550,155,533,174,499,188,448,198,346,208,345,203,448,193,497,183,530,170,545,152,555,131"/>
+<area shape="rect" title=" " alt="" coords="502,5,611,31"/>
+<area shape="poly" title=" " alt="" coords="561,44,565,93,560,93,556,45"/>
+<area shape="rect" title=" " alt="" coords="635,5,745,31"/>
+<area shape="poly" title=" " alt="" coords="663,41,582,95,579,91,660,36"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a5d74787dedbc4e11c1ab15bf487e61f8" id="r_a5d74787dedbc4e11c1ab15bf487e61f8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a5d74787dedbc4e11c1ab15bf487e61f8">State</a> { <a class="el" href="classrm_1_1Tracker.html#a5d74787dedbc4e11c1ab15bf487e61f8a339435bd0d4a842c6107333c908a5317">LOST</a>
+, <a class="el" href="classrm_1_1Tracker.html#a5d74787dedbc4e11c1ab15bf487e61f8aa9ebac8261913bb47c6073b985855ffe">DETECTING</a>
+, <a class="el" href="classrm_1_1Tracker.html#a5d74787dedbc4e11c1ab15bf487e61f8a5b83dded44924a6ef0fc0c08bac2c232">TRACKING</a>
+, <a class="el" href="classrm_1_1Tracker.html#a5d74787dedbc4e11c1ab15bf487e61f8a8fb9e52fbe3019e1462b11f92f7f9841">TEMP_LOST</a>
+ }</td></tr>
+<tr class="separator:a5d74787dedbc4e11c1ab15bf487e61f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a31d5126d5f8447e1122e993938ed78f3" id="r_a31d5126d5f8447e1122e993938ed78f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a31d5126d5f8447e1122e993938ed78f3">Tracker</a> (double max_match_distance, double max_match_yaw_diff)</td></tr>
+<tr class="separator:a31d5126d5f8447e1122e993938ed78f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c0e1a5d2899791edd8e684ed16e2878" id="r_a6c0e1a5d2899791edd8e684ed16e2878"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a6c0e1a5d2899791edd8e684ed16e2878">init</a> (const <a class="el" href="namespacerm.html#a41bc7389661b8944193e96106ddb32c1">Armors_</a> &amp;armors)</td></tr>
+<tr class="separator:a6c0e1a5d2899791edd8e684ed16e2878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c51adb7812a637fed2d0d565e67ea6" id="r_a13c51adb7812a637fed2d0d565e67ea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a13c51adb7812a637fed2d0d565e67ea6">update</a> (const <a class="el" href="namespacerm.html#a41bc7389661b8944193e96106ddb32c1">Armors_</a> &amp;armors)</td></tr>
+<tr class="separator:a13c51adb7812a637fed2d0d565e67ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ab918cb6fe542e1f697262d32fed29e7e" id="r_ab918cb6fe542e1f697262d32fed29e7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrm_1_1ExtendedKalmanFilter.html">ExtendedKalmanFilter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#ab918cb6fe542e1f697262d32fed29e7e">ekf</a></td></tr>
+<tr class="separator:ab918cb6fe542e1f697262d32fed29e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a059bb3327d269f671549749248db5828" id="r_a059bb3327d269f671549749248db5828"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a059bb3327d269f671549749248db5828">tracking_thres</a> = 1</td></tr>
+<tr class="separator:a059bb3327d269f671549749248db5828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf192671d36be79f19d7bf498a688e2" id="r_a9bf192671d36be79f19d7bf498a688e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a9bf192671d36be79f19d7bf498a688e2">lost_thres</a> = 2</td></tr>
+<tr class="separator:a9bf192671d36be79f19d7bf498a688e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8137f351e95e57db9287a91be72ac7" id="r_a9f8137f351e95e57db9287a91be72ac7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a9f8137f351e95e57db9287a91be72ac7">matched</a> = 0</td></tr>
+<tr class="separator:a9f8137f351e95e57db9287a91be72ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350895bf7ff20cbbb2c0c1f5c06804f2" id="r_a350895bf7ff20cbbb2c0c1f5c06804f2"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classrm_1_1Tracker.html#a5d74787dedbc4e11c1ab15bf487e61f8">rm::Tracker::State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a350895bf7ff20cbbb2c0c1f5c06804f2">tracker_state</a></td></tr>
+<tr class="separator:a350895bf7ff20cbbb2c0c1f5c06804f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb7430fb26300d0e626cf90ad4e76ff" id="r_aabb7430fb26300d0e626cf90ad4e76ff"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#aabb7430fb26300d0e626cf90ad4e76ff">tracked_id</a></td></tr>
+<tr class="separator:aabb7430fb26300d0e626cf90ad4e76ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b37de4a0854e7d3d48c9fba0d53c1c" id="r_a60b37de4a0854e7d3d48c9fba0d53c1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrm_1_1Armor__.html">Armor_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a60b37de4a0854e7d3d48c9fba0d53c1c">tracked_armor</a></td></tr>
+<tr class="separator:a60b37de4a0854e7d3d48c9fba0d53c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69cb669f28e807ce7f8ca337b482342d" id="r_a69cb669f28e807ce7f8ca337b482342d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrm_1_1Armor__.html">Armor_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a69cb669f28e807ce7f8ca337b482342d">current_armor</a></td></tr>
+<tr class="separator:a69cb669f28e807ce7f8ca337b482342d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e7284c0bdd5c73ea1511a1c208cecc" id="r_a39e7284c0bdd5c73ea1511a1c208cecc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrm_1_1Roi__rect.html">Roi_rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a39e7284c0bdd5c73ea1511a1c208cecc">TrackingROI</a></td></tr>
+<tr class="separator:a39e7284c0bdd5c73ea1511a1c208cecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb99666508ef5c6d40155165593fcac" id="r_a0cb99666508ef5c6d40155165593fcac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrm_1_1Roi__rect.html">Roi_rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a0cb99666508ef5c6d40155165593fcac">LastTargetRoi</a></td></tr>
+<tr class="separator:a0cb99666508ef5c6d40155165593fcac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4165dde532cbe17ebfcaa5b044a27d2" id="r_ae4165dde532cbe17ebfcaa5b044a27d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacerm.html#ab6b473100f23f025c8cfabd7c6f244d2">ArmorsNum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#ae4165dde532cbe17ebfcaa5b044a27d2">tracked_armors_num</a></td></tr>
+<tr class="separator:ae4165dde532cbe17ebfcaa5b044a27d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc51ddeef4e05fee40b49d0e0db14e4" id="r_accc51ddeef4e05fee40b49d0e0db14e4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#accc51ddeef4e05fee40b49d0e0db14e4">info_position_diff</a></td></tr>
+<tr class="separator:accc51ddeef4e05fee40b49d0e0db14e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24863cf7174d5f168b0b8524f2da3045" id="r_a24863cf7174d5f168b0b8524f2da3045"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a24863cf7174d5f168b0b8524f2da3045">info_yaw_diff</a></td></tr>
+<tr class="separator:a24863cf7174d5f168b0b8524f2da3045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d84616fc618858e9a694f70dc1e273f" id="r_a7d84616fc618858e9a694f70dc1e273f"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a7d84616fc618858e9a694f70dc1e273f">measurement</a></td></tr>
+<tr class="separator:a7d84616fc618858e9a694f70dc1e273f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65cdcdfa1c5ec9d10b36ad94fd6e2901" id="r_a65cdcdfa1c5ec9d10b36ad94fd6e2901"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a65cdcdfa1c5ec9d10b36ad94fd6e2901">target_state</a></td></tr>
+<tr class="separator:a65cdcdfa1c5ec9d10b36ad94fd6e2901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a198de8c3f38514f4e55231aa69cd10" id="r_a5a198de8c3f38514f4e55231aa69cd10"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a5a198de8c3f38514f4e55231aa69cd10">dz</a></td></tr>
+<tr class="separator:a5a198de8c3f38514f4e55231aa69cd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7559b367d5b05915ed3884406ff0f5f" id="r_ae7559b367d5b05915ed3884406ff0f5f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#ae7559b367d5b05915ed3884406ff0f5f">another_r</a></td></tr>
+<tr class="separator:ae7559b367d5b05915ed3884406ff0f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618d9146472f0c42081da7a8c39a9508" id="r_a618d9146472f0c42081da7a8c39a9508"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a618d9146472f0c42081da7a8c39a9508">lost_count_</a> = 0</td></tr>
+<tr class="separator:a618d9146472f0c42081da7a8c39a9508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600adc92a22b73c0e3751a724e2c2dbf" id="r_a600adc92a22b73c0e3751a724e2c2dbf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a600adc92a22b73c0e3751a724e2c2dbf">tracker_count_</a> = 0</td></tr>
+<tr class="separator:a600adc92a22b73c0e3751a724e2c2dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2add2f0e3c04b6258ced4df70fb65f57" id="r_a2add2f0e3c04b6258ced4df70fb65f57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a2add2f0e3c04b6258ced4df70fb65f57">detect_count_</a> = 0</td></tr>
+<tr class="separator:a2add2f0e3c04b6258ced4df70fb65f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ce3cb64ebb581ab458e90b39d7d774" id="r_a30ce3cb64ebb581ab458e90b39d7d774"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a30ce3cb64ebb581ab458e90b39d7d774">predict_point</a></td></tr>
+<tr class="separator:a30ce3cb64ebb581ab458e90b39d7d774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fe0c7ca10c4d9a253c4ade25412675" id="r_a55fe0c7ca10c4d9a253c4ade25412675"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a55fe0c7ca10c4d9a253c4ade25412675">last_point</a></td></tr>
+<tr class="separator:a55fe0c7ca10c4d9a253c4ade25412675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de7917567353302141384b934bfb7ff" id="r_a0de7917567353302141384b934bfb7ff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a0de7917567353302141384b934bfb7ff">max_match_distance_</a></td></tr>
+<tr class="separator:a0de7917567353302141384b934bfb7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74b01ffae5077fb5ca3994dfbbf529b" id="r_ac74b01ffae5077fb5ca3994dfbbf529b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#ac74b01ffae5077fb5ca3994dfbbf529b">first_track</a> = 1</td></tr>
+<tr class="separator:ac74b01ffae5077fb5ca3994dfbbf529b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3708e8d089b6820d36a25d65c7690a" id="r_abc3708e8d089b6820d36a25d65c7690a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrm_1_1MaxQueue.html">MaxQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#abc3708e8d089b6820d36a25d65c7690a">rects_width</a></td></tr>
+<tr class="separator:abc3708e8d089b6820d36a25d65c7690a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b9fc391487478813726215ff6047a26" id="r_a8b9fc391487478813726215ff6047a26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrm_1_1MaxQueue.html">MaxQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a8b9fc391487478813726215ff6047a26">rects_height</a></td></tr>
+<tr class="separator:a8b9fc391487478813726215ff6047a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5780927facdf0de2b8d8746bb160ca29" id="r_a5780927facdf0de2b8d8746bb160ca29"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a5780927facdf0de2b8d8746bb160ca29">roi_ratio_width</a> = 1.5</td></tr>
+<tr class="separator:a5780927facdf0de2b8d8746bb160ca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf955ebfe720d802a0e72eb2820d831" id="r_a1bf955ebfe720d802a0e72eb2820d831"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a1bf955ebfe720d802a0e72eb2820d831">roi_ratio_height</a> = 2</td></tr>
+<tr class="separator:a1bf955ebfe720d802a0e72eb2820d831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5748e3b7ec3544cf658493f2afeb45e" id="r_ac5748e3b7ec3544cf658493f2afeb45e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#ac5748e3b7ec3544cf658493f2afeb45e">average_ratio</a> =0</td></tr>
+<tr class="separator:ac5748e3b7ec3544cf658493f2afeb45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04197601717de209482993c0fea8ad8a" id="r_a04197601717de209482993c0fea8ad8a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a04197601717de209482993c0fea8ad8a">priority_hit_angle</a> =45</td></tr>
+<tr class="separator:a04197601717de209482993c0fea8ad8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:acb951693f2751b4bb7f86d1b5adb2478" id="r_acb951693f2751b4bb7f86d1b5adb2478"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#acb951693f2751b4bb7f86d1b5adb2478">initEKF</a> (const <a class="el" href="structrm_1_1Armor__.html">Armor_</a> &amp;armor)</td></tr>
+<tr class="separator:acb951693f2751b4bb7f86d1b5adb2478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00f345cebecc7fed6d8640b5b2cc233" id="r_ad00f345cebecc7fed6d8640b5b2cc233"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#ad00f345cebecc7fed6d8640b5b2cc233">updateArmorsNum</a> (const <a class="el" href="structrm_1_1Armor__.html">Armor_</a> &amp;armor)</td></tr>
+<tr class="separator:ad00f345cebecc7fed6d8640b5b2cc233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6253070aa9722ef7e877859c8d910e6f" id="r_a6253070aa9722ef7e877859c8d910e6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a6253070aa9722ef7e877859c8d910e6f">handleArmorJump</a> (const <a class="el" href="structrm_1_1Armor__.html">Armor_</a> &amp;armor)</td></tr>
+<tr class="separator:a6253070aa9722ef7e877859c8d910e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c38bfb5da01bfc08b35278b24d6e86" id="r_a89c38bfb5da01bfc08b35278b24d6e86"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a89c38bfb5da01bfc08b35278b24d6e86">getArmorPositionFromState</a> (const Eigen::VectorXd &amp;x)</td></tr>
+<tr class="separator:a89c38bfb5da01bfc08b35278b24d6e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a5cee7158cebeedbd6d070dd456f531c3" id="r_a5cee7158cebeedbd6d070dd456f531c3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a5cee7158cebeedbd6d070dd456f531c3">max_match_yaw_diff_</a></td></tr>
+<tr class="separator:a5cee7158cebeedbd6d070dd456f531c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4808a1502ae545d176e31e10aa29b893" id="r_a4808a1502ae545d176e31e10aa29b893"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1Tracker.html#a4808a1502ae545d176e31e10aa29b893">last_yaw_</a></td></tr>
+<tr class="separator:a4808a1502ae545d176e31e10aa29b893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00118">118</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a5d74787dedbc4e11c1ab15bf487e61f8" name="a5d74787dedbc4e11c1ab15bf487e61f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d74787dedbc4e11c1ab15bf487e61f8">&#9670;&#160;</a></span>State</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classrm_1_1Tracker.html#a5d74787dedbc4e11c1ab15bf487e61f8">State</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a5d74787dedbc4e11c1ab15bf487e61f8a339435bd0d4a842c6107333c908a5317" name="a5d74787dedbc4e11c1ab15bf487e61f8a339435bd0d4a842c6107333c908a5317"></a>LOST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d74787dedbc4e11c1ab15bf487e61f8aa9ebac8261913bb47c6073b985855ffe" name="a5d74787dedbc4e11c1ab15bf487e61f8aa9ebac8261913bb47c6073b985855ffe"></a>DETECTING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d74787dedbc4e11c1ab15bf487e61f8a5b83dded44924a6ef0fc0c08bac2c232" name="a5d74787dedbc4e11c1ab15bf487e61f8a5b83dded44924a6ef0fc0c08bac2c232"></a>TRACKING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d74787dedbc4e11c1ab15bf487e61f8a8fb9e52fbe3019e1462b11f92f7f9841" name="a5d74787dedbc4e11c1ab15bf487e61f8a8fb9e52fbe3019e1462b11f92f7f9841"></a>TEMP_LOST&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00131">131</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a31d5126d5f8447e1122e993938ed78f3" name="a31d5126d5f8447e1122e993938ed78f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d5126d5f8447e1122e993938ed78f3">&#9670;&#160;</a></span>Tracker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrm_1_1Tracker.html">Tracker</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max_match_distance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max_match_yaw_diff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8cpp_source.html">tracker.cpp</a> 第 <a class="el" href="tracker_8cpp_source.html#l00019">19</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a89c38bfb5da01bfc08b35278b24d6e86" name="a89c38bfb5da01bfc08b35278b24d6e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c38bfb5da01bfc08b35278b24d6e86">&#9670;&#160;</a></span>getArmorPositionFromState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector3d getArmorPositionFromState </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8cpp_source.html">tracker.cpp</a> 第 <a class="el" href="tracker_8cpp_source.html#l00196">196</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00156">Tracker::handleArmorJump()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrm_1_1Tracker_a89c38bfb5da01bfc08b35278b24d6e86_icgraph.png" border="0" usemap="#aclassrm_1_1Tracker_a89c38bfb5da01bfc08b35278b24d6e86_icgraph" alt=""/></div>
+<map name="aclassrm_1_1Tracker_a89c38bfb5da01bfc08b35278b24d6e86_icgraph" id="aclassrm_1_1Tracker_a89c38bfb5da01bfc08b35278b24d6e86_icgraph">
+<area shape="rect" title=" " alt="" coords="192,5,395,31"/>
+<area shape="rect" href="classrm_1_1Tracker.html#a6253070aa9722ef7e877859c8d910e6f" title=" " alt="" coords="5,5,144,31"/>
+<area shape="poly" title=" " alt="" coords="178,21,144,21,144,15,178,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6253070aa9722ef7e877859c8d910e6f" name="a6253070aa9722ef7e877859c8d910e6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6253070aa9722ef7e877859c8d910e6f">&#9670;&#160;</a></span>handleArmorJump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleArmorJump </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structrm_1_1Armor__.html">Armor_</a> &amp;&#160;</td>
+          <td class="paramname"><em>armor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8cpp_source.html">tracker.cpp</a> 第 <a class="el" href="tracker_8cpp_source.html#l00156">156</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="tracker_8hpp_source.html#l00151">Tracker::another_r</a>, <a class="el" href="tracker_8hpp_source.html#l00139">Tracker::current_armor</a>, <a class="el" href="tracker_8hpp_source.html#l00151">Tracker::dz</a>, <a class="el" href="tracker_8hpp_source.html#l00126">Tracker::ekf</a>, <a class="el" href="tracker_8cpp_source.html#l00196">Tracker::getArmorPositionFromState()</a>, <a class="el" href="tracker_8hpp_source.html#l00155">Tracker::max_match_distance_</a>, <a class="el" href="namespacerm.html#ab6b473100f23f025c8cfabd7c6f244d2a3ae6534d71e2a49528370a24b2a90d32">rm::NORMAL_4</a>, <a class="el" href="namespacerm.html#ae50f7d9b4a7ea4647a4aff547a8ceb48">rm::p</a>, <a class="el" href="tracker_8hpp_source.html#l00096">Armor_::point</a>, <a class="el" href="extended__kalman__filter_8cpp_source.html#l00014">ExtendedKalmanFilter::setState()</a>, <a class="el" href="tracker_8hpp_source.html#l00148">Tracker::target_state</a>, <a class="el" href="tracker_8hpp_source.html#l00142">Tracker::tracked_armors_num</a> , 以及 <a class="el" href="tracker_8cpp_source.html#l00145">Tracker::updateArmorsNum()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrm_1_1Tracker_a6253070aa9722ef7e877859c8d910e6f_cgraph.png" border="0" usemap="#aclassrm_1_1Tracker_a6253070aa9722ef7e877859c8d910e6f_cgraph" alt=""/></div>
+<map name="aclassrm_1_1Tracker_a6253070aa9722ef7e877859c8d910e6f_cgraph" id="aclassrm_1_1Tracker_a6253070aa9722ef7e877859c8d910e6f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,63,144,88"/>
+<area shape="rect" href="classrm_1_1Tracker.html#a89c38bfb5da01bfc08b35278b24d6e86" title=" " alt="" coords="192,5,395,31"/>
+<area shape="poly" title=" " alt="" coords="120,60,191,41,227,31,229,37,193,46,122,65"/>
+<area shape="rect" href="classrm_1_1ExtendedKalmanFilter.html#a973ebca4fec9d039e4f8a4a7385600d5" title=" " alt="" coords="197,55,389,95"/>
+<area shape="poly" title=" " alt="" coords="144,73,184,73,184,78,144,78"/>
+<area shape="rect" href="classrm_1_1Tracker.html#ad00f345cebecc7fed6d8640b5b2cc233" title=" " alt="" coords="221,120,366,145"/>
+<area shape="poly" title=" " alt="" coords="122,85,193,105,229,114,227,119,191,110,120,91"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6c0e1a5d2899791edd8e684ed16e2878" name="a6c0e1a5d2899791edd8e684ed16e2878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c0e1a5d2899791edd8e684ed16e2878">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacerm.html#a41bc7389661b8944193e96106ddb32c1">Armors_</a> &amp;&#160;</td>
+          <td class="paramname"><em>armors</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8cpp_source.html">tracker.cpp</a> 第 <a class="el" href="tracker_8cpp_source.html#l00026">26</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="tracker_8hpp_source.html#l00040">MaxQueue::clear()</a>, <a class="el" href="tracker_8hpp_source.html#l00133">Tracker::DETECTING</a>, <a class="el" href="tracker_8hpp_source.html#l00154">Tracker::last_point</a>, <a class="el" href="tracker_8hpp_source.html#l00096">Armor_::point</a>, <a class="el" href="tracker_8hpp_source.html#l00157">Tracker::rects_height</a>, <a class="el" href="tracker_8hpp_source.html#l00157">Tracker::rects_width</a>, <a class="el" href="tracker_8hpp_source.html#l00139">Tracker::tracked_armor</a>, <a class="el" href="tracker_8hpp_source.html#l00138">Tracker::tracked_id</a>, <a class="el" href="classrm_1_1Tracker.html#a350895bf7ff20cbbb2c0c1f5c06804f2">Tracker::tracker_state</a>, <a class="el" href="tracker_8hpp_source.html#l00140">Tracker::TrackingROI</a>, <a class="el" href="tracker_8hpp_source.html#l00071">Roi_rect::vx</a> , 以及 <a class="el" href="tracker_8hpp_source.html#l00071">Roi_rect::vy</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrm_1_1Tracker_a6c0e1a5d2899791edd8e684ed16e2878_cgraph.png" border="0" usemap="#aclassrm_1_1Tracker_a6c0e1a5d2899791edd8e684ed16e2878_cgraph" alt=""/></div>
+<map name="aclassrm_1_1Tracker_a6c0e1a5d2899791edd8e684ed16e2878_cgraph" id="aclassrm_1_1Tracker_a6c0e1a5d2899791edd8e684ed16e2878_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,48,31"/>
+<area shape="rect" href="classrm_1_1MaxQueue.html#ac8bb3912a3ce86b15842e79d0b421204" title=" " alt="" coords="96,5,255,31"/>
+<area shape="poly" title=" " alt="" coords="48,15,82,15,82,21,48,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acb951693f2751b4bb7f86d1b5adb2478" name="acb951693f2751b4bb7f86d1b5adb2478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb951693f2751b4bb7f86d1b5adb2478">&#9670;&#160;</a></span>initEKF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initEKF </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structrm_1_1Armor__.html">Armor_</a> &amp;&#160;</td>
+          <td class="paramname"><em>armor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8cpp_source.html">tracker.cpp</a> 第 <a class="el" href="tracker_8cpp_source.html#l00126">126</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="tracker_8hpp_source.html#l00151">Tracker::another_r</a>, <a class="el" href="tracker_8hpp_source.html#l00151">Tracker::dz</a>, <a class="el" href="tracker_8hpp_source.html#l00126">Tracker::ekf</a>, <a class="el" href="tracker_8hpp_source.html#l00175">Tracker::last_yaw_</a>, <a class="el" href="tracker_8hpp_source.html#l00096">Armor_::point</a>, <a class="el" href="extended__kalman__filter_8cpp_source.html#l00014">ExtendedKalmanFilter::setState()</a> , 以及 <a class="el" href="tracker_8hpp_source.html#l00148">Tracker::target_state</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrm_1_1Tracker_acb951693f2751b4bb7f86d1b5adb2478_cgraph.png" border="0" usemap="#aclassrm_1_1Tracker_acb951693f2751b4bb7f86d1b5adb2478_cgraph" alt=""/></div>
+<map name="aclassrm_1_1Tracker_acb951693f2751b4bb7f86d1b5adb2478_cgraph" id="aclassrm_1_1Tracker_acb951693f2751b4bb7f86d1b5adb2478_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,73,38"/>
+<area shape="rect" href="classrm_1_1ExtendedKalmanFilter.html#a973ebca4fec9d039e4f8a4a7385600d5" title=" " alt="" coords="121,5,313,45"/>
+<area shape="poly" title=" " alt="" coords="74,23,108,23,108,28,74,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a13c51adb7812a637fed2d0d565e67ea6" name="a13c51adb7812a637fed2d0d565e67ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13c51adb7812a637fed2d0d565e67ea6">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void update </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacerm.html#a41bc7389661b8944193e96106ddb32c1">Armors_</a> &amp;&#160;</td>
+          <td class="paramname"><em>armors</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8cpp_source.html">tracker.cpp</a> 第 <a class="el" href="tracker_8cpp_source.html#l00042">42</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="tracker_8hpp_source.html#l00153">Tracker::detect_count_</a>, <a class="el" href="tracker_8hpp_source.html#l00133">Tracker::DETECTING</a>, <a class="el" href="tracker_8hpp_source.html#l00154">Tracker::last_point</a>, <a class="el" href="tracker_8hpp_source.html#l00132">Tracker::LOST</a>, <a class="el" href="tracker_8hpp_source.html#l00152">Tracker::lost_count_</a>, <a class="el" href="tracker_8hpp_source.html#l00129">Tracker::lost_thres</a>, <a class="el" href="tracker_8hpp_source.html#l00130">Tracker::matched</a>, <a class="el" href="tracker_8hpp_source.html#l00155">Tracker::max_match_distance_</a>, <a class="el" href="tracker_8hpp_source.html#l00146">Tracker::measurement</a>, <a class="el" href="namespacerm.html#ae50f7d9b4a7ea4647a4aff547a8ceb48">rm::p</a>, <a class="el" href="tracker_8hpp_source.html#l00096">Armor_::point</a>, <a class="el" href="tracker_8hpp_source.html#l00161">Tracker::priority_hit_angle</a>, <a class="el" href="tracker_8hpp_source.html#l00102">Armor_::rotation_angle</a>, <a class="el" href="tracker_8hpp_source.html#l00135">Tracker::TEMP_LOST</a>, <a class="el" href="tracker_8hpp_source.html#l00139">Tracker::tracked_armor</a>, <a class="el" href="tracker_8hpp_source.html#l00152">Tracker::tracker_count_</a>, <a class="el" href="classrm_1_1Tracker.html#a350895bf7ff20cbbb2c0c1f5c06804f2">Tracker::tracker_state</a> , 以及 <a class="el" href="tracker_8hpp_source.html#l00134">Tracker::TRACKING</a>.</p>
+
+</div>
+</div>
+<a id="ad00f345cebecc7fed6d8640b5b2cc233" name="ad00f345cebecc7fed6d8640b5b2cc233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad00f345cebecc7fed6d8640b5b2cc233">&#9670;&#160;</a></span>updateArmorsNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateArmorsNum </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structrm_1_1Armor__.html">Armor_</a> &amp;&#160;</td>
+          <td class="paramname"><em>armor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8cpp_source.html">tracker.cpp</a> 第 <a class="el" href="tracker_8cpp_source.html#l00145">145</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="namespacerm.html#ab6b473100f23f025c8cfabd7c6f244d2a2a2b76b9d48b8995e1d40f6e602ace03">rm::BALANCE_2</a>, <a class="el" href="namespacerm.html#ab6b473100f23f025c8cfabd7c6f244d2a3ae6534d71e2a49528370a24b2a90d32">rm::NORMAL_4</a>, <a class="el" href="namespacerm.html#ab6b473100f23f025c8cfabd7c6f244d2a392cae5ef148738bee8e2fe0b6fe1b21">rm::OUTPOST_3</a>, <a class="el" href="tracker_8hpp_source.html#l00142">Tracker::tracked_armors_num</a> , 以及 <a class="el" href="tracker_8hpp_source.html#l00138">Tracker::tracked_id</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00156">Tracker::handleArmorJump()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrm_1_1Tracker_ad00f345cebecc7fed6d8640b5b2cc233_icgraph.png" border="0" usemap="#aclassrm_1_1Tracker_ad00f345cebecc7fed6d8640b5b2cc233_icgraph" alt=""/></div>
+<map name="aclassrm_1_1Tracker_ad00f345cebecc7fed6d8640b5b2cc233_icgraph" id="aclassrm_1_1Tracker_ad00f345cebecc7fed6d8640b5b2cc233_icgraph">
+<area shape="rect" title=" " alt="" coords="192,5,337,31"/>
+<area shape="rect" href="classrm_1_1Tracker.html#a6253070aa9722ef7e877859c8d910e6f" title=" " alt="" coords="5,5,144,31"/>
+<area shape="poly" title=" " alt="" coords="179,21,144,21,144,15,179,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ae7559b367d5b05915ed3884406ff0f5f" name="ae7559b367d5b05915ed3884406ff0f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7559b367d5b05915ed3884406ff0f5f">&#9670;&#160;</a></span>another_r</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double another_r</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00151">151</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00156">Tracker::handleArmorJump()</a> , 以及 <a class="el" href="tracker_8cpp_source.html#l00126">Tracker::initEKF()</a>.</p>
+
+</div>
+</div>
+<a id="ac5748e3b7ec3544cf658493f2afeb45e" name="ac5748e3b7ec3544cf658493f2afeb45e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5748e3b7ec3544cf658493f2afeb45e">&#9670;&#160;</a></span>average_ratio</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double average_ratio =0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00160">160</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a69cb669f28e807ce7f8ca337b482342d" name="a69cb669f28e807ce7f8ca337b482342d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69cb669f28e807ce7f8ca337b482342d">&#9670;&#160;</a></span>current_armor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrm_1_1Armor__.html">Armor_</a> current_armor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00139">139</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00156">Tracker::handleArmorJump()</a>.</p>
+
+</div>
+</div>
+<a id="a2add2f0e3c04b6258ced4df70fb65f57" name="a2add2f0e3c04b6258ced4df70fb65f57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2add2f0e3c04b6258ced4df70fb65f57">&#9670;&#160;</a></span>detect_count_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int detect_count_ = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00153">153</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00042">Tracker::update()</a>.</p>
+
+</div>
+</div>
+<a id="a5a198de8c3f38514f4e55231aa69cd10" name="a5a198de8c3f38514f4e55231aa69cd10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a198de8c3f38514f4e55231aa69cd10">&#9670;&#160;</a></span>dz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double dz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00151">151</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00156">Tracker::handleArmorJump()</a> , 以及 <a class="el" href="tracker_8cpp_source.html#l00126">Tracker::initEKF()</a>.</p>
+
+</div>
+</div>
+<a id="ab918cb6fe542e1f697262d32fed29e7e" name="ab918cb6fe542e1f697262d32fed29e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab918cb6fe542e1f697262d32fed29e7e">&#9670;&#160;</a></span>ekf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrm_1_1ExtendedKalmanFilter.html">ExtendedKalmanFilter</a> ekf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00126">126</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00156">Tracker::handleArmorJump()</a> , 以及 <a class="el" href="tracker_8cpp_source.html#l00126">Tracker::initEKF()</a>.</p>
+
+</div>
+</div>
+<a id="ac74b01ffae5077fb5ca3994dfbbf529b" name="ac74b01ffae5077fb5ca3994dfbbf529b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac74b01ffae5077fb5ca3994dfbbf529b">&#9670;&#160;</a></span>first_track</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double first_track = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00156">156</a> 行定义.</p>
+
+</div>
+</div>
+<a id="accc51ddeef4e05fee40b49d0e0db14e4" name="accc51ddeef4e05fee40b49d0e0db14e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accc51ddeef4e05fee40b49d0e0db14e4">&#9670;&#160;</a></span>info_position_diff</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double info_position_diff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00144">144</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a24863cf7174d5f168b0b8524f2da3045" name="a24863cf7174d5f168b0b8524f2da3045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24863cf7174d5f168b0b8524f2da3045">&#9670;&#160;</a></span>info_yaw_diff</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double info_yaw_diff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00145">145</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a55fe0c7ca10c4d9a253c4ade25412675" name="a55fe0c7ca10c4d9a253c4ade25412675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55fe0c7ca10c4d9a253c4ade25412675">&#9670;&#160;</a></span>last_point</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector3d last_point</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00154">154</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00026">Tracker::init()</a> , 以及 <a class="el" href="tracker_8cpp_source.html#l00042">Tracker::update()</a>.</p>
+
+</div>
+</div>
+<a id="a4808a1502ae545d176e31e10aa29b893" name="a4808a1502ae545d176e31e10aa29b893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4808a1502ae545d176e31e10aa29b893">&#9670;&#160;</a></span>last_yaw_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double last_yaw_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00175">175</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00126">Tracker::initEKF()</a>.</p>
+
+</div>
+</div>
+<a id="a0cb99666508ef5c6d40155165593fcac" name="a0cb99666508ef5c6d40155165593fcac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb99666508ef5c6d40155165593fcac">&#9670;&#160;</a></span>LastTargetRoi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrm_1_1Roi__rect.html">Roi_rect</a> LastTargetRoi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00140">140</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a618d9146472f0c42081da7a8c39a9508" name="a618d9146472f0c42081da7a8c39a9508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a618d9146472f0c42081da7a8c39a9508">&#9670;&#160;</a></span>lost_count_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lost_count_ = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00152">152</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00042">Tracker::update()</a>.</p>
+
+</div>
+</div>
+<a id="a9bf192671d36be79f19d7bf498a688e2" name="a9bf192671d36be79f19d7bf498a688e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bf192671d36be79f19d7bf498a688e2">&#9670;&#160;</a></span>lost_thres</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lost_thres = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00129">129</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00042">Tracker::update()</a>.</p>
+
+</div>
+</div>
+<a id="a9f8137f351e95e57db9287a91be72ac7" name="a9f8137f351e95e57db9287a91be72ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8137f351e95e57db9287a91be72ac7">&#9670;&#160;</a></span>matched</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool matched = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00130">130</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00042">Tracker::update()</a>.</p>
+
+</div>
+</div>
+<a id="a0de7917567353302141384b934bfb7ff" name="a0de7917567353302141384b934bfb7ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de7917567353302141384b934bfb7ff">&#9670;&#160;</a></span>max_match_distance_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double max_match_distance_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00155">155</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00156">Tracker::handleArmorJump()</a> , 以及 <a class="el" href="tracker_8cpp_source.html#l00042">Tracker::update()</a>.</p>
+
+</div>
+</div>
+<a id="a5cee7158cebeedbd6d070dd456f531c3" name="a5cee7158cebeedbd6d070dd456f531c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cee7158cebeedbd6d070dd456f531c3">&#9670;&#160;</a></span>max_match_yaw_diff_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double max_match_yaw_diff_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00173">173</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7d84616fc618858e9a694f70dc1e273f" name="a7d84616fc618858e9a694f70dc1e273f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d84616fc618858e9a694f70dc1e273f">&#9670;&#160;</a></span>measurement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::VectorXd measurement</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00146">146</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00042">Tracker::update()</a>.</p>
+
+</div>
+</div>
+<a id="a30ce3cb64ebb581ab458e90b39d7d774" name="a30ce3cb64ebb581ab458e90b39d7d774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30ce3cb64ebb581ab458e90b39d7d774">&#9670;&#160;</a></span>predict_point</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector3d predict_point</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00154">154</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a04197601717de209482993c0fea8ad8a" name="a04197601717de209482993c0fea8ad8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04197601717de209482993c0fea8ad8a">&#9670;&#160;</a></span>priority_hit_angle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double priority_hit_angle =45</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00161">161</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00042">Tracker::update()</a>.</p>
+
+</div>
+</div>
+<a id="a8b9fc391487478813726215ff6047a26" name="a8b9fc391487478813726215ff6047a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b9fc391487478813726215ff6047a26">&#9670;&#160;</a></span>rects_height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrm_1_1MaxQueue.html">MaxQueue</a> rects_height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00157">157</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00026">Tracker::init()</a>.</p>
+
+</div>
+</div>
+<a id="abc3708e8d089b6820d36a25d65c7690a" name="abc3708e8d089b6820d36a25d65c7690a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc3708e8d089b6820d36a25d65c7690a">&#9670;&#160;</a></span>rects_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrm_1_1MaxQueue.html">MaxQueue</a> rects_width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00157">157</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00026">Tracker::init()</a>.</p>
+
+</div>
+</div>
+<a id="a1bf955ebfe720d802a0e72eb2820d831" name="a1bf955ebfe720d802a0e72eb2820d831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bf955ebfe720d802a0e72eb2820d831">&#9670;&#160;</a></span>roi_ratio_height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double roi_ratio_height = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00159">159</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5780927facdf0de2b8d8746bb160ca29" name="a5780927facdf0de2b8d8746bb160ca29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5780927facdf0de2b8d8746bb160ca29">&#9670;&#160;</a></span>roi_ratio_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double roi_ratio_width = 1.5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00158">158</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a65cdcdfa1c5ec9d10b36ad94fd6e2901" name="a65cdcdfa1c5ec9d10b36ad94fd6e2901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65cdcdfa1c5ec9d10b36ad94fd6e2901">&#9670;&#160;</a></span>target_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::VectorXd target_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00148">148</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00156">Tracker::handleArmorJump()</a> , 以及 <a class="el" href="tracker_8cpp_source.html#l00126">Tracker::initEKF()</a>.</p>
+
+</div>
+</div>
+<a id="a60b37de4a0854e7d3d48c9fba0d53c1c" name="a60b37de4a0854e7d3d48c9fba0d53c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b37de4a0854e7d3d48c9fba0d53c1c">&#9670;&#160;</a></span>tracked_armor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrm_1_1Armor__.html">Armor_</a> tracked_armor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00139">139</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00026">Tracker::init()</a> , 以及 <a class="el" href="tracker_8cpp_source.html#l00042">Tracker::update()</a>.</p>
+
+</div>
+</div>
+<a id="ae4165dde532cbe17ebfcaa5b044a27d2" name="ae4165dde532cbe17ebfcaa5b044a27d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4165dde532cbe17ebfcaa5b044a27d2">&#9670;&#160;</a></span>tracked_armors_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacerm.html#ab6b473100f23f025c8cfabd7c6f244d2">ArmorsNum</a> tracked_armors_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00142">142</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00156">Tracker::handleArmorJump()</a> , 以及 <a class="el" href="tracker_8cpp_source.html#l00145">Tracker::updateArmorsNum()</a>.</p>
+
+</div>
+</div>
+<a id="aabb7430fb26300d0e626cf90ad4e76ff" name="aabb7430fb26300d0e626cf90ad4e76ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabb7430fb26300d0e626cf90ad4e76ff">&#9670;&#160;</a></span>tracked_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tracked_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00138">138</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00026">Tracker::init()</a> , 以及 <a class="el" href="tracker_8cpp_source.html#l00145">Tracker::updateArmorsNum()</a>.</p>
+
+</div>
+</div>
+<a id="a600adc92a22b73c0e3751a724e2c2dbf" name="a600adc92a22b73c0e3751a724e2c2dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a600adc92a22b73c0e3751a724e2c2dbf">&#9670;&#160;</a></span>tracker_count_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tracker_count_ = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00152">152</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00042">Tracker::update()</a>.</p>
+
+</div>
+</div>
+<a id="a350895bf7ff20cbbb2c0c1f5c06804f2" name="a350895bf7ff20cbbb2c0c1f5c06804f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350895bf7ff20cbbb2c0c1f5c06804f2">&#9670;&#160;</a></span>tracker_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classrm_1_1Tracker.html#a5d74787dedbc4e11c1ab15bf487e61f8">rm::Tracker::State</a> tracker_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00026">Tracker::init()</a> , 以及 <a class="el" href="tracker_8cpp_source.html#l00042">Tracker::update()</a>.</p>
+
+</div>
+</div>
+<a id="a059bb3327d269f671549749248db5828" name="a059bb3327d269f671549749248db5828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a059bb3327d269f671549749248db5828">&#9670;&#160;</a></span>tracking_thres</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tracking_thres = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00128">128</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a39e7284c0bdd5c73ea1511a1c208cecc" name="a39e7284c0bdd5c73ea1511a1c208cecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e7284c0bdd5c73ea1511a1c208cecc">&#9670;&#160;</a></span>TrackingROI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrm_1_1Roi__rect.html">Roi_rect</a> TrackingROI</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00140">140</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00026">Tracker::init()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Armor/ArmorTrack/<a class="el" href="tracker_8hpp_source.html">tracker.hpp</a></li>
+<li>Armor/ArmorTrack/<a class="el" href="tracker_8cpp_source.html">tracker.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacerm.html">rm</a></li><li class="navelem"><a class="el" href="classrm_1_1Tracker.html">Tracker</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

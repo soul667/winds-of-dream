@@ -1,0 +1,18 @@
+<map id="xioctl" name="xioctl">
+<area shape="rect" id="Node000001" title=" " alt="" coords="577,104,636,129"/>
+<area shape="rect" id="Node000002" href="$classRMVideoCapture.html#ac1b66fe77173de9e5e8542b2823d6071" title=" " alt="" coords="431,5,477,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="585,95,559,69,528,44,502,32,477,25,479,20,504,27,531,40,563,65,589,91"/>
+<area shape="rect" id="Node000003" href="$classRMVideoCapture.html#a51a34814749217f5d6731ba0d873fcfb" title=" " alt="" coords="379,55,529,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="564,105,529,94,494,83,496,78,530,89,565,100"/>
+<area shape="rect" id="Node000006" href="$classRMVideoCapture.html#a579a30a367834b92cae61dc51f567046" title=" " alt="" coords="387,104,521,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="564,119,521,119,521,114,564,114"/>
+<area shape="rect" id="Node000007" href="$classRMVideoCapture.html#a5c07718f39c3544dacacf57274e5aaea" title=" " alt="" coords="421,153,487,179"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="565,133,488,158,487,153,564,128"/>
+<area shape="rect" id="Node000008" href="$classRMVideoCapture.html#af66efe831d763e000ee3ba763adccc31" title=" " alt="" coords="205,155,331,180"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="591,143,565,171,530,194,500,203,469,208,406,207,348,196,302,183,304,177,350,191,407,201,469,203,499,198,528,189,561,167,587,139"/>
+<area shape="rect" id="Node000004" href="$classRMVideoCapture.html#aed31b4e74a2584047891b23a2a41a98c" title=" " alt="" coords="219,80,317,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="365,82,318,89,317,83,365,77"/>
+<area shape="rect" id="Node000005" href="$classRMVideoCapture.html#ab9cac86fb8b9d91fb7b2beac682d99de" title=" " alt="" coords="5,131,157,156"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="208,112,130,133,128,128,207,106"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="191,160,157,156,158,150,192,155"/>
+</map>

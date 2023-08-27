@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“创梦之翼2023步兵自瞄文档”: number_detector/svm.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">“创梦之翼2023步兵自瞄文档”<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">xxx</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('svm_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">svm.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="svm_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="svm_8h.html">svm.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="define_8h.html">define.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacerm.html">rm</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classrm_1_1svmdetector.html#aad6f1976a03fe237647f458a44139219">    8</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classrm_1_1svmdetector.html#aad6f1976a03fe237647f458a44139219">svmdetector::init_model</a>()</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <a class="code hl_variable" href="classrm_1_1svmdetector.html#a6b4f0bb15e4ce482263a527ac532865a">svm</a> = cv::ml::SVM::create();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <a class="code hl_variable" href="classrm_1_1svmdetector.html#a6b4f0bb15e4ce482263a527ac532865a">svm</a> = cv::Algorithm::load&lt;cv::ml::SVM&gt;(<a class="code hl_define" href="define_8h.html#a3e7afa56f006c22f946ae0dd493c01e4">flip_model_PATH</a>);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classrm_1_1svmdetector.html#a6b4f0bb15e4ce482263a527ac532865a">svm</a>.empty() == 1)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;modle do not exsit!!!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;modle SUCCESS!!!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
+</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classrm_1_1svmdetector.html#a931668ea2e48ea2aa2b6a32d527436b3">   21</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classrm_1_1svmdetector.html#a931668ea2e48ea2aa2b6a32d527436b3">svmdetector::predict_number</a>(cv::Mat img0)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="comment">//    Log(23,&quot;div : &quot; &lt;&lt; (double)img0.rows/(double)img0.cols );</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="comment">//    if (double(img0.rows)/double(img0.cols) &gt; 3.5)</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="comment">//    {</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="comment">//        Log(18,&quot;ans :&quot;&lt;&lt; 1&lt;&lt;&quot;               &quot;);</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="comment">//        return 1;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="comment">//    }</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="comment">// std::cout&lt;&lt;&quot;predict   number&quot;;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        cv::resize(img0, <a class="code hl_variable" href="classrm_1_1svmdetector.html#ab9a317ed5ac259f43d89f639adf151e7">reshaped_img</a>, cv::Size(40, 130));</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_variable" href="classrm_1_1svmdetector.html#a2ffd687657a29d9b520063ad377541e0">line_img</a> = <a class="code hl_variable" href="classrm_1_1svmdetector.html#ab9a317ed5ac259f43d89f639adf151e7">reshaped_img</a>.reshape(0, 1);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_variable" href="classrm_1_1svmdetector.html#a2ffd687657a29d9b520063ad377541e0">line_img</a>.convertTo(<a class="code hl_variable" href="classrm_1_1svmdetector.html#abfd514b4c003e056e1f71e30be735483">predict_mat</a>, CV_32FC1);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_variable" href="classrm_1_1svmdetector.html#acf40520af3f90e4252425ef2d5bdb95a">ans</a> = <a class="code hl_variable" href="classrm_1_1svmdetector.html#a6b4f0bb15e4ce482263a527ac532865a">svm</a>-&gt;predict(<a class="code hl_variable" href="classrm_1_1svmdetector.html#abfd514b4c003e056e1f71e30be735483">predict_mat</a>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="comment">// ans2 = ans+2;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_define" href="define_8h.html#a6cf969fd3443833426c11a2c61d68fb6">Log</a>(18, <span class="stringliteral">&quot;predict :&quot;</span> &lt;&lt; <a class="code hl_variable" href="classrm_1_1svmdetector.html#acf40520af3f90e4252425ef2d5bdb95a">ans</a> &lt;&lt; <span class="stringliteral">&quot;               &quot;</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="comment">// std::cout&lt;&lt;&quot;result:&quot;&lt;&lt;ans&lt;&lt;std::endl;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classrm_1_1svmdetector.html#acf40520af3f90e4252425ef2d5bdb95a">ans</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classrm_1_1svmdetector.html#a92c5a39cb4d23769d3cc6cf7202b68cb">   41</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classrm_1_1svmdetector.html#a92c5a39cb4d23769d3cc6cf7202b68cb">svmdetector::GammaCorrection</a>(cv::Mat &amp;src, cv::Mat &amp;dst, <span class="keywordtype">double</span> gamma)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        CV_Assert(src.data);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        CV_Assert(src.depth() != <span class="keyword">sizeof</span>(uchar));</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> lut[256];</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 256; i++)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            lut[i] = cv::saturate_cast&lt;uchar&gt;(pow((<span class="keywordtype">float</span>)(i / 255.0), gamma) * 255.0f);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        dst = src.clone();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> channels = dst.channels();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">switch</span> (channels)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            cv::MatIterator_&lt;uchar&gt; it, end;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">for</span> (it = dst.begin&lt;uchar&gt;(), end = dst.end&lt;uchar&gt;(); it != end; it++)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                *it = lut[(*it)];</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            cv::MatIterator_&lt;cv::Vec3b&gt; it, end;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">for</span> (it = dst.begin&lt;cv::Vec3b&gt;(), end = dst.end&lt;cv::Vec3b&gt;(); it != end; it++)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                (*it)[0] = lut[((*it)[0])];</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                (*it)[1] = lut[((*it)[1])];</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                (*it)[2] = lut[((*it)[2])];</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="ttc" id="aclassrm_1_1svmdetector_html_a2ffd687657a29d9b520063ad377541e0"><div class="ttname"><a href="classrm_1_1svmdetector.html#a2ffd687657a29d9b520063ad377541e0">rm::svmdetector::line_img</a></div><div class="ttdeci">cv::Mat line_img</div><div class="ttdef"><b>Definition</b> <a href="svm_8h_source.html#l00014">svm.h:14</a></div></div>
+<div class="ttc" id="aclassrm_1_1svmdetector_html_a6b4f0bb15e4ce482263a527ac532865a"><div class="ttname"><a href="classrm_1_1svmdetector.html#a6b4f0bb15e4ce482263a527ac532865a">rm::svmdetector::svm</a></div><div class="ttdeci">cv::Ptr&lt; cv::ml::SVM &gt; svm</div><div class="ttdef"><b>Definition</b> <a href="svm_8h_source.html#l00013">svm.h:13</a></div></div>
+<div class="ttc" id="aclassrm_1_1svmdetector_html_a92c5a39cb4d23769d3cc6cf7202b68cb"><div class="ttname"><a href="classrm_1_1svmdetector.html#a92c5a39cb4d23769d3cc6cf7202b68cb">rm::svmdetector::GammaCorrection</a></div><div class="ttdeci">void GammaCorrection(cv::Mat &amp;src, cv::Mat &amp;dst, double gamma)</div><div class="ttdef"><b>Definition</b> <a href="svm_8cpp_source.html#l00041">svm.cpp:41</a></div></div>
+<div class="ttc" id="aclassrm_1_1svmdetector_html_a931668ea2e48ea2aa2b6a32d527436b3"><div class="ttname"><a href="classrm_1_1svmdetector.html#a931668ea2e48ea2aa2b6a32d527436b3">rm::svmdetector::predict_number</a></div><div class="ttdeci">int predict_number(cv::Mat img0)</div><div class="ttdef"><b>Definition</b> <a href="svm_8cpp_source.html#l00021">svm.cpp:21</a></div></div>
+<div class="ttc" id="aclassrm_1_1svmdetector_html_aad6f1976a03fe237647f458a44139219"><div class="ttname"><a href="classrm_1_1svmdetector.html#aad6f1976a03fe237647f458a44139219">rm::svmdetector::init_model</a></div><div class="ttdeci">void init_model()</div><div class="ttdef"><b>Definition</b> <a href="svm_8cpp_source.html#l00008">svm.cpp:8</a></div></div>
+<div class="ttc" id="aclassrm_1_1svmdetector_html_ab9a317ed5ac259f43d89f639adf151e7"><div class="ttname"><a href="classrm_1_1svmdetector.html#ab9a317ed5ac259f43d89f639adf151e7">rm::svmdetector::reshaped_img</a></div><div class="ttdeci">cv::Mat reshaped_img</div><div class="ttdef"><b>Definition</b> <a href="svm_8h_source.html#l00014">svm.h:14</a></div></div>
+<div class="ttc" id="aclassrm_1_1svmdetector_html_abfd514b4c003e056e1f71e30be735483"><div class="ttname"><a href="classrm_1_1svmdetector.html#abfd514b4c003e056e1f71e30be735483">rm::svmdetector::predict_mat</a></div><div class="ttdeci">cv::Mat predict_mat</div><div class="ttdef"><b>Definition</b> <a href="svm_8h_source.html#l00014">svm.h:14</a></div></div>
+<div class="ttc" id="aclassrm_1_1svmdetector_html_acf40520af3f90e4252425ef2d5bdb95a"><div class="ttname"><a href="classrm_1_1svmdetector.html#acf40520af3f90e4252425ef2d5bdb95a">rm::svmdetector::ans</a></div><div class="ttdeci">int ans</div><div class="ttdef"><b>Definition</b> <a href="svm_8h_source.html#l00015">svm.h:15</a></div></div>
+<div class="ttc" id="adefine_8h_html"><div class="ttname"><a href="define_8h.html">define.h</a></div></div>
+<div class="ttc" id="adefine_8h_html_a3e7afa56f006c22f946ae0dd493c01e4"><div class="ttname"><a href="define_8h.html#a3e7afa56f006c22f946ae0dd493c01e4">flip_model_PATH</a></div><div class="ttdeci">#define flip_model_PATH</div><div class="ttdef"><b>Definition</b> <a href="define_8h_source.html#l00014">define.h:14</a></div></div>
+<div class="ttc" id="adefine_8h_html_a6cf969fd3443833426c11a2c61d68fb6"><div class="ttname"><a href="define_8h.html#a6cf969fd3443833426c11a2c61d68fb6">Log</a></div><div class="ttdeci">#define Log(n, str)</div><div class="ttdef"><b>Definition</b> <a href="define_8h_source.html#l00037">define.h:37</a></div></div>
+<div class="ttc" id="anamespacerm_html"><div class="ttname"><a href="namespacerm.html">rm</a></div><div class="ttdef"><b>Definition</b> <a href="armor_8cpp_source.html#l00005">armor.cpp:5</a></div></div>
+<div class="ttc" id="asvm_8h_html"><div class="ttname"><a href="svm_8h.html">svm.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_19429442479068bdf4201c23953b67d2.html">number_detector</a></li><li class="navelem"><a class="el" href="svm_8cpp.html">svm.cpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

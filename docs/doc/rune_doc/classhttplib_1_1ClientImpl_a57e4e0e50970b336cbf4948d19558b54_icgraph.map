@@ -1,0 +1,12 @@
+<map id="Patch" name="Patch">
+<area shape="rect" id="Node000001" title=" " alt="" coords="111,80,168,105"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="156,68,151,61,139,59,129,61,124,65,123,71,126,79,121,81,117,72,119,62,127,56,139,53,154,57,161,65"/>
+<area shape="rect" id="Node000002" href="$classhttplib_1_1ClientImpl.html#a5a85940bad600a87e6dab052234bb3cd" title=" " alt="" coords="5,5,63,31"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="107,74,51,33,55,29,111,69"/>
+<area shape="rect" id="Node000003" href="$classhttplib_1_1ClientImpl.html#a8ef039f185ab4a1016749b14efa091df" title=" " alt="" coords="5,55,63,80"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="97,85,62,77,64,72,98,80"/>
+<area shape="rect" id="Node000004" href="$classhttplib_1_1ClientImpl.html#abb980e9b5b893a82bc143ee8ea1c07bb" title=" " alt="" coords="5,104,63,129"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="98,105,64,113,62,108,97,100"/>
+<area shape="rect" id="Node000005" href="$classhttplib_1_1ClientImpl.html#a99e87b7b062929a7e5df3ce5efc04da2" title=" " alt="" coords="5,153,63,179"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="111,115,55,155,52,151,108,111"/>
+</map>

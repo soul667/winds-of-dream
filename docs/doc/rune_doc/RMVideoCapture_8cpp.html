@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“创梦之翼2023步兵自瞄文档”: Others/Camera/RMVideoCapture.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">“创梦之翼2023步兵自瞄文档”<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">xxx</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('RMVideoCapture_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RMVideoCapture.cpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a>&quot;</code><br />
+<code>#include &quot;linux/videodev2.h&quot;</code><br />
+<code>#include &lt;libv4l2.h&gt;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;fcntl.h&gt;</code><br />
+<code>#include &lt;sys/ioctl.h&gt;</code><br />
+<code>#include &lt;sys/mman.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+RMVideoCapture.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="RMVideoCapture_8cpp__incl.png" border="0" usemap="#aOthers_2Camera_2RMVideoCapture_8cpp" alt=""/></div>
+<map name="aOthers_2Camera_2RMVideoCapture_8cpp" id="aOthers_2Camera_2RMVideoCapture_8cpp">
+<area shape="rect" title=" " alt="" coords="791,5,1051,31"/>
+<area shape="rect" href="RMVideoCapture_8hpp.html" title=" " alt="" coords="205,79,363,104"/>
+<area shape="poly" title=" " alt="" coords="813,33,378,81,377,76,812,28"/>
+<area shape="rect" title=" " alt="" coords="388,79,527,104"/>
+<area shape="poly" title=" " alt="" coords="847,33,541,80,540,75,846,28"/>
+<area shape="rect" title=" " alt="" coords="551,79,630,104"/>
+<area shape="poly" title=" " alt="" coords="868,33,644,81,643,76,867,28"/>
+<area shape="rect" title=" " alt="" coords="654,79,722,104"/>
+<area shape="poly" title=" " alt="" coords="885,33,736,78,734,73,883,28"/>
+<area shape="rect" title=" " alt="" coords="747,79,813,104"/>
+<area shape="poly" title=" " alt="" coords="900,33,816,75,814,70,897,28"/>
+<area shape="rect" title=" " alt="" coords="837,79,912,104"/>
+<area shape="poly" title=" " alt="" coords="916,32,892,69,888,66,911,30"/>
+<area shape="rect" title=" " alt="" coords="937,79,999,104"/>
+<area shape="poly" title=" " alt="" coords="931,30,955,66,951,69,927,32"/>
+<area shape="rect" title=" " alt="" coords="1024,79,1112,104"/>
+<area shape="poly" title=" " alt="" coords="946,28,1033,70,1031,75,944,33"/>
+<area shape="rect" title=" " alt="" coords="1137,79,1239,104"/>
+<area shape="poly" title=" " alt="" coords="965,28,1132,72,1131,78,963,33"/>
+<area shape="rect" title=" " alt="" coords="1264,79,1344,104"/>
+<area shape="poly" title=" " alt="" coords="990,28,1251,76,1250,81,989,33"/>
+<area shape="rect" title=" " alt="" coords="1368,79,1427,104"/>
+<area shape="poly" title=" " alt="" coords="1035,28,1184,47,1355,76,1354,81,1183,52,1035,33"/>
+<area shape="rect" title=" " alt="" coords="1451,79,1517,104"/>
+<area shape="poly" title=" " alt="" coords="1052,27,1231,46,1437,76,1437,81,1230,51,1051,32"/>
+<area shape="rect" title=" " alt="" coords="5,159,160,185"/>
+<area shape="poly" title=" " alt="" coords="256,106,125,157,123,152,254,102"/>
+<area shape="rect" title=" " alt="" coords="185,152,383,192"/>
+<area shape="poly" title=" " alt="" coords="287,104,287,138,281,138,281,104"/>
+<area shape="rect" title=" " alt="" coords="407,159,607,185"/>
+<area shape="poly" title=" " alt="" coords="317,101,462,152,461,157,315,107"/>
+</map>
+</div>
+</div>
+<p><a href="RMVideoCapture_8cpp_source.html">浏览源代码.</a></p>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_19cfa4107752b02b78eaeca0e87f7fb4.html">Others</a></li><li class="navelem"><a class="el" href="dir_cfc568893c851ed0d930e8661e7d455e.html">Camera</a></li><li class="navelem"><a class="el" href="RMVideoCapture_8cpp.html">RMVideoCapture.cpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

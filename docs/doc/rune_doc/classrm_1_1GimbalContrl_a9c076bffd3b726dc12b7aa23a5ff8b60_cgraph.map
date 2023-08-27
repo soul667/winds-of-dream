@@ -1,0 +1,7 @@
+<map id="Transform" name="Transform">
+<area shape="rect" id="Node000001" title="Get the gimbal control info." alt="" coords="5,5,92,31"/>
+<area shape="rect" id="Node000002" href="$classrm_1_1GimbalContrl.html#aa4791877ca9409e80d27099fa4a4d3b6" title="Get the gimbal control angle" alt="" coords="140,5,217,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,15,126,15,126,21,92,21"/>
+<area shape="rect" id="Node000003" href="$classrm_1_1GimbalContrl.html#ae218741888641d466a47aa554c01c3b6" title="Calculate the actual y value with air resistance" alt="" coords="265,5,365,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="218,15,252,15,252,21,218,21"/>
+</map>

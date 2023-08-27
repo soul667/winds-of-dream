@@ -1,0 +1,48 @@
+<map id="wind_main" name="wind_main">
+<area shape="rect" id="Node000001" title="能量机关的主入口" alt="" coords="5,396,99,422"/>
+<area shape="rect" id="Node000002" href="$classrm_1_1Wind.html#a08577f2b25a08ba6d82841ebeb64d306" title="计算角度差" alt="" coords="178,94,311,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,396,55,346,68,274,79,235,96,196,117,160,145,128,164,116,167,120,148,132,122,163,101,199,84,237,73,276,60,347,56,397"/>
+<area shape="rect" id="Node000003" href="$classrm_1_1Wind.html#aed283c2f71bf3cabaa496966638c725e" title="找到一些我们定义的特征形状，如中心点，T，moon" alt="" coords="194,296,295,322"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="64,394,99,363,145,332,180,319,182,324,148,337,102,367,68,398"/>
+<area shape="rect" id="Node000008" href="$classrm_1_1Result__Show.html#ac025d0f8e6068d5b1acb9810f8f275b9" title=" " alt="" coords="407,397,557,437"/>
+<area shape="poly" id="edge22_Node000001_Node000008" title=" " alt="" coords="99,407,393,413,393,418,99,413"/>
+<area shape="rect" id="Node000009" href="$namespacerm.html#a0f340613936e30ef9f5f70003f4b5be2" title=" " alt="" coords="419,246,545,271"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="56,395,87,339,113,308,145,283,177,268,210,257,279,245,346,242,405,245,405,250,346,247,280,250,211,262,179,273,148,287,117,311,92,342,61,397"/>
+<area shape="rect" id="Node000010" href="$classrm_1_1Solve.html#aaaad5c2d3eba23c44a7bef2c8ea53ef3" title=" " alt="" coords="162,447,327,472"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="100,419,183,441,182,446,98,424"/>
+<area shape="rect" id="Node000011" href="$classrm_1_1Solve.html#a62d3fe502f76f249004d07a4949ce913" title=" " alt="" coords="172,497,317,537"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="68,420,102,451,148,483,161,489,159,494,145,487,99,455,64,424"/>
+<area shape="rect" id="Node000012" href="$classrm_1_1Result__Show.html#a0a0ed07176ce3be9ceddbca7837cdfa6" title=" " alt="" coords="147,562,343,587"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="61,421,91,482,116,517,148,547,159,554,157,558,145,551,112,521,87,485,56,423"/>
+<area shape="rect" id="Node000013" href="$classrm_1_1Wind.html#aa0dcd03083db9f051a6df17ad9ad2063" title="识别扇叶，给出扇叶的特征五点二维坐标（图像坐标系下）" alt="" coords="194,192,295,218"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="54,395,65,364,84,321,110,277,145,238,179,218,182,222,148,242,114,280,88,324,70,366,60,397"/>
+<area shape="rect" id="Node000015" href="$classrm_1_1gradient__descent.html#a67b2b50b063d40efdbff09094df6b447" title=" " alt="" coords="165,612,325,652"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="59,421,68,456,85,504,112,554,129,577,148,598,155,603,151,607,145,602,125,581,107,557,80,506,63,458,53,423"/>
+<area shape="rect" id="Node000016" href="$classrm_1_1Wind.html#ae41821b56929a5a7fbb622f5cd395631" title="进行图像预处理，主要是两个目的，一个是滤除噪点，一个是滤去中央靶心，防止连接。" alt="" coords="161,346,328,371"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="98,394,182,372,183,377,100,400"/>
+<area shape="rect" id="Node000017" href="$classrm_1_1Solve.html#add06156025e674c41bec2fb7f502bf2d" title=" " alt="" coords="181,676,308,702"/>
+<area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="57,422,62,467,76,532,88,567,104,602,124,634,148,662,170,675,167,680,145,666,119,637,99,605,83,569,71,534,57,468,51,422"/>
+<area shape="rect" id="Node000018" href="$classrm_1_1Wind.html#afacb3b398ff871e74f38ce3eec309db5" title="复平面以中心为原点，points_now向量旋转theta" alt="" coords="178,726,311,751"/>
+<area shape="poly" id="edge23_Node000001_Node000018" title=" " alt="" coords="56,422,58,475,70,554,81,597,97,639,120,678,148,712,167,725,164,729,145,716,115,681,93,641,76,598,64,555,53,476,50,422"/>
+<area shape="rect" id="Node000019" href="$classrm_1_1Wind.html#ad8da6effe8118a08d206d816ed75285b" title="更新状态机状态，使用之前掩膜出来的流水灯" alt="" coords="191,143,298,168"/>
+<area shape="poly" id="edge24_Node000001_Node000019" title=" " alt="" coords="52,396,59,354,74,295,101,232,121,203,145,178,177,161,179,165,148,182,125,206,106,235,79,297,64,355,57,397"/>
+<area shape="rect" id="Node000004" href="$classrm_1_1Result__Show.html#a2c678045d7985221cd232973e0f7ac8a" title=" " alt="" coords="391,181,573,221"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="267,294,322,264,390,231,407,224,409,229,392,236,324,268,269,299"/>
+<area shape="rect" id="Node000005" href="$namespacerm.html#ad22f93dc59ddfb19f3f13576a8bef7d5" title=" " alt="" coords="420,347,544,372"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="296,317,409,342,408,347,295,322"/>
+<area shape="rect" id="Node000006" href="$classrm_1_1Wind.html#a5f37e3e9ef3a3d33f8180bb961a9a6d4" title="得到两个角度差，以从x轴正向（不是相机坐标系），是二维笛卡尔坐标系。逆时针旋转为正。" alt="" coords="621,80,736,106"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="296,316,356,323,428,323,466,319,503,311,539,299,572,282,592,266,610,246,638,202,657,157,669,119,674,120,662,159,643,205,614,250,596,270,575,286,541,304,504,317,467,325,428,329,356,328,295,322"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="297,314,321,321,344,332,360,345,369,358,378,371,392,383,402,389,400,393,389,387,374,374,365,361,356,348,341,337,319,326,295,319"/>
+<area shape="rect" id="Node000007" href="$classrm_1_1Wind.html#a682074f619089cb0a4c056dcdffd628a" title="给出平面坐标系上一个向量，x轴正向逆时针转到它所需的角度（0&#45;360）" alt="" coords="784,80,871,106"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="736,90,771,90,771,96,736,96"/>
+<area shape="poly" id="edge15_Node000013_Node000004" title=" " alt="" coords="296,202,377,200,377,206,296,207"/>
+<area shape="poly" id="edge17_Node000013_Node000007" title=" " alt="" coords="294,190,390,167,487,150,563,141,639,132,735,115,770,106,771,112,737,120,640,137,564,146,488,155,391,172,296,195"/>
+<area shape="poly" id="edge16_Node000013_Node000009" title=" " alt="" coords="296,214,412,240,411,245,295,219"/>
+<area shape="rect" id="Node000014" href="$classrm_1_1Wind.html#ac3cadc5057bfb418cd420a8830af2a00" title=" " alt="" coords="452,80,512,106"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="295,196,319,188,341,178,356,165,365,151,374,137,389,123,413,110,438,101,440,106,415,115,392,127,378,141,369,154,360,168,344,182,321,193,296,201"/>
+<area shape="poly" id="edge14_Node000014_Node000006" title=" " alt="" coords="512,90,607,90,607,96,512,96"/>
+<area shape="poly" id="edge20_Node000016_Node000008" title=" " alt="" coords="298,369,394,393,392,398,296,374"/>
+<area shape="poly" id="edge25_Node000019_Node000004" title=" " alt="" coords="299,163,378,179,377,184,298,168"/>
+<area shape="poly" id="edge27_Node000019_Node000006" title=" " alt="" coords="298,146,320,139,341,128,356,113,363,97,372,80,389,65,421,54,453,47,520,47,583,58,635,73,633,78,582,63,520,52,454,52,422,59,392,70,376,83,368,99,360,116,344,133,322,144,299,151"/>
+<area shape="poly" id="edge26_Node000019_Node000007" title=" " alt="" coords="297,148,320,140,341,128,351,118,357,107,363,83,369,59,377,47,389,38,441,15,496,4,553,4,609,11,663,24,713,40,791,72,788,77,711,45,662,29,609,16,553,9,497,10,443,20,392,42,381,51,374,61,368,84,362,109,356,121,344,133,323,145,299,153"/>
+</map>
