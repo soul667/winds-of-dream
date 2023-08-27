@@ -1,0 +1,24 @@
+<map id="read_content" name="read_content">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,152,112,177"/>
+<area shape="poly" id="edge10_Node000001_Node000001" title=" " alt="" coords="27,153,20,144,23,134,37,128,59,125,85,129,97,138,93,142,83,134,59,131,38,133,27,137,25,143,31,150"/>
+<area shape="rect" id="Node000002" href="$namespacehttplib_1_1detail.html#ac2ec1e68b90e0b3a0a706aa67d3e5794" title=" " alt="" coords="207,29,304,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,150,104,108,130,85,159,65,192,51,194,56,161,70,133,89,108,112,72,154"/>
+<area shape="rect" id="Node000003" href="$namespacehttplib_1_1detail.html#a44767eeb196ca0b3b763cbf7b39361d0" title=" " alt="" coords="179,103,331,143"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="112,151,165,139,167,145,113,156"/>
+<area shape="rect" id="Node000005" href="$namespacehttplib_1_1detail.html#a3d5ba283417336b51eb7886ef7a627ca" title=" " alt="" coords="161,192,349,217"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="113,173,179,187,178,192,112,178"/>
+<area shape="rect" id="Node000008" href="$namespacehttplib_1_1detail.html#a4c5253f6fd053ff050f0d14c6ec1ce1a" title=" " alt="" coords="160,271,351,296"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="81,175,161,226,221,262,218,266,159,231,78,180"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="223,31,216,21,220,11,233,5,255,3,282,6,293,15,290,19,280,11,255,8,235,10,224,15,222,20,227,28"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="219,104,216,94,222,85,235,79,255,77,278,80,291,87,288,91,277,85,255,82,237,84,226,89,222,95,224,102"/>
+<area shape="rect" id="Node000004" href="$namespacehttplib_1_1detail.html#a07964c2da334b036caf1a533a2e97f22" title=" " alt="" coords="434,104,573,129"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="332,119,420,116,421,122,332,124"/>
+<area shape="poly" id="edge9_Node000005_Node000005" title=" " alt="" coords="223,193,216,184,220,174,233,168,255,165,282,169,293,178,290,182,280,174,255,171,235,173,224,177,222,183,227,190"/>
+<area shape="rect" id="Node000006" href="$classhttplib_1_1detail_1_1decompressor.html#a2102385de02e4d9d0c31b20afe99638c" title=" " alt="" coords="399,154,608,194"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="349,190,385,186,385,191,350,196"/>
+<area shape="rect" id="Node000007" href="$classhttplib_1_1detail_1_1decompressor.html#a3e3db569abb3e42d00f2c7288e00800a" title=" " alt="" coords="399,218,608,258"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="350,215,385,219,385,225,349,220"/>
+<area shape="poly" id="edge13_Node000008_Node000008" title=" " alt="" coords="223,272,216,262,220,252,233,246,255,244,282,248,293,256,290,261,280,252,255,249,235,251,224,256,222,262,227,269"/>
+<area shape="rect" id="Node000009" href="$classhttplib_1_1Stream.html#a947476f03b5e378bbb404a304a5f700c" title=" " alt="" coords="425,283,581,308"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="351,285,412,288,412,294,351,291"/>
+</map>

@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“创梦之翼2023步兵自瞄文档”: MaxQueue类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">“创梦之翼2023步兵自瞄文档”<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">xxx</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classrm_1_1MaxQueue.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classrm_1_1MaxQueue-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">MaxQueue类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="tracker_8hpp_source.html">tracker.hpp</a>&gt;</code></p>
+<div class="dynheader">
+MaxQueue 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrm_1_1MaxQueue__coll__graph.png" border="0" usemap="#aMaxQueue_coll__map" alt="Collaboration graph"/></div>
+<map name="aMaxQueue_coll__map" id="aMaxQueue_coll__map">
+<area shape="rect" title=" " alt="" coords="81,93,173,119"/>
+<area shape="rect" title=" " alt="" coords="5,5,115,31"/>
+<area shape="poly" title=" " alt="" coords="80,40,119,91,115,94,75,43"/>
+<area shape="rect" title=" " alt="" coords="139,5,248,31"/>
+<area shape="poly" title=" " alt="" coords="178,43,138,94,134,91,174,40"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abffd03370c79272f970b1de927a41eab" id="r_abffd03370c79272f970b1de927a41eab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1MaxQueue.html#abffd03370c79272f970b1de927a41eab">MaxQueue</a> ()</td></tr>
+<tr class="separator:abffd03370c79272f970b1de927a41eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae412249826957f3f64ad95e210daabd" id="r_aae412249826957f3f64ad95e210daabd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1MaxQueue.html#aae412249826957f3f64ad95e210daabd">pop_front</a> ()</td></tr>
+<tr class="separator:aae412249826957f3f64ad95e210daabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad67fce59ecca5f583c965d77bd5b5ba" id="r_aad67fce59ecca5f583c965d77bd5b5ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1MaxQueue.html#aad67fce59ecca5f583c965d77bd5b5ba">max_value</a> ()</td></tr>
+<tr class="separator:aad67fce59ecca5f583c965d77bd5b5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b57d21919c42d55af03391f91a1c08" id="r_af4b57d21919c42d55af03391f91a1c08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1MaxQueue.html#af4b57d21919c42d55af03391f91a1c08">size</a> ()</td></tr>
+<tr class="separator:af4b57d21919c42d55af03391f91a1c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204" id="r_ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1MaxQueue.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
+<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a4c613b741adf2ce7fef2c89dfb018" id="r_a91a4c613b741adf2ce7fef2c89dfb018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1MaxQueue.html#a91a4c613b741adf2ce7fef2c89dfb018">emplace_back</a> (int value)</td></tr>
+<tr class="separator:a91a4c613b741adf2ce7fef2c89dfb018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a51761465b37e563ba8b7569846015b87" id="r_a51761465b37e563ba8b7569846015b87"><td class="memItemLeft" align="right" valign="top">queue&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1MaxQueue.html#a51761465b37e563ba8b7569846015b87">que</a></td></tr>
+<tr class="separator:a51761465b37e563ba8b7569846015b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade62b0df6c31b895d23ff3ed2f72fcc5" id="r_ade62b0df6c31b895d23ff3ed2f72fcc5"><td class="memItemLeft" align="right" valign="top">deque&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1MaxQueue.html#ade62b0df6c31b895d23ff3ed2f72fcc5">deq</a></td></tr>
+<tr class="separator:ade62b0df6c31b895d23ff3ed2f72fcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a6413c81a33a870342b4e6d454d3a45" id="r_a9a6413c81a33a870342b4e6d454d3a45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1MaxQueue.html#a9a6413c81a33a870342b4e6d454d3a45">maximum_queue_size</a> = 10</td></tr>
+<tr class="separator:a9a6413c81a33a870342b4e6d454d3a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00020">20</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abffd03370c79272f970b1de927a41eab" name="abffd03370c79272f970b1de927a41eab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abffd03370c79272f970b1de927a41eab">&#9670;&#160;</a></span>MaxQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrm_1_1MaxQueue.html">MaxQueue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00025">25</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ac8bb3912a3ce86b15842e79d0b421204" name="ac8bb3912a3ce86b15842e79d0b421204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8bb3912a3ce86b15842e79d0b421204">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00040">40</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="tracker_8hpp_source.html#l00022">MaxQueue::deq</a> , 以及 <a class="el" href="tracker_8hpp_source.html#l00021">MaxQueue::que</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8cpp_source.html#l00026">Tracker::init()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrm_1_1MaxQueue_ac8bb3912a3ce86b15842e79d0b421204_icgraph.png" border="0" usemap="#aclassrm_1_1MaxQueue_ac8bb3912a3ce86b15842e79d0b421204_icgraph" alt=""/></div>
+<map name="aclassrm_1_1MaxQueue_ac8bb3912a3ce86b15842e79d0b421204_icgraph" id="aclassrm_1_1MaxQueue_ac8bb3912a3ce86b15842e79d0b421204_icgraph">
+<area shape="rect" title=" " alt="" coords="176,5,231,31"/>
+<area shape="rect" href="classrm_1_1Tracker.html#a6c0e1a5d2899791edd8e684ed16e2878" title=" " alt="" coords="5,5,128,31"/>
+<area shape="poly" title=" " alt="" coords="162,21,128,21,128,15,162,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a91a4c613b741adf2ce7fef2c89dfb018" name="a91a4c613b741adf2ce7fef2c89dfb018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91a4c613b741adf2ce7fef2c89dfb018">&#9670;&#160;</a></span>emplace_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void emplace_back </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00046">46</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="tracker_8hpp_source.html#l00022">MaxQueue::deq</a>, <a class="el" href="tracker_8hpp_source.html#l00057">MaxQueue::maximum_queue_size</a>, <a class="el" href="tracker_8hpp_source.html#l00026">MaxQueue::pop_front()</a> , 以及 <a class="el" href="tracker_8hpp_source.html#l00021">MaxQueue::que</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrm_1_1MaxQueue_a91a4c613b741adf2ce7fef2c89dfb018_cgraph.png" border="0" usemap="#aclassrm_1_1MaxQueue_a91a4c613b741adf2ce7fef2c89dfb018_cgraph" alt=""/></div>
+<map name="aclassrm_1_1MaxQueue_a91a4c613b741adf2ce7fef2c89dfb018_cgraph" id="aclassrm_1_1MaxQueue_a91a4c613b741adf2ce7fef2c89dfb018_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,121,31"/>
+<area shape="rect" href="classrm_1_1MaxQueue.html#aae412249826957f3f64ad95e210daabd" title=" " alt="" coords="169,5,253,31"/>
+<area shape="poly" title=" " alt="" coords="122,15,156,15,156,21,122,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aad67fce59ecca5f583c965d77bd5b5ba" name="aad67fce59ecca5f583c965d77bd5b5ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad67fce59ecca5f583c965d77bd5b5ba">&#9670;&#160;</a></span>max_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int max_value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00035">35</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="tracker_8hpp_source.html#l00022">MaxQueue::deq</a>.</p>
+
+</div>
+</div>
+<a id="aae412249826957f3f64ad95e210daabd" name="aae412249826957f3f64ad95e210daabd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae412249826957f3f64ad95e210daabd">&#9670;&#160;</a></span>pop_front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pop_front </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00026">26</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="tracker_8hpp_source.html#l00022">MaxQueue::deq</a> , 以及 <a class="el" href="tracker_8hpp_source.html#l00021">MaxQueue::que</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8hpp_source.html#l00046">MaxQueue::emplace_back()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrm_1_1MaxQueue_aae412249826957f3f64ad95e210daabd_icgraph.png" border="0" usemap="#aclassrm_1_1MaxQueue_aae412249826957f3f64ad95e210daabd_icgraph" alt=""/></div>
+<map name="aclassrm_1_1MaxQueue_aae412249826957f3f64ad95e210daabd_icgraph" id="aclassrm_1_1MaxQueue_aae412249826957f3f64ad95e210daabd_icgraph">
+<area shape="rect" title=" " alt="" coords="169,5,253,31"/>
+<area shape="rect" href="classrm_1_1MaxQueue.html#a91a4c613b741adf2ce7fef2c89dfb018" title=" " alt="" coords="5,5,121,31"/>
+<area shape="poly" title=" " alt="" coords="155,21,121,21,121,15,155,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af4b57d21919c42d55af03391f91a1c08" name="af4b57d21919c42d55af03391f91a1c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b57d21919c42d55af03391f91a1c08">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00039">39</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="tracker_8hpp_source.html#l00021">MaxQueue::que</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ade62b0df6c31b895d23ff3ed2f72fcc5" name="ade62b0df6c31b895d23ff3ed2f72fcc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade62b0df6c31b895d23ff3ed2f72fcc5">&#9670;&#160;</a></span>deq</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">deque&lt;int&gt; deq</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00022">22</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8hpp_source.html#l00040">MaxQueue::clear()</a>, <a class="el" href="tracker_8hpp_source.html#l00046">MaxQueue::emplace_back()</a>, <a class="el" href="tracker_8hpp_source.html#l00035">MaxQueue::max_value()</a> , 以及 <a class="el" href="tracker_8hpp_source.html#l00026">MaxQueue::pop_front()</a>.</p>
+
+</div>
+</div>
+<a id="a9a6413c81a33a870342b4e6d454d3a45" name="a9a6413c81a33a870342b4e6d454d3a45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a6413c81a33a870342b4e6d454d3a45">&#9670;&#160;</a></span>maximum_queue_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int maximum_queue_size = 10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00057">57</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8hpp_source.html#l00046">MaxQueue::emplace_back()</a>.</p>
+
+</div>
+</div>
+<a id="a51761465b37e563ba8b7569846015b87" name="a51761465b37e563ba8b7569846015b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51761465b37e563ba8b7569846015b87">&#9670;&#160;</a></span>que</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">queue&lt;int&gt; que</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tracker_8hpp_source.html">tracker.hpp</a> 第 <a class="el" href="tracker_8hpp_source.html#l00021">21</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="tracker_8hpp_source.html#l00040">MaxQueue::clear()</a>, <a class="el" href="tracker_8hpp_source.html#l00046">MaxQueue::emplace_back()</a>, <a class="el" href="tracker_8hpp_source.html#l00026">MaxQueue::pop_front()</a> , 以及 <a class="el" href="tracker_8hpp_source.html#l00039">MaxQueue::size()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Armor/ArmorTrack/<a class="el" href="tracker_8hpp_source.html">tracker.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacerm.html">rm</a></li><li class="navelem"><a class="el" href="classrm_1_1MaxQueue.html">MaxQueue</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

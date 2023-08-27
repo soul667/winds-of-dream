@@ -1,0 +1,61 @@
+<map id="make_basic_authentication_header" name="make_basic_authentication_header">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1387,321,1587,361"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="1523,310,1510,303,1487,300,1466,302,1453,307,1449,313,1451,320,1446,322,1444,312,1450,302,1465,297,1487,295,1512,298,1526,305"/>
+<area shape="rect" id="Node000002" href="$classhttplib_1_1ClientImpl.html#ab8f464de6859a4d550b5df29da982089" title=" " alt="" coords="1200,321,1339,361"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="1373,344,1339,344,1339,339,1373,339"/>
+<area shape="rect" id="Node000003" href="$classhttplib_1_1ClientImpl.html#a6de035aad823b7ae5fa8e0f48ed09bc4" title=" " alt="" coords="1013,321,1152,361"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="1186,344,1153,344,1153,339,1186,339"/>
+<area shape="rect" id="Node000004" href="$classhttplib_1_1ClientImpl.html#a42dae28c6560a1f871995926f484b5bb" title=" " alt="" coords="827,321,965,361"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="999,344,966,344,966,339,999,339"/>
+<area shape="rect" id="Node000005" href="$classhttplib_1_1ClientImpl.html#a824a47e22c0500112512a6b8c9208272" title=" " alt="" coords="640,257,779,297"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="823,319,767,300,769,295,825,314"/>
+<area shape="rect" id="Node000006" href="$classhttplib_1_1ClientImpl.html#aa7ac58b0426f561c4f4aeef31a69d1a9" title=" " alt="" coords="437,61,576,101"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="690,246,650,180,623,146,590,115,572,104,574,99,594,111,626,142,655,177,695,243"/>
+<area shape="rect" id="Node000007" href="$classhttplib_1_1ClientImpl.html#a523f1098b8b5916cab950c8a047a3721" title=" " alt="" coords="421,126,592,151"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="683,249,642,205,618,183,591,165,566,154,568,149,593,160,621,179,646,201,687,245"/>
+<area shape="rect" id="Node000008" href="$classhttplib_1_1ClientImpl.html#a212e0a0bfdb07e6ad5e952ffa08684fb" title=" " alt="" coords="421,175,592,201"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="663,253,591,216,556,203,557,198,593,211,665,248"/>
+<area shape="rect" id="Node000009" href="$classhttplib_1_1ClientImpl.html#a4f18708d985c2b3da3884bd6705ab594" title=" " alt="" coords="437,225,576,265"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="626,267,576,259,577,254,627,262"/>
+<area shape="rect" id="Node000010" href="$classhttplib_1_1ClientImpl.html#a93df075c851425fc22821b03114d5396" title=" " alt="" coords="437,289,576,329"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="627,293,577,301,576,296,626,288"/>
+<area shape="rect" id="Node000011" href="$classhttplib_1_1ClientImpl.html#abc53cfb610db4b7c79e003ef23584106" title=" " alt="" coords="437,353,576,393"/>
+<area shape="poly" id="edge11_Node000005_Node000011" title=" " alt="" coords="664,307,593,344,565,356,563,351,591,339,662,302"/>
+<area shape="rect" id="Node000012" href="$classhttplib_1_1ClientImpl.html#a5d69bcd6ad213754eb257c0fae155a70" title=" " alt="" coords="437,417,576,457"/>
+<area shape="poly" id="edge12_Node000005_Node000012" title=" " alt="" coords="681,309,642,352,620,382,610,394,594,408,573,419,570,415,590,403,606,390,616,378,638,349,678,306"/>
+<area shape="poly" id="edge13_Node000012_Node000004" title=" " alt="" coords="589,415,826,356,827,361,590,420"/>
+<area shape="rect" id="Node000013" href="$classhttplib_1_1ClientImpl.html#a96084c554b112c3feb6a0a5902cfeb41" title=" " alt="" coords="228,381,367,421"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="423,426,366,416,367,411,424,420"/>
+<area shape="rect" id="Node000014" href="$classhttplib_1_1ClientImpl.html#a7183f5495bfc8ffa1f6df50cb0b92d57" title=" " alt="" coords="221,446,373,501"/>
+<area shape="poly" id="edge15_Node000012_Node000014" title=" " alt="" coords="424,454,374,463,373,458,423,449"/>
+<area shape="rect" id="Node000015" href="$classhttplib_1_1ClientImpl.html#a82e94dabc3156e5cbf5a59d54a91bff3" title=" " alt="" coords="20,5,159,45"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="221,437,219,435,204,409,194,384,185,335,189,288,198,243,206,198,209,153,199,107,188,83,171,59,157,46,161,42,175,56,192,81,204,105,214,152,212,198,203,244,194,289,191,335,199,382,209,407,224,432,225,434"/>
+<area shape="rect" id="Node000016" href="$classhttplib_1_1ClientImpl.html#a189e610a52b4490e7804520f52cabd7a" title=" " alt="" coords="20,69,159,109"/>
+<area shape="poly" id="edge17_Node000014_Node000016" title=" " alt="" coords="221,438,219,435,197,392,189,352,191,313,197,275,203,238,204,200,195,162,171,123,157,110,161,106,175,120,200,160,209,200,208,238,203,276,196,313,195,351,202,391,224,432,226,435"/>
+<area shape="rect" id="Node000017" href="$classhttplib_1_1ClientImpl.html#aac96e450612fec2fbb4e7f80b5e3c92d" title=" " alt="" coords="20,133,159,173"/>
+<area shape="poly" id="edge18_Node000014_Node000017" title=" " alt="" coords="222,438,219,435,201,401,193,369,193,338,197,307,200,278,199,248,191,218,171,187,157,175,160,171,175,184,196,216,204,247,205,278,202,308,199,338,199,368,206,399,224,432,226,435"/>
+<area shape="rect" id="Node000018" href="$classhttplib_1_1ClientImpl.html#a250e83cafd27181f2c0a816e8b7bc92f" title=" " alt="" coords="20,197,159,237"/>
+<area shape="poly" id="edge19_Node000014_Node000018" title=" " alt="" coords="222,438,219,435,204,410,197,386,196,340,195,296,187,274,171,251,157,239,160,235,175,248,192,271,200,295,201,340,202,385,209,408,223,432,226,435"/>
+<area shape="rect" id="Node000019" href="$classhttplib_1_1ClientImpl.html#a38ebdd91890fa9cda3aefc05b41c34fd" title=" " alt="" coords="20,261,159,301"/>
+<area shape="poly" id="edge20_Node000014_Node000019" title=" " alt="" coords="223,439,219,435,208,419,201,403,196,373,190,344,183,330,171,315,156,304,159,299,175,311,188,327,195,342,201,372,206,401,212,416,223,432,227,435"/>
+<area shape="rect" id="Node000020" href="$classhttplib_1_1ClientImpl.html#a35fe9c8ee765e58bc71f75056cbc8d82" title=" " alt="" coords="20,325,159,365"/>
+<area shape="poly" id="edge21_Node000014_Node000020" title=" " alt="" coords="226,440,220,435,205,420,196,406,187,393,172,379,152,368,154,363,175,375,191,389,200,403,209,417,223,431,229,436"/>
+<area shape="rect" id="Node000021" href="$classhttplib_1_1ClientImpl.html#a27d851a9f25e6733167cdd0c4f843716" title=" " alt="" coords="20,389,159,429"/>
+<area shape="poly" id="edge22_Node000014_Node000021" title=" " alt="" coords="208,449,155,432,156,427,209,444"/>
+<area shape="rect" id="Node000022" href="$classhttplib_1_1ClientImpl.html#a544d84bfb3b01866864e55ba1596a271" title=" " alt="" coords="20,453,159,493"/>
+<area shape="poly" id="edge23_Node000014_Node000022" title=" " alt="" coords="208,476,159,476,159,471,208,471"/>
+<area shape="rect" id="Node000023" href="$classhttplib_1_1ClientImpl.html#a423f731f682156568dde05884ccf3794" title=" " alt="" coords="20,517,159,557"/>
+<area shape="poly" id="edge24_Node000014_Node000023" title=" " alt="" coords="209,503,156,520,155,515,208,498"/>
+<area shape="rect" id="Node000024" href="$classhttplib_1_1ClientImpl.html#a2c4e81f50b61f56b46c0ff1e9bb7ddcd" title=" " alt="" coords="5,582,173,607"/>
+<area shape="poly" id="edge25_Node000014_Node000024" title=" " alt="" coords="259,512,220,543,175,572,144,584,142,579,172,567,217,539,256,507"/>
+<area shape="rect" id="Node000025" href="$classhttplib_1_1ClientImpl.html#a0f810e35fe082322f5f6425dcad9f14b" title=" " alt="" coords="5,631,173,657"/>
+<area shape="poly" id="edge26_Node000014_Node000025" title=" " alt="" coords="275,514,233,570,205,598,175,622,152,634,149,629,172,618,202,594,229,567,271,511"/>
+<area shape="rect" id="Node000026" href="$classhttplib_1_1ClientImpl.html#ab6ad592791ef4f24902429db688ffc72" title=" " alt="" coords="5,681,173,706"/>
+<area shape="poly" id="edge27_Node000014_Node000026" title=" " alt="" coords="283,515,266,552,242,595,212,636,175,671,154,683,152,678,172,667,208,633,238,592,261,550,279,513"/>
+<area shape="rect" id="Node000027" href="$classhttplib_1_1ClientImpl.html#aa49c49b89785086d3be3d46939ef0068" title=" " alt="" coords="5,730,173,755"/>
+<area shape="poly" id="edge28_Node000014_Node000027" title=" " alt="" coords="289,515,274,562,251,618,218,673,198,698,175,721,156,732,153,728,172,717,194,695,214,670,246,615,269,560,284,513"/>
+<area shape="rect" id="Node000028" href="$classhttplib_1_1ClientImpl.html#a22113e92b2f56d5c7a0e3778824a6fb2" title=" " alt="" coords="5,779,173,805"/>
+<area shape="poly" id="edge29_Node000014_Node000028" title=" " alt="" coords="293,515,281,572,259,641,224,710,202,742,175,770,157,782,154,777,172,766,198,739,220,707,254,639,275,571,288,514"/>
+<area shape="rect" id="Node000029" href="$classhttplib_1_1ClientImpl.html#a1ecbc65e4dc4b7f047f60666e3b29a6d" title=" " alt="" coords="13,829,165,883"/>
+<area shape="poly" id="edge30_Node000014_Node000029" title=" " alt="" coords="294,515,283,580,262,660,227,744,203,783,175,819,163,830,159,826,171,816,199,780,222,742,256,658,278,579,289,514"/>
+</map>

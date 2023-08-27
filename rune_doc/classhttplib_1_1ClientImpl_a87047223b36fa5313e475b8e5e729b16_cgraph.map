@@ -1,0 +1,7 @@
+<map id="set_connection_timeout" name="set_connection_timeout">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,184,67"/>
+<area shape="rect" id="Node000002" href="$namespacehttplib_1_1detail.html#aa3718b142c169948996eec37335674ca" title=" " alt="" coords="236,5,407,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,40,222,35,223,41,185,46"/>
+<area shape="rect" id="Node000003" href="$classhttplib_1_1ClientImpl.html#abcb5e1f1de07a9241dc3f5b3a0638e1e" title=" " alt="" coords="232,70,411,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,63,218,67,218,73,184,68"/>
+</map>

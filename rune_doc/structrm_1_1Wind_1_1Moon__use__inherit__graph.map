@@ -1,0 +1,7 @@
+<map id="Wind::Moon_use" name="Wind::Moon_use">
+<area shape="rect" id="Node000001" title="存储moon形状的类" alt="" coords="5,79,135,104"/>
+<area shape="rect" id="Node000003" href="$structrm_1_1Wind_1_1Center__use.html" title="中心点使用的类" alt="" coords="23,152,117,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="73,118,73,152,67,152,67,118"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="19,5,121,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,44,73,79,67,79,67,44"/>
+</map>

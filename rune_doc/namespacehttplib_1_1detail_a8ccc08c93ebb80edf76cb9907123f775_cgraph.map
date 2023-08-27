@@ -1,0 +1,6 @@
+<map id="is_connection_error" name="is_connection_error">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,155,55"/>
+<area shape="rect" id="Node000002" href="$namespacehttplib_1_1detail.html#a4e123998023aa19d5b4606090c80830f" title=" " alt="" coords="203,29,312,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,39,189,39,189,45,155,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="228,31,222,21,225,11,237,5,257,3,282,6,292,15,288,19,279,11,257,8,239,10,229,15,227,20,232,28"/>
+</map>

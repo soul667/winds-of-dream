@@ -1,0 +1,683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“创梦之翼2023步兵自瞄文档”: WindEKF类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">“创梦之翼2023步兵自瞄文档”<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">xxx</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classrm_1_1WindEKF.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classrm_1_1WindEKF-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">WindEKF类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="wind__kf_8h_source.html">wind_kf.h</a>&gt;</code></p>
+<div class="dynheader">
+类 WindEKF 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrm_1_1WindEKF__inherit__graph.png" border="0" usemap="#aWindEKF_inherit__map" alt="Inheritance graph"/></div>
+<map name="aWindEKF_inherit__map" id="aWindEKF_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,79,85,104"/>
+<area shape="rect" href="classrm_1_1WindKF.html" title=" " alt="" coords="9,5,81,31"/>
+<area shape="poly" title=" " alt="" coords="48,44,48,79,43,79,43,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+WindEKF 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrm_1_1WindEKF__coll__graph.png" border="0" usemap="#aWindEKF_coll__map" alt="Collaboration graph"/></div>
+<map name="aWindEKF_coll__map" id="aWindEKF_coll__map">
+<area shape="rect" title=" " alt="" coords="160,343,240,368"/>
+<area shape="rect" href="classrm_1_1WindKF.html" title=" " alt="" coords="80,255,152,280"/>
+<area shape="poly" title=" " alt="" coords="139,288,190,340,186,344,135,292"/>
+<area shape="rect" href="structrm_1_1WindKF_1_1Dimension__Params.html" title=" " alt="" coords="5,5,152,31"/>
+<area shape="poly" title=" " alt="" coords="76,45,70,82,67,129,71,180,84,230,92,242,102,253,98,256,87,245,79,232,65,181,62,129,65,82,71,44"/>
+<area shape="rect" title=" " alt="" coords="177,5,223,31"/>
+<area shape="poly" title=" " alt="" coords="203,44,203,343,197,343,197,44"/>
+<area shape="poly" title=" " alt="" coords="165,35,141,46,127,56,115,81,107,109,102,166,107,217,115,254,110,255,102,218,97,166,101,108,110,79,123,53,139,41,162,30"/>
+<area shape="rect" href="structrm_1_1WindEKF_1_1p.html" title=" " alt="" coords="250,255,289,280"/>
+<area shape="poly" title=" " alt="" coords="253,293,212,344,208,340,249,289"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrm_1_1WindEKF_1_1p.html">p</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aeb94da2d78087225f238b51b207b297e" id="r_aeb94da2d78087225f238b51b207b297e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#aeb94da2d78087225f238b51b207b297e">WindEKF</a> ()</td></tr>
+<tr class="separator:aeb94da2d78087225f238b51b207b297e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0bcb79ed5857bc682280c03109db5a" id="r_aac0bcb79ed5857bc682280c03109db5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#aac0bcb79ed5857bc682280c03109db5a">~WindEKF</a> ()</td></tr>
+<tr class="separator:aac0bcb79ed5857bc682280c03109db5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02fd73d861ef2e4aabb38c0c9ff82947" id="r_a02fd73d861ef2e4aabb38c0c9ff82947"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#a02fd73d861ef2e4aabb38c0c9ff82947">init</a> ()</td></tr>
+<tr class="separator:a02fd73d861ef2e4aabb38c0c9ff82947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b2b50b063d40efdbff09094df6b447" id="r_a67b2b50b063d40efdbff09094df6b447"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#a67b2b50b063d40efdbff09094df6b447">predict</a> (float flytime, float timeline)</td></tr>
+<tr class="separator:a67b2b50b063d40efdbff09094df6b447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8815b1d7beb02bd7a8ea7fd6c594dd9f" id="r_a8815b1d7beb02bd7a8ea7fd6c594dd9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#a8815b1d7beb02bd7a8ea7fd6c594dd9f">correct</a> (float timeline, float theta, int direction)</td></tr>
+<tr class="separator:a8815b1d7beb02bd7a8ea7fd6c594dd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7bb577ed6c10f48316b52941c59a54" id="r_afd7bb577ed6c10f48316b52941c59a54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#afd7bb577ed6c10f48316b52941c59a54">first_set</a> (float firstime, float theta)</td></tr>
+<tr class="separator:afd7bb577ed6c10f48316b52941c59a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20897c5c8bd47f5d4005989bead0e55" id="r_ad20897c5c8bd47f5d4005989bead0e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a> ()</td></tr>
+<tr class="separator:ad20897c5c8bd47f5d4005989bead0e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classrm_1_1WindKF"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classrm_1_1WindKF')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classrm_1_1WindKF.html">WindKF</a></td></tr>
+<tr class="memitem:a018f9a719a174ac0d51a9fc33da9434b inherit pub_methods_classrm_1_1WindKF" id="r_a018f9a719a174ac0d51a9fc33da9434b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#a018f9a719a174ac0d51a9fc33da9434b">init</a> (int direction)</td></tr>
+<tr class="separator:a018f9a719a174ac0d51a9fc33da9434b inherit pub_methods_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb4af926648cbab7cf3494863d48447d inherit pub_methods_classrm_1_1WindKF" id="r_abb4af926648cbab7cf3494863d48447d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#abb4af926648cbab7cf3494863d48447d">correct</a> (float timeline, float theta)</td></tr>
+<tr class="separator:abb4af926648cbab7cf3494863d48447d inherit pub_methods_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a27d28cd280b2386bcf6596d3ee23adc8" id="r_a27d28cd280b2386bcf6596d3ee23adc8"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#a27d28cd280b2386bcf6596d3ee23adc8">f_x</a></td></tr>
+<tr class="separator:a27d28cd280b2386bcf6596d3ee23adc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab508ded41392ee86a2a619d3e93d2373" id="r_ab508ded41392ee86a2a619d3e93d2373"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#ab508ded41392ee86a2a619d3e93d2373">amp</a> =0.8</td></tr>
+<tr class="separator:ab508ded41392ee86a2a619d3e93d2373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a522b09df8bc2c65c894606d6022a288f" id="r_a522b09df8bc2c65c894606d6022a288f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#a522b09df8bc2c65c894606d6022a288f">omega</a> =1.9</td></tr>
+<tr class="separator:a522b09df8bc2c65c894606d6022a288f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30c622a174639ec92b375db9b2ee56d" id="r_ab30c622a174639ec92b375db9b2ee56d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#ab30c622a174639ec92b375db9b2ee56d">phi</a> =0</td></tr>
+<tr class="separator:ab30c622a174639ec92b375db9b2ee56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab792dec57acf3225a6a0e606bc2676a3" id="r_ab792dec57acf3225a6a0e606bc2676a3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#ab792dec57acf3225a6a0e606bc2676a3">est_theta</a> =0</td></tr>
+<tr class="separator:ab792dec57acf3225a6a0e606bc2676a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0e191413114f9d3d801199ae634c1f" id="r_a2e0e191413114f9d3d801199ae634c1f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#a2e0e191413114f9d3d801199ae634c1f">chiSquare</a> =0</td></tr>
+<tr class="separator:a2e0e191413114f9d3d801199ae634c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e2c6c20a8f3b56806383e174e348e5" id="r_a51e2c6c20a8f3b56806383e174e348e5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#a51e2c6c20a8f3b56806383e174e348e5">theta_dot</a> =0</td></tr>
+<tr class="separator:a51e2c6c20a8f3b56806383e174e348e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf89cc541be8d2216cd284712375b1f9" id="r_adf89cc541be8d2216cd284712375b1f9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#adf89cc541be8d2216cd284712375b1f9">Last_theta</a> =0</td></tr>
+<tr class="separator:adf89cc541be8d2216cd284712375b1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7741b027518f54723f5d163c97fbe8" id="r_a0e7741b027518f54723f5d163c97fbe8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#a0e7741b027518f54723f5d163c97fbe8">Lasttimestamp</a></td></tr>
+<tr class="separator:a0e7741b027518f54723f5d163c97fbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f753a8f94140149f7520174bcdbe23d" id="r_a6f753a8f94140149f7520174bcdbe23d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#a6f753a8f94140149f7520174bcdbe23d">firstgrab</a> =true</td></tr>
+<tr class="separator:a6f753a8f94140149f7520174bcdbe23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classrm_1_1WindKF"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classrm_1_1WindKF')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="classrm_1_1WindKF.html">WindKF</a></td></tr>
+<tr class="memitem:ace7e27f550f932fe63463540d6024886 inherit pub_attribs_classrm_1_1WindKF" id="r_ace7e27f550f932fe63463540d6024886"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#ace7e27f550f932fe63463540d6024886">P</a></td></tr>
+<tr class="separator:ace7e27f550f932fe63463540d6024886 inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6257c9f19f18374972877bcbabc92e inherit pub_attribs_classrm_1_1WindKF" id="r_a8e6257c9f19f18374972877bcbabc92e"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#a8e6257c9f19f18374972877bcbabc92e">P_minus</a></td></tr>
+<tr class="separator:a8e6257c9f19f18374972877bcbabc92e inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d0edaf810915e2ea76a9bcc04f4708 inherit pub_attribs_classrm_1_1WindKF" id="r_ae6d0edaf810915e2ea76a9bcc04f4708"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#ae6d0edaf810915e2ea76a9bcc04f4708">Q</a></td></tr>
+<tr class="separator:ae6d0edaf810915e2ea76a9bcc04f4708 inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1013d534e23616770faa75bc79285dd5 inherit pub_attribs_classrm_1_1WindKF" id="r_a1013d534e23616770faa75bc79285dd5"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#a1013d534e23616770faa75bc79285dd5">R</a></td></tr>
+<tr class="separator:a1013d534e23616770faa75bc79285dd5 inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7b4ff917b073d60d3711a3e13731ed inherit pub_attribs_classrm_1_1WindKF" id="r_a7e7b4ff917b073d60d3711a3e13731ed"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#a7e7b4ff917b073d60d3711a3e13731ed">F</a></td></tr>
+<tr class="separator:a7e7b4ff917b073d60d3711a3e13731ed inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71cfa0963896c928697d0170d9734943 inherit pub_attribs_classrm_1_1WindKF" id="r_a71cfa0963896c928697d0170d9734943"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#a71cfa0963896c928697d0170d9734943">H</a></td></tr>
+<tr class="separator:a71cfa0963896c928697d0170d9734943 inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a798e92db19c60eb735a56da0ebb7ee9c inherit pub_attribs_classrm_1_1WindKF" id="r_a798e92db19c60eb735a56da0ebb7ee9c"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#a798e92db19c60eb735a56da0ebb7ee9c">K</a></td></tr>
+<tr class="separator:a798e92db19c60eb735a56da0ebb7ee9c inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5540cb3097e6600f1f4f9c31177619c4 inherit pub_attribs_classrm_1_1WindKF" id="r_a5540cb3097e6600f1f4f9c31177619c4"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#a5540cb3097e6600f1f4f9c31177619c4">x</a></td></tr>
+<tr class="separator:a5540cb3097e6600f1f4f9c31177619c4 inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a27e812e14b91d9722f8cab5b656c4e inherit pub_attribs_classrm_1_1WindKF" id="r_a4a27e812e14b91d9722f8cab5b656c4e"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#a4a27e812e14b91d9722f8cab5b656c4e">x_hat</a></td></tr>
+<tr class="separator:a4a27e812e14b91d9722f8cab5b656c4e inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad757631f336adec51540edd7f8f2c82a inherit pub_attribs_classrm_1_1WindKF" id="r_ad757631f336adec51540edd7f8f2c82a"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#ad757631f336adec51540edd7f8f2c82a">x_hat_minus</a></td></tr>
+<tr class="separator:ad757631f336adec51540edd7f8f2c82a inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e4e8fbf47a0fa37923e054f28b82662 inherit pub_attribs_classrm_1_1WindKF" id="r_a5e4e8fbf47a0fa37923e054f28b82662"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#a5e4e8fbf47a0fa37923e054f28b82662">z</a></td></tr>
+<tr class="separator:a5e4e8fbf47a0fa37923e054f28b82662 inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20450672a13b6013bdb75e4b607e96fe inherit pub_attribs_classrm_1_1WindKF" id="r_a20450672a13b6013bdb75e4b607e96fe"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#a20450672a13b6013bdb75e4b607e96fe">z_zat</a></td></tr>
+<tr class="separator:a20450672a13b6013bdb75e4b607e96fe inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7741b027518f54723f5d163c97fbe8 inherit pub_attribs_classrm_1_1WindKF" id="r_a0e7741b027518f54723f5d163c97fbe8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#a0e7741b027518f54723f5d163c97fbe8">Lasttimestamp</a></td></tr>
+<tr class="separator:a0e7741b027518f54723f5d163c97fbe8 inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff0804ae73417375fcbdc3f9814705e inherit pub_attribs_classrm_1_1WindKF" id="r_a8ff0804ae73417375fcbdc3f9814705e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#a8ff0804ae73417375fcbdc3f9814705e">mydirection</a> =0</td></tr>
+<tr class="separator:a8ff0804ae73417375fcbdc3f9814705e inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c0b9493c0481d2ba969d40a38bad94 inherit pub_attribs_classrm_1_1WindKF" id="r_a64c0b9493c0481d2ba969d40a38bad94"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindKF.html#a64c0b9493c0481d2ba969d40a38bad94">thetadot_est</a> = 0</td></tr>
+<tr class="separator:a64c0b9493c0481d2ba969d40a38bad94 inherit pub_attribs_classrm_1_1WindKF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ae00090238985fe8b2a77847f5c4b353d" id="r_ae00090238985fe8b2a77847f5c4b353d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structrm_1_1WindEKF_1_1p.html">rm::WindEKF::p</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrm_1_1WindEKF.html#ae00090238985fe8b2a77847f5c4b353d">p</a></td></tr>
+<tr class="separator:ae00090238985fe8b2a77847f5c4b353d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="wind__kf_8h_source.html">wind_kf.h</a> 第 <a class="el" href="wind__kf_8h_source.html#l00036">36</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aeb94da2d78087225f238b51b207b297e" name="aeb94da2d78087225f238b51b207b297e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb94da2d78087225f238b51b207b297e">&#9670;&#160;</a></span>WindEKF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrm_1_1WindEKF.html">WindEKF</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8cpp_source.html">wind_kf.cpp</a> 第 <a class="el" href="wind__kf_8cpp_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aac0bcb79ed5857bc682280c03109db5a" name="aac0bcb79ed5857bc682280c03109db5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac0bcb79ed5857bc682280c03109db5a">&#9670;&#160;</a></span>~WindEKF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="classrm_1_1WindEKF.html">WindEKF</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8h_source.html">wind_kf.h</a> 第 <a class="el" href="wind__kf_8h_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a8815b1d7beb02bd7a8ea7fd6c594dd9f" name="a8815b1d7beb02bd7a8ea7fd6c594dd9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8815b1d7beb02bd7a8ea7fd6c594dd9f">&#9670;&#160;</a></span>correct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void correct </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>timeline</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>theta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>direction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8cpp_source.html">wind_kf.cpp</a> 第 <a class="el" href="wind__kf_8cpp_source.html#l00067">67</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="wind__kf_8h_source.html#l00052">WindEKF::amp</a>, <a class="el" href="wind__kf_8h_source.html#l00056">WindEKF::chiSquare</a>, <a class="el" href="wind__kf_8h_source.html#l00048">WindEKF::p::chiSquare_MAX</a>, <a class="el" href="wind__kf_8h_source.html#l00042">WindEKF::p::dynamParams</a>, <a class="el" href="wind__kf_8h_source.html#l00055">WindEKF::est_theta</a>, <a class="el" href="wind__kf_8h_source.html#l00019">WindKF::F</a>, <a class="el" href="wind__kf_8h_source.html#l00051">WindEKF::f_x</a>, <a class="el" href="wind__kf_8h_source.html#l00020">WindKF::H</a>, <a class="el" href="wind__kf_8h_source.html#l00021">WindKF::K</a>, <a class="el" href="wind__kf_8h_source.html#l00058">WindEKF::Last_theta</a>, <a class="el" href="wind__kf_8h_source.html#l00059">WindEKF::Lasttimestamp</a>, <a class="el" href="wind__kf_8h_source.html#l00053">WindEKF::omega</a>, <a class="el" href="wind__kf_8h_source.html#l00015">WindKF::P</a>, <a class="el" href="wind__kf_8h_source.html#l00016">WindKF::P_minus</a>, <a class="el" href="wind__kf_8h_source.html#l00054">WindEKF::phi</a>, <a class="el" href="wind__kf_8h_source.html#l00017">WindKF::Q</a>, <a class="el" href="wind__kf_8h_source.html#l00018">WindKF::R</a>, <a class="el" href="wind__kf_8h_source.html#l00057">WindEKF::theta_dot</a> , 以及 <a class="el" href="wind__kf_8h_source.html#l00023">WindKF::x_hat</a>.</p>
+
+</div>
+</div>
+<a id="afd7bb577ed6c10f48316b52941c59a54" name="afd7bb577ed6c10f48316b52941c59a54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7bb577ed6c10f48316b52941c59a54">&#9670;&#160;</a></span>first_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void first_set </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>firstime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>theta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="classrm_1_1WindKF.html#afd7bb577ed6c10f48316b52941c59a54">WindKF</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8cpp_source.html">wind_kf.cpp</a> 第 <a class="el" href="wind__kf_8cpp_source.html#l00131">131</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="wind__kf_8h_source.html#l00060">WindEKF::firstgrab</a>, <a class="el" href="wind__kf_8h_source.html#l00059">WindEKF::Lasttimestamp</a> , 以及 <a class="el" href="wind__kf_8h_source.html#l00023">WindKF::x_hat</a>.</p>
+
+</div>
+</div>
+<a id="a02fd73d861ef2e4aabb38c0c9ff82947" name="a02fd73d861ef2e4aabb38c0c9ff82947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02fd73d861ef2e4aabb38c0c9ff82947">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8cpp_source.html">wind_kf.cpp</a> 第 <a class="el" href="wind__kf_8cpp_source.html#l00014">14</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="wind__kf_8h_source.html#l00042">WindEKF::p::dynamParams</a>, <a class="el" href="wind__kf_8h_source.html#l00019">WindKF::F</a>, <a class="el" href="wind__kf_8h_source.html#l00051">WindEKF::f_x</a>, <a class="el" href="wind__kf_8h_source.html#l00020">WindKF::H</a>, <a class="el" href="wind__kf_8h_source.html#l00043">WindEKF::p::measureParams</a>, <a class="el" href="wind__kf_8h_source.html#l00015">WindKF::P</a>, <a class="el" href="wind__kf_8h_source.html#l00017">WindKF::Q</a>, <a class="el" href="wind__kf_8h_source.html#l00018">WindKF::R</a> , 以及 <a class="el" href="wind__kf_8h_source.html#l00023">WindKF::x_hat</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="wind_8cpp_source.html#l00052">Wind::init()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrm_1_1WindEKF_a02fd73d861ef2e4aabb38c0c9ff82947_icgraph.png" border="0" usemap="#aclassrm_1_1WindEKF_a02fd73d861ef2e4aabb38c0c9ff82947_icgraph" alt=""/></div>
+<map name="aclassrm_1_1WindEKF_a02fd73d861ef2e4aabb38c0c9ff82947_icgraph" id="aclassrm_1_1WindEKF_a02fd73d861ef2e4aabb38c0c9ff82947_icgraph">
+<area shape="rect" title=" " alt="" coords="417,5,460,31"/>
+<area shape="rect" href="classrm_1_1Wind.html#a8914eec985ee96f8c43400d81eca5e95" title="初始化" alt="" coords="259,5,369,31"/>
+<area shape="poly" title=" " alt="" coords="404,21,370,21,370,15,404,15"/>
+<area shape="rect" href="classrm_1_1Run.html#aee8048628ff2b5c026c9e15acdcaacb8" title=" " alt="" coords="108,5,211,31"/>
+<area shape="poly" title=" " alt="" coords="245,21,211,21,211,15,245,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a67b2b50b063d40efdbff09094df6b447" name="a67b2b50b063d40efdbff09094df6b447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b2b50b063d40efdbff09094df6b447">&#9670;&#160;</a></span>predict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float predict </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>flytime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>timeline</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="classrm_1_1WindKF.html#a67b2b50b063d40efdbff09094df6b447">WindKF</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8cpp_source.html">wind_kf.cpp</a> 第 <a class="el" href="wind__kf_8cpp_source.html#l00140">140</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="wind__kf_8h_source.html#l00052">WindEKF::amp</a>, <a class="el" href="wind__kf_8h_source.html#l00053">WindEKF::omega</a> , 以及 <a class="el" href="wind__kf_8h_source.html#l00054">WindEKF::phi</a>.</p>
+
+</div>
+</div>
+<a id="ad20897c5c8bd47f5d4005989bead0e55" name="ad20897c5c8bd47f5d4005989bead0e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20897c5c8bd47f5d4005989bead0e55">&#9670;&#160;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="classrm_1_1WindKF.html#ad20897c5c8bd47f5d4005989bead0e55">WindKF</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8cpp_source.html">wind_kf.cpp</a> 第 <a class="el" href="wind__kf_8cpp_source.html#l00150">150</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="wind__kf_8h_source.html#l00042">WindEKF::p::dynamParams</a>, <a class="el" href="wind__kf_8h_source.html#l00019">WindKF::F</a>, <a class="el" href="wind__kf_8h_source.html#l00051">WindEKF::f_x</a>, <a class="el" href="wind__kf_8h_source.html#l00020">WindKF::H</a>, <a class="el" href="wind__kf_8h_source.html#l00043">WindEKF::p::measureParams</a>, <a class="el" href="wind__kf_8h_source.html#l00015">WindKF::P</a> , 以及 <a class="el" href="wind__kf_8h_source.html#l00023">WindKF::x_hat</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ab508ded41392ee86a2a619d3e93d2373" name="ab508ded41392ee86a2a619d3e93d2373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab508ded41392ee86a2a619d3e93d2373">&#9670;&#160;</a></span>amp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float amp =0.8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8h_source.html">wind_kf.h</a> 第 <a class="el" href="wind__kf_8h_source.html#l00052">52</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="wind__kf_8cpp_source.html#l00067">WindEKF::correct()</a> , 以及 <a class="el" href="wind__kf_8cpp_source.html#l00140">WindEKF::predict()</a>.</p>
+
+</div>
+</div>
+<a id="a2e0e191413114f9d3d801199ae634c1f" name="a2e0e191413114f9d3d801199ae634c1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e0e191413114f9d3d801199ae634c1f">&#9670;&#160;</a></span>chiSquare</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float chiSquare =0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8h_source.html">wind_kf.h</a> 第 <a class="el" href="wind__kf_8h_source.html#l00056">56</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="wind__kf_8cpp_source.html#l00067">WindEKF::correct()</a>.</p>
+
+</div>
+</div>
+<a id="ab792dec57acf3225a6a0e606bc2676a3" name="ab792dec57acf3225a6a0e606bc2676a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab792dec57acf3225a6a0e606bc2676a3">&#9670;&#160;</a></span>est_theta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float est_theta =0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8h_source.html">wind_kf.h</a> 第 <a class="el" href="wind__kf_8h_source.html#l00055">55</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="wind__kf_8cpp_source.html#l00067">WindEKF::correct()</a>.</p>
+
+</div>
+</div>
+<a id="a27d28cd280b2386bcf6596d3ee23adc8" name="a27d28cd280b2386bcf6596d3ee23adc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d28cd280b2386bcf6596d3ee23adc8">&#9670;&#160;</a></span>f_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat f_x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8h_source.html">wind_kf.h</a> 第 <a class="el" href="wind__kf_8h_source.html#l00051">51</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="wind__kf_8cpp_source.html#l00067">WindEKF::correct()</a>, <a class="el" href="wind__kf_8cpp_source.html#l00014">WindEKF::init()</a> , 以及 <a class="el" href="wind__kf_8cpp_source.html#l00150">WindEKF::reset()</a>.</p>
+
+</div>
+</div>
+<a id="a6f753a8f94140149f7520174bcdbe23d" name="a6f753a8f94140149f7520174bcdbe23d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f753a8f94140149f7520174bcdbe23d">&#9670;&#160;</a></span>firstgrab</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool firstgrab =true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8h_source.html">wind_kf.h</a> 第 <a class="el" href="wind__kf_8h_source.html#l00060">60</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="wind__kf_8cpp_source.html#l00131">WindEKF::first_set()</a>.</p>
+
+</div>
+</div>
+<a id="adf89cc541be8d2216cd284712375b1f9" name="adf89cc541be8d2216cd284712375b1f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf89cc541be8d2216cd284712375b1f9">&#9670;&#160;</a></span>Last_theta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Last_theta =0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8h_source.html">wind_kf.h</a> 第 <a class="el" href="wind__kf_8h_source.html#l00058">58</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="wind__kf_8cpp_source.html#l00067">WindEKF::correct()</a>.</p>
+
+</div>
+</div>
+<a id="a0e7741b027518f54723f5d163c97fbe8" name="a0e7741b027518f54723f5d163c97fbe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e7741b027518f54723f5d163c97fbe8">&#9670;&#160;</a></span>Lasttimestamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Lasttimestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8h_source.html">wind_kf.h</a> 第 <a class="el" href="wind__kf_8h_source.html#l00059">59</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="wind__kf_8cpp_source.html#l00067">WindEKF::correct()</a> , 以及 <a class="el" href="wind__kf_8cpp_source.html#l00131">WindEKF::first_set()</a>.</p>
+
+</div>
+</div>
+<a id="a522b09df8bc2c65c894606d6022a288f" name="a522b09df8bc2c65c894606d6022a288f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a522b09df8bc2c65c894606d6022a288f">&#9670;&#160;</a></span>omega</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float omega =1.9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8h_source.html">wind_kf.h</a> 第 <a class="el" href="wind__kf_8h_source.html#l00053">53</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="wind__kf_8cpp_source.html#l00067">WindEKF::correct()</a> , 以及 <a class="el" href="wind__kf_8cpp_source.html#l00140">WindEKF::predict()</a>.</p>
+
+</div>
+</div>
+<a id="ae00090238985fe8b2a77847f5c4b353d" name="ae00090238985fe8b2a77847f5c4b353d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae00090238985fe8b2a77847f5c4b353d">&#9670;&#160;</a></span>p</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structrm_1_1WindEKF_1_1p.html">rm::WindEKF::p</a> <a class="el" href="structrm_1_1WindEKF_1_1p.html">p</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab30c622a174639ec92b375db9b2ee56d" name="ab30c622a174639ec92b375db9b2ee56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab30c622a174639ec92b375db9b2ee56d">&#9670;&#160;</a></span>phi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float phi =0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8h_source.html">wind_kf.h</a> 第 <a class="el" href="wind__kf_8h_source.html#l00054">54</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="wind__kf_8cpp_source.html#l00067">WindEKF::correct()</a> , 以及 <a class="el" href="wind__kf_8cpp_source.html#l00140">WindEKF::predict()</a>.</p>
+
+</div>
+</div>
+<a id="a51e2c6c20a8f3b56806383e174e348e5" name="a51e2c6c20a8f3b56806383e174e348e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e2c6c20a8f3b56806383e174e348e5">&#9670;&#160;</a></span>theta_dot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float theta_dot =0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="wind__kf_8h_source.html">wind_kf.h</a> 第 <a class="el" href="wind__kf_8h_source.html#l00057">57</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="wind__kf_8cpp_source.html#l00067">WindEKF::correct()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>rune/WindPredict/<a class="el" href="wind__kf_8h_source.html">wind_kf.h</a></li>
+<li>rune/WindPredict/<a class="el" href="wind__kf_8cpp_source.html">wind_kf.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacerm.html">rm</a></li><li class="navelem"><a class="el" href="classrm_1_1WindEKF.html">WindEKF</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

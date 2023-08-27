@@ -1,0 +1,7 @@
+<map id="WindKF" name="WindKF">
+<area shape="rect" id="Node000001" title=" " alt="" coords="103,255,175,280"/>
+<area shape="rect" id="Node000002" href="$structrm_1_1WindKF_1_1Dimension__Params.html" title=" " alt="" coords="5,5,152,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,44,138,254,133,255,82,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="177,5,223,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,45,152,231,145,255,140,254,147,230,192,43"/>
+</map>

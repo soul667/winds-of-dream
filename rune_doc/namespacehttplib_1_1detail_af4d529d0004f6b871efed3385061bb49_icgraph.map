@@ -1,0 +1,6 @@
+<map id="get_local_ip_and_port" name="get_local_ip_and_port">
+<area shape="rect" id="Node000001" title=" " alt="" coords="260,29,424,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="384,20,373,11,342,8,317,10,304,15,301,20,308,27,304,31,296,21,300,11,316,5,342,3,375,7,387,16"/>
+<area shape="rect" id="Node000002" href="$classhttplib_1_1detail_1_1SocketStream.html#ac02151dda8beb39183084ab3d4c0ceaa" title=" " alt="" coords="5,22,212,62"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="246,45,212,45,212,39,246,39"/>
+</map>

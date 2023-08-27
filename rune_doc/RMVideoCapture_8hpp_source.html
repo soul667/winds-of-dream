@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“创梦之翼2023步兵自瞄文档”: Others/Camera/RMVideoCapture.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">“创梦之翼2023步兵自瞄文档”<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">xxx</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('RMVideoCapture_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RMVideoCapture.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="RMVideoCapture_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*******************************************************************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">Copyright 2017 Dajiang Innovations Technology Co., Ltd (DJI)</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"></span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated </span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">documentation files(the &quot;Software&quot;), to deal in the Software without restriction, including without limitation</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">the rights to use, copy, modify, merge, publish, distribute, sublicense, and / or sell copies of the Software, and </span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">to permit persons to whom the Software is furnished to do so, subject to the following conditions : </span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">The above copyright notice and this permission notice shall be included in all copies or substantial portions of</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">the Software.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">IN THE SOFTWARE.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">*******************************************************************************************************************/</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include&lt;opencv2/opencv.hpp&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//ToOpenCV4.2.0</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;opencv2/imgcodecs/legacy/constants_c.h&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;opencv2/imgproc/types_c.h&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="classRMVideoCapture.html">RMVideoCapture</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="classRMVideoCapture.html#ad842759b3b49d3e6c774e1f1d593bfc2">RMVideoCapture</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="classRMVideoCapture.html#ad842759b3b49d3e6c774e1f1d593bfc2">RMVideoCapture</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> buffer_size = 2);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="classRMVideoCapture.html#a0f4baf3f15201c1e38976af3e5ea9754">~RMVideoCapture</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">//打开摄像头</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRMVideoCapture.html#aee0e961abd48d98420e1ce9147974319">open</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> size_buffer = 2);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">//判断摄像头是否打开</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRMVideoCapture.html#a6403a2e2e1f4f8b27cf4da929892ff85">isOpened</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//    void setBufferSize(size_t bsize);</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">//设置分辨率</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRMVideoCapture.html#af66efe831d763e000ee3ba763adccc31">setVideoFormat</a>(<span class="keywordtype">size_t</span> width, <span class="keywordtype">size_t</span> height, <span class="keywordtype">bool</span> mjpg = 1);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">//设置曝光</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRMVideoCapture.html#a579a30a367834b92cae61dc51f567046">setExposureTime</a>(<span class="keywordtype">int</span> t = 0);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">//改变分辨率</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRMVideoCapture.html#ab9cac86fb8b9d91fb7b2beac682d99de">changeVideoFormat</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">bool</span> mjpg = 1);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">//设置帧率</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRMVideoCapture.html#a5c07718f39c3544dacacf57274e5aaea">setFPS</a>(<span class="keywordtype">int</span> fps);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">//开始捕获视频流</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRMVideoCapture.html#aed31b4e74a2584047891b23a2a41a98c">startStream</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">//结束捕获视频流</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRMVideoCapture.html#a1c5c0f527116eb371f9c244b28e4c3f1">closeStream</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">//重新打开摄像头</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classRMVideoCapture.html#a3496b37562505a32f8a8639e83cbb128">restartCapture</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_class" href="classRMVideoCapture.html">RMVideoCapture</a>&amp; <a class="code hl_function" href="classRMVideoCapture.html#a3d9813f617f9b1f6edf3b7cd8ec710e1">operator &gt;&gt; </a>(cv::Mat &amp; image);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html#ae522f89111ac5fe7562d0088f31113c0">   54</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRMVideoCapture.html#ae522f89111ac5fe7562d0088f31113c0">read</a>(cv::Mat&amp; image);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">     * @Brief:  Grabs the next frame from video file or capturing device.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">     * @Return: &#39;true&#39; if success</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">//从摄像头获取下一帧数据</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRMVideoCapture.html#a5c658696e3f1f0bf3f4b84447a6f1dad">grab</a>();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">     * @Brief:  Decodes and returns the grabbed video frame.</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">     * @Output: img:    the video frame is returned here. If no frames has been grabbed</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">     *                  the image remains unchanged.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">//解码图片并返回</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRMVideoCapture.html#a3ebc08cd4065cf256d4505caa8758e0b">retrieve</a>(cv::Mat&amp; image);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">//获得分辨率数据</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    cv::Size <a class="code hl_function" href="classRMVideoCapture.html#aa36fa5a75069a4d28b83cd189004cd03">getResolution</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">//获得帧编号</span></div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html#a134a0d63775c91ff4a3ab9fa8ac7438a">   73</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classRMVideoCapture.html#a134a0d63775c91ff4a3ab9fa8ac7438a">getFrameCount</a>()</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classRMVideoCapture.html#a081e6d15e4016c3532833e983343d5cd">_frameCount</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">//输出摄像头信息</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classRMVideoCapture.html#ac1b66fe77173de9e5e8542b2823d6071">info</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">private</span>:</div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="};">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="structRMVideoCapture_1_1MapBuffer.html">   82</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structRMVideoCapture_1_1MapBuffer.html">MapBuffer</a></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="structRMVideoCapture_1_1MapBuffer.html#add9af9569af79ec26dd741fb226b38ba">   84</a></span>        <span class="keywordtype">void</span> * <a class="code hl_variable" href="structRMVideoCapture_1_1MapBuffer.html#add9af9569af79ec26dd741fb226b38ba">ptr</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="structRMVideoCapture_1_1MapBuffer.html#ac8d42bcd4a44e078047ccd7291059238">   85</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structRMVideoCapture_1_1MapBuffer.html#ac8d42bcd4a44e078047ccd7291059238">length</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    };</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">//分辨率</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html#ac8435c09234cd6b9bf78d0d9f513b19c">   88</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classRMVideoCapture.html#ac8435c09234cd6b9bf78d0d9f513b19c">_width</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html#ae56087f20883e5dac738adf23c2bfd5b">   89</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classRMVideoCapture.html#ae56087f20883e5dac738adf23c2bfd5b">_height</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html#acda811d045e1f4533b8ce0ae0b1c857c">   90</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classRMVideoCapture.html#acda811d045e1f4533b8ce0ae0b1c857c">_format</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html#ad66223b2b8711491aced271d9864db9e">   92</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classRMVideoCapture.html#ad66223b2b8711491aced271d9864db9e">_camera_fd</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html#a4487d25c8169294e7df31015b14ab51f">   93</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classRMVideoCapture.html#a4487d25c8169294e7df31015b14ab51f">_is_opened</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">//缓存大小</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html#a55e9c6b24735eca3504f2f1d28cf4b97">   95</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classRMVideoCapture.html#a55e9c6b24735eca3504f2f1d28cf4b97">_buffer_size</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html#ac6d35d26abc0e4d5080ce1a9191fe186">   96</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classRMVideoCapture.html#ac6d35d26abc0e4d5080ce1a9191fe186">_bufferIdx</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html#a081e6d15e4016c3532833e983343d5cd">   97</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classRMVideoCapture.html#a081e6d15e4016c3532833e983343d5cd">_frameCount</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html#a65349cacccef5e8aa31fa2ed56517ad1">   98</a></span>    <a class="code hl_struct" href="structRMVideoCapture_1_1MapBuffer.html">MapBuffer</a>* <a class="code hl_variable" href="classRMVideoCapture.html#a65349cacccef5e8aa31fa2ed56517ad1">_buffers</a>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">//摄像头文件路径</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html#af942ec63ed4ecf469d8d890c48f331ea">  100</a></span>    std::string <a class="code hl_variable" href="classRMVideoCapture.html#af942ec63ed4ecf469d8d890c48f331ea">_videoPath</a>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classRMVideoCapture.html#a979ff4e1a2e3ddbcda39537d053abded">  102</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classRMVideoCapture.html#a979ff4e1a2e3ddbcda39537d053abded">_grabbed_left</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="comment">//void cvtRaw2Mat(void * data,unsigned int length, cv::Mat &amp; image);</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">//摄像头数据转换为Mat</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classRMVideoCapture.html#abec8df6b0240502313b0adcaf7f657fb">cvtRaw2Mat</a>(<span class="keywordtype">void</span> * data, cv::Mat &amp; image);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">//刷新获得当前摄像头参数 分辨率和格式</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRMVideoCapture.html#a51a34814749217f5d6731ba0d873fcfb">refreshVideoFormat</a>();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">//初始化摄像头缓存</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRMVideoCapture.html#a209e8f5fd9d7f4d51699eedc779984f2">initMMap</a>();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="comment">//对摄像头进行读写操作</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classRMVideoCapture.html#a22cce36344ad43e1d0742f8af3ba7296">xioctl</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">int</span> request, <span class="keywordtype">void</span> *arg);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>};</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="ttc" id="aclassRMVideoCapture_html"><div class="ttname"><a href="classRMVideoCapture.html">RMVideoCapture</a></div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00025">RMVideoCapture.hpp:26</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a081e6d15e4016c3532833e983343d5cd"><div class="ttname"><a href="classRMVideoCapture.html#a081e6d15e4016c3532833e983343d5cd">RMVideoCapture::_frameCount</a></div><div class="ttdeci">unsigned int _frameCount</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00097">RMVideoCapture.hpp:97</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a0f4baf3f15201c1e38976af3e5ea9754"><div class="ttname"><a href="classRMVideoCapture.html#a0f4baf3f15201c1e38976af3e5ea9754">RMVideoCapture::~RMVideoCapture</a></div><div class="ttdeci">~RMVideoCapture()</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00079">RMVideoCapture.cpp:79</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a134a0d63775c91ff4a3ab9fa8ac7438a"><div class="ttname"><a href="classRMVideoCapture.html#a134a0d63775c91ff4a3ab9fa8ac7438a">RMVideoCapture::getFrameCount</a></div><div class="ttdeci">int getFrameCount()</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00073">RMVideoCapture.hpp:73</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a1c5c0f527116eb371f9c244b28e4c3f1"><div class="ttname"><a href="classRMVideoCapture.html#a1c5c0f527116eb371f9c244b28e4c3f1">RMVideoCapture::closeStream</a></div><div class="ttdeci">bool closeStream()</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00314">RMVideoCapture.cpp:314</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a209e8f5fd9d7f4d51699eedc779984f2"><div class="ttname"><a href="classRMVideoCapture.html#a209e8f5fd9d7f4d51699eedc779984f2">RMVideoCapture::initMMap</a></div><div class="ttdeci">bool initMMap()</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00239">RMVideoCapture.cpp:239</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a22cce36344ad43e1d0742f8af3ba7296"><div class="ttname"><a href="classRMVideoCapture.html#a22cce36344ad43e1d0742f8af3ba7296">RMVideoCapture::xioctl</a></div><div class="ttdeci">int xioctl(int fd, int request, void *arg)</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00035">RMVideoCapture.cpp:35</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a3496b37562505a32f8a8639e83cbb128"><div class="ttname"><a href="classRMVideoCapture.html#a3496b37562505a32f8a8639e83cbb128">RMVideoCapture::restartCapture</a></div><div class="ttdeci">void restartCapture()</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00331">RMVideoCapture.cpp:331</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a3d9813f617f9b1f6edf3b7cd8ec710e1"><div class="ttname"><a href="classRMVideoCapture.html#a3d9813f617f9b1f6edf3b7cd8ec710e1">RMVideoCapture::operator&gt;&gt;</a></div><div class="ttdeci">RMVideoCapture &amp; operator&gt;&gt;(cv::Mat &amp;image)</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00359">RMVideoCapture.cpp:359</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a3ebc08cd4065cf256d4505caa8758e0b"><div class="ttname"><a href="classRMVideoCapture.html#a3ebc08cd4065cf256d4505caa8758e0b">RMVideoCapture::retrieve</a></div><div class="ttdeci">bool retrieve(cv::Mat &amp;image)</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00418">RMVideoCapture.cpp:418</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a4487d25c8169294e7df31015b14ab51f"><div class="ttname"><a href="classRMVideoCapture.html#a4487d25c8169294e7df31015b14ab51f">RMVideoCapture::_is_opened</a></div><div class="ttdeci">bool _is_opened</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00093">RMVideoCapture.hpp:93</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a51a34814749217f5d6731ba0d873fcfb"><div class="ttname"><a href="classRMVideoCapture.html#a51a34814749217f5d6731ba0d873fcfb">RMVideoCapture::refreshVideoFormat</a></div><div class="ttdeci">bool refreshVideoFormat()</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00158">RMVideoCapture.cpp:158</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a55e9c6b24735eca3504f2f1d28cf4b97"><div class="ttname"><a href="classRMVideoCapture.html#a55e9c6b24735eca3504f2f1d28cf4b97">RMVideoCapture::_buffer_size</a></div><div class="ttdeci">unsigned int _buffer_size</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00095">RMVideoCapture.hpp:95</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a579a30a367834b92cae61dc51f567046"><div class="ttname"><a href="classRMVideoCapture.html#a579a30a367834b92cae61dc51f567046">RMVideoCapture::setExposureTime</a></div><div class="ttdeci">bool setExposureTime(int t=0)</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00190">RMVideoCapture.cpp:190</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a5c07718f39c3544dacacf57274e5aaea"><div class="ttname"><a href="classRMVideoCapture.html#a5c07718f39c3544dacacf57274e5aaea">RMVideoCapture::setFPS</a></div><div class="ttdeci">bool setFPS(int fps)</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00174">RMVideoCapture.cpp:174</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a5c658696e3f1f0bf3f4b84447a6f1dad"><div class="ttname"><a href="classRMVideoCapture.html#a5c658696e3f1f0bf3f4b84447a6f1dad">RMVideoCapture::grab</a></div><div class="ttdeci">bool grab()</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00376">RMVideoCapture.cpp:376</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a6403a2e2e1f4f8b27cf4da929892ff85"><div class="ttname"><a href="classRMVideoCapture.html#a6403a2e2e1f4f8b27cf4da929892ff85">RMVideoCapture::isOpened</a></div><div class="ttdeci">bool isOpened() const</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00107">RMVideoCapture.cpp:107</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a65349cacccef5e8aa31fa2ed56517ad1"><div class="ttname"><a href="classRMVideoCapture.html#a65349cacccef5e8aa31fa2ed56517ad1">RMVideoCapture::_buffers</a></div><div class="ttdeci">MapBuffer * _buffers</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00098">RMVideoCapture.hpp:98</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_a979ff4e1a2e3ddbcda39537d053abded"><div class="ttname"><a href="classRMVideoCapture.html#a979ff4e1a2e3ddbcda39537d053abded">RMVideoCapture::_grabbed_left</a></div><div class="ttdeci">bool _grabbed_left</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00102">RMVideoCapture.hpp:102</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_aa36fa5a75069a4d28b83cd189004cd03"><div class="ttname"><a href="classRMVideoCapture.html#aa36fa5a75069a4d28b83cd189004cd03">RMVideoCapture::getResolution</a></div><div class="ttdeci">cv::Size getResolution()</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00449">RMVideoCapture.cpp:449</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_ab9cac86fb8b9d91fb7b2beac682d99de"><div class="ttname"><a href="classRMVideoCapture.html#ab9cac86fb8b9d91fb7b2beac682d99de">RMVideoCapture::changeVideoFormat</a></div><div class="ttdeci">bool changeVideoFormat(int width, int height, bool mjpg=1)</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00150">RMVideoCapture.cpp:150</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_abec8df6b0240502313b0adcaf7f657fb"><div class="ttname"><a href="classRMVideoCapture.html#abec8df6b0240502313b0adcaf7f657fb">RMVideoCapture::cvtRaw2Mat</a></div><div class="ttdeci">void cvtRaw2Mat(void *data, cv::Mat &amp;image)</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00341">RMVideoCapture.cpp:341</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_ac1b66fe77173de9e5e8542b2823d6071"><div class="ttname"><a href="classRMVideoCapture.html#ac1b66fe77173de9e5e8542b2823d6071">RMVideoCapture::info</a></div><div class="ttdeci">void info()</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00454">RMVideoCapture.cpp:454</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_ac6d35d26abc0e4d5080ce1a9191fe186"><div class="ttname"><a href="classRMVideoCapture.html#ac6d35d26abc0e4d5080ce1a9191fe186">RMVideoCapture::_bufferIdx</a></div><div class="ttdeci">unsigned int _bufferIdx</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00096">RMVideoCapture.hpp:96</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_ac8435c09234cd6b9bf78d0d9f513b19c"><div class="ttname"><a href="classRMVideoCapture.html#ac8435c09234cd6b9bf78d0d9f513b19c">RMVideoCapture::_width</a></div><div class="ttdeci">unsigned int _width</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00088">RMVideoCapture.hpp:88</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_acda811d045e1f4533b8ce0ae0b1c857c"><div class="ttname"><a href="classRMVideoCapture.html#acda811d045e1f4533b8ce0ae0b1c857c">RMVideoCapture::_format</a></div><div class="ttdeci">unsigned int _format</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00090">RMVideoCapture.hpp:90</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_ad66223b2b8711491aced271d9864db9e"><div class="ttname"><a href="classRMVideoCapture.html#ad66223b2b8711491aced271d9864db9e">RMVideoCapture::_camera_fd</a></div><div class="ttdeci">int _camera_fd</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00092">RMVideoCapture.hpp:92</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_ad842759b3b49d3e6c774e1f1d593bfc2"><div class="ttname"><a href="classRMVideoCapture.html#ad842759b3b49d3e6c774e1f1d593bfc2">RMVideoCapture::RMVideoCapture</a></div><div class="ttdeci">RMVideoCapture()</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00043">RMVideoCapture.cpp:43</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_ae522f89111ac5fe7562d0088f31113c0"><div class="ttname"><a href="classRMVideoCapture.html#ae522f89111ac5fe7562d0088f31113c0">RMVideoCapture::read</a></div><div class="ttdeci">bool read(cv::Mat &amp;image)</div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_ae56087f20883e5dac738adf23c2bfd5b"><div class="ttname"><a href="classRMVideoCapture.html#ae56087f20883e5dac738adf23c2bfd5b">RMVideoCapture::_height</a></div><div class="ttdeci">unsigned int _height</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00089">RMVideoCapture.hpp:89</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_aed31b4e74a2584047891b23a2a41a98c"><div class="ttname"><a href="classRMVideoCapture.html#aed31b4e74a2584047891b23a2a41a98c">RMVideoCapture::startStream</a></div><div class="ttdeci">bool startStream()</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00299">RMVideoCapture.cpp:299</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_aee0e961abd48d98420e1ce9147974319"><div class="ttname"><a href="classRMVideoCapture.html#aee0e961abd48d98420e1ce9147974319">RMVideoCapture::open</a></div><div class="ttdeci">bool open(const int id, int size_buffer=2)</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00085">RMVideoCapture.cpp:85</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_af66efe831d763e000ee3ba763adccc31"><div class="ttname"><a href="classRMVideoCapture.html#af66efe831d763e000ee3ba763adccc31">RMVideoCapture::setVideoFormat</a></div><div class="ttdeci">bool setVideoFormat(size_t width, size_t height, bool mjpg=1)</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8cpp_source.html#l00122">RMVideoCapture.cpp:122</a></div></div>
+<div class="ttc" id="aclassRMVideoCapture_html_af942ec63ed4ecf469d8d890c48f331ea"><div class="ttname"><a href="classRMVideoCapture.html#af942ec63ed4ecf469d8d890c48f331ea">RMVideoCapture::_videoPath</a></div><div class="ttdeci">std::string _videoPath</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00100">RMVideoCapture.hpp:100</a></div></div>
+<div class="ttc" id="astructRMVideoCapture_1_1MapBuffer_html"><div class="ttname"><a href="structRMVideoCapture_1_1MapBuffer.html">RMVideoCapture::MapBuffer</a></div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00082">RMVideoCapture.hpp:83</a></div></div>
+<div class="ttc" id="astructRMVideoCapture_1_1MapBuffer_html_ac8d42bcd4a44e078047ccd7291059238"><div class="ttname"><a href="structRMVideoCapture_1_1MapBuffer.html#ac8d42bcd4a44e078047ccd7291059238">RMVideoCapture::MapBuffer::length</a></div><div class="ttdeci">unsigned int length</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00085">RMVideoCapture.hpp:85</a></div></div>
+<div class="ttc" id="astructRMVideoCapture_1_1MapBuffer_html_add9af9569af79ec26dd741fb226b38ba"><div class="ttname"><a href="structRMVideoCapture_1_1MapBuffer.html#add9af9569af79ec26dd741fb226b38ba">RMVideoCapture::MapBuffer::ptr</a></div><div class="ttdeci">void * ptr</div><div class="ttdef"><b>Definition</b> <a href="RMVideoCapture_8hpp_source.html#l00084">RMVideoCapture.hpp:84</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_19cfa4107752b02b78eaeca0e87f7fb4.html">Others</a></li><li class="navelem"><a class="el" href="dir_cfc568893c851ed0d930e8661e7d455e.html">Camera</a></li><li class="navelem"><a class="el" href="RMVideoCapture_8hpp.html">RMVideoCapture.hpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

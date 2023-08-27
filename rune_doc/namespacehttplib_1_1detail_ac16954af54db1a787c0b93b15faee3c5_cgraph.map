@@ -1,0 +1,11 @@
+<map id="write_content" name="write_content">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,54,116,79"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="32,55,26,46,29,36,41,30,61,27,84,31,94,39,91,43,82,36,61,33,43,35,33,39,31,45,37,52"/>
+<area shape="rect" id="Node000002" href="$classhttplib_1_1Stream.html#a7a884813bb9b05916e723e46e1da1ac6" title=" " alt="" coords="164,5,303,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,51,150,43,151,48,115,57"/>
+<area shape="rect" id="Node000003" href="$namespacehttplib_1_1detail.html#a5bb6b09526112244720d2f598d158556" title=" " alt="" coords="188,94,279,119"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="117,77,175,91,174,96,116,82"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="205,95,199,86,202,76,214,70,233,67,257,71,267,79,263,83,254,76,233,73,215,75,206,79,204,85,209,92"/>
+<area shape="rect" id="Node000004" href="$classhttplib_1_1Stream.html#a3ebe1c6187e849c8b7c986b9a055cdd5" title=" " alt="" coords="351,94,511,119"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="279,104,337,104,337,109,279,109"/>
+</map>

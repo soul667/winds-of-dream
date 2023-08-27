@@ -1,0 +1,909 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“创梦之翼2023步兵自瞄文档”: SocketStream类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">“创梦之翼2023步兵自瞄文档”<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">xxx</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classhttplib_1_1detail_1_1SocketStream.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="classhttplib_1_1detail_1_1SocketStream-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">SocketStream类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 SocketStream 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1detail_1_1SocketStream__inherit__graph.png" border="0" usemap="#aSocketStream_inherit__map" alt="Inheritance graph"/></div>
+<map name="aSocketStream_inherit__map" id="aSocketStream_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,79,117,104"/>
+<area shape="rect" href="classhttplib_1_1Stream.html" title=" " alt="" coords="27,5,96,31"/>
+<area shape="poly" title=" " alt="" coords="64,44,64,79,59,79,59,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+SocketStream 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1detail_1_1SocketStream__coll__graph.png" border="0" usemap="#aSocketStream_coll__map" alt="Collaboration graph"/></div>
+<map name="aSocketStream_coll__map" id="aSocketStream_coll__map">
+<area shape="rect" title=" " alt="" coords="28,137,140,163"/>
+<area shape="rect" href="classhttplib_1_1Stream.html" title=" " alt="" coords="5,5,75,31"/>
+<area shape="poly" title=" " alt="" coords="51,43,83,136,78,138,46,45"/>
+<area shape="rect" title=" " alt="" coords="99,5,159,31"/>
+<area shape="poly" title=" " alt="" coords="123,45,91,138,86,136,118,43"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af03ab5852d0c5a1fd527a1b19d2d8250" id="r_af03ab5852d0c5a1fd527a1b19d2d8250"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#af03ab5852d0c5a1fd527a1b19d2d8250">SocketStream</a> (<a class="el" href="httplib_8h.html#a84d69664998f9fc285147c6d1382a6fb">socket_t</a> sock, time_t read_timeout_sec, time_t read_timeout_usec, time_t write_timeout_sec, time_t write_timeout_usec)</td></tr>
+<tr class="separator:af03ab5852d0c5a1fd527a1b19d2d8250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe290e467c2bd442bd5ec4456ed5c1a3" id="r_abe290e467c2bd442bd5ec4456ed5c1a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#abe290e467c2bd442bd5ec4456ed5c1a3">~SocketStream</a> () override</td></tr>
+<tr class="separator:abe290e467c2bd442bd5ec4456ed5c1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355beed1b8bbb6d2a6ef941d4d07d2c6" id="r_a355beed1b8bbb6d2a6ef941d4d07d2c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#a355beed1b8bbb6d2a6ef941d4d07d2c6">is_readable</a> () const override</td></tr>
+<tr class="separator:a355beed1b8bbb6d2a6ef941d4d07d2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7ff5384d3dfff884733fc9ed4d717d" id="r_a4d7ff5384d3dfff884733fc9ed4d717d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#a4d7ff5384d3dfff884733fc9ed4d717d">is_writable</a> () const override</td></tr>
+<tr class="separator:a4d7ff5384d3dfff884733fc9ed4d717d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e18d934b3b0c664f52110edde56a4f8" id="r_a9e18d934b3b0c664f52110edde56a4f8"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#a9e18d934b3b0c664f52110edde56a4f8">read</a> (char *ptr, size_t size) override</td></tr>
+<tr class="separator:a9e18d934b3b0c664f52110edde56a4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e830df591a731e5ad1069d6551b259" id="r_a31e830df591a731e5ad1069d6551b259"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#a31e830df591a731e5ad1069d6551b259">write</a> (const char *ptr, size_t size) override</td></tr>
+<tr class="separator:a31e830df591a731e5ad1069d6551b259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f42c37054e893b8c2cb1632adb923f" id="r_aa2f42c37054e893b8c2cb1632adb923f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#aa2f42c37054e893b8c2cb1632adb923f">get_remote_ip_and_port</a> (std::string &amp;ip, int &amp;port) const override</td></tr>
+<tr class="separator:aa2f42c37054e893b8c2cb1632adb923f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02151dda8beb39183084ab3d4c0ceaa" id="r_ac02151dda8beb39183084ab3d4c0ceaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#ac02151dda8beb39183084ab3d4c0ceaa">get_local_ip_and_port</a> (std::string &amp;ip, int &amp;port) const override</td></tr>
+<tr class="separator:ac02151dda8beb39183084ab3d4c0ceaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac898d15674a6a000c90fb37451c036da" id="r_ac898d15674a6a000c90fb37451c036da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="httplib_8h.html#a84d69664998f9fc285147c6d1382a6fb">socket_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#ac898d15674a6a000c90fb37451c036da">socket</a> () const override</td></tr>
+<tr class="separator:ac898d15674a6a000c90fb37451c036da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classhttplib_1_1Stream"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhttplib_1_1Stream')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classhttplib_1_1Stream.html">Stream</a></td></tr>
+<tr class="memitem:acf845f4bb63730e9f7d42fe6b646d7b9 inherit pub_methods_classhttplib_1_1Stream" id="r_acf845f4bb63730e9f7d42fe6b646d7b9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#acf845f4bb63730e9f7d42fe6b646d7b9">~Stream</a> ()=default</td></tr>
+<tr class="separator:acf845f4bb63730e9f7d42fe6b646d7b9 inherit pub_methods_classhttplib_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ced5eaa5862159f8aafc9ab773fda8 inherit pub_methods_classhttplib_1_1Stream" id="r_ab0ced5eaa5862159f8aafc9ab773fda8"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ab0ced5eaa5862159f8aafc9ab773fda8 inherit pub_methods_classhttplib_1_1Stream"><td class="memTemplItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#ab0ced5eaa5862159f8aafc9ab773fda8">write_format</a> (const char *fmt, const Args &amp;...args)</td></tr>
+<tr class="separator:ab0ced5eaa5862159f8aafc9ab773fda8 inherit pub_methods_classhttplib_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96dc9102421e3b364e5a0528cf7fc6d inherit pub_methods_classhttplib_1_1Stream" id="r_ae96dc9102421e3b364e5a0528cf7fc6d"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#ae96dc9102421e3b364e5a0528cf7fc6d">write</a> (const char *ptr)</td></tr>
+<tr class="separator:ae96dc9102421e3b364e5a0528cf7fc6d inherit pub_methods_classhttplib_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad141683608a735cd0470e4968ccb76db inherit pub_methods_classhttplib_1_1Stream" id="r_ad141683608a735cd0470e4968ccb76db"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#ad141683608a735cd0470e4968ccb76db">write</a> (const std::string &amp;s)</td></tr>
+<tr class="separator:ad141683608a735cd0470e4968ccb76db inherit pub_methods_classhttplib_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ac6f88ba3c7fe5a885703b50c04f03718" id="r_ac6f88ba3c7fe5a885703b50c04f03718"><td class="memItemLeft" align="right" valign="top"><a class="el" href="httplib_8h.html#a84d69664998f9fc285147c6d1382a6fb">socket_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#ac6f88ba3c7fe5a885703b50c04f03718">sock_</a></td></tr>
+<tr class="separator:ac6f88ba3c7fe5a885703b50c04f03718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a5e72f42fe7107cd3dcdf906ba63146" id="r_a7a5e72f42fe7107cd3dcdf906ba63146"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#a7a5e72f42fe7107cd3dcdf906ba63146">read_timeout_sec_</a></td></tr>
+<tr class="separator:a7a5e72f42fe7107cd3dcdf906ba63146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f1629dad964b42082b42204b1bdd75" id="r_ac6f1629dad964b42082b42204b1bdd75"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#ac6f1629dad964b42082b42204b1bdd75">read_timeout_usec_</a></td></tr>
+<tr class="separator:ac6f1629dad964b42082b42204b1bdd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5733e7df4e3dbbfb3e5e33915e62039" id="r_ad5733e7df4e3dbbfb3e5e33915e62039"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#ad5733e7df4e3dbbfb3e5e33915e62039">write_timeout_sec_</a></td></tr>
+<tr class="separator:ad5733e7df4e3dbbfb3e5e33915e62039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432d2eccbd25538c633f8b06a85ae360" id="r_a432d2eccbd25538c633f8b06a85ae360"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#a432d2eccbd25538c633f8b06a85ae360">write_timeout_usec_</a></td></tr>
+<tr class="separator:a432d2eccbd25538c633f8b06a85ae360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9844bde8cb9e892a9a9f2377d4d54c36" id="r_a9844bde8cb9e892a9a9f2377d4d54c36"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#a9844bde8cb9e892a9a9f2377d4d54c36">read_buff_</a></td></tr>
+<tr class="separator:a9844bde8cb9e892a9a9f2377d4d54c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0598fa10294a3e385dbe1a67bd0be029" id="r_a0598fa10294a3e385dbe1a67bd0be029"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#a0598fa10294a3e385dbe1a67bd0be029">read_buff_off_</a> = 0</td></tr>
+<tr class="separator:a0598fa10294a3e385dbe1a67bd0be029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a398d691720f00689664fc32ef562d0aa" id="r_a398d691720f00689664fc32ef562d0aa"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#a398d691720f00689664fc32ef562d0aa">read_buff_content_size_</a> = 0</td></tr>
+<tr class="separator:a398d691720f00689664fc32ef562d0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静态 Private 属性</h2></td></tr>
+<tr class="memitem:aa8b998f3ffc7263308f1f666c5bddc5e" id="r_aa8b998f3ffc7263308f1f666c5bddc5e"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#aa8b998f3ffc7263308f1f666c5bddc5e">read_buff_size_</a> = 1024 * 4</td></tr>
+<tr class="separator:aa8b998f3ffc7263308f1f666c5bddc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l02515">2515</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="af03ab5852d0c5a1fd527a1b19d2d8250" name="af03ab5852d0c5a1fd527a1b19d2d8250"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af03ab5852d0c5a1fd527a1b19d2d8250">&#9670;&#160;</a></span>SocketStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html">SocketStream</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="httplib_8h.html#a84d69664998f9fc285147c6d1382a6fb">socket_t</a>&#160;</td>
+          <td class="paramname"><em>sock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>read_timeout_sec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>read_timeout_usec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>write_timeout_sec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>write_timeout_usec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l05004">5004</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abe290e467c2bd442bd5ec4456ed5c1a3" name="abe290e467c2bd442bd5ec4456ed5c1a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe290e467c2bd442bd5ec4456ed5c1a3">&#9670;&#160;</a></span>~SocketStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="classhttplib_1_1detail_1_1SocketStream.html">SocketStream</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l05013">5013</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ac02151dda8beb39183084ab3d4c0ceaa" name="ac02151dda8beb39183084ab3d4c0ceaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac02151dda8beb39183084ab3d4c0ceaa">&#9670;&#160;</a></span>get_local_ip_and_port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void get_local_ip_and_port </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classhttplib_1_1Stream.html#a234464263f3d6b546d398afa4f4e858b">Stream</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l05086">5086</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="httplib_8h_source.html#l02950">httplib::detail::get_local_ip_and_port()</a> , 以及 <a class="el" href="httplib_8h_source.html#l02530">SocketStream::sock_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1detail_1_1SocketStream_ac02151dda8beb39183084ab3d4c0ceaa_cgraph.png" border="0" usemap="#aclasshttplib_1_1detail_1_1SocketStream_ac02151dda8beb39183084ab3d4c0ceaa_cgraph" alt=""/></div>
+<map name="aclasshttplib_1_1detail_1_1SocketStream_ac02151dda8beb39183084ab3d4c0ceaa_cgraph" id="aclasshttplib_1_1detail_1_1SocketStream_ac02151dda8beb39183084ab3d4c0ceaa_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,169,62"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#af4d529d0004f6b871efed3385061bb49" title=" " alt="" coords="217,29,360,69"/>
+<area shape="poly" title=" " alt="" coords="169,47,203,47,203,52,169,52"/>
+<area shape="poly" title=" " alt="" coords="253,30,251,20,257,11,270,5,289,3,311,6,323,13,320,17,309,11,289,8,271,10,260,15,256,21,258,28"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a4cacdfd300ffbe98456ff9761adc4214" title=" " alt="" coords="408,29,547,69"/>
+<area shape="poly" title=" " alt="" coords="360,47,394,47,394,52,360,52"/>
+<area shape="poly" title=" " alt="" coords="442,30,440,20,446,11,458,5,477,3,499,6,511,13,509,17,498,11,477,8,460,10,449,15,445,21,447,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa2f42c37054e893b8c2cb1632adb923f" name="aa2f42c37054e893b8c2cb1632adb923f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f42c37054e893b8c2cb1632adb923f">&#9670;&#160;</a></span>get_remote_ip_and_port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void get_remote_ip_and_port </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classhttplib_1_1Stream.html#a35e5e05860f1e46b335c7020d3e3925f">Stream</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l05081">5081</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="httplib_8h_source.html#l02959">httplib::detail::get_remote_ip_and_port()</a> , 以及 <a class="el" href="httplib_8h_source.html#l02530">SocketStream::sock_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1detail_1_1SocketStream_aa2f42c37054e893b8c2cb1632adb923f_cgraph.png" border="0" usemap="#aclasshttplib_1_1detail_1_1SocketStream_aa2f42c37054e893b8c2cb1632adb923f_cgraph" alt=""/></div>
+<map name="aclasshttplib_1_1detail_1_1SocketStream_aa2f42c37054e893b8c2cb1632adb923f_cgraph" id="aclasshttplib_1_1detail_1_1SocketStream_aa2f42c37054e893b8c2cb1632adb923f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,185,62"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a99ce7731b1177f0bc09f009234b42d94" title=" " alt="" coords="233,29,392,69"/>
+<area shape="poly" title=" " alt="" coords="186,47,220,47,220,52,186,52"/>
+<area shape="poly" title=" " alt="" coords="276,30,274,20,280,11,293,5,313,3,336,6,348,13,345,17,334,11,313,8,294,10,283,15,279,21,281,28"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a4cacdfd300ffbe98456ff9761adc4214" title=" " alt="" coords="440,29,579,69"/>
+<area shape="poly" title=" " alt="" coords="392,47,426,47,426,52,392,52"/>
+<area shape="poly" title=" " alt="" coords="473,30,470,20,476,11,489,5,509,3,532,6,545,13,542,17,531,11,509,8,491,10,480,15,476,21,478,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a355beed1b8bbb6d2a6ef941d4d07d2c6" name="a355beed1b8bbb6d2a6ef941d4d07d2c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a355beed1b8bbb6d2a6ef941d4d07d2c6">&#9670;&#160;</a></span>is_readable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_readable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classhttplib_1_1Stream.html#af5f2e50ee8f365759ab169e553c022a4">Stream</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l05015">5015</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="httplib_8h_source.html#l02531">SocketStream::read_timeout_sec_</a>, <a class="el" href="httplib_8h_source.html#l02532">SocketStream::read_timeout_usec_</a>, <a class="el" href="httplib_8h_source.html#l02391">httplib::detail::select_read()</a> , 以及 <a class="el" href="httplib_8h_source.html#l02530">SocketStream::sock_</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l05024">SocketStream::read()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1detail_1_1SocketStream_a355beed1b8bbb6d2a6ef941d4d07d2c6_cgraph.png" border="0" usemap="#aclasshttplib_1_1detail_1_1SocketStream_a355beed1b8bbb6d2a6ef941d4d07d2c6_cgraph" alt=""/></div>
+<map name="aclasshttplib_1_1detail_1_1SocketStream_a355beed1b8bbb6d2a6ef941d4d07d2c6_cgraph" id="aclasshttplib_1_1detail_1_1SocketStream_a355beed1b8bbb6d2a6ef941d4d07d2c6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,103,38"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#aafabd6167493d9f8e77accea2fa856b5" title=" " alt="" coords="151,13,343,38"/>
+<area shape="poly" title=" " alt="" coords="103,23,137,23,137,28,103,28"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#abb548803394819eca2a15092124b101f" title=" " alt="" coords="391,5,552,45"/>
+<area shape="poly" title=" " alt="" coords="343,23,377,23,377,28,343,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1detail_1_1SocketStream_a355beed1b8bbb6d2a6ef941d4d07d2c6_icgraph.png" border="0" usemap="#aclasshttplib_1_1detail_1_1SocketStream_a355beed1b8bbb6d2a6ef941d4d07d2c6_icgraph" alt=""/></div>
+<map name="aclasshttplib_1_1detail_1_1SocketStream_a355beed1b8bbb6d2a6ef941d4d07d2c6_icgraph" id="aclasshttplib_1_1detail_1_1SocketStream_a355beed1b8bbb6d2a6ef941d4d07d2c6_icgraph">
+<area shape="rect" title=" " alt="" coords="104,5,201,31"/>
+<area shape="rect" href="classhttplib_1_1detail_1_1SocketStream.html#a9e18d934b3b0c664f52110edde56a4f8" title=" " alt="" coords="5,5,56,31"/>
+<area shape="poly" title=" " alt="" coords="90,21,56,21,56,15,90,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4d7ff5384d3dfff884733fc9ed4d717d" name="a4d7ff5384d3dfff884733fc9ed4d717d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d7ff5384d3dfff884733fc9ed4d717d">&#9670;&#160;</a></span>is_writable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_writable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classhttplib_1_1Stream.html#a7a884813bb9b05916e723e46e1da1ac6">Stream</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l05019">5019</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="httplib_8h_source.html#l02504">httplib::detail::is_socket_alive()</a>, <a class="el" href="httplib_8h_source.html#l02419">httplib::detail::select_write()</a>, <a class="el" href="httplib_8h_source.html#l02530">SocketStream::sock_</a>, <a class="el" href="httplib_8h_source.html#l02533">SocketStream::write_timeout_sec_</a> , 以及 <a class="el" href="httplib_8h_source.html#l02534">SocketStream::write_timeout_usec_</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l05070">SocketStream::write()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1detail_1_1SocketStream_a4d7ff5384d3dfff884733fc9ed4d717d_cgraph.png" border="0" usemap="#aclasshttplib_1_1detail_1_1SocketStream_a4d7ff5384d3dfff884733fc9ed4d717d_cgraph" alt=""/></div>
+<map name="aclasshttplib_1_1detail_1_1SocketStream_a4d7ff5384d3dfff884733fc9ed4d717d_cgraph" id="aclasshttplib_1_1detail_1_1SocketStream_a4d7ff5384d3dfff884733fc9ed4d717d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,89,99,114"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a5e3626678ce0a5789a73d9f7f37d5e0a" title=" " alt="" coords="161,49,289,89"/>
+<area shape="poly" title=" " alt="" coords="98,90,147,81,148,86,99,95"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#ae52afceaea48a363cef0f4e85ca5500f" title=" " alt="" coords="147,113,303,153"/>
+<area shape="poly" title=" " alt="" coords="99,107,133,114,132,119,98,113"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a558ebf9d3ec32636484581ddd055f540" title=" " alt="" coords="373,5,520,45"/>
+<area shape="poly" title=" " alt="" coords="288,54,359,40,360,45,289,59"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#aafabd6167493d9f8e77accea2fa856b5" title=" " alt="" coords="351,70,543,95"/>
+<area shape="poly" title=" " alt="" coords="289,70,337,73,337,79,289,76"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#abb548803394819eca2a15092124b101f" title=" " alt="" coords="591,63,752,103"/>
+<area shape="poly" title=" " alt="" coords="521,41,580,57,578,62,519,47"/>
+<area shape="poly" title=" " alt="" coords="543,80,577,80,577,85,543,85"/>
+<area shape="poly" title=" " alt="" coords="303,127,416,119,542,105,577,100,577,105,543,111,417,124,303,132"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1detail_1_1SocketStream_a4d7ff5384d3dfff884733fc9ed4d717d_icgraph.png" border="0" usemap="#aclasshttplib_1_1detail_1_1SocketStream_a4d7ff5384d3dfff884733fc9ed4d717d_icgraph" alt=""/></div>
+<map name="aclasshttplib_1_1detail_1_1SocketStream_a4d7ff5384d3dfff884733fc9ed4d717d_icgraph" id="aclasshttplib_1_1detail_1_1SocketStream_a4d7ff5384d3dfff884733fc9ed4d717d_icgraph">
+<area shape="rect" title=" " alt="" coords="108,5,201,31"/>
+<area shape="rect" href="classhttplib_1_1detail_1_1SocketStream.html#a31e830df591a731e5ad1069d6551b259" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9e18d934b3b0c664f52110edde56a4f8" name="a9e18d934b3b0c664f52110edde56a4f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e18d934b3b0c664f52110edde56a4f8">&#9670;&#160;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t read </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classhttplib_1_1Stream.html#a947476f03b5e378bbb404a304a5f700c">Stream</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l05024">5024</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="httplib_8h_source.html#l00105">CPPHTTPLIB_RECV_FLAGS</a>, <a class="el" href="httplib_8h_source.html#l05015">SocketStream::is_readable()</a>, <a class="el" href="httplib_8h_source.html#l02536">SocketStream::read_buff_</a>, <a class="el" href="httplib_8h_source.html#l02538">SocketStream::read_buff_content_size_</a>, <a class="el" href="httplib_8h_source.html#l02537">SocketStream::read_buff_off_</a>, <a class="el" href="httplib_8h_source.html#l02540">SocketStream::read_buff_size_</a>, <a class="el" href="httplib_8h_source.html#l02366">httplib::detail::read_socket()</a> , 以及 <a class="el" href="httplib_8h_source.html#l02530">SocketStream::sock_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1detail_1_1SocketStream_a9e18d934b3b0c664f52110edde56a4f8_cgraph.png" border="0" usemap="#aclasshttplib_1_1detail_1_1SocketStream_a9e18d934b3b0c664f52110edde56a4f8_cgraph" alt=""/></div>
+<map name="aclasshttplib_1_1detail_1_1SocketStream_a9e18d934b3b0c664f52110edde56a4f8_cgraph" id="aclasshttplib_1_1detail_1_1SocketStream_a9e18d934b3b0c664f52110edde56a4f8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,35,56,60"/>
+<area shape="rect" href="classhttplib_1_1detail_1_1SocketStream.html#a355beed1b8bbb6d2a6ef941d4d07d2c6" title=" " alt="" coords="104,8,201,33"/>
+<area shape="poly" title=" " alt="" coords="56,39,90,32,91,37,57,45"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a558ebf9d3ec32636484581ddd055f540" title=" " alt="" coords="272,55,419,95"/>
+<area shape="poly" title=" " alt="" coords="57,47,259,65,258,70,56,52"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#aafabd6167493d9f8e77accea2fa856b5" title=" " alt="" coords="249,5,441,31"/>
+<area shape="poly" title=" " alt="" coords="201,17,235,17,236,22,201,23"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#abb548803394819eca2a15092124b101f" title=" " alt="" coords="489,27,651,67"/>
+<area shape="poly" title=" " alt="" coords="442,28,476,32,476,38,441,33"/>
+<area shape="poly" title=" " alt="" coords="418,64,475,56,476,62,419,69"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac898d15674a6a000c90fb37451c036da" name="ac898d15674a6a000c90fb37451c036da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac898d15674a6a000c90fb37451c036da">&#9670;&#160;</a></span>socket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="httplib_8h.html#a84d69664998f9fc285147c6d1382a6fb">socket_t</a> socket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classhttplib_1_1Stream.html#a520b335a2f640917c97571df1c2fc9cc">Stream</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l05091">5091</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="httplib_8h_source.html#l02530">SocketStream::sock_</a>.</p>
+
+</div>
+</div>
+<a id="a31e830df591a731e5ad1069d6551b259" name="a31e830df591a731e5ad1069d6551b259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31e830df591a731e5ad1069d6551b259">&#9670;&#160;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t write </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classhttplib_1_1Stream.html#a3ebe1c6187e849c8b7c986b9a055cdd5">Stream</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l05070">5070</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="httplib_8h_source.html#l00109">CPPHTTPLIB_SEND_FLAGS</a>, <a class="el" href="httplib_8h_source.html#l05019">SocketStream::is_writable()</a>, <a class="el" href="httplib_8h_source.html#l02378">httplib::detail::send_socket()</a> , 以及 <a class="el" href="httplib_8h_source.html#l02530">SocketStream::sock_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1detail_1_1SocketStream_a31e830df591a731e5ad1069d6551b259_cgraph.png" border="0" usemap="#aclasshttplib_1_1detail_1_1SocketStream_a31e830df591a731e5ad1069d6551b259_cgraph" alt=""/></div>
+<map name="aclasshttplib_1_1detail_1_1SocketStream_a31e830df591a731e5ad1069d6551b259_cgraph" id="aclasshttplib_1_1detail_1_1SocketStream_a31e830df591a731e5ad1069d6551b259_cgraph">
+<area shape="rect" title=" " alt="" coords="5,146,60,171"/>
+<area shape="rect" href="classhttplib_1_1detail_1_1SocketStream.html#a4d7ff5384d3dfff884733fc9ed4d717d" title=" " alt="" coords="135,117,229,142"/>
+<area shape="poly" title=" " alt="" coords="60,151,121,139,122,144,61,156"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a238d84c07bdb35a9d7c555abed95e8bd" title=" " alt="" coords="108,167,256,207"/>
+<area shape="poly" title=" " alt="" coords="61,161,95,168,94,173,60,166"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a5e3626678ce0a5789a73d9f7f37d5e0a" title=" " alt="" coords="318,45,446,85"/>
+<area shape="poly" title=" " alt="" coords="222,114,305,87,307,92,224,119"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#ae52afceaea48a363cef0f4e85ca5500f" title=" " alt="" coords="304,109,460,149"/>
+<area shape="poly" title=" " alt="" coords="229,127,290,127,290,132,229,132"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a558ebf9d3ec32636484581ddd055f540" title=" " alt="" coords="531,5,677,45"/>
+<area shape="poly" title=" " alt="" coords="446,51,516,38,517,44,447,56"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#aafabd6167493d9f8e77accea2fa856b5" title=" " alt="" coords="508,70,700,95"/>
+<area shape="poly" title=" " alt="" coords="446,68,494,71,494,77,446,73"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#abb548803394819eca2a15092124b101f" title=" " alt="" coords="748,88,909,128"/>
+<area shape="poly" title=" " alt="" coords="667,43,701,55,767,80,765,85,699,60,665,48"/>
+<area shape="poly" title=" " alt="" coords="700,91,735,95,734,100,700,96"/>
+<area shape="poly" title=" " alt="" coords="460,123,734,110,734,115,460,128"/>
+<area shape="poly" title=" " alt="" coords="256,178,460,159,700,127,734,121,735,127,700,132,460,164,256,183"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a9844bde8cb9e892a9a9f2377d4d54c36" name="a9844bde8cb9e892a9a9f2377d4d54c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9844bde8cb9e892a9a9f2377d4d54c36">&#9670;&#160;</a></span>read_buff_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;char&gt; read_buff_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l02536">2536</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l05024">SocketStream::read()</a>.</p>
+
+</div>
+</div>
+<a id="a398d691720f00689664fc32ef562d0aa" name="a398d691720f00689664fc32ef562d0aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a398d691720f00689664fc32ef562d0aa">&#9670;&#160;</a></span>read_buff_content_size_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t read_buff_content_size_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l02538">2538</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l05024">SocketStream::read()</a>.</p>
+
+</div>
+</div>
+<a id="a0598fa10294a3e385dbe1a67bd0be029" name="a0598fa10294a3e385dbe1a67bd0be029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0598fa10294a3e385dbe1a67bd0be029">&#9670;&#160;</a></span>read_buff_off_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t read_buff_off_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l02537">2537</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l05024">SocketStream::read()</a>.</p>
+
+</div>
+</div>
+<a id="aa8b998f3ffc7263308f1f666c5bddc5e" name="aa8b998f3ffc7263308f1f666c5bddc5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8b998f3ffc7263308f1f666c5bddc5e">&#9670;&#160;</a></span>read_buff_size_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t read_buff_size_ = 1024 * 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l02540">2540</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l05024">SocketStream::read()</a>.</p>
+
+</div>
+</div>
+<a id="a7a5e72f42fe7107cd3dcdf906ba63146" name="a7a5e72f42fe7107cd3dcdf906ba63146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a5e72f42fe7107cd3dcdf906ba63146">&#9670;&#160;</a></span>read_timeout_sec_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t read_timeout_sec_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l02531">2531</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l05015">SocketStream::is_readable()</a>.</p>
+
+</div>
+</div>
+<a id="ac6f1629dad964b42082b42204b1bdd75" name="ac6f1629dad964b42082b42204b1bdd75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f1629dad964b42082b42204b1bdd75">&#9670;&#160;</a></span>read_timeout_usec_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t read_timeout_usec_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l02532">2532</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l05015">SocketStream::is_readable()</a>.</p>
+
+</div>
+</div>
+<a id="ac6f88ba3c7fe5a885703b50c04f03718" name="ac6f88ba3c7fe5a885703b50c04f03718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f88ba3c7fe5a885703b50c04f03718">&#9670;&#160;</a></span>sock_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="httplib_8h.html#a84d69664998f9fc285147c6d1382a6fb">socket_t</a> sock_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l02530">2530</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l05086">SocketStream::get_local_ip_and_port()</a>, <a class="el" href="httplib_8h_source.html#l05081">SocketStream::get_remote_ip_and_port()</a>, <a class="el" href="httplib_8h_source.html#l05015">SocketStream::is_readable()</a>, <a class="el" href="httplib_8h_source.html#l05019">SocketStream::is_writable()</a>, <a class="el" href="httplib_8h_source.html#l05024">SocketStream::read()</a>, <a class="el" href="httplib_8h_source.html#l05091">SocketStream::socket()</a> , 以及 <a class="el" href="httplib_8h_source.html#l05070">SocketStream::write()</a>.</p>
+
+</div>
+</div>
+<a id="ad5733e7df4e3dbbfb3e5e33915e62039" name="ad5733e7df4e3dbbfb3e5e33915e62039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5733e7df4e3dbbfb3e5e33915e62039">&#9670;&#160;</a></span>write_timeout_sec_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t write_timeout_sec_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l02533">2533</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l05019">SocketStream::is_writable()</a>.</p>
+
+</div>
+</div>
+<a id="a432d2eccbd25538c633f8b06a85ae360" name="a432d2eccbd25538c633f8b06a85ae360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432d2eccbd25538c633f8b06a85ae360">&#9670;&#160;</a></span>write_timeout_usec_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t write_timeout_usec_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l02534">2534</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l05019">SocketStream::is_writable()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/server/<a class="el" href="httplib_8h_source.html">httplib.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacehttplib.html">httplib</a></li><li class="navelem"><a class="el" href="namespacehttplib_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classhttplib_1_1detail_1_1SocketStream.html">SocketStream</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

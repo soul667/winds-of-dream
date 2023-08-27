@@ -1,0 +1,9 @@
+<map id="ClientImpl" name="ClientImpl">
+<area shape="rect" id="Node000001" title=" " alt="" coords="80,401,169,427"/>
+<area shape="rect" id="Node000002" href="$structhttplib_1_1ClientImpl_1_1Socket.html" title=" " alt="" coords="5,5,71,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="35,44,26,107,23,193,26,240,34,288,47,333,68,376,80,389,96,399,93,403,77,393,64,379,42,335,28,289,20,241,17,193,21,107,30,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="95,5,155,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,44,127,401,122,401,122,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="255,5,314,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="294,44,306,109,312,198,309,246,300,293,283,339,257,379,239,395,217,406,170,416,169,410,215,401,236,391,253,376,279,336,295,292,304,245,307,198,301,110,289,45"/>
+</map>

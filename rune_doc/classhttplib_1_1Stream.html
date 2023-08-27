@@ -1,0 +1,1083 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“创梦之翼2023步兵自瞄文档”: Stream类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">“创梦之翼2023步兵自瞄文档”<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">xxx</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classhttplib_1_1Stream.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classhttplib_1_1Stream-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Stream类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="httplib_8h_source.html">httplib.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Stream 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1Stream__inherit__graph.png" border="0" usemap="#aStream_inherit__map" alt="Inheritance graph"/></div>
+<map name="aStream_inherit__map" id="aStream_inherit__map">
+<area shape="rect" title=" " alt="" coords="91,5,161,31"/>
+<area shape="rect" href="classhttplib_1_1detail_1_1BufferStream.html" title=" " alt="" coords="5,79,113,104"/>
+<area shape="poly" title=" " alt="" coords="107,43,72,80,68,77,104,39"/>
+<area shape="rect" href="classhttplib_1_1detail_1_1SocketStream.html" title=" " alt="" coords="138,79,250,104"/>
+<area shape="poly" title=" " alt="" coords="148,39,185,77,181,80,145,42"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:acf845f4bb63730e9f7d42fe6b646d7b9" id="r_acf845f4bb63730e9f7d42fe6b646d7b9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#acf845f4bb63730e9f7d42fe6b646d7b9">~Stream</a> ()=default</td></tr>
+<tr class="separator:acf845f4bb63730e9f7d42fe6b646d7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f2e50ee8f365759ab169e553c022a4" id="r_af5f2e50ee8f365759ab169e553c022a4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#af5f2e50ee8f365759ab169e553c022a4">is_readable</a> () const =0</td></tr>
+<tr class="separator:af5f2e50ee8f365759ab169e553c022a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a884813bb9b05916e723e46e1da1ac6" id="r_a7a884813bb9b05916e723e46e1da1ac6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#a7a884813bb9b05916e723e46e1da1ac6">is_writable</a> () const =0</td></tr>
+<tr class="separator:a7a884813bb9b05916e723e46e1da1ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947476f03b5e378bbb404a304a5f700c" id="r_a947476f03b5e378bbb404a304a5f700c"><td class="memItemLeft" align="right" valign="top">virtual ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#a947476f03b5e378bbb404a304a5f700c">read</a> (char *ptr, size_t size)=0</td></tr>
+<tr class="separator:a947476f03b5e378bbb404a304a5f700c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebe1c6187e849c8b7c986b9a055cdd5" id="r_a3ebe1c6187e849c8b7c986b9a055cdd5"><td class="memItemLeft" align="right" valign="top">virtual ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#a3ebe1c6187e849c8b7c986b9a055cdd5">write</a> (const char *ptr, size_t size)=0</td></tr>
+<tr class="separator:a3ebe1c6187e849c8b7c986b9a055cdd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e5e05860f1e46b335c7020d3e3925f" id="r_a35e5e05860f1e46b335c7020d3e3925f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#a35e5e05860f1e46b335c7020d3e3925f">get_remote_ip_and_port</a> (std::string &amp;ip, int &amp;port) const =0</td></tr>
+<tr class="separator:a35e5e05860f1e46b335c7020d3e3925f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a234464263f3d6b546d398afa4f4e858b" id="r_a234464263f3d6b546d398afa4f4e858b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#a234464263f3d6b546d398afa4f4e858b">get_local_ip_and_port</a> (std::string &amp;ip, int &amp;port) const =0</td></tr>
+<tr class="separator:a234464263f3d6b546d398afa4f4e858b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a520b335a2f640917c97571df1c2fc9cc" id="r_a520b335a2f640917c97571df1c2fc9cc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="httplib_8h.html#a84d69664998f9fc285147c6d1382a6fb">socket_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#a520b335a2f640917c97571df1c2fc9cc">socket</a> () const =0</td></tr>
+<tr class="separator:a520b335a2f640917c97571df1c2fc9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ced5eaa5862159f8aafc9ab773fda8" id="r_ab0ced5eaa5862159f8aafc9ab773fda8"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ab0ced5eaa5862159f8aafc9ab773fda8"><td class="memTemplItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#ab0ced5eaa5862159f8aafc9ab773fda8">write_format</a> (const char *fmt, const Args &amp;...args)</td></tr>
+<tr class="separator:ab0ced5eaa5862159f8aafc9ab773fda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96dc9102421e3b364e5a0528cf7fc6d" id="r_ae96dc9102421e3b364e5a0528cf7fc6d"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#ae96dc9102421e3b364e5a0528cf7fc6d">write</a> (const char *ptr)</td></tr>
+<tr class="separator:ae96dc9102421e3b364e5a0528cf7fc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad141683608a735cd0470e4968ccb76db" id="r_ad141683608a735cd0470e4968ccb76db"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttplib_1_1Stream.html#ad141683608a735cd0470e4968ccb76db">write</a> (const std::string &amp;s)</td></tr>
+<tr class="separator:ad141683608a735cd0470e4968ccb76db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l00552">552</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="acf845f4bb63730e9f7d42fe6b646d7b9" name="acf845f4bb63730e9f7d42fe6b646d7b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf845f4bb63730e9f7d42fe6b646d7b9">&#9670;&#160;</a></span>~Stream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="classhttplib_1_1Stream.html">Stream</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a234464263f3d6b546d398afa4f4e858b" name="a234464263f3d6b546d398afa4f4e858b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a234464263f3d6b546d398afa4f4e858b">&#9670;&#160;</a></span>get_local_ip_and_port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void get_local_ip_and_port </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classhttplib_1_1detail_1_1BufferStream.html#ac02151dda8beb39183084ab3d4c0ceaa">BufferStream</a> , 以及 <a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#ac02151dda8beb39183084ab3d4c0ceaa">SocketStream</a> 内被实现.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l06042">Server::process_request()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1Stream_a234464263f3d6b546d398afa4f4e858b_icgraph.png" border="0" usemap="#aclasshttplib_1_1Stream_a234464263f3d6b546d398afa4f4e858b_icgraph" alt=""/></div>
+<map name="aclasshttplib_1_1Stream_a234464263f3d6b546d398afa4f4e858b_icgraph" id="aclasshttplib_1_1Stream_a234464263f3d6b546d398afa4f4e858b_icgraph">
+<area shape="rect" title=" " alt="" coords="1467,77,1631,102"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a38604c92fe06817dda47d499106cd097" title=" " alt="" coords="1247,69,1419,109"/>
+<area shape="poly" title=" " alt="" coords="1453,92,1419,92,1419,87,1453,87"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a1959231e7d593c0e9b77ba0b04d8f322" title=" " alt="" coords="1027,69,1199,109"/>
+<area shape="poly" title=" " alt="" coords="1232,92,1199,92,1199,87,1232,87"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a72c0538dd85db932f217a9165d4be4eb" title=" " alt="" coords="820,69,979,109"/>
+<area shape="poly" title=" " alt="" coords="1013,92,979,92,979,87,1013,87"/>
+<area shape="rect" href="classhttplib_1_1Server.html#ae7de7ceee946e941ceb5bf17aea9b9ea" title=" " alt="" coords="613,47,772,73"/>
+<area shape="poly" title=" " alt="" coords="806,79,772,74,772,69,807,74"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c8b29132c38e96550491c2c0bc6eca4" title=" " alt="" coords="613,97,772,137"/>
+<area shape="poly" title=" " alt="" coords="807,105,772,109,772,104,806,99"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a074576dea67414895af400385931267d" title=" " alt="" coords="403,12,565,52"/>
+<area shape="poly" title=" " alt="" coords="599,50,565,46,566,40,600,45"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c5802f6315e9e6cae9e77aea448f06d" title=" " alt="" coords="204,12,355,52"/>
+<area shape="poly" title=" " alt="" coords="389,35,355,35,355,29,389,29"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a06eda577a8d5bbe97dee432488d8710e" title=" " alt="" coords="5,5,156,45"/>
+<area shape="poly" title=" " alt="" coords="190,32,156,31,156,25,191,26"/>
+<area shape="rect" href="classhttplib_1_1Server.html#aaf02dfe63190429fb24e30cd84d4e56c" title=" " alt="" coords="5,69,156,109"/>
+<area shape="poly" title=" " alt="" coords="197,58,152,72,150,67,196,53"/>
+<area shape="poly" title=" " alt="" coords="169,82,613,61,613,66,170,88"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a35e5e05860f1e46b335c7020d3e3925f" name="a35e5e05860f1e46b335c7020d3e3925f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35e5e05860f1e46b335c7020d3e3925f">&#9670;&#160;</a></span>get_remote_ip_and_port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void get_remote_ip_and_port </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classhttplib_1_1detail_1_1BufferStream.html#aa2f42c37054e893b8c2cb1632adb923f">BufferStream</a> , 以及 <a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#aa2f42c37054e893b8c2cb1632adb923f">SocketStream</a> 内被实现.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l06042">Server::process_request()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1Stream_a35e5e05860f1e46b335c7020d3e3925f_icgraph.png" border="0" usemap="#aclasshttplib_1_1Stream_a35e5e05860f1e46b335c7020d3e3925f_icgraph" alt=""/></div>
+<map name="aclasshttplib_1_1Stream_a35e5e05860f1e46b335c7020d3e3925f_icgraph" id="aclasshttplib_1_1Stream_a35e5e05860f1e46b335c7020d3e3925f_icgraph">
+<area shape="rect" title=" " alt="" coords="1467,77,1647,102"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a38604c92fe06817dda47d499106cd097" title=" " alt="" coords="1247,69,1419,109"/>
+<area shape="poly" title=" " alt="" coords="1453,92,1419,92,1419,87,1453,87"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a1959231e7d593c0e9b77ba0b04d8f322" title=" " alt="" coords="1027,69,1199,109"/>
+<area shape="poly" title=" " alt="" coords="1232,92,1199,92,1199,87,1232,87"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a72c0538dd85db932f217a9165d4be4eb" title=" " alt="" coords="820,69,979,109"/>
+<area shape="poly" title=" " alt="" coords="1013,92,979,92,979,87,1013,87"/>
+<area shape="rect" href="classhttplib_1_1Server.html#ae7de7ceee946e941ceb5bf17aea9b9ea" title=" " alt="" coords="613,47,772,73"/>
+<area shape="poly" title=" " alt="" coords="806,79,772,74,772,69,807,74"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c8b29132c38e96550491c2c0bc6eca4" title=" " alt="" coords="613,97,772,137"/>
+<area shape="poly" title=" " alt="" coords="807,105,772,109,772,104,806,99"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a074576dea67414895af400385931267d" title=" " alt="" coords="403,12,565,52"/>
+<area shape="poly" title=" " alt="" coords="599,50,565,46,566,40,600,45"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c5802f6315e9e6cae9e77aea448f06d" title=" " alt="" coords="204,12,355,52"/>
+<area shape="poly" title=" " alt="" coords="389,35,355,35,355,29,389,29"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a06eda577a8d5bbe97dee432488d8710e" title=" " alt="" coords="5,5,156,45"/>
+<area shape="poly" title=" " alt="" coords="190,32,156,31,156,25,191,26"/>
+<area shape="rect" href="classhttplib_1_1Server.html#aaf02dfe63190429fb24e30cd84d4e56c" title=" " alt="" coords="5,69,156,109"/>
+<area shape="poly" title=" " alt="" coords="197,58,152,72,150,67,196,53"/>
+<area shape="poly" title=" " alt="" coords="169,82,613,61,613,66,170,88"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af5f2e50ee8f365759ab169e553c022a4" name="af5f2e50ee8f365759ab169e553c022a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f2e50ee8f365759ab169e553c022a4">&#9670;&#160;</a></span>is_readable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool is_readable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classhttplib_1_1detail_1_1BufferStream.html#a355beed1b8bbb6d2a6ef941d4d07d2c6">BufferStream</a> , 以及 <a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#a355beed1b8bbb6d2a6ef941d4d07d2c6">SocketStream</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a7a884813bb9b05916e723e46e1da1ac6" name="a7a884813bb9b05916e723e46e1da1ac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a884813bb9b05916e723e46e1da1ac6">&#9670;&#160;</a></span>is_writable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool is_writable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classhttplib_1_1detail_1_1BufferStream.html#a4d7ff5384d3dfff884733fc9ed4d717d">BufferStream</a> , 以及 <a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#a4d7ff5384d3dfff884733fc9ed4d717d">SocketStream</a> 内被实现.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l03705">httplib::detail::write_content()</a>, <a class="el" href="httplib_8h_source.html#l03783">httplib::detail::write_content_chunked()</a> , 以及 <a class="el" href="httplib_8h_source.html#l03751">httplib::detail::write_content_without_length()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1Stream_a7a884813bb9b05916e723e46e1da1ac6_icgraph.png" border="0" usemap="#aclasshttplib_1_1Stream_a7a884813bb9b05916e723e46e1da1ac6_icgraph" alt=""/></div>
+<map name="aclasshttplib_1_1Stream_a7a884813bb9b05916e723e46e1da1ac6_icgraph" id="aclasshttplib_1_1Stream_a7a884813bb9b05916e723e46e1da1ac6_icgraph">
+<area shape="rect" title=" " alt="" coords="2583,661,2676,687"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#ac16954af54db1a787c0b93b15faee3c5" title=" " alt="" coords="2368,742,2519,782"/>
+<area shape="poly" title=" " alt="" coords="2590,695,2488,744,2485,739,2588,690"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#ae6ce420a85649042db0b7c2600fa16e9" title=" " alt="" coords="2368,545,2519,585"/>
+<area shape="poly" title=" " alt="" coords="2594,657,2533,620,2478,587,2480,583,2536,616,2597,652"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#ad13e0333cc7030c3c8b9e19a1571fd87" title=" " alt="" coords="2352,654,2535,694"/>
+<area shape="poly" title=" " alt="" coords="2569,677,2535,677,2535,671,2569,671"/>
+<area shape="poly" title=" " alt="" coords="2474,730,2463,723,2443,721,2426,723,2415,727,2412,733,2414,741,2408,742,2406,732,2412,723,2424,717,2443,715,2465,718,2477,726"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a3b29f19f40659e44d34adcf3b7736f09" title=" " alt="" coords="2141,773,2291,813"/>
+<area shape="poly" title=" " alt="" coords="2355,777,2292,785,2291,780,2354,771"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#ae259fb5b6fdd05752db3f82821273a89" title=" " alt="" coords="2139,592,2293,647"/>
+<area shape="poly" title=" " alt="" coords="2397,737,2351,708,2258,649,2261,645,2353,704,2400,733"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a9c047d9ac1d4eb4aa9bea40ffb6cbea9" title=" " alt="" coords="1905,715,2080,755"/>
+<area shape="poly" title=" " alt="" coords="2354,759,2080,743,2080,738,2354,754"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#afd5cbf61981be207ba8f4eb22b1f828e" title=" " alt="" coords="2128,861,2304,901"/>
+<area shape="poly" title=" " alt="" coords="2393,791,2257,863,2254,858,2390,786"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#ab8f464de6859a4d550b5df29da982089" title=" " alt="" coords="1923,591,2062,631"/>
+<area shape="poly" title=" " alt="" coords="2125,619,2062,616,2062,611,2125,613"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a6de035aad823b7ae5fa8e0f48ed09bc4" title=" " alt="" coords="1711,577,1849,617"/>
+<area shape="poly" title=" " alt="" coords="1909,608,1849,604,1850,599,1910,603"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a42dae28c6560a1f871995926f484b5bb" title=" " alt="" coords="1496,457,1635,497"/>
+<area shape="poly" title=" " alt="" coords="1730,572,1601,499,1604,494,1732,567"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a824a47e22c0500112512a6b8c9208272" title=" " alt="" coords="1273,310,1411,350"/>
+<area shape="poly" title=" " alt="" coords="1521,451,1372,352,1375,348,1524,447"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#aa7ac58b0426f561c4f4aeef31a69d1a9" title=" " alt="" coords="1053,342,1191,382"/>
+<area shape="poly" title=" " alt="" coords="1259,345,1192,355,1191,349,1259,339"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a523f1098b8b5916cab950c8a047a3721" title=" " alt="" coords="1037,407,1207,432"/>
+<area shape="poly" title=" " alt="" coords="1292,359,1209,396,1172,409,1170,404,1207,392,1290,354"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a212e0a0bfdb07e6ad5e952ffa08684fb" title=" " alt="" coords="1037,100,1207,125"/>
+<area shape="poly" title=" " alt="" coords="1324,299,1305,262,1279,219,1246,176,1206,140,1183,128,1186,123,1210,136,1250,173,1284,216,1310,259,1329,296"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a4f18708d985c2b3da3884bd6705ab594" title=" " alt="" coords="1053,150,1191,190"/>
+<area shape="poly" title=" " alt="" coords="1314,301,1267,252,1238,227,1207,204,1184,192,1187,188,1209,200,1241,222,1270,248,1317,298"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a93df075c851425fc22821b03114d5396" title=" " alt="" coords="1053,214,1191,254"/>
+<area shape="poly" title=" " alt="" coords="1288,306,1207,268,1178,257,1180,252,1209,264,1290,301"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#abc53cfb610db4b7c79e003ef23584106" title=" " alt="" coords="1053,278,1191,318"/>
+<area shape="poly" title=" " alt="" coords="1259,321,1191,311,1192,305,1259,315"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a5d69bcd6ad213754eb257c0fae155a70" title=" " alt="" coords="1053,457,1191,497"/>
+<area shape="poly" title=" " alt="" coords="1313,362,1266,404,1209,446,1183,459,1181,454,1207,441,1263,400,1310,358"/>
+<area shape="poly" title=" " alt="" coords="1205,474,1496,474,1496,479,1205,479"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a96084c554b112c3feb6a0a5902cfeb41" title=" " alt="" coords="839,385,978,425"/>
+<area shape="poly" title=" " alt="" coords="1048,455,968,427,970,422,1050,450"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a7183f5495bfc8ffa1f6df50cb0b92d57" title=" " alt="" coords="833,449,985,504"/>
+<area shape="poly" title=" " alt="" coords="1039,479,985,479,985,474,1039,474"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a82e94dabc3156e5cbf5a59d54a91bff3" title=" " alt="" coords="628,233,767,273"/>
+<area shape="poly" title=" " alt="" coords="830,442,827,438,814,418,807,398,804,360,800,323,793,305,779,287,765,275,768,271,783,283,798,303,805,322,809,360,812,397,819,416,831,435,834,438"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a189e610a52b4490e7804520f52cabd7a" title=" " alt="" coords="628,297,767,337"/>
+<area shape="poly" title=" " alt="" coords="832,443,827,438,811,415,803,393,796,372,780,351,762,339,765,335,783,347,801,369,808,391,815,413,831,435,836,439"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#aac96e450612fec2fbb4e7f80b5e3c92d" title=" " alt="" coords="628,361,767,401"/>
+<area shape="poly" title=" " alt="" coords="841,445,780,415,752,403,754,398,782,410,843,441"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a250e83cafd27181f2c0a816e8b7bc92f" title=" " alt="" coords="628,425,767,465"/>
+<area shape="poly" title=" " alt="" coords="819,466,767,458,767,453,820,461"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a38ebdd91890fa9cda3aefc05b41c34fd" title=" " alt="" coords="628,489,767,529"/>
+<area shape="poly" title=" " alt="" coords="820,493,767,501,767,496,819,488"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a35fe9c8ee765e58bc71f75056cbc8d82" title=" " alt="" coords="628,553,767,593"/>
+<area shape="poly" title=" " alt="" coords="845,513,782,543,754,555,752,550,780,538,843,508"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a27d851a9f25e6733167cdd0c4f843716" title=" " alt="" coords="628,617,767,657"/>
+<area shape="poly" title=" " alt="" coords="880,516,837,563,783,607,761,619,758,614,780,602,833,559,876,513"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a544d84bfb3b01866864e55ba1596a271" title=" " alt="" coords="628,681,767,721"/>
+<area shape="poly" title=" " alt="" coords="893,518,850,595,819,635,783,671,764,683,761,678,780,667,815,632,845,592,888,515"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a423f731f682156568dde05884ccf3794" title=" " alt="" coords="628,745,767,785"/>
+<area shape="poly" title=" " alt="" coords="900,518,884,567,860,625,827,683,806,710,783,735,766,747,763,742,780,731,802,707,822,680,855,623,879,565,895,517"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a2c4e81f50b61f56b46c0ff1e9bb7ddcd" title=" " alt="" coords="613,809,781,835"/>
+<area shape="poly" title=" " alt="" coords="905,518,894,580,871,655,855,694,836,732,812,767,783,799,763,812,761,807,780,795,808,764,831,729,851,692,866,653,888,579,900,517"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a0f810e35fe082322f5f6425dcad9f14b" title=" " alt="" coords="613,859,781,884"/>
+<area shape="poly" title=" " alt="" coords="908,518,899,590,879,678,863,725,842,770,816,812,783,849,767,861,764,856,780,845,811,809,837,767,858,723,874,677,894,589,903,518"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#ab6ad592791ef4f24902429db688ffc72" title=" " alt="" coords="613,5,781,31"/>
+<area shape="poly" title=" " alt="" coords="829,441,827,438,811,411,800,384,795,358,793,333,797,283,808,235,818,187,820,140,817,117,810,93,797,68,779,44,766,33,769,29,783,40,802,66,815,91,822,115,826,140,823,188,813,236,803,284,798,333,800,358,805,383,816,409,832,435,833,438"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#aa49c49b89785086d3be3d46939ef0068" title=" " alt="" coords="613,55,781,80"/>
+<area shape="poly" title=" " alt="" coords="830,441,827,438,813,414,803,391,796,346,799,302,807,260,815,218,816,177,806,136,795,115,779,93,766,82,769,78,783,89,800,112,811,134,822,177,820,219,812,261,804,303,801,346,808,390,818,412,832,435,834,438"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a22113e92b2f56d5c7a0e3778824a6fb2" title=" " alt="" coords="613,104,781,129"/>
+<area shape="poly" title=" " alt="" coords="830,441,827,438,806,398,799,359,800,322,806,285,812,250,812,214,803,179,779,142,766,132,769,127,783,139,808,177,818,214,817,250,812,286,806,322,804,359,811,396,832,435,834,438"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a1ecbc65e4dc4b7f047f60666e3b29a6d" title=" " alt="" coords="621,153,773,208"/>
+<area shape="poly" title=" " alt="" coords="830,442,827,438,810,409,802,381,801,354,803,328,805,302,803,276,796,250,779,222,767,210,770,206,783,219,801,248,809,276,810,302,808,329,806,354,808,381,815,407,832,435,834,438"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a42c25bbcb26333f481f7e9e9cdcf7bac" title=" " alt="" coords="1703,755,1857,795"/>
+<area shape="poly" title=" " alt="" coords="1893,757,1858,763,1857,758,1892,752"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a693e2c382f78df00dddb96d76af96987" title=" " alt="" coords="1488,755,1643,795"/>
+<area shape="poly" title=" " alt="" coords="1688,778,1643,778,1643,773,1688,773"/>
+<area shape="rect" href="classhttplib_1_1Server.html#ac96174176abe6bda49dca359f0948115" title=" " alt="" coords="1476,819,1655,859"/>
+<area shape="poly" title=" " alt="" coords="1700,802,1634,822,1632,817,1698,797"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a38604c92fe06817dda47d499106cd097" title=" " alt="" coords="1256,819,1428,859"/>
+<area shape="poly" title=" " alt="" coords="1482,802,1413,822,1412,817,1481,797"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a1959231e7d593c0e9b77ba0b04d8f322" title=" " alt="" coords="1036,879,1208,919"/>
+<area shape="poly" title=" " alt="" coords="1255,866,1197,882,1195,877,1254,861"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a72c0538dd85db932f217a9165d4be4eb" title=" " alt="" coords="829,909,988,949"/>
+<area shape="poly" title=" " alt="" coords="1023,916,989,920,988,915,1022,910"/>
+<area shape="rect" href="classhttplib_1_1Server.html#ae7de7ceee946e941ceb5bf17aea9b9ea" title=" " alt="" coords="618,973,777,999"/>
+<area shape="poly" title=" " alt="" coords="822,955,746,976,744,971,821,950"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c8b29132c38e96550491c2c0bc6eca4" title=" " alt="" coords="618,909,777,949"/>
+<area shape="poly" title=" " alt="" coords="816,931,777,931,777,926,816,926"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a074576dea67414895af400385931267d" title=" " alt="" coords="403,937,565,977"/>
+<area shape="poly" title=" " alt="" coords="604,976,565,970,566,965,605,971"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c5802f6315e9e6cae9e77aea448f06d" title=" " alt="" coords="204,937,355,977"/>
+<area shape="poly" title=" " alt="" coords="389,959,355,959,355,954,389,954"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a06eda577a8d5bbe97dee432488d8710e" title=" " alt="" coords="5,930,156,970"/>
+<area shape="poly" title=" " alt="" coords="190,956,156,955,156,950,191,951"/>
+<area shape="rect" href="classhttplib_1_1Server.html#aaf02dfe63190429fb24e30cd84d4e56c" title=" " alt="" coords="5,994,156,1034"/>
+<area shape="poly" title=" " alt="" coords="197,983,152,996,150,991,196,978"/>
+<area shape="poly" title=" " alt="" coords="169,1007,617,987,618,992,170,1013"/>
+<area shape="poly" title=" " alt="" coords="1462,842,1428,842,1428,837,1462,837"/>
+<area shape="poly" title=" " alt="" coords="2171,855,2127,827,2023,758,2026,753,2129,822,2173,851"/>
+<area shape="poly" title=" " alt="" coords="2254,849,2240,842,2216,839,2195,841,2182,846,2177,852,2180,860,2175,861,2172,851,2179,842,2194,836,2216,834,2242,837,2256,844"/>
+<area shape="poly" title=" " alt="" coords="2355,588,2294,603,2293,598,2354,583"/>
+<area shape="poly" title=" " alt="" coords="2354,552,2301,549,2243,551,2184,561,2129,582,2112,594,2103,609,2095,625,2082,645,2016,717,2012,713,2078,642,2090,623,2098,606,2109,591,2127,577,2183,556,2242,545,2301,543,2354,547"/>
+<area shape="poly" title=" " alt="" coords="2474,533,2463,526,2443,523,2426,525,2415,530,2412,536,2414,544,2408,545,2406,535,2412,526,2424,520,2443,518,2465,521,2477,528"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#aa5fb3408c73ef4d22d1497307933ca2f" title=" " alt="" coords="2141,477,2291,517"/>
+<area shape="poly" title=" " alt="" coords="2362,543,2283,519,2284,514,2364,538"/>
+<area shape="poly" title=" " alt="" coords="2339,691,2081,726,2080,721,2338,686"/>
+<area shape="poly" title=" " alt="" coords="2474,642,2463,635,2443,633,2426,635,2415,639,2412,645,2414,653,2408,654,2406,644,2412,635,2424,629,2443,627,2465,630,2477,638"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a947476f03b5e378bbb404a304a5f700c" name="a947476f03b5e378bbb404a304a5f700c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a947476f03b5e378bbb404a304a5f700c">&#9670;&#160;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ssize_t read </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classhttplib_1_1detail_1_1BufferStream.html#a9e18d934b3b0c664f52110edde56a4f8">BufferStream</a> , 以及 <a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#a9e18d934b3b0c664f52110edde56a4f8">SocketStream</a> 内被实现.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l02309">stream_line_reader::getline()</a>, <a class="el" href="httplib_8h_source.html#l03490">httplib::detail::read_content_with_length()</a>, <a class="el" href="httplib_8h_source.html#l03523">httplib::detail::read_content_without_length()</a> , 以及 <a class="el" href="httplib_8h_source.html#l03512">httplib::detail::skip_content_with_length()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1Stream_a947476f03b5e378bbb404a304a5f700c_icgraph.png" border="0" usemap="#aclasshttplib_1_1Stream_a947476f03b5e378bbb404a304a5f700c_icgraph" alt=""/></div>
+<map name="aclasshttplib_1_1Stream_a947476f03b5e378bbb404a304a5f700c_icgraph" id="aclasshttplib_1_1Stream_a947476f03b5e378bbb404a304a5f700c_icgraph">
+<area shape="rect" title=" " alt="" coords="2543,361,2593,386"/>
+<area shape="rect" href="classhttplib_1_1detail_1_1stream__line__reader.html#ac65868a0a88bf0f2542bf1aae2bbd7f0" title=" " alt="" coords="2322,221,2485,261"/>
+<area shape="poly" title=" " alt="" coords="2552,350,2528,312,2493,275,2473,264,2476,259,2496,271,2532,308,2557,347"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a4c5253f6fd053ff050f0d14c6ec1ce1a" title=" " alt="" coords="2323,309,2484,349"/>
+<area shape="poly" title=" " alt="" coords="2529,366,2478,352,2479,347,2530,361"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a4187c871ba3804d715290c9bbe5f3eae" title=" " alt="" coords="2312,397,2495,437"/>
+<area shape="poly" title=" " alt="" coords="2530,386,2479,400,2478,395,2529,381"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a3a8b8accace91af91cf7e6464120d844" title=" " alt="" coords="2323,485,2484,525"/>
+<area shape="poly" title=" " alt="" coords="2549,399,2496,451,2443,487,2440,483,2493,447,2545,395"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a38604c92fe06817dda47d499106cd097" title=" " alt="" coords="1256,108,1428,148"/>
+<area shape="poly" title=" " alt="" coords="2375,213,2327,165,2296,142,2263,124,2189,99,2129,93,1986,99,1775,99,1589,106,1428,121,1428,115,1589,101,1775,93,1986,93,2129,88,2190,94,2265,119,2299,137,2330,161,2379,209"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#aefda3aacb133cd69a0d8225150e57280" title=" " alt="" coords="2113,309,2259,349"/>
+<area shape="poly" title=" " alt="" coords="2331,269,2313,276,2231,312,2229,307,2311,271,2329,264"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#ae29e51101516c2f7b28d808c53cfbc2b" title=" " alt="" coords="2113,157,2259,197"/>
+<area shape="poly" title=" " alt="" coords="2321,220,2254,200,2255,195,2323,215"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#acf834c304e8b5c89b3b7c8b1e660006c" title=" " alt="" coords="2108,221,2264,261"/>
+<area shape="poly" title=" " alt="" coords="2308,244,2264,244,2264,239,2308,239"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a1959231e7d593c0e9b77ba0b04d8f322" title=" " alt="" coords="1036,83,1208,123"/>
+<area shape="poly" title=" " alt="" coords="1242,119,1208,115,1208,110,1242,114"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a72c0538dd85db932f217a9165d4be4eb" title=" " alt="" coords="825,69,983,109"/>
+<area shape="poly" title=" " alt="" coords="1022,99,983,97,984,92,1022,94"/>
+<area shape="rect" href="classhttplib_1_1Server.html#ae7de7ceee946e941ceb5bf17aea9b9ea" title=" " alt="" coords="613,49,772,74"/>
+<area shape="poly" title=" " alt="" coords="811,80,772,74,772,69,811,74"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c8b29132c38e96550491c2c0bc6eca4" title=" " alt="" coords="613,99,772,139"/>
+<area shape="poly" title=" " alt="" coords="811,105,772,110,772,105,811,100"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a074576dea67414895af400385931267d" title=" " alt="" coords="403,12,565,52"/>
+<area shape="poly" title=" " alt="" coords="599,51,565,46,566,41,600,46"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c5802f6315e9e6cae9e77aea448f06d" title=" " alt="" coords="204,12,355,52"/>
+<area shape="poly" title=" " alt="" coords="389,35,355,35,355,29,389,29"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a06eda577a8d5bbe97dee432488d8710e" title=" " alt="" coords="5,5,156,45"/>
+<area shape="poly" title=" " alt="" coords="190,32,156,31,156,25,191,26"/>
+<area shape="rect" href="classhttplib_1_1Server.html#aaf02dfe63190429fb24e30cd84d4e56c" title=" " alt="" coords="5,69,156,109"/>
+<area shape="poly" title=" " alt="" coords="197,58,152,72,150,67,196,53"/>
+<area shape="poly" title=" " alt="" coords="169,83,613,62,613,68,170,88"/>
+<area shape="poly" title=" " alt="" coords="2220,298,2208,291,2186,288,2167,290,2155,295,2151,301,2153,308,2148,310,2146,300,2152,291,2166,285,2186,283,2210,286,2222,293"/>
+<area shape="poly" title=" " alt="" coords="2099,175,1428,136,1429,130,2099,170"/>
+<area shape="poly" title=" " alt="" coords="2220,146,2208,139,2186,136,2167,138,2155,143,2151,149,2153,156,2148,158,2146,148,2152,139,2166,133,2186,131,2210,134,2222,141"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a6de035aad823b7ae5fa8e0f48ed09bc4" title=" " alt="" coords="1915,235,2054,275"/>
+<area shape="poly" title=" " alt="" coords="2122,205,2038,237,2036,232,2120,200"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a42dae28c6560a1f871995926f484b5bb" title=" " alt="" coords="1707,439,1846,479"/>
+<area shape="poly" title=" " alt="" coords="1959,287,1911,344,1889,378,1863,409,1818,441,1815,436,1860,405,1885,374,1907,341,1955,283"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a824a47e22c0500112512a6b8c9208272" title=" " alt="" coords="1491,599,1629,639"/>
+<area shape="poly" title=" " alt="" coords="1739,489,1590,601,1587,596,1736,485"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#aa7ac58b0426f561c4f4aeef31a69d1a9" title=" " alt="" coords="1273,695,1411,735"/>
+<area shape="poly" title=" " alt="" coords="1509,647,1429,685,1400,697,1398,692,1427,680,1507,642"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a523f1098b8b5916cab950c8a047a3721" title=" " alt="" coords="1257,759,1427,785"/>
+<area shape="poly" title=" " alt="" coords="1537,651,1490,701,1461,727,1429,749,1401,762,1399,757,1427,744,1458,723,1487,697,1533,648"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a212e0a0bfdb07e6ad5e952ffa08684fb" title=" " alt="" coords="1257,809,1427,834"/>
+<area shape="poly" title=" " alt="" coords="1546,652,1527,687,1501,726,1468,766,1430,800,1408,811,1405,806,1426,795,1464,762,1497,723,1522,684,1541,649"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a4f18708d985c2b3da3884bd6705ab594" title=" " alt="" coords="1273,503,1411,543"/>
+<area shape="poly" title=" " alt="" coords="1507,595,1427,557,1398,545,1400,540,1429,552,1509,590"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a93df075c851425fc22821b03114d5396" title=" " alt="" coords="1273,567,1411,607"/>
+<area shape="poly" title=" " alt="" coords="1477,609,1411,599,1412,594,1478,604"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#abc53cfb610db4b7c79e003ef23584106" title=" " alt="" coords="1273,631,1411,671"/>
+<area shape="poly" title=" " alt="" coords="1478,633,1412,643,1411,638,1477,628"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a5d69bcd6ad213754eb257c0fae155a70" title=" " alt="" coords="1273,439,1411,479"/>
+<area shape="poly" title=" " alt="" coords="1532,590,1486,540,1457,515,1427,493,1405,481,1407,477,1429,488,1460,511,1489,537,1536,586"/>
+<area shape="poly" title=" " alt="" coords="1425,456,1707,456,1707,461,1425,461"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a96084c554b112c3feb6a0a5902cfeb41" title=" " alt="" coords="1053,439,1191,479"/>
+<area shape="poly" title=" " alt="" coords="1259,461,1192,461,1192,456,1259,456"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a7183f5495bfc8ffa1f6df50cb0b92d57" title=" " alt="" coords="1046,543,1198,598"/>
+<area shape="poly" title=" " alt="" coords="1272,486,1257,493,1166,545,1163,541,1255,488,1270,482"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a82e94dabc3156e5cbf5a59d54a91bff3" title=" " alt="" coords="835,263,973,303"/>
+<area shape="poly" title=" " alt="" coords="1071,536,1051,515,1034,492,1022,466,1016,443,1014,399,1010,358,1002,338,986,316,972,305,975,300,990,313,1006,335,1015,357,1019,399,1021,442,1027,465,1038,489,1055,512,1075,532"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a189e610a52b4490e7804520f52cabd7a" title=" " alt="" coords="835,327,973,367"/>
+<area shape="poly" title=" " alt="" coords="1073,536,1034,492,1018,461,1012,433,1005,407,986,381,970,369,973,365,990,377,1010,405,1018,431,1023,459,1038,489,1077,532"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#aac96e450612fec2fbb4e7f80b5e3c92d" title=" " alt="" coords="835,391,973,431"/>
+<area shape="poly" title=" " alt="" coords="1079,536,1034,493,1011,467,986,445,965,433,967,428,990,440,1015,463,1038,489,1083,532"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a250e83cafd27181f2c0a816e8b7bc92f" title=" " alt="" coords="835,455,973,495"/>
+<area shape="poly" title=" " alt="" coords="1053,540,987,509,958,497,960,492,989,504,1055,535"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a38ebdd91890fa9cda3aefc05b41c34fd" title=" " alt="" coords="835,519,973,559"/>
+<area shape="poly" title=" " alt="" coords="1032,560,973,551,974,546,1033,555"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a35fe9c8ee765e58bc71f75056cbc8d82" title=" " alt="" coords="835,583,973,623"/>
+<area shape="poly" title=" " alt="" coords="1033,586,974,595,973,590,1032,581"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a27d851a9f25e6733167cdd0c4f843716" title=" " alt="" coords="835,647,973,687"/>
+<area shape="poly" title=" " alt="" coords="1055,606,989,637,960,649,958,644,987,632,1053,602"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a544d84bfb3b01866864e55ba1596a271" title=" " alt="" coords="835,711,973,751"/>
+<area shape="poly" title=" " alt="" coords="1091,611,1045,657,989,701,967,713,965,708,987,696,1042,653,1087,607"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a423f731f682156568dde05884ccf3794" title=" " alt="" coords="835,775,973,815"/>
+<area shape="poly" title=" " alt="" coords="1104,612,1059,689,1027,729,990,765,971,777,968,772,986,761,1023,726,1054,686,1100,609"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a2c4e81f50b61f56b46c0ff1e9bb7ddcd" title=" " alt="" coords="820,839,988,865"/>
+<area shape="poly" title=" " alt="" coords="1113,612,1096,662,1071,720,1036,778,1014,805,990,829,968,842,966,837,986,825,1010,802,1032,775,1066,718,1091,660,1108,610"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a0f810e35fe082322f5f6425dcad9f14b" title=" " alt="" coords="820,889,988,914"/>
+<area shape="poly" title=" " alt="" coords="1117,612,1103,672,1079,743,1042,816,1018,850,990,879,972,891,969,886,986,875,1014,846,1038,814,1074,741,1098,670,1112,611"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#ab6ad592791ef4f24902429db688ffc72" title=" " alt="" coords="820,938,988,963"/>
+<area shape="poly" title=" " alt="" coords="1120,613,1109,681,1086,766,1069,810,1048,853,1022,893,990,929,973,940,970,936,986,925,1017,890,1043,851,1065,808,1081,764,1104,680,1114,612"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#aa49c49b89785086d3be3d46939ef0068" title=" " alt="" coords="820,987,988,1013"/>
+<area shape="poly" title=" " alt="" coords="1122,612,1114,689,1093,788,1076,839,1054,890,1025,936,990,978,973,989,970,985,986,974,1021,933,1049,887,1071,837,1088,786,1109,689,1117,612"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a22113e92b2f56d5c7a0e3778824a6fb2" title=" " alt="" coords="820,134,988,159"/>
+<area shape="poly" title=" " alt="" coords="1069,536,1050,516,1034,492,1016,445,1011,402,1014,362,1020,323,1025,286,1023,249,1012,211,986,172,972,162,976,157,990,169,1017,209,1029,248,1030,286,1025,324,1019,362,1016,402,1021,444,1038,489,1054,512,1073,532"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a1ecbc65e4dc4b7f047f60666e3b29a6d" title=" " alt="" coords="828,183,980,238"/>
+<area shape="poly" title=" " alt="" coords="1070,536,1050,516,1034,492,1019,457,1013,425,1015,367,1016,339,1014,312,1005,283,986,252,974,240,977,236,990,249,1009,281,1019,311,1021,339,1020,367,1018,425,1024,456,1038,489,1054,512,1074,532"/>
+<area shape="poly" title=" " alt="" coords="2095,250,2054,253,2054,247,2094,245"/>
+<area shape="poly" title=" " alt="" coords="2308,332,2260,332,2260,327,2308,327"/>
+<area shape="poly" title=" " alt="" coords="2430,297,2421,291,2403,288,2388,290,2379,294,2376,301,2377,308,2372,309,2370,300,2375,291,2386,285,2403,283,2423,286,2433,293"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#ab26c8271598d49da42a6b11f5460fdf6" title=" " alt="" coords="2113,397,2259,437"/>
+<area shape="poly" title=" " alt="" coords="2331,357,2313,364,2231,400,2229,395,2311,359,2329,352"/>
+<area shape="poly" title=" " alt="" coords="2143,391,2106,363,2006,277,2010,273,2110,359,2146,387"/>
+<area shape="poly" title=" " alt="" coords="2220,386,2208,379,2186,376,2167,378,2155,383,2151,389,2153,396,2148,398,2146,388,2152,379,2166,373,2186,371,2210,374,2222,381"/>
+<area shape="rect" href="classhttplib_1_1Server.html#af1fa50c21417aba4d1ce45287e8aed87" title=" " alt="" coords="1909,355,2060,395"/>
+<area shape="poly" title=" " alt="" coords="2099,402,2060,393,2061,388,2100,396"/>
+<area shape="rect" href="classhttplib_1_1Server.html#aa70cb27c3acd4c8c4c0ac920055672d2" title=" " alt="" coords="1701,355,1852,395"/>
+<area shape="poly" title=" " alt="" coords="1895,377,1852,377,1852,372,1895,372"/>
+<area shape="rect" href="classhttplib_1_1Server.html#aebdbdccbc188db1cf54806b341a76f3e" title=" " alt="" coords="1692,275,1861,330"/>
+<area shape="poly" title=" " alt="" coords="1912,353,1855,333,1857,327,1914,348"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a513fd9613e880a9bab5d0644fe71944a" title=" " alt="" coords="1476,290,1644,315"/>
+<area shape="poly" title=" " alt="" coords="1702,353,1598,318,1600,313,1704,348"/>
+<area shape="poly" title=" " alt="" coords="1530,283,1367,150,1370,146,1534,279"/>
+<area shape="poly" title=" " alt="" coords="1679,305,1644,305,1644,300,1679,300"/>
+<area shape="poly" title=" " alt="" coords="2430,385,2421,379,2403,376,2388,378,2379,382,2376,389,2377,396,2372,397,2370,388,2375,379,2386,373,2403,371,2423,374,2433,381"/>
+<area shape="poly" title=" " alt="" coords="2430,473,2421,467,2403,464,2388,466,2379,470,2376,477,2377,484,2372,485,2370,476,2375,467,2386,461,2403,459,2423,462,2433,469"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a520b335a2f640917c97571df1c2fc9cc" name="a520b335a2f640917c97571df1c2fc9cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a520b335a2f640917c97571df1c2fc9cc">&#9670;&#160;</a></span>socket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="httplib_8h.html#a84d69664998f9fc285147c6d1382a6fb">socket_t</a> socket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classhttplib_1_1detail_1_1BufferStream.html#ac898d15674a6a000c90fb37451c036da">BufferStream</a> , 以及 <a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#ac898d15674a6a000c90fb37451c036da">SocketStream</a> 内被实现.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l06042">Server::process_request()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1Stream_a520b335a2f640917c97571df1c2fc9cc_icgraph.png" border="0" usemap="#aclasshttplib_1_1Stream_a520b335a2f640917c97571df1c2fc9cc_icgraph" alt=""/></div>
+<map name="aclasshttplib_1_1Stream_a520b335a2f640917c97571df1c2fc9cc_icgraph" id="aclasshttplib_1_1Stream_a520b335a2f640917c97571df1c2fc9cc_icgraph">
+<area shape="rect" title=" " alt="" coords="1467,77,1531,102"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a38604c92fe06817dda47d499106cd097" title=" " alt="" coords="1247,69,1419,109"/>
+<area shape="poly" title=" " alt="" coords="1453,92,1419,92,1419,87,1453,87"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a1959231e7d593c0e9b77ba0b04d8f322" title=" " alt="" coords="1027,69,1199,109"/>
+<area shape="poly" title=" " alt="" coords="1232,92,1199,92,1199,87,1232,87"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a72c0538dd85db932f217a9165d4be4eb" title=" " alt="" coords="820,69,979,109"/>
+<area shape="poly" title=" " alt="" coords="1013,92,979,92,979,87,1013,87"/>
+<area shape="rect" href="classhttplib_1_1Server.html#ae7de7ceee946e941ceb5bf17aea9b9ea" title=" " alt="" coords="613,47,772,73"/>
+<area shape="poly" title=" " alt="" coords="806,79,772,74,772,69,807,74"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c8b29132c38e96550491c2c0bc6eca4" title=" " alt="" coords="613,97,772,137"/>
+<area shape="poly" title=" " alt="" coords="807,105,772,109,772,104,806,99"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a074576dea67414895af400385931267d" title=" " alt="" coords="403,12,565,52"/>
+<area shape="poly" title=" " alt="" coords="599,50,565,46,566,40,600,45"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c5802f6315e9e6cae9e77aea448f06d" title=" " alt="" coords="204,12,355,52"/>
+<area shape="poly" title=" " alt="" coords="389,35,355,35,355,29,389,29"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a06eda577a8d5bbe97dee432488d8710e" title=" " alt="" coords="5,5,156,45"/>
+<area shape="poly" title=" " alt="" coords="190,32,156,31,156,25,191,26"/>
+<area shape="rect" href="classhttplib_1_1Server.html#aaf02dfe63190429fb24e30cd84d4e56c" title=" " alt="" coords="5,69,156,109"/>
+<area shape="poly" title=" " alt="" coords="197,58,152,72,150,67,196,53"/>
+<area shape="poly" title=" " alt="" coords="169,82,613,61,613,66,170,88"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae96dc9102421e3b364e5a0528cf7fc6d" name="ae96dc9102421e3b364e5a0528cf7fc6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae96dc9102421e3b364e5a0528cf7fc6d">&#9670;&#160;</a></span>write() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t write </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l04993">4993</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3ebe1c6187e849c8b7c986b9a055cdd5" name="a3ebe1c6187e849c8b7c986b9a055cdd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ebe1c6187e849c8b7c986b9a055cdd5">&#9670;&#160;</a></span>write() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ssize_t write </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classhttplib_1_1detail_1_1BufferStream.html#a31e830df591a731e5ad1069d6551b259">BufferStream</a> , 以及 <a class="el" href="classhttplib_1_1detail_1_1SocketStream.html#a31e830df591a731e5ad1069d6551b259">SocketStream</a> 内被实现.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l03694">httplib::detail::write_data()</a>, <a class="el" href="httplib_8h_source.html#l01642">Stream::write_format()</a>, <a class="el" href="httplib_8h_source.html#l03680">httplib::detail::write_headers()</a> , 以及 <a class="el" href="httplib_8h_source.html#l04414">httplib::detail::write_multipart_ranges_data()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1Stream_a3ebe1c6187e849c8b7c986b9a055cdd5_icgraph.png" border="0" usemap="#aclasshttplib_1_1Stream_a3ebe1c6187e849c8b7c986b9a055cdd5_icgraph" alt=""/></div>
+<map name="aclasshttplib_1_1Stream_a3ebe1c6187e849c8b7c986b9a055cdd5_icgraph" id="aclasshttplib_1_1Stream_a3ebe1c6187e849c8b7c986b9a055cdd5_icgraph">
+<area shape="rect" title=" " alt="" coords="2619,829,2673,854"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a5bb6b09526112244720d2f598d158556" title=" " alt="" coords="2384,965,2571,990"/>
+<area shape="poly" title=" " alt="" coords="2620,865,2496,967,2493,962,2617,861"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#afd5cbf61981be207ba8f4eb22b1f828e" title=" " alt="" coords="1929,1225,2105,1265"/>
+<area shape="poly" title=" " alt="" coords="2641,868,2617,934,2597,971,2573,1004,2521,1053,2464,1095,2402,1131,2338,1161,2274,1186,2212,1206,2106,1233,2105,1228,2211,1201,2272,1181,2335,1156,2399,1127,2461,1091,2518,1049,2569,1001,2593,968,2612,932,2636,866"/>
+<area shape="rect" href="classhttplib_1_1Stream.html#ab0ced5eaa5862159f8aafc9ab773fda8" title=" " alt="" coords="2191,683,2298,709"/>
+<area shape="poly" title=" " alt="" coords="2633,817,2609,772,2591,750,2569,733,2536,716,2501,704,2428,691,2357,688,2298,691,2298,686,2357,683,2428,685,2503,699,2538,711,2572,728,2595,747,2613,769,2638,814"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a649bd4e4f9c6b0a7883498aa9f8b272e" title=" " alt="" coords="1942,676,2093,716"/>
+<area shape="poly" title=" " alt="" coords="2605,835,2092,716,2094,711,2606,830"/>
+<area shape="poly" title=" " alt="" coords="2507,954,2498,946,2477,943,2460,945,2451,950,2449,956,2454,963,2449,966,2443,956,2446,947,2458,940,2477,938,2500,941,2510,950"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#ac16954af54db1a787c0b93b15faee3c5" title=" " alt="" coords="2169,1089,2320,1129"/>
+<area shape="poly" title=" " alt="" coords="2443,999,2282,1092,2280,1087,2440,995"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#ab8f464de6859a4d550b5df29da982089" title=" " alt="" coords="1725,733,1863,773"/>
+<area shape="poly" title=" " alt="" coords="2450,958,2399,918,2335,880,2273,855,2208,833,2078,799,1959,776,1863,763,1864,758,1959,771,2080,794,2210,828,2275,850,2337,875,2402,913,2454,953"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a42c25bbcb26333f481f7e9e9cdcf7bac" title=" " alt="" coords="1504,708,1659,748"/>
+<area shape="poly" title=" " alt="" coords="2462,1003,2410,1070,2375,1108,2338,1143,2238,1226,2192,1258,2146,1283,2098,1299,2048,1304,1991,1298,1928,1280,1852,1245,1823,1226,1798,1205,1753,1153,1704,1083,1678,1038,1655,991,1619,895,1596,809,1583,749,1589,748,1601,808,1624,893,1660,989,1682,1036,1709,1080,1757,1150,1801,1201,1826,1222,1854,1240,1930,1275,1993,1293,2048,1299,2097,1294,2144,1278,2189,1254,2234,1222,2334,1139,2372,1104,2406,1066,2457,1000"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#ae6ce420a85649042db0b7c2600fa16e9" title=" " alt="" coords="2169,913,2320,953"/>
+<area shape="poly" title=" " alt="" coords="2396,965,2320,950,2321,945,2397,959"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#ad13e0333cc7030c3c8b9e19a1571fd87" title=" " alt="" coords="2153,1001,2336,1041"/>
+<area shape="poly" title=" " alt="" coords="2397,995,2337,1007,2336,1001,2396,990"/>
+<area shape="poly" title=" " alt="" coords="2283,1078,2270,1071,2245,1068,2223,1070,2210,1075,2205,1081,2207,1088,2202,1090,2200,1080,2207,1070,2222,1065,2245,1063,2271,1066,2286,1073"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a3b29f19f40659e44d34adcf3b7736f09" title=" " alt="" coords="1942,1137,2093,1177"/>
+<area shape="poly" title=" " alt="" coords="2156,1131,2093,1144,2092,1139,2155,1125"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#ae259fb5b6fdd05752db3f82821273a89" title=" " alt="" coords="1940,906,2095,961"/>
+<area shape="poly" title=" " alt="" coords="2195,1084,2152,1055,2094,1008,2045,963,2049,959,2097,1004,2155,1051,2198,1080"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a9c047d9ac1d4eb4aa9bea40ffb6cbea9" title=" " alt="" coords="1707,1029,1881,1069"/>
+<area shape="poly" title=" " alt="" coords="2155,1100,1881,1064,1882,1058,2156,1095"/>
+<area shape="poly" title=" " alt="" coords="2200,1139,2053,1227,2051,1223,2197,1134"/>
+<area shape="poly" title=" " alt="" coords="1936,901,1928,895,1891,866,1858,833,1809,775,1813,772,1862,830,1895,862,1931,891,1939,897"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a6de035aad823b7ae5fa8e0f48ed09bc4" title=" " alt="" coords="1512,456,1651,496"/>
+<area shape="poly" title=" " alt="" coords="1767,724,1596,498,1600,494,1771,720"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a42dae28c6560a1f871995926f484b5bb" title=" " alt="" coords="1297,424,1436,464"/>
+<area shape="poly" title=" " alt="" coords="1498,466,1436,457,1437,452,1499,461"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a824a47e22c0500112512a6b8c9208272" title=" " alt="" coords="1074,268,1213,308"/>
+<area shape="poly" title=" " alt="" coords="1324,418,1172,310,1175,306,1327,414"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#aa7ac58b0426f561c4f4aeef31a69d1a9" title=" " alt="" coords="854,132,993,172"/>
+<area shape="poly" title=" " alt="" coords="1109,261,1063,223,1008,186,984,175,986,170,1011,182,1066,219,1112,257"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a523f1098b8b5916cab950c8a047a3721" title=" " alt="" coords="838,197,1009,222"/>
+<area shape="poly" title=" " alt="" coords="1084,265,1008,236,973,225,974,220,1010,231,1086,260"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a212e0a0bfdb07e6ad5e952ffa08684fb" title=" " alt="" coords="838,246,1009,271"/>
+<area shape="poly" title=" " alt="" coords="1060,280,1009,273,1009,267,1061,274"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a4f18708d985c2b3da3884bd6705ab594" title=" " alt="" coords="854,296,993,336"/>
+<area shape="poly" title=" " alt="" coords="1061,301,993,310,993,305,1060,296"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a93df075c851425fc22821b03114d5396" title=" " alt="" coords="854,360,993,400"/>
+<area shape="poly" title=" " alt="" coords="1088,316,1010,350,981,362,979,357,1008,346,1086,312"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#abc53cfb610db4b7c79e003ef23584106" title=" " alt="" coords="854,68,993,108"/>
+<area shape="poly" title=" " alt="" coords="1122,257,1075,189,1044,153,1008,122,988,110,990,106,1011,118,1047,150,1079,186,1126,254"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a5d69bcd6ad213754eb257c0fae155a70" title=" " alt="" coords="854,424,993,464"/>
+<area shape="poly" title=" " alt="" coords="1118,320,1071,368,1011,414,988,426,985,421,1008,410,1067,364,1114,317"/>
+<area shape="poly" title=" " alt="" coords="1006,441,1297,441,1297,447,1006,447"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a96084c554b112c3feb6a0a5902cfeb41" title=" " alt="" coords="641,352,779,392"/>
+<area shape="poly" title=" " alt="" coords="850,422,769,395,771,390,851,417"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a7183f5495bfc8ffa1f6df50cb0b92d57" title=" " alt="" coords="634,417,786,471"/>
+<area shape="poly" title=" " alt="" coords="840,447,786,447,786,441,840,441"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a82e94dabc3156e5cbf5a59d54a91bff3" title=" " alt="" coords="429,460,568,500"/>
+<area shape="poly" title=" " alt="" coords="621,462,569,471,568,466,620,457"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a189e610a52b4490e7804520f52cabd7a" title=" " alt="" coords="429,524,568,564"/>
+<area shape="poly" title=" " alt="" coords="650,481,584,514,556,526,554,522,582,510,648,476"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#aac96e450612fec2fbb4e7f80b5e3c92d" title=" " alt="" coords="429,588,568,628"/>
+<area shape="poly" title=" " alt="" coords="682,484,639,532,584,578,562,590,560,586,581,574,635,529,678,481"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a250e83cafd27181f2c0a816e8b7bc92f" title=" " alt="" coords="429,652,568,692"/>
+<area shape="poly" title=" " alt="" coords="694,486,651,564,621,606,584,642,566,654,563,650,581,638,617,602,647,561,690,483"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a38ebdd91890fa9cda3aefc05b41c34fd" title=" " alt="" coords="429,716,568,756"/>
+<area shape="poly" title=" " alt="" coords="702,485,686,535,662,594,629,654,608,681,584,706,567,718,564,714,581,702,604,678,624,651,657,592,681,533,697,484"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a35fe9c8ee765e58bc71f75056cbc8d82" title=" " alt="" coords="429,780,568,820"/>
+<area shape="poly" title=" " alt="" coords="706,485,694,547,671,623,636,701,612,737,584,770,569,782,566,778,581,766,608,734,631,698,666,621,689,546,701,484"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a27d851a9f25e6733167cdd0c4f843716" title=" " alt="" coords="429,844,568,884"/>
+<area shape="poly" title=" " alt="" coords="709,485,701,558,680,651,664,700,643,748,617,793,585,834,569,846,566,842,581,830,613,790,638,746,659,698,675,650,695,558,704,485"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a544d84bfb3b01866864e55ba1596a271" title=" " alt="" coords="429,5,568,45"/>
+<area shape="poly" title=" " alt="" coords="631,409,628,406,614,382,604,358,596,314,599,270,606,228,614,187,616,145,606,103,596,81,581,59,567,46,570,42,585,56,600,79,611,101,621,145,619,187,612,229,604,271,601,313,609,357,619,379,633,402,635,405"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a423f731f682156568dde05884ccf3794" title=" " alt="" coords="429,69,568,109"/>
+<area shape="poly" title=" " alt="" coords="631,409,628,405,608,367,600,331,601,295,606,261,611,227,611,193,602,159,581,123,566,111,570,107,585,120,607,157,616,192,616,227,611,262,606,296,605,330,613,365,633,403,635,405"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a2c4e81f50b61f56b46c0ff1e9bb7ddcd" title=" " alt="" coords="415,134,583,159"/>
+<area shape="poly" title=" " alt="" coords="631,409,628,405,611,374,604,343,604,313,607,285,610,256,609,229,600,201,581,173,567,162,570,157,585,169,605,198,614,228,615,257,612,285,609,314,609,343,616,372,633,403,635,405"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a0f810e35fe082322f5f6425dcad9f14b" title=" " alt="" coords="415,183,583,209"/>
+<area shape="poly" title=" " alt="" coords="632,409,629,406,613,381,607,356,606,310,607,288,605,266,597,244,581,222,566,211,569,207,585,218,602,241,610,264,612,287,612,310,612,356,618,379,633,402,636,406"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#ab6ad592791ef4f24902429db688ffc72" title=" " alt="" coords="415,233,583,258"/>
+<area shape="poly" title=" " alt="" coords="632,410,629,406,616,388,609,370,606,335,601,303,594,287,581,271,565,260,568,256,584,267,599,284,606,301,611,335,615,368,621,385,633,402,636,406"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#aa49c49b89785086d3be3d46939ef0068" title=" " alt="" coords="415,282,583,307"/>
+<area shape="poly" title=" " alt="" coords="633,410,629,406,612,383,605,361,598,341,581,321,562,310,565,305,584,317,602,338,610,359,617,381,633,402,637,406"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a22113e92b2f56d5c7a0e3778824a6fb2" title=" " alt="" coords="415,331,583,357"/>
+<area shape="poly" title=" " alt="" coords="639,412,629,406,606,387,581,370,553,359,555,354,584,366,609,383,632,402,642,408"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a1ecbc65e4dc4b7f047f60666e3b29a6d" title=" " alt="" coords="423,381,575,435"/>
+<area shape="poly" title=" " alt="" coords="620,431,574,424,575,418,621,426"/>
+<area shape="poly" title=" " alt="" coords="1770,1019,1594,750,1598,747,1774,1017"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a693e2c382f78df00dddb96d76af96987" title=" " alt="" coords="1289,740,1444,780"/>
+<area shape="poly" title=" " alt="" coords="1491,744,1444,751,1444,746,1490,739"/>
+<area shape="rect" href="classhttplib_1_1Server.html#ac96174176abe6bda49dca359f0948115" title=" " alt="" coords="1277,676,1456,716"/>
+<area shape="poly" title=" " alt="" coords="1490,717,1456,712,1457,707,1490,712"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a38604c92fe06817dda47d499106cd097" title=" " alt="" coords="1057,708,1229,748"/>
+<area shape="poly" title=" " alt="" coords="1275,750,1229,743,1230,738,1276,744"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a1959231e7d593c0e9b77ba0b04d8f322" title=" " alt="" coords="837,776,1009,816"/>
+<area shape="poly" title=" " alt="" coords="1066,755,989,779,988,773,1064,750"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a72c0538dd85db932f217a9165d4be4eb" title=" " alt="" coords="631,901,789,941"/>
+<area shape="poly" title=" " alt="" coords="878,825,746,904,744,899,875,821"/>
+<area shape="rect" href="classhttplib_1_1Server.html#ae7de7ceee946e941ceb5bf17aea9b9ea" title=" " alt="" coords="419,909,578,934"/>
+<area shape="poly" title=" " alt="" coords="617,924,578,924,578,919,617,919"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c8b29132c38e96550491c2c0bc6eca4" title=" " alt="" coords="419,959,578,999"/>
+<area shape="poly" title=" " alt="" coords="623,948,574,961,572,956,622,942"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a074576dea67414895af400385931267d" title=" " alt="" coords="204,901,367,941"/>
+<area shape="poly" title=" " alt="" coords="405,924,367,924,367,919,405,919"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c5802f6315e9e6cae9e77aea448f06d" title=" " alt="" coords="5,901,156,941"/>
+<area shape="poly" title=" " alt="" coords="190,924,156,924,156,919,190,919"/>
+<area shape="poly" title=" " alt="" coords="1264,713,1230,718,1229,713,1263,708"/>
+<area shape="poly" title=" " alt="" coords="1968,1220,1928,1191,1861,1128,1810,1072,1814,1068,1864,1124,1931,1187,1971,1216"/>
+<area shape="poly" title=" " alt="" coords="2055,1214,2042,1207,2017,1204,1996,1206,1983,1211,1979,1217,1981,1224,1976,1226,1973,1216,1980,1206,1995,1201,2017,1199,2043,1202,2057,1209"/>
+<area shape="poly" title=" " alt="" coords="2155,936,2095,936,2095,931,2155,931"/>
+<area shape="poly" title=" " alt="" coords="2164,960,2106,976,1879,1032,1878,1027,2105,971,2163,955"/>
+<area shape="poly" title=" " alt="" coords="2283,902,2270,895,2245,892,2223,894,2210,899,2205,905,2207,912,2202,914,2200,904,2207,894,2222,889,2245,887,2271,890,2286,897"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#aa5fb3408c73ef4d22d1497307933ca2f" title=" " alt="" coords="1942,841,2093,881"/>
+<area shape="poly" title=" " alt="" coords="2167,912,2080,884,2082,879,2169,907"/>
+<area shape="poly" title=" " alt="" coords="2140,1030,1882,1047,1881,1041,2139,1025"/>
+<area shape="poly" title=" " alt="" coords="2283,990,2270,983,2245,980,2223,982,2210,987,2205,993,2207,1000,2202,1002,2200,992,2207,982,2222,977,2245,975,2271,978,2286,985"/>
+<area shape="poly" title=" " alt="" coords="2184,715,2106,731,1977,746,1864,753,1863,748,1977,740,2105,725,2183,709"/>
+<area shape="poly" title=" " alt="" coords="2207,680,2159,659,2105,643,2039,634,1971,634,1904,640,1839,651,1721,680,1633,710,1631,705,1720,675,1838,645,1903,635,1971,629,2039,629,2106,637,2161,654,2209,675"/>
+<area shape="poly" title=" " alt="" coords="2213,678,2163,647,2104,620,2020,592,1953,576,1884,568,1795,567,1580,567,1519,571,1459,583,1400,601,1344,622,1246,669,1176,710,1174,706,1243,665,1342,617,1398,595,1458,578,1519,566,1580,561,1795,561,1884,563,1954,570,2022,587,2106,615,2166,643,2216,673"/>
+<area shape="poly" title=" " alt="" coords="2178,699,2093,699,2093,693,2178,693"/>
+<area shape="poly" title=" " alt="" coords="1929,721,1864,738,1863,733,1928,716"/>
+<area shape="poly" title=" " alt="" coords="1929,705,1659,725,1659,720,1928,700"/>
+<area shape="poly" title=" " alt="" coords="2055,664,2042,657,2017,655,1996,657,1983,661,1979,667,1981,675,1976,676,1973,666,1980,657,1995,651,2017,649,2043,652,2057,660"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad141683608a735cd0470e4968ccb76db" name="ad141683608a735cd0470e4968ccb76db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad141683608a735cd0470e4968ccb76db">&#9670;&#160;</a></span>write() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t write </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l04997">4997</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab0ced5eaa5862159f8aafc9ab773fda8" name="ab0ced5eaa5862159f8aafc9ab773fda8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ced5eaa5862159f8aafc9ab773fda8">&#9670;&#160;</a></span>write_format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t write_format </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Args &amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="httplib_8h_source.html">httplib.h</a> 第 <a class="el" href="httplib_8h_source.html#l01642">1642</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="classhttplib_1_1Stream.html#a3ebe1c6187e849c8b7c986b9a055cdd5">Stream::write()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="httplib_8h_source.html#l06042">Server::process_request()</a>, <a class="el" href="httplib_8h_source.html#l03680">httplib::detail::write_headers()</a>, <a class="el" href="httplib_8h_source.html#l06614">ClientImpl::write_request()</a> , 以及 <a class="el" href="httplib_8h_source.html#l05444">Server::write_response_core()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1Stream_ab0ced5eaa5862159f8aafc9ab773fda8_cgraph.png" border="0" usemap="#aclasshttplib_1_1Stream_ab0ced5eaa5862159f8aafc9ab773fda8_cgraph" alt=""/></div>
+<map name="aclasshttplib_1_1Stream_ab0ced5eaa5862159f8aafc9ab773fda8_cgraph" id="aclasshttplib_1_1Stream_ab0ced5eaa5862159f8aafc9ab773fda8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,112,31"/>
+<area shape="rect" href="classhttplib_1_1Stream.html#a3ebe1c6187e849c8b7c986b9a055cdd5" title=" " alt="" coords="160,5,215,31"/>
+<area shape="poly" title=" " alt="" coords="112,15,146,15,146,21,112,21"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhttplib_1_1Stream_ab0ced5eaa5862159f8aafc9ab773fda8_icgraph.png" border="0" usemap="#aclasshttplib_1_1Stream_ab0ced5eaa5862159f8aafc9ab773fda8_icgraph" alt=""/></div>
+<map name="aclasshttplib_1_1Stream_ab0ced5eaa5862159f8aafc9ab773fda8_icgraph" id="aclasshttplib_1_1Stream_ab0ced5eaa5862159f8aafc9ab773fda8_icgraph">
+<area shape="rect" title=" " alt="" coords="2112,207,2219,233"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a38604c92fe06817dda47d499106cd097" title=" " alt="" coords="1264,127,1436,167"/>
+<area shape="poly" title=" " alt="" coords="2121,205,2063,185,1903,144,1776,118,1715,112,1648,111,1484,121,1433,129,1433,124,1484,116,1648,105,1715,107,1777,113,1904,138,2065,180,2123,200"/>
+<area shape="rect" href="namespacehttplib_1_1detail.html#a649bd4e4f9c6b0a7883498aa9f8b272e" title=" " alt="" coords="1913,240,2064,280"/>
+<area shape="poly" title=" " alt="" coords="2099,238,2065,246,2063,240,2098,232"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#ab8f464de6859a4d550b5df29da982089" title=" " alt="" coords="1719,297,1857,337"/>
+<area shape="poly" title=" " alt="" coords="2143,244,2108,271,2065,294,2012,310,1957,319,1858,324,1857,318,1957,313,2011,305,2063,290,2105,267,2139,240"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a42c25bbcb26333f481f7e9e9cdcf7bac" title=" " alt="" coords="1711,177,1865,217"/>
+<area shape="poly" title=" " alt="" coords="2098,211,2064,207,1960,201,1866,199,1866,194,1961,195,2064,201,2099,206"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a1959231e7d593c0e9b77ba0b04d8f322" title=" " alt="" coords="1044,119,1216,159"/>
+<area shape="poly" title=" " alt="" coords="1250,146,1216,144,1216,139,1250,140"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a72c0538dd85db932f217a9165d4be4eb" title=" " alt="" coords="831,115,990,155"/>
+<area shape="poly" title=" " alt="" coords="1030,140,990,139,990,133,1030,134"/>
+<area shape="rect" href="classhttplib_1_1Server.html#ae7de7ceee946e941ceb5bf17aea9b9ea" title=" " alt="" coords="619,71,777,97"/>
+<area shape="poly" title=" " alt="" coords="817,115,751,99,753,94,819,110"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c8b29132c38e96550491c2c0bc6eca4" title=" " alt="" coords="619,121,777,161"/>
+<area shape="poly" title=" " alt="" coords="818,140,778,142,778,136,817,135"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a074576dea67414895af400385931267d" title=" " alt="" coords="405,12,568,52"/>
+<area shape="poly" title=" " alt="" coords="632,71,568,55,569,49,633,65"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a2c5802f6315e9e6cae9e77aea448f06d" title=" " alt="" coords="204,12,355,52"/>
+<area shape="poly" title=" " alt="" coords="392,35,355,35,355,29,392,29"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a06eda577a8d5bbe97dee432488d8710e" title=" " alt="" coords="5,5,156,45"/>
+<area shape="poly" title=" " alt="" coords="190,32,156,31,156,25,191,26"/>
+<area shape="rect" href="classhttplib_1_1Server.html#aaf02dfe63190429fb24e30cd84d4e56c" title=" " alt="" coords="5,69,156,109"/>
+<area shape="poly" title=" " alt="" coords="197,58,152,72,150,67,196,53"/>
+<area shape="poly" title=" " alt="" coords="170,86,618,82,618,87,170,91"/>
+<area shape="poly" title=" " alt="" coords="2018,228,2008,221,1989,219,1972,221,1962,225,1958,231,1960,239,1955,240,1953,230,1959,221,1971,215,1989,213,2010,216,2021,224"/>
+<area shape="poly" title=" " alt="" coords="1906,286,1858,300,1857,295,1904,281"/>
+<area shape="poly" title=" " alt="" coords="1910,238,1852,220,1853,215,1912,233"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a6de035aad823b7ae5fa8e0f48ed09bc4" title=" " alt="" coords="1504,328,1643,368"/>
+<area shape="poly" title=" " alt="" coords="1705,332,1643,341,1642,336,1705,326"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a42dae28c6560a1f871995926f484b5bb" title=" " alt="" coords="1281,343,1419,383"/>
+<area shape="poly" title=" " alt="" coords="1491,356,1420,361,1419,355,1490,351"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a824a47e22c0500112512a6b8c9208272" title=" " alt="" coords="1061,343,1199,383"/>
+<area shape="poly" title=" " alt="" coords="1267,365,1200,365,1200,360,1267,360"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#aa7ac58b0426f561c4f4aeef31a69d1a9" title=" " alt="" coords="841,179,980,219"/>
+<area shape="poly" title=" " alt="" coords="1103,334,1055,283,1026,256,995,233,973,221,975,217,997,228,1029,252,1059,279,1106,330"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a523f1098b8b5916cab950c8a047a3721" title=" " alt="" coords="825,243,996,269"/>
+<area shape="poly" title=" " alt="" coords="1088,337,1044,309,995,284,961,271,963,266,997,279,1047,305,1091,333"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a212e0a0bfdb07e6ad5e952ffa08684fb" title=" " alt="" coords="825,293,996,318"/>
+<area shape="poly" title=" " alt="" coords="1046,344,959,321,961,315,1048,338"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a4f18708d985c2b3da3884bd6705ab594" title=" " alt="" coords="841,343,980,383"/>
+<area shape="poly" title=" " alt="" coords="1047,365,980,365,980,360,1047,360"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a93df075c851425fc22821b03114d5396" title=" " alt="" coords="841,407,980,447"/>
+<area shape="poly" title=" " alt="" coords="1049,389,980,409,979,404,1047,384"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#abc53cfb610db4b7c79e003ef23584106" title=" " alt="" coords="841,471,980,511"/>
+<area shape="poly" title=" " alt="" coords="1096,394,1050,428,997,461,972,473,970,468,995,456,1047,423,1093,389"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a5d69bcd6ad213754eb257c0fae155a70" title=" " alt="" coords="841,535,980,575"/>
+<area shape="poly" title=" " alt="" coords="1106,395,998,525,977,537,974,532,994,521,1102,392"/>
+<area shape="poly" title=" " alt="" coords="978,527,995,520,1168,444,1306,380,1308,385,1170,449,997,525,980,532"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a96084c554b112c3feb6a0a5902cfeb41" title=" " alt="" coords="629,513,767,553"/>
+<area shape="poly" title=" " alt="" coords="827,549,767,543,768,538,828,544"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a7183f5495bfc8ffa1f6df50cb0b92d57" title=" " alt="" coords="622,578,774,633"/>
+<area shape="poly" title=" " alt="" coords="828,577,775,590,773,585,827,572"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a82e94dabc3156e5cbf5a59d54a91bff3" title=" " alt="" coords="417,137,556,177"/>
+<area shape="poly" title=" " alt="" coords="618,569,616,567,601,541,591,516,582,467,586,420,595,375,603,330,606,285,596,239,585,215,569,191,555,178,558,174,573,188,590,213,601,237,611,284,609,331,600,376,591,421,588,467,596,514,606,539,621,564,623,566"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a189e610a52b4490e7804520f52cabd7a" title=" " alt="" coords="417,201,556,241"/>
+<area shape="poly" title=" " alt="" coords="619,570,616,567,594,525,586,484,588,445,594,407,600,370,601,332,592,294,569,255,554,242,558,238,573,252,597,292,606,332,605,370,599,408,593,446,592,484,599,523,621,564,623,567"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#aac96e450612fec2fbb4e7f80b5e3c92d" title=" " alt="" coords="417,265,556,305"/>
+<area shape="poly" title=" " alt="" coords="619,570,616,567,598,533,590,501,590,470,594,440,597,410,596,380,588,350,569,319,554,307,558,303,573,316,593,348,602,379,602,410,599,440,596,470,596,501,603,531,621,564,623,567"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a250e83cafd27181f2c0a816e8b7bc92f" title=" " alt="" coords="417,329,556,369"/>
+<area shape="poly" title=" " alt="" coords="620,570,617,567,601,542,594,518,593,472,592,428,584,406,569,383,554,371,558,367,573,380,589,403,597,427,599,472,599,517,606,540,621,564,624,567"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a38ebdd91890fa9cda3aefc05b41c34fd" title=" " alt="" coords="417,393,556,433"/>
+<area shape="poly" title=" " alt="" coords="620,571,617,567,605,551,598,535,593,505,587,476,581,462,569,447,553,436,557,431,573,443,585,459,592,474,598,504,603,534,609,548,621,564,624,567"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a35fe9c8ee765e58bc71f75056cbc8d82" title=" " alt="" coords="417,457,556,497"/>
+<area shape="poly" title=" " alt="" coords="624,573,617,567,602,552,593,538,584,525,569,511,549,500,552,495,572,507,588,521,597,535,606,549,620,563,628,569"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a27d851a9f25e6733167cdd0c4f843716" title=" " alt="" coords="417,521,556,561"/>
+<area shape="poly" title=" " alt="" coords="608,581,552,564,554,559,610,576"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a544d84bfb3b01866864e55ba1596a271" title=" " alt="" coords="417,585,556,625"/>
+<area shape="poly" title=" " alt="" coords="608,608,556,608,556,603,608,603"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a423f731f682156568dde05884ccf3794" title=" " alt="" coords="417,649,556,689"/>
+<area shape="poly" title=" " alt="" coords="610,635,554,652,552,647,608,630"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a2c4e81f50b61f56b46c0ff1e9bb7ddcd" title=" " alt="" coords="403,714,571,739"/>
+<area shape="poly" title=" " alt="" coords="659,644,618,675,572,704,541,716,539,711,569,699,615,671,655,639"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a0f810e35fe082322f5f6425dcad9f14b" title=" " alt="" coords="403,763,571,789"/>
+<area shape="poly" title=" " alt="" coords="675,646,632,702,603,730,572,754,549,766,546,761,569,750,600,726,628,698,671,642"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#ab6ad592791ef4f24902429db688ffc72" title=" " alt="" coords="403,813,571,838"/>
+<area shape="poly" title=" " alt="" coords="684,646,666,684,641,726,610,768,572,803,552,815,549,810,569,799,606,764,637,723,661,682,679,644"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#aa49c49b89785086d3be3d46939ef0068" title=" " alt="" coords="403,862,571,887"/>
+<area shape="poly" title=" " alt="" coords="689,646,674,694,650,750,616,805,596,830,572,853,553,864,551,860,569,849,592,827,612,802,645,747,669,692,684,645"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a22113e92b2f56d5c7a0e3778824a6fb2" title=" " alt="" coords="403,911,571,937"/>
+<area shape="poly" title=" " alt="" coords="693,647,680,704,657,773,622,842,599,874,572,902,555,913,552,909,569,898,595,871,618,839,652,771,675,703,688,646"/>
+<area shape="rect" href="classhttplib_1_1ClientImpl.html#a1ecbc65e4dc4b7f047f60666e3b29a6d" title=" " alt="" coords="411,961,563,1015"/>
+<area shape="poly" title=" " alt="" coords="694,647,683,712,660,792,625,876,601,915,573,951,560,962,556,958,569,947,596,912,620,874,655,790,677,711,689,646"/>
+<area shape="rect" href="classhttplib_1_1Server.html#a693e2c382f78df00dddb96d76af96987" title=" " alt="" coords="1496,131,1651,171"/>
+<area shape="poly" title=" " alt="" coords="1696,180,1650,170,1651,165,1697,175"/>
+<area shape="rect" href="classhttplib_1_1Server.html#ac96174176abe6bda49dca359f0948115" title=" " alt="" coords="1484,195,1663,235"/>
+<area shape="poly" title=" " alt="" coords="1697,207,1663,210,1663,205,1696,202"/>
+<area shape="poly" title=" " alt="" coords="1482,152,1436,151,1436,146,1482,146"/>
+<area shape="poly" title=" " alt="" coords="1493,193,1415,169,1417,164,1495,188"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/server/<a class="el" href="httplib_8h_source.html">httplib.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacehttplib.html">httplib</a></li><li class="navelem"><a class="el" href="classhttplib_1_1Stream.html">Stream</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

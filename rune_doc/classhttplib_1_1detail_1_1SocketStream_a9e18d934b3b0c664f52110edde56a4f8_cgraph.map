@@ -1,0 +1,12 @@
+<map id="read" name="read">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,56,60"/>
+<area shape="rect" id="Node000002" href="$classhttplib_1_1detail_1_1SocketStream.html#a355beed1b8bbb6d2a6ef941d4d07d2c6" title=" " alt="" coords="104,8,201,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,39,90,32,91,37,57,45"/>
+<area shape="rect" id="Node000005" href="$namespacehttplib_1_1detail.html#a558ebf9d3ec32636484581ddd055f540" title=" " alt="" coords="272,55,419,95"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="57,47,259,65,258,70,56,52"/>
+<area shape="rect" id="Node000003" href="$namespacehttplib_1_1detail.html#aafabd6167493d9f8e77accea2fa856b5" title=" " alt="" coords="249,5,441,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="201,17,235,17,236,22,201,23"/>
+<area shape="rect" id="Node000004" href="$namespacehttplib_1_1detail.html#abb548803394819eca2a15092124b101f" title=" " alt="" coords="489,27,651,67"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="442,28,476,32,476,38,441,33"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="418,64,475,56,476,62,419,69"/>
+</map>

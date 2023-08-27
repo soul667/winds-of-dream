@@ -1,0 +1,1368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“创梦之翼2023步兵自瞄文档”: RMVideoCapture类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">“创梦之翼2023步兵自瞄文档”<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">xxx</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classRMVideoCapture.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classRMVideoCapture-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">RMVideoCapture类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a>&gt;</code></p>
+<div class="dynheader">
+RMVideoCapture 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture__coll__graph.png" border="0" usemap="#aRMVideoCapture_coll__map" alt="Collaboration graph"/></div>
+<map name="aRMVideoCapture_coll__map" id="aRMVideoCapture_coll__map">
+<area shape="rect" title=" " alt="" coords="34,93,165,119"/>
+<area shape="rect" href="structRMVideoCapture_1_1MapBuffer.html" title=" " alt="" coords="5,5,95,31"/>
+<area shape="poly" title=" " alt="" coords="56,44,64,68,85,91,81,95,60,71,51,45"/>
+<area shape="rect" title=" " alt="" coords="119,5,178,31"/>
+<area shape="poly" title=" " alt="" coords="138,44,109,94,104,91,133,41"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRMVideoCapture_1_1MapBuffer.html">MapBuffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad842759b3b49d3e6c774e1f1d593bfc2" id="r_ad842759b3b49d3e6c774e1f1d593bfc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#ad842759b3b49d3e6c774e1f1d593bfc2">RMVideoCapture</a> ()</td></tr>
+<tr class="separator:ad842759b3b49d3e6c774e1f1d593bfc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2cb4e3c908751881c2e82995c7d79bc" id="r_ab2cb4e3c908751881c2e82995c7d79bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#ab2cb4e3c908751881c2e82995c7d79bc">RMVideoCapture</a> (const int id, int buffer_size=2)</td></tr>
+<tr class="separator:ab2cb4e3c908751881c2e82995c7d79bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f4baf3f15201c1e38976af3e5ea9754" id="r_a0f4baf3f15201c1e38976af3e5ea9754"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a0f4baf3f15201c1e38976af3e5ea9754">~RMVideoCapture</a> ()</td></tr>
+<tr class="separator:a0f4baf3f15201c1e38976af3e5ea9754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee0e961abd48d98420e1ce9147974319" id="r_aee0e961abd48d98420e1ce9147974319"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#aee0e961abd48d98420e1ce9147974319">open</a> (const int id, int size_buffer=2)</td></tr>
+<tr class="separator:aee0e961abd48d98420e1ce9147974319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6403a2e2e1f4f8b27cf4da929892ff85" id="r_a6403a2e2e1f4f8b27cf4da929892ff85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a6403a2e2e1f4f8b27cf4da929892ff85">isOpened</a> () const</td></tr>
+<tr class="separator:a6403a2e2e1f4f8b27cf4da929892ff85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66efe831d763e000ee3ba763adccc31" id="r_af66efe831d763e000ee3ba763adccc31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#af66efe831d763e000ee3ba763adccc31">setVideoFormat</a> (size_t width, size_t height, bool mjpg=1)</td></tr>
+<tr class="separator:af66efe831d763e000ee3ba763adccc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579a30a367834b92cae61dc51f567046" id="r_a579a30a367834b92cae61dc51f567046"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a579a30a367834b92cae61dc51f567046">setExposureTime</a> (int t=0)</td></tr>
+<tr class="separator:a579a30a367834b92cae61dc51f567046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9cac86fb8b9d91fb7b2beac682d99de" id="r_ab9cac86fb8b9d91fb7b2beac682d99de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#ab9cac86fb8b9d91fb7b2beac682d99de">changeVideoFormat</a> (int width, int height, bool mjpg=1)</td></tr>
+<tr class="separator:ab9cac86fb8b9d91fb7b2beac682d99de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c07718f39c3544dacacf57274e5aaea" id="r_a5c07718f39c3544dacacf57274e5aaea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a5c07718f39c3544dacacf57274e5aaea">setFPS</a> (int fps)</td></tr>
+<tr class="separator:a5c07718f39c3544dacacf57274e5aaea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed31b4e74a2584047891b23a2a41a98c" id="r_aed31b4e74a2584047891b23a2a41a98c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#aed31b4e74a2584047891b23a2a41a98c">startStream</a> ()</td></tr>
+<tr class="separator:aed31b4e74a2584047891b23a2a41a98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5c0f527116eb371f9c244b28e4c3f1" id="r_a1c5c0f527116eb371f9c244b28e4c3f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a1c5c0f527116eb371f9c244b28e4c3f1">closeStream</a> ()</td></tr>
+<tr class="separator:a1c5c0f527116eb371f9c244b28e4c3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3496b37562505a32f8a8639e83cbb128" id="r_a3496b37562505a32f8a8639e83cbb128"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a3496b37562505a32f8a8639e83cbb128">restartCapture</a> ()</td></tr>
+<tr class="separator:a3496b37562505a32f8a8639e83cbb128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9813f617f9b1f6edf3b7cd8ec710e1" id="r_a3d9813f617f9b1f6edf3b7cd8ec710e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRMVideoCapture.html">RMVideoCapture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a3d9813f617f9b1f6edf3b7cd8ec710e1">operator&gt;&gt;</a> (cv::Mat &amp;image)</td></tr>
+<tr class="separator:a3d9813f617f9b1f6edf3b7cd8ec710e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae522f89111ac5fe7562d0088f31113c0" id="r_ae522f89111ac5fe7562d0088f31113c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#ae522f89111ac5fe7562d0088f31113c0">read</a> (cv::Mat &amp;image)</td></tr>
+<tr class="separator:ae522f89111ac5fe7562d0088f31113c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c658696e3f1f0bf3f4b84447a6f1dad" id="r_a5c658696e3f1f0bf3f4b84447a6f1dad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a5c658696e3f1f0bf3f4b84447a6f1dad">grab</a> ()</td></tr>
+<tr class="separator:a5c658696e3f1f0bf3f4b84447a6f1dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebc08cd4065cf256d4505caa8758e0b" id="r_a3ebc08cd4065cf256d4505caa8758e0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a3ebc08cd4065cf256d4505caa8758e0b">retrieve</a> (cv::Mat &amp;image)</td></tr>
+<tr class="separator:a3ebc08cd4065cf256d4505caa8758e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa36fa5a75069a4d28b83cd189004cd03" id="r_aa36fa5a75069a4d28b83cd189004cd03"><td class="memItemLeft" align="right" valign="top">cv::Size&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#aa36fa5a75069a4d28b83cd189004cd03">getResolution</a> ()</td></tr>
+<tr class="separator:aa36fa5a75069a4d28b83cd189004cd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134a0d63775c91ff4a3ab9fa8ac7438a" id="r_a134a0d63775c91ff4a3ab9fa8ac7438a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a134a0d63775c91ff4a3ab9fa8ac7438a">getFrameCount</a> ()</td></tr>
+<tr class="separator:a134a0d63775c91ff4a3ab9fa8ac7438a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b66fe77173de9e5e8542b2823d6071" id="r_ac1b66fe77173de9e5e8542b2823d6071"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#ac1b66fe77173de9e5e8542b2823d6071">info</a> ()</td></tr>
+<tr class="separator:ac1b66fe77173de9e5e8542b2823d6071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:abec8df6b0240502313b0adcaf7f657fb" id="r_abec8df6b0240502313b0adcaf7f657fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#abec8df6b0240502313b0adcaf7f657fb">cvtRaw2Mat</a> (void *data, cv::Mat &amp;image)</td></tr>
+<tr class="separator:abec8df6b0240502313b0adcaf7f657fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a34814749217f5d6731ba0d873fcfb" id="r_a51a34814749217f5d6731ba0d873fcfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a51a34814749217f5d6731ba0d873fcfb">refreshVideoFormat</a> ()</td></tr>
+<tr class="separator:a51a34814749217f5d6731ba0d873fcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209e8f5fd9d7f4d51699eedc779984f2" id="r_a209e8f5fd9d7f4d51699eedc779984f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a209e8f5fd9d7f4d51699eedc779984f2">initMMap</a> ()</td></tr>
+<tr class="separator:a209e8f5fd9d7f4d51699eedc779984f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22cce36344ad43e1d0742f8af3ba7296" id="r_a22cce36344ad43e1d0742f8af3ba7296"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a22cce36344ad43e1d0742f8af3ba7296">xioctl</a> (int fd, int request, void *arg)</td></tr>
+<tr class="separator:a22cce36344ad43e1d0742f8af3ba7296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ac8435c09234cd6b9bf78d0d9f513b19c" id="r_ac8435c09234cd6b9bf78d0d9f513b19c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#ac8435c09234cd6b9bf78d0d9f513b19c">_width</a></td></tr>
+<tr class="separator:ac8435c09234cd6b9bf78d0d9f513b19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56087f20883e5dac738adf23c2bfd5b" id="r_ae56087f20883e5dac738adf23c2bfd5b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#ae56087f20883e5dac738adf23c2bfd5b">_height</a></td></tr>
+<tr class="separator:ae56087f20883e5dac738adf23c2bfd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda811d045e1f4533b8ce0ae0b1c857c" id="r_acda811d045e1f4533b8ce0ae0b1c857c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#acda811d045e1f4533b8ce0ae0b1c857c">_format</a></td></tr>
+<tr class="separator:acda811d045e1f4533b8ce0ae0b1c857c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66223b2b8711491aced271d9864db9e" id="r_ad66223b2b8711491aced271d9864db9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#ad66223b2b8711491aced271d9864db9e">_camera_fd</a></td></tr>
+<tr class="separator:ad66223b2b8711491aced271d9864db9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4487d25c8169294e7df31015b14ab51f" id="r_a4487d25c8169294e7df31015b14ab51f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a4487d25c8169294e7df31015b14ab51f">_is_opened</a></td></tr>
+<tr class="separator:a4487d25c8169294e7df31015b14ab51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e9c6b24735eca3504f2f1d28cf4b97" id="r_a55e9c6b24735eca3504f2f1d28cf4b97"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a55e9c6b24735eca3504f2f1d28cf4b97">_buffer_size</a></td></tr>
+<tr class="separator:a55e9c6b24735eca3504f2f1d28cf4b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d35d26abc0e4d5080ce1a9191fe186" id="r_ac6d35d26abc0e4d5080ce1a9191fe186"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#ac6d35d26abc0e4d5080ce1a9191fe186">_bufferIdx</a></td></tr>
+<tr class="separator:ac6d35d26abc0e4d5080ce1a9191fe186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081e6d15e4016c3532833e983343d5cd" id="r_a081e6d15e4016c3532833e983343d5cd"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a081e6d15e4016c3532833e983343d5cd">_frameCount</a></td></tr>
+<tr class="separator:a081e6d15e4016c3532833e983343d5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65349cacccef5e8aa31fa2ed56517ad1" id="r_a65349cacccef5e8aa31fa2ed56517ad1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRMVideoCapture_1_1MapBuffer.html">MapBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a65349cacccef5e8aa31fa2ed56517ad1">_buffers</a></td></tr>
+<tr class="separator:a65349cacccef5e8aa31fa2ed56517ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af942ec63ed4ecf469d8d890c48f331ea" id="r_af942ec63ed4ecf469d8d890c48f331ea"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#af942ec63ed4ecf469d8d890c48f331ea">_videoPath</a></td></tr>
+<tr class="separator:af942ec63ed4ecf469d8d890c48f331ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979ff4e1a2e3ddbcda39537d053abded" id="r_a979ff4e1a2e3ddbcda39537d053abded"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRMVideoCapture.html#a979ff4e1a2e3ddbcda39537d053abded">_grabbed_left</a></td></tr>
+<tr class="separator:a979ff4e1a2e3ddbcda39537d053abded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a> 第 <a class="el" href="RMVideoCapture_8hpp_source.html#l00025">25</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ad842759b3b49d3e6c774e1f1d593bfc2" name="ad842759b3b49d3e6c774e1f1d593bfc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad842759b3b49d3e6c774e1f1d593bfc2">&#9670;&#160;</a></span>RMVideoCapture() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRMVideoCapture.html">RMVideoCapture</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00043">43</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00096">_bufferIdx</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00097">_frameCount</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00102">_grabbed_left</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00089">_height</a> , 以及 <a class="el" href="RMVideoCapture_8hpp_source.html#l00088">_width</a>.</p>
+
+</div>
+</div>
+<a id="ab2cb4e3c908751881c2e82995c7d79bc" name="ab2cb4e3c908751881c2e82995c7d79bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2cb4e3c908751881c2e82995c7d79bc">&#9670;&#160;</a></span>RMVideoCapture() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRMVideoCapture.html">RMVideoCapture</a> </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buffer_size</em> = <code>2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00052">52</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00095">_buffer_size</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00096">_bufferIdx</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00098">_buffers</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00097">_frameCount</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00089">_height</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00093">_is_opened</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00100">_videoPath</a> , 以及 <a class="el" href="RMVideoCapture_8hpp_source.html#l00088">_width</a>.</p>
+
+</div>
+</div>
+<a id="a0f4baf3f15201c1e38976af3e5ea9754" name="a0f4baf3f15201c1e38976af3e5ea9754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f4baf3f15201c1e38976af3e5ea9754">&#9670;&#160;</a></span>~RMVideoCapture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="classRMVideoCapture.html">RMVideoCapture</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00079">79</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00098">_buffers</a> , 以及 <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab9cac86fb8b9d91fb7b2beac682d99de" name="ab9cac86fb8b9d91fb7b2beac682d99de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9cac86fb8b9d91fb7b2beac682d99de">&#9670;&#160;</a></span>changeVideoFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool changeVideoFormat </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>mjpg</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00150">150</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8cpp_source.html#l00314">closeStream()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00331">restartCapture()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00122">setVideoFormat()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00299">startStream()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_ab9cac86fb8b9d91fb7b2beac682d99de_cgraph.png" border="0" usemap="#aclassRMVideoCapture_ab9cac86fb8b9d91fb7b2beac682d99de_cgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_ab9cac86fb8b9d91fb7b2beac682d99de_cgraph" id="aclassRMVideoCapture_ab9cac86fb8b9d91fb7b2beac682d99de_cgraph">
+<area shape="rect" title=" " alt="" coords="5,80,157,105"/>
+<area shape="rect" href="classRMVideoCapture.html#a1c5c0f527116eb371f9c244b28e4c3f1" title=" " alt="" coords="212,5,315,31"/>
+<area shape="poly" title=" " alt="" coords="112,77,218,34,220,38,115,82"/>
+<area shape="rect" href="classRMVideoCapture.html#a3496b37562505a32f8a8639e83cbb128" title=" " alt="" coords="205,55,321,80"/>
+<area shape="poly" title=" " alt="" coords="157,79,192,75,192,80,158,85"/>
+<area shape="rect" href="classRMVideoCapture.html#af66efe831d763e000ee3ba763adccc31" title=" " alt="" coords="382,105,507,131"/>
+<area shape="poly" title=" " alt="" coords="158,95,368,110,368,115,157,101"/>
+<area shape="rect" href="classRMVideoCapture.html#aed31b4e74a2584047891b23a2a41a98c" title=" " alt="" coords="214,156,313,181"/>
+<area shape="poly" title=" " alt="" coords="114,103,221,148,218,153,112,108"/>
+<area shape="rect" href="classRMVideoCapture.html#a22cce36344ad43e1d0742f8af3ba7296" title=" " alt="" coords="568,155,627,180"/>
+<area shape="poly" title=" " alt="" coords="486,128,521,139,556,151,554,156,519,145,485,133"/>
+<area shape="rect" href="classRMVideoCapture.html#a209e8f5fd9d7f4d51699eedc779984f2" title=" " alt="" coords="403,155,486,180"/>
+<area shape="poly" title=" " alt="" coords="313,166,389,165,389,170,313,171"/>
+<area shape="rect" href="classRMVideoCapture.html#a51a34814749217f5d6731ba0d873fcfb" title=" " alt="" coords="369,204,520,229"/>
+<area shape="poly" title=" " alt="" coords="313,179,383,198,382,203,311,184"/>
+<area shape="poly" title=" " alt="" coords="485,201,519,190,554,179,556,184,521,195,486,206"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1c5c0f527116eb371f9c244b28e4c3f1" name="a1c5c0f527116eb371f9c244b28e4c3f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c5c0f527116eb371f9c244b28e4c3f1">&#9670;&#160;</a></span>closeStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool closeStream </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00314">314</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00095">_buffer_size</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00096">_bufferIdx</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00098">_buffers</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a> , 以及 <a class="el" href="RMVideoCapture_8hpp_source.html#l00097">_frameCount</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00150">changeVideoFormat()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_a1c5c0f527116eb371f9c244b28e4c3f1_icgraph.png" border="0" usemap="#aclassRMVideoCapture_a1c5c0f527116eb371f9c244b28e4c3f1_icgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_a1c5c0f527116eb371f9c244b28e4c3f1_icgraph" id="aclassRMVideoCapture_a1c5c0f527116eb371f9c244b28e4c3f1_icgraph">
+<area shape="rect" title=" " alt="" coords="205,5,308,31"/>
+<area shape="rect" href="classRMVideoCapture.html#ab9cac86fb8b9d91fb7b2beac682d99de" title=" " alt="" coords="5,5,157,31"/>
+<area shape="poly" title=" " alt="" coords="191,21,158,21,158,15,191,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abec8df6b0240502313b0adcaf7f657fb" name="abec8df6b0240502313b0adcaf7f657fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abec8df6b0240502313b0adcaf7f657fb">&#9670;&#160;</a></span>cvtRaw2Mat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cvtRaw2Mat </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>image</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00341">341</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00090">_format</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00089">_height</a> , 以及 <a class="el" href="RMVideoCapture_8hpp_source.html#l00088">_width</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00418">retrieve()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_abec8df6b0240502313b0adcaf7f657fb_icgraph.png" border="0" usemap="#aclassRMVideoCapture_abec8df6b0240502313b0adcaf7f657fb_icgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_abec8df6b0240502313b0adcaf7f657fb_icgraph" id="aclassRMVideoCapture_abec8df6b0240502313b0adcaf7f657fb_icgraph">
+<area shape="rect" title=" " alt="" coords="273,5,376,31"/>
+<area shape="rect" href="classRMVideoCapture.html#a3ebc08cd4065cf256d4505caa8758e0b" title=" " alt="" coords="152,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="260,21,226,21,226,15,260,15"/>
+<area shape="rect" href="classRMVideoCapture.html#a3d9813f617f9b1f6edf3b7cd8ec710e1" title=" " alt="" coords="5,5,104,31"/>
+<area shape="poly" title=" " alt="" coords="138,21,104,21,104,15,138,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a134a0d63775c91ff4a3ab9fa8ac7438a" name="a134a0d63775c91ff4a3ab9fa8ac7438a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a134a0d63775c91ff4a3ab9fa8ac7438a">&#9670;&#160;</a></span>getFrameCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getFrameCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a> 第 <a class="el" href="RMVideoCapture_8hpp_source.html#l00073">73</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00097">_frameCount</a>.</p>
+
+</div>
+</div>
+<a id="aa36fa5a75069a4d28b83cd189004cd03" name="aa36fa5a75069a4d28b83cd189004cd03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa36fa5a75069a4d28b83cd189004cd03">&#9670;&#160;</a></span>getResolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Size getResolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00449">449</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00089">_height</a> , 以及 <a class="el" href="RMVideoCapture_8hpp_source.html#l00088">_width</a>.</p>
+
+</div>
+</div>
+<a id="a5c658696e3f1f0bf3f4b84447a6f1dad" name="a5c658696e3f1f0bf3f4b84447a6f1dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c658696e3f1f0bf3f4b84447a6f1dad">&#9670;&#160;</a></span>grab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool grab </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00376">376</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00095">_buffer_size</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00096">_bufferIdx</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a> , 以及 <a class="el" href="RMVideoCapture_8hpp_source.html#l00102">_grabbed_left</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00359">operator&gt;&gt;()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_a5c658696e3f1f0bf3f4b84447a6f1dad_icgraph.png" border="0" usemap="#aclassRMVideoCapture_a5c658696e3f1f0bf3f4b84447a6f1dad_icgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_a5c658696e3f1f0bf3f4b84447a6f1dad_icgraph" id="aclassRMVideoCapture_a5c658696e3f1f0bf3f4b84447a6f1dad_icgraph">
+<area shape="rect" title=" " alt="" coords="152,5,203,31"/>
+<area shape="rect" href="classRMVideoCapture.html#a3d9813f617f9b1f6edf3b7cd8ec710e1" title=" " alt="" coords="5,5,104,31"/>
+<area shape="poly" title=" " alt="" coords="138,21,104,21,104,15,138,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac1b66fe77173de9e5e8542b2823d6071" name="ac1b66fe77173de9e5e8542b2823d6071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1b66fe77173de9e5e8542b2823d6071">&#9670;&#160;</a></span>info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void info </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00454">454</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a>, <a class="el" href="wind__define_8h_source.html#l00225">c</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00035">xioctl()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_ac1b66fe77173de9e5e8542b2823d6071_cgraph.png" border="0" usemap="#aclassRMVideoCapture_ac1b66fe77173de9e5e8542b2823d6071_cgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_ac1b66fe77173de9e5e8542b2823d6071_cgraph" id="aclassRMVideoCapture_ac1b66fe77173de9e5e8542b2823d6071_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,52,31"/>
+<area shape="rect" href="classRMVideoCapture.html#a22cce36344ad43e1d0742f8af3ba7296" title=" " alt="" coords="100,5,159,31"/>
+<area shape="poly" title=" " alt="" coords="52,15,87,15,87,21,52,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a209e8f5fd9d7f4d51699eedc779984f2" name="a209e8f5fd9d7f4d51699eedc779984f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209e8f5fd9d7f4d51699eedc779984f2">&#9670;&#160;</a></span>initMMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initMMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00239">239</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00095">_buffer_size</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00098">_buffers</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00085">RMVideoCapture::MapBuffer::length</a> , 以及 <a class="el" href="RMVideoCapture_8hpp_source.html#l00084">RMVideoCapture::MapBuffer::ptr</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00299">startStream()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_a209e8f5fd9d7f4d51699eedc779984f2_icgraph.png" border="0" usemap="#aclassRMVideoCapture_a209e8f5fd9d7f4d51699eedc779984f2_icgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_a209e8f5fd9d7f4d51699eedc779984f2_icgraph" id="aclassRMVideoCapture_a209e8f5fd9d7f4d51699eedc779984f2_icgraph">
+<area shape="rect" title=" " alt="" coords="352,5,435,31"/>
+<area shape="rect" href="classRMVideoCapture.html#aed31b4e74a2584047891b23a2a41a98c" title=" " alt="" coords="205,5,304,31"/>
+<area shape="poly" title=" " alt="" coords="339,21,304,21,304,15,339,15"/>
+<area shape="rect" href="classRMVideoCapture.html#ab9cac86fb8b9d91fb7b2beac682d99de" title=" " alt="" coords="5,5,157,31"/>
+<area shape="poly" title=" " alt="" coords="191,21,157,21,157,15,191,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6403a2e2e1f4f8b27cf4da929892ff85" name="a6403a2e2e1f4f8b27cf4da929892ff85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6403a2e2e1f4f8b27cf4da929892ff85">&#9670;&#160;</a></span>isOpened()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isOpened </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00107">107</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00093">_is_opened</a>.</p>
+
+</div>
+</div>
+<a id="aee0e961abd48d98420e1ce9147974319" name="aee0e961abd48d98420e1ce9147974319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee0e961abd48d98420e1ce9147974319">&#9670;&#160;</a></span>open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool open </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size_buffer</em> = <code>2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00085">85</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00095">_buffer_size</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00098">_buffers</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00093">_is_opened</a> , 以及 <a class="el" href="RMVideoCapture_8hpp_source.html#l00100">_videoPath</a>.</p>
+
+</div>
+</div>
+<a id="a3d9813f617f9b1f6edf3b7cd8ec710e1" name="a3d9813f617f9b1f6edf3b7cd8ec710e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9813f617f9b1f6edf3b7cd8ec710e1">&#9670;&#160;</a></span>operator&gt;&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRMVideoCapture.html">RMVideoCapture</a> &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00359">359</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8cpp_source.html#l00376">grab()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00418">retrieve()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_a3d9813f617f9b1f6edf3b7cd8ec710e1_cgraph.png" border="0" usemap="#aclassRMVideoCapture_a3d9813f617f9b1f6edf3b7cd8ec710e1_cgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_a3d9813f617f9b1f6edf3b7cd8ec710e1_cgraph" id="aclassRMVideoCapture_a3d9813f617f9b1f6edf3b7cd8ec710e1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,104,56"/>
+<area shape="rect" href="classRMVideoCapture.html#a5c658696e3f1f0bf3f4b84447a6f1dad" title=" " alt="" coords="163,5,214,31"/>
+<area shape="poly" title=" " alt="" coords="104,31,149,23,150,28,105,37"/>
+<area shape="rect" href="classRMVideoCapture.html#a3ebc08cd4065cf256d4505caa8758e0b" title=" " alt="" coords="152,55,225,80"/>
+<area shape="poly" title=" " alt="" coords="105,50,139,56,138,61,104,55"/>
+<area shape="rect" href="classRMVideoCapture.html#abec8df6b0240502313b0adcaf7f657fb" title=" " alt="" coords="273,55,376,80"/>
+<area shape="poly" title=" " alt="" coords="225,65,260,65,260,70,225,70"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae522f89111ac5fe7562d0088f31113c0" name="ae522f89111ac5fe7562d0088f31113c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae522f89111ac5fe7562d0088f31113c0">&#9670;&#160;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool read </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51a34814749217f5d6731ba0d873fcfb" name="a51a34814749217f5d6731ba0d873fcfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51a34814749217f5d6731ba0d873fcfb">&#9670;&#160;</a></span>refreshVideoFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool refreshVideoFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00158">158</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00090">_format</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00089">_height</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00088">_width</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00035">xioctl()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00299">startStream()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_a51a34814749217f5d6731ba0d873fcfb_cgraph.png" border="0" usemap="#aclassRMVideoCapture_a51a34814749217f5d6731ba0d873fcfb_cgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_a51a34814749217f5d6731ba0d873fcfb_cgraph" id="aclassRMVideoCapture_a51a34814749217f5d6731ba0d873fcfb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,156,31"/>
+<area shape="rect" href="classRMVideoCapture.html#a22cce36344ad43e1d0742f8af3ba7296" title=" " alt="" coords="204,5,263,31"/>
+<area shape="poly" title=" " alt="" coords="156,15,190,15,190,21,156,21"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_a51a34814749217f5d6731ba0d873fcfb_icgraph.png" border="0" usemap="#aclassRMVideoCapture_a51a34814749217f5d6731ba0d873fcfb_icgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_a51a34814749217f5d6731ba0d873fcfb_icgraph" id="aclassRMVideoCapture_a51a34814749217f5d6731ba0d873fcfb_icgraph">
+<area shape="rect" title=" " alt="" coords="352,5,503,31"/>
+<area shape="rect" href="classRMVideoCapture.html#aed31b4e74a2584047891b23a2a41a98c" title=" " alt="" coords="205,5,304,31"/>
+<area shape="poly" title=" " alt="" coords="338,21,304,21,304,15,338,15"/>
+<area shape="rect" href="classRMVideoCapture.html#ab9cac86fb8b9d91fb7b2beac682d99de" title=" " alt="" coords="5,5,157,31"/>
+<area shape="poly" title=" " alt="" coords="191,21,157,21,157,15,191,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3496b37562505a32f8a8639e83cbb128" name="a3496b37562505a32f8a8639e83cbb128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3496b37562505a32f8a8639e83cbb128">&#9670;&#160;</a></span>restartCapture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void restartCapture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00331">331</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00096">_bufferIdx</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00097">_frameCount</a> , 以及 <a class="el" href="RMVideoCapture_8hpp_source.html#l00100">_videoPath</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00150">changeVideoFormat()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_a3496b37562505a32f8a8639e83cbb128_icgraph.png" border="0" usemap="#aclassRMVideoCapture_a3496b37562505a32f8a8639e83cbb128_icgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_a3496b37562505a32f8a8639e83cbb128_icgraph" id="aclassRMVideoCapture_a3496b37562505a32f8a8639e83cbb128_icgraph">
+<area shape="rect" title=" " alt="" coords="205,5,321,31"/>
+<area shape="rect" href="classRMVideoCapture.html#ab9cac86fb8b9d91fb7b2beac682d99de" title=" " alt="" coords="5,5,157,31"/>
+<area shape="poly" title=" " alt="" coords="192,21,157,21,157,15,192,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3ebc08cd4065cf256d4505caa8758e0b" name="a3ebc08cd4065cf256d4505caa8758e0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ebc08cd4065cf256d4505caa8758e0b">&#9670;&#160;</a></span>retrieve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool retrieve </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00418">418</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00095">_buffer_size</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00096">_bufferIdx</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00098">_buffers</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00097">_frameCount</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00102">_grabbed_left</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00341">cvtRaw2Mat()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00359">operator&gt;&gt;()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_a3ebc08cd4065cf256d4505caa8758e0b_cgraph.png" border="0" usemap="#aclassRMVideoCapture_a3ebc08cd4065cf256d4505caa8758e0b_cgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_a3ebc08cd4065cf256d4505caa8758e0b_cgraph" id="aclassRMVideoCapture_a3ebc08cd4065cf256d4505caa8758e0b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,79,31"/>
+<area shape="rect" href="classRMVideoCapture.html#abec8df6b0240502313b0adcaf7f657fb" title=" " alt="" coords="127,5,229,31"/>
+<area shape="poly" title=" " alt="" coords="79,15,113,15,113,21,79,21"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_a3ebc08cd4065cf256d4505caa8758e0b_icgraph.png" border="0" usemap="#aclassRMVideoCapture_a3ebc08cd4065cf256d4505caa8758e0b_icgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_a3ebc08cd4065cf256d4505caa8758e0b_icgraph" id="aclassRMVideoCapture_a3ebc08cd4065cf256d4505caa8758e0b_icgraph">
+<area shape="rect" title=" " alt="" coords="152,5,225,31"/>
+<area shape="rect" href="classRMVideoCapture.html#a3d9813f617f9b1f6edf3b7cd8ec710e1" title=" " alt="" coords="5,5,104,31"/>
+<area shape="poly" title=" " alt="" coords="138,21,104,21,104,15,138,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a579a30a367834b92cae61dc51f567046" name="a579a30a367834b92cae61dc51f567046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a579a30a367834b92cae61dc51f567046">&#9670;&#160;</a></span>setExposureTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool setExposureTime </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>t</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00190">190</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a>, <a class="el" href="wind__define_8h_source.html#l00225">c</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00035">xioctl()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_a579a30a367834b92cae61dc51f567046_cgraph.png" border="0" usemap="#aclassRMVideoCapture_a579a30a367834b92cae61dc51f567046_cgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_a579a30a367834b92cae61dc51f567046_cgraph" id="aclassRMVideoCapture_a579a30a367834b92cae61dc51f567046_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,140,31"/>
+<area shape="rect" href="classRMVideoCapture.html#a22cce36344ad43e1d0742f8af3ba7296" title=" " alt="" coords="188,5,247,31"/>
+<area shape="poly" title=" " alt="" coords="140,15,174,15,174,21,140,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5c07718f39c3544dacacf57274e5aaea" name="a5c07718f39c3544dacacf57274e5aaea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c07718f39c3544dacacf57274e5aaea">&#9670;&#160;</a></span>setFPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool setFPS </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fps</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00174">174</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00035">xioctl()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_a5c07718f39c3544dacacf57274e5aaea_cgraph.png" border="0" usemap="#aclassRMVideoCapture_a5c07718f39c3544dacacf57274e5aaea_cgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_a5c07718f39c3544dacacf57274e5aaea_cgraph" id="aclassRMVideoCapture_a5c07718f39c3544dacacf57274e5aaea_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,72,31"/>
+<area shape="rect" href="classRMVideoCapture.html#a22cce36344ad43e1d0742f8af3ba7296" title=" " alt="" coords="120,5,179,31"/>
+<area shape="poly" title=" " alt="" coords="72,15,106,15,106,21,72,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af66efe831d763e000ee3ba763adccc31" name="af66efe831d763e000ee3ba763adccc31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af66efe831d763e000ee3ba763adccc31">&#9670;&#160;</a></span>setVideoFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool setVideoFormat </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>mjpg</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00122">122</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00097">_frameCount</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00089">_height</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00088">_width</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00035">xioctl()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00150">changeVideoFormat()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_af66efe831d763e000ee3ba763adccc31_cgraph.png" border="0" usemap="#aclassRMVideoCapture_af66efe831d763e000ee3ba763adccc31_cgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_af66efe831d763e000ee3ba763adccc31_cgraph" id="aclassRMVideoCapture_af66efe831d763e000ee3ba763adccc31_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,131,31"/>
+<area shape="rect" href="classRMVideoCapture.html#a22cce36344ad43e1d0742f8af3ba7296" title=" " alt="" coords="179,5,237,31"/>
+<area shape="poly" title=" " alt="" coords="131,15,165,15,165,21,131,21"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_af66efe831d763e000ee3ba763adccc31_icgraph.png" border="0" usemap="#aclassRMVideoCapture_af66efe831d763e000ee3ba763adccc31_icgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_af66efe831d763e000ee3ba763adccc31_icgraph" id="aclassRMVideoCapture_af66efe831d763e000ee3ba763adccc31_icgraph">
+<area shape="rect" title=" " alt="" coords="205,5,331,31"/>
+<area shape="rect" href="classRMVideoCapture.html#ab9cac86fb8b9d91fb7b2beac682d99de" title=" " alt="" coords="5,5,157,31"/>
+<area shape="poly" title=" " alt="" coords="191,21,157,21,157,15,191,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed31b4e74a2584047891b23a2a41a98c" name="aed31b4e74a2584047891b23a2a41a98c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed31b4e74a2584047891b23a2a41a98c">&#9670;&#160;</a></span>startStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool startStream </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00299">299</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">_camera_fd</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00097">_frameCount</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00239">initMMap()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00158">refreshVideoFormat()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00150">changeVideoFormat()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_aed31b4e74a2584047891b23a2a41a98c_cgraph.png" border="0" usemap="#aclassRMVideoCapture_aed31b4e74a2584047891b23a2a41a98c_cgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_aed31b4e74a2584047891b23a2a41a98c_cgraph" id="aclassRMVideoCapture_aed31b4e74a2584047891b23a2a41a98c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,104,56"/>
+<area shape="rect" href="classRMVideoCapture.html#a209e8f5fd9d7f4d51699eedc779984f2" title=" " alt="" coords="186,5,269,31"/>
+<area shape="poly" title=" " alt="" coords="104,34,172,23,172,29,105,39"/>
+<area shape="rect" href="classRMVideoCapture.html#a51a34814749217f5d6731ba0d873fcfb" title=" " alt="" coords="152,55,303,80"/>
+<area shape="poly" title=" " alt="" coords="105,48,139,52,138,58,104,53"/>
+<area shape="rect" href="classRMVideoCapture.html#a22cce36344ad43e1d0742f8af3ba7296" title=" " alt="" coords="351,55,409,80"/>
+<area shape="poly" title=" " alt="" coords="303,65,337,65,337,70,303,70"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_aed31b4e74a2584047891b23a2a41a98c_icgraph.png" border="0" usemap="#aclassRMVideoCapture_aed31b4e74a2584047891b23a2a41a98c_icgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_aed31b4e74a2584047891b23a2a41a98c_icgraph" id="aclassRMVideoCapture_aed31b4e74a2584047891b23a2a41a98c_icgraph">
+<area shape="rect" title=" " alt="" coords="205,5,304,31"/>
+<area shape="rect" href="classRMVideoCapture.html#ab9cac86fb8b9d91fb7b2beac682d99de" title=" " alt="" coords="5,5,157,31"/>
+<area shape="poly" title=" " alt="" coords="191,21,157,21,157,15,191,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a22cce36344ad43e1d0742f8af3ba7296" name="a22cce36344ad43e1d0742f8af3ba7296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22cce36344ad43e1d0742f8af3ba7296">&#9670;&#160;</a></span>xioctl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int xioctl </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a> 第 <a class="el" href="RMVideoCapture_8cpp_source.html#l00035">35</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00454">info()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00158">refreshVideoFormat()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00190">setExposureTime()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00174">setFPS()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00122">setVideoFormat()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRMVideoCapture_a22cce36344ad43e1d0742f8af3ba7296_icgraph.png" border="0" usemap="#aclassRMVideoCapture_a22cce36344ad43e1d0742f8af3ba7296_icgraph" alt=""/></div>
+<map name="aclassRMVideoCapture_a22cce36344ad43e1d0742f8af3ba7296_icgraph" id="aclassRMVideoCapture_a22cce36344ad43e1d0742f8af3ba7296_icgraph">
+<area shape="rect" title=" " alt="" coords="577,104,636,129"/>
+<area shape="rect" href="classRMVideoCapture.html#ac1b66fe77173de9e5e8542b2823d6071" title=" " alt="" coords="431,5,477,31"/>
+<area shape="poly" title=" " alt="" coords="585,95,559,69,528,44,502,32,477,25,479,20,504,27,531,40,563,65,589,91"/>
+<area shape="rect" href="classRMVideoCapture.html#a51a34814749217f5d6731ba0d873fcfb" title=" " alt="" coords="379,55,529,80"/>
+<area shape="poly" title=" " alt="" coords="564,105,529,94,494,83,496,78,530,89,565,100"/>
+<area shape="rect" href="classRMVideoCapture.html#a579a30a367834b92cae61dc51f567046" title=" " alt="" coords="387,104,521,129"/>
+<area shape="poly" title=" " alt="" coords="564,119,521,119,521,114,564,114"/>
+<area shape="rect" href="classRMVideoCapture.html#a5c07718f39c3544dacacf57274e5aaea" title=" " alt="" coords="421,153,487,179"/>
+<area shape="poly" title=" " alt="" coords="565,133,488,158,487,153,564,128"/>
+<area shape="rect" href="classRMVideoCapture.html#af66efe831d763e000ee3ba763adccc31" title=" " alt="" coords="205,155,331,180"/>
+<area shape="poly" title=" " alt="" coords="591,143,565,171,530,194,500,203,469,208,406,207,348,196,302,183,304,177,350,191,407,201,469,203,499,198,528,189,561,167,587,139"/>
+<area shape="rect" href="classRMVideoCapture.html#aed31b4e74a2584047891b23a2a41a98c" title=" " alt="" coords="219,80,317,105"/>
+<area shape="poly" title=" " alt="" coords="365,82,318,89,317,83,365,77"/>
+<area shape="rect" href="classRMVideoCapture.html#ab9cac86fb8b9d91fb7b2beac682d99de" title=" " alt="" coords="5,131,157,156"/>
+<area shape="poly" title=" " alt="" coords="208,112,130,133,128,128,207,106"/>
+<area shape="poly" title=" " alt="" coords="191,160,157,156,158,150,192,155"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a55e9c6b24735eca3504f2f1d28cf4b97" name="a55e9c6b24735eca3504f2f1d28cf4b97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55e9c6b24735eca3504f2f1d28cf4b97">&#9670;&#160;</a></span>_buffer_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _buffer_size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a> 第 <a class="el" href="RMVideoCapture_8hpp_source.html#l00095">95</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00314">closeStream()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00376">grab()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00239">initMMap()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00085">open()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00418">retrieve()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00052">RMVideoCapture()</a>.</p>
+
+</div>
+</div>
+<a id="ac6d35d26abc0e4d5080ce1a9191fe186" name="ac6d35d26abc0e4d5080ce1a9191fe186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d35d26abc0e4d5080ce1a9191fe186">&#9670;&#160;</a></span>_bufferIdx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _bufferIdx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a> 第 <a class="el" href="RMVideoCapture_8hpp_source.html#l00096">96</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00314">closeStream()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00376">grab()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00331">restartCapture()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00418">retrieve()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00043">RMVideoCapture()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00052">RMVideoCapture()</a>.</p>
+
+</div>
+</div>
+<a id="a65349cacccef5e8aa31fa2ed56517ad1" name="a65349cacccef5e8aa31fa2ed56517ad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65349cacccef5e8aa31fa2ed56517ad1">&#9670;&#160;</a></span>_buffers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structRMVideoCapture_1_1MapBuffer.html">MapBuffer</a>* _buffers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a> 第 <a class="el" href="RMVideoCapture_8hpp_source.html#l00098">98</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00314">closeStream()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00239">initMMap()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00085">open()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00418">retrieve()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00052">RMVideoCapture()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00079">~RMVideoCapture()</a>.</p>
+
+</div>
+</div>
+<a id="ad66223b2b8711491aced271d9864db9e" name="ad66223b2b8711491aced271d9864db9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad66223b2b8711491aced271d9864db9e">&#9670;&#160;</a></span>_camera_fd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _camera_fd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a> 第 <a class="el" href="RMVideoCapture_8hpp_source.html#l00092">92</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00314">closeStream()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00376">grab()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00454">info()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00239">initMMap()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00085">open()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00158">refreshVideoFormat()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00331">restartCapture()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00418">retrieve()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00052">RMVideoCapture()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00190">setExposureTime()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00174">setFPS()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00122">setVideoFormat()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00299">startStream()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00079">~RMVideoCapture()</a>.</p>
+
+</div>
+</div>
+<a id="acda811d045e1f4533b8ce0ae0b1c857c" name="acda811d045e1f4533b8ce0ae0b1c857c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda811d045e1f4533b8ce0ae0b1c857c">&#9670;&#160;</a></span>_format</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _format</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a> 第 <a class="el" href="RMVideoCapture_8hpp_source.html#l00090">90</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00341">cvtRaw2Mat()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00158">refreshVideoFormat()</a>.</p>
+
+</div>
+</div>
+<a id="a081e6d15e4016c3532833e983343d5cd" name="a081e6d15e4016c3532833e983343d5cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081e6d15e4016c3532833e983343d5cd">&#9670;&#160;</a></span>_frameCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _frameCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a> 第 <a class="el" href="RMVideoCapture_8hpp_source.html#l00097">97</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00314">closeStream()</a>, <a class="el" href="RMVideoCapture_8hpp_source.html#l00073">getFrameCount()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00331">restartCapture()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00418">retrieve()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00043">RMVideoCapture()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00052">RMVideoCapture()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00122">setVideoFormat()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00299">startStream()</a>.</p>
+
+</div>
+</div>
+<a id="a979ff4e1a2e3ddbcda39537d053abded" name="a979ff4e1a2e3ddbcda39537d053abded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979ff4e1a2e3ddbcda39537d053abded">&#9670;&#160;</a></span>_grabbed_left</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _grabbed_left</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a> 第 <a class="el" href="RMVideoCapture_8hpp_source.html#l00102">102</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00376">grab()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00418">retrieve()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00043">RMVideoCapture()</a>.</p>
+
+</div>
+</div>
+<a id="ae56087f20883e5dac738adf23c2bfd5b" name="ae56087f20883e5dac738adf23c2bfd5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae56087f20883e5dac738adf23c2bfd5b">&#9670;&#160;</a></span>_height</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _height</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a> 第 <a class="el" href="RMVideoCapture_8hpp_source.html#l00089">89</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00341">cvtRaw2Mat()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00449">getResolution()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00158">refreshVideoFormat()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00043">RMVideoCapture()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00052">RMVideoCapture()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00122">setVideoFormat()</a>.</p>
+
+</div>
+</div>
+<a id="a4487d25c8169294e7df31015b14ab51f" name="a4487d25c8169294e7df31015b14ab51f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4487d25c8169294e7df31015b14ab51f">&#9670;&#160;</a></span>_is_opened</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _is_opened</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a> 第 <a class="el" href="RMVideoCapture_8hpp_source.html#l00093">93</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00107">isOpened()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00085">open()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00052">RMVideoCapture()</a>.</p>
+
+</div>
+</div>
+<a id="af942ec63ed4ecf469d8d890c48f331ea" name="af942ec63ed4ecf469d8d890c48f331ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af942ec63ed4ecf469d8d890c48f331ea">&#9670;&#160;</a></span>_videoPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string _videoPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a> 第 <a class="el" href="RMVideoCapture_8hpp_source.html#l00100">100</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00085">open()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00331">restartCapture()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00052">RMVideoCapture()</a>.</p>
+
+</div>
+</div>
+<a id="ac8435c09234cd6b9bf78d0d9f513b19c" name="ac8435c09234cd6b9bf78d0d9f513b19c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8435c09234cd6b9bf78d0d9f513b19c">&#9670;&#160;</a></span>_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _width</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a> 第 <a class="el" href="RMVideoCapture_8hpp_source.html#l00088">88</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="RMVideoCapture_8cpp_source.html#l00341">cvtRaw2Mat()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00449">getResolution()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00158">refreshVideoFormat()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00043">RMVideoCapture()</a>, <a class="el" href="RMVideoCapture_8cpp_source.html#l00052">RMVideoCapture()</a> , 以及 <a class="el" href="RMVideoCapture_8cpp_source.html#l00122">setVideoFormat()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Others/Camera/<a class="el" href="RMVideoCapture_8hpp_source.html">RMVideoCapture.hpp</a></li>
+<li>Others/Camera/<a class="el" href="RMVideoCapture_8cpp_source.html">RMVideoCapture.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classRMVideoCapture.html">RMVideoCapture</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

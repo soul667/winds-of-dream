@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“创梦之翼2023步兵自瞄文档”: Serials/Serial.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">“创梦之翼2023步兵自瞄文档”<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">xxx</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('Serial_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Serial.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Serial_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">MIT License</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">Copyright (c) 2018 SEU-SuperNova-CVRA</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">of this software and associated documentation files (the &quot;Software&quot;), to deal</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">in the Software without restriction, including without limitation the rights</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">copies of the Software, and to permit persons to whom the Software is</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">furnished to do so, subject to the following conditions:</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">The above copyright notice and this permission notice shall be included in all</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">copies or substantial portions of the Software.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">SOFTWARE.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">Authors:    BinYan Hu</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">**************************************************************/</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;thread&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/* Serial frame&#39;s EOF may conflict with somewhere else&#39;s EOF */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#undef EOF</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacerm.html">rm</a> {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * @Brief:  Serial communication protocol and inplement</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html">   39</a></span><span class="keyword">class </span><a class="code hl_class" href="classrm_1_1Serial.html">Serial</a> {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   * @Brief: 控制战车帧结构体</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">   */</span></div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1ControlFrame.html">   44</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structrm_1_1Serial_1_1ControlFrame.html">ControlFrame</a> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1ControlFrame.html#a469a1c8bec37bb224f75fb029a9ea780">   45</a></span>    uint8_t <a class="code hl_variable" href="structrm_1_1Serial_1_1ControlFrame.html#a469a1c8bec37bb224f75fb029a9ea780">SOF</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1ControlFrame.html#a9565d53e4263e98a8f2744e2f4e23894">   46</a></span>    uint8_t <a class="code hl_variable" href="structrm_1_1Serial_1_1ControlFrame.html#a9565d53e4263e98a8f2744e2f4e23894">flg</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1ControlFrame.html#ae1c2d516777e6b42af0d281c9ecc7375">   47</a></span>    int16_t <a class="code hl_variable" href="structrm_1_1Serial_1_1ControlFrame.html#ae1c2d516777e6b42af0d281c9ecc7375">x</a>; <span class="comment">// mm</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1ControlFrame.html#ab0580f504a7428539be299fa71565f30">   48</a></span>    uint16_t <a class="code hl_variable" href="structrm_1_1Serial_1_1ControlFrame.html#ab0580f504a7428539be299fa71565f30">y</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1ControlFrame.html#abd938edbea27ed4f351dc19d69039222">   49</a></span>    int16_t <a class="code hl_variable" href="structrm_1_1Serial_1_1ControlFrame.html#abd938edbea27ed4f351dc19d69039222">z</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1ControlFrame.html#ab42b0f83e39af1af41a8bf2bd652dd89">   50</a></span>    uint32_t <a class="code hl_variable" href="structrm_1_1Serial_1_1ControlFrame.html#ab42b0f83e39af1af41a8bf2bd652dd89">time_stamp</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1ControlFrame.html#a2cb8804192a060d08ae288e96d190f70">   51</a></span>    <span class="keywordtype">short</span> <a class="code hl_variable" href="structrm_1_1Serial_1_1ControlFrame.html#a2cb8804192a060d08ae288e96d190f70">reserve1</a>;   <span class="comment">// LightBar len ratio</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1ControlFrame.html#a184bd7574d1161029b980dea64a3b9d5">   52</a></span>    uint8_t <a class="code hl_variable" href="structrm_1_1Serial_1_1ControlFrame.html#a184bd7574d1161029b980dea64a3b9d5">reserve2</a>; <span class="comment">// Target type</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1ControlFrame.html#ad99ced27b7c22f0fe894d5e7ac23801c">   53</a></span>    uint8_t <a class="code hl_variable" href="structrm_1_1Serial_1_1ControlFrame.html#ad99ced27b7c22f0fe894d5e7ac23801c">EOF</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  };</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1DebugFrame.html">   56</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structrm_1_1Serial_1_1DebugFrame.html">DebugFrame</a> {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1DebugFrame.html#a59c57ff7ea28da104818207466a0e2e5">   57</a></span>    uint8_t <a class="code hl_variable" href="structrm_1_1Serial_1_1DebugFrame.html#a59c57ff7ea28da104818207466a0e2e5">data</a>[100];</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  };</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   * @Brief: 战车回传数据帧结构体</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   */</span></div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="};">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1FeedBackFrame.html">   63</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structrm_1_1Serial_1_1FeedBackFrame.html">FeedBackFrame</a> {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1FeedBackFrame.html#a469a1c8bec37bb224f75fb029a9ea780">   64</a></span>    uint8_t <a class="code hl_variable" href="structrm_1_1Serial_1_1FeedBackFrame.html#a469a1c8bec37bb224f75fb029a9ea780">SOF</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1FeedBackFrame.html#a65f0358762feff3f4c9a1c72daf30294">   65</a></span>    uint8_t <a class="code hl_variable" href="structrm_1_1Serial_1_1FeedBackFrame.html#a65f0358762feff3f4c9a1c72daf30294">myteam</a>; <span class="comment">//  EE DD</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1FeedBackFrame.html#a8b39c7cf885dde9bead7a947b2e96964">   66</a></span>    <span class="keywordtype">short</span> <a class="code hl_variable" href="structrm_1_1Serial_1_1FeedBackFrame.html#a8b39c7cf885dde9bead7a947b2e96964">pitch</a>;    <span class="comment">//  10k*rad</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1FeedBackFrame.html#a375937c160ed8c75a1b4c3000a41b4e7">   67</a></span>    <span class="keywordtype">short</span> <a class="code hl_variable" href="structrm_1_1Serial_1_1FeedBackFrame.html#a375937c160ed8c75a1b4c3000a41b4e7">yaw</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1FeedBackFrame.html#abc40bb0a01cd780be17eb1d7742b1711">   68</a></span>    uint16_t <a class="code hl_variable" href="structrm_1_1Serial_1_1FeedBackFrame.html#abc40bb0a01cd780be17eb1d7742b1711">bullet_speed</a>; <span class="comment">//  m/s</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1FeedBackFrame.html#ab42b0f83e39af1af41a8bf2bd652dd89">   69</a></span>    uint32_t <a class="code hl_variable" href="structrm_1_1Serial_1_1FeedBackFrame.html#ab42b0f83e39af1af41a8bf2bd652dd89">time_stamp</a>;   <span class="comment">// ms</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1FeedBackFrame.html#a6796a34bef353c8fc7d1ea3691fc04fe">   70</a></span>    <span class="keywordtype">short</span> <a class="code hl_variable" href="structrm_1_1Serial_1_1FeedBackFrame.html#a6796a34bef353c8fc7d1ea3691fc04fe">reserve</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1FeedBackFrame.html#a37e90f5e3bd99fac2021fb3a326607d4">   71</a></span>    uint8_t <a class="code hl_variable" href="structrm_1_1Serial_1_1FeedBackFrame.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="structrm_1_1Serial_1_1FeedBackFrame.html#ad99ced27b7c22f0fe894d5e7ac23801c">   72</a></span>    uint8_t <a class="code hl_variable" href="structrm_1_1Serial_1_1FeedBackFrame.html#ad99ced27b7c22f0fe894d5e7ac23801c">EOF</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  };</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">   * @Brief: 比赛红蓝方</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a48c32b5652ef5ff153efc6076ce26f67aa36a5d6a8d34fba0b01fc4e56cd2a240">   78</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="classrm_1_1Serial.html#a48c32b5652ef5ff153efc6076ce26f67">TeamName</a> { <a class="code hl_enumvalue" href="classrm_1_1Serial.html#a48c32b5652ef5ff153efc6076ce26f67aa36a5d6a8d34fba0b01fc4e56cd2a240">TEAM_BLUE</a> = (uint8_t)0xDD, <a class="code hl_enumvalue" href="classrm_1_1Serial.html#a48c32b5652ef5ff153efc6076ce26f67a097bdc2bb8d24f733c06f0be9b66bc3d">TEAM_RED</a> = (uint8_t)0xEE };</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   * @Breif:所需控制模式</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">   */</span></div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="};">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280a">   83</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280a">TaskMode</a> {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280aaf1a2b164c6a01dd1290f3e79171a8f11">   84</a></span>    <a class="code hl_enumvalue" href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280aaf1a2b164c6a01dd1290f3e79171a8f11">NO_TASK</a> = (uint8_t)(0x00),    <span class="comment">// 手动控制</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280aadf27135dbed4f1d82cdaa5c3c3f71aec">   85</a></span>    <a class="code hl_enumvalue" href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280aadf27135dbed4f1d82cdaa5c3c3f71aec">SMALL_BUFF</a> = (uint8_t)(0x01), <span class="comment">// 小符模式</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280aa0baf24d19dc08e54bc904247c49ea78f">   86</a></span>    <a class="code hl_enumvalue" href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280aa0baf24d19dc08e54bc904247c49ea78f">BIG_BUFF</a> = (uint8_t)(0x02),   <span class="comment">// 大符模式</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_enumvalue" href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280aab125963850fa5d66063b8dff563f62a0">AUTO_SHOOT</a> = (uint8_t)(0x03)  <span class="comment">// 自动射击</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280aab125963850fa5d66063b8dff563f62a0">   88</a></span>  };</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="foldopen" id="foldopen00090" data-start="{" data-end="};">
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05f">   90</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05f">ErrorCode</a> {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05faa67b06cae69cb8e07cb1a47e1508ab12">   91</a></span>    <a class="code hl_enumvalue" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05faa67b06cae69cb8e07cb1a47e1508ab12">SYSTEM_ERROR</a> = 1,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fac7f69f7c9e5aea9b8f54cf02870e2bf8">   92</a></span>    <a class="code hl_enumvalue" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fac7f69f7c9e5aea9b8f54cf02870e2bf8">SUCCESS</a> = 0,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa1a9deb5cb1442a6956fb0642949193fa">   93</a></span>    <a class="code hl_enumvalue" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa1a9deb5cb1442a6956fb0642949193fa">PORT_OCCUPIED</a> = -1,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa11b7484302e817858cdbece4112d7ae6">   94</a></span>    <a class="code hl_enumvalue" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa11b7484302e817858cdbece4112d7ae6">READ_WRITE_ERROR</a> = -2,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa427c816b65513a159c6c1dbfc90d46b4">   95</a></span>    <a class="code hl_enumvalue" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa427c816b65513a159c6c1dbfc90d46b4">CORRUPTED_FRAME</a> = -3,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_enumvalue" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa52acca9974adc722d8bdd782fec68b55">TIME_OUT</a> = -4</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa52acca9974adc722d8bdd782fec68b55">   97</a></span>  };</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <a class="code hl_function" href="classrm_1_1Serial.html#a36f90bf118e9113ae398f4cf60e97d4d">Serial</a>();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a31c9ea00a5ce1e5c6ec2758779228cbf">  101</a></span>  <a class="code hl_function" href="classrm_1_1Serial.html#a31c9ea00a5ce1e5c6ec2758779228cbf">Serial</a>(<span class="keyword">const</span> <a class="code hl_class" href="classrm_1_1Serial.html">Serial</a> &amp;right) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a3efe62f2234ea7499fa5be666f4398b9">  102</a></span>  <a class="code hl_function" href="classrm_1_1Serial.html#a3efe62f2234ea7499fa5be666f4398b9">Serial</a>(<a class="code hl_class" href="classrm_1_1Serial.html">Serial</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <a class="code hl_function" href="classrm_1_1Serial.html#a66d1357b5ada9dfc94c00dc86397951a">~Serial</a>();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="comment">/* @See: &#39;enum ErrorCode&#39; */</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a2d606c047fb5f5ba5519ebffbbfe7af3">  105</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classrm_1_1Serial.html#a2d606c047fb5f5ba5519ebffbbfe7af3">_errorCode</a> = <a class="code hl_enumvalue" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fac7f69f7c9e5aea9b8f54cf02870e2bf8">SUCCESS</a>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a71da41db39782cf2ad244d90dd72bc8c">  106</a></span>  uint8_t <a class="code hl_variable" href="classrm_1_1Serial.html#a71da41db39782cf2ad244d90dd72bc8c">SerialOpened</a> = 0;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">   * @Brief: Open serial port and config options</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classrm_1_1Serial.html#a197911c12f2fb97bb7f63a156bc0d79d">openPort</a>();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">   * @Brief:  close serial port</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classrm_1_1Serial.html#a81c732793ddceba5201de90fe9f34645">closePort</a>();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">   * @Brief</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classrm_1_1Serial.html#a6403a2e2e1f4f8b27cf4da929892ff85">isOpened</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">   * @Brief: std::cout detailed states and information when en_debug is on.</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classrm_1_1Serial.html#af692bf30c9c056eb2c584ddf56983b0e">setDebug</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> en_debug);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">   * @Brief:  Set up communication with STM</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">   * @Output: self_team: BLUE_TEAM or RED_TEAM</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a882260e451666bb72d2fe9c2fee2a95d">  132</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classrm_1_1Serial.html#a882260e451666bb72d2fe9c2fee2a95d">setup</a>(<span class="keywordtype">int</span> &amp;self_color);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">   * @Brief:  控制机器人</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">   * @Input:  time_duration:  try for how long to send control data</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> _Rep, <span class="keyword">typename</span> _Period&gt;</div>
+<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#ab915f8b61803b691597335c207a36414">  139</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classrm_1_1Serial.html#ab915f8b61803b691597335c207a36414">tryControl</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structrm_1_1Serial_1_1ControlFrame.html">ControlFrame</a> &amp;controlData,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                 <span class="keyword">const</span> std::chrono::duration&lt;_Rep, _Period&gt; &amp;time_duration) {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="comment">//        std::unique_lock&lt;std::mutex&gt; lockGuard(_mutex1/*,</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="comment">//        time_duration*/);</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    std::unique_lock&lt;std::timed_mutex&gt; lockGuard(<a class="code hl_variable" href="classrm_1_1Serial.html#a1302cf337733d1d6705545520bdf7c1e">_mutex</a>, time_duration);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordflow">if</span> (lockGuard.owns_lock()) {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>      <a class="code hl_function" href="classrm_1_1Serial.html#ac601c18980affbd03586013640a8170a">control</a>(controlData);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>      <span class="comment">// std::this_thread::sleep_for(std::chrono::milliseconds(1));</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>      <span class="keywordflow">return</span> <a class="code hl_variable" href="classrm_1_1Serial.html#a2d606c047fb5f5ba5519ebffbbfe7af3">_errorCode</a>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="classrm_1_1Serial.html#add3ebee1e5c469f6744a4e2ae0ba7fab">_en_debug</a>)</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;PORT_OCCUPIED&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>      <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa1a9deb5cb1442a6956fb0642949193fa">PORT_OCCUPIED</a>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  }</div>
+</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">   * @Brief:  控制机器人</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">   * @Input:  time_duration:  try for how long to send control data</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classrm_1_1Serial.html#aac1ca691514b2277f57f13bcf31decc2">tryDebug</a>(<span class="keywordtype">char</span> *data, uint32_t size);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">   * @Brief:  从机器人接收信息</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">   * @Input:  time_duration:  try for how long to receive feedback data</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> _Rep, <span class="keyword">typename</span> _Period&gt;</div>
+<div class="foldopen" id="foldopen00166" data-start="{" data-end="}">
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a677e10b0ab574a5e4126bfa037cb0ba2">  166</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classrm_1_1Serial.html#a677e10b0ab574a5e4126bfa037cb0ba2">tryFeedBack</a>(<a class="code hl_struct" href="structrm_1_1Serial_1_1FeedBackFrame.html">FeedBackFrame</a> &amp;feedBackData,</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                  <span class="keyword">const</span> std::chrono::duration&lt;_Rep, _Period&gt; &amp;time_duration) {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="comment">//        std::unique_lock&lt;std::mutex&gt; lockGuard(_mutex1/*,</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="comment">//        time_duration*/);</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    std::unique_lock&lt;std::timed_mutex&gt; lockGuard(<a class="code hl_variable" href="classrm_1_1Serial.html#a1302cf337733d1d6705545520bdf7c1e">_mutex</a>, time_duration);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keywordflow">if</span> (lockGuard.owns_lock()) {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <a class="code hl_function" href="classrm_1_1Serial.html#ab49ecd71c717334edc2a402291189304">feedBack</a>(feedBackData);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      <span class="comment">// std::this_thread::sleep_for(std::chrono::milliseconds(1));</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      <span class="keywordflow">return</span> <a class="code hl_variable" href="classrm_1_1Serial.html#a2d606c047fb5f5ba5519ebffbbfe7af3">_errorCode</a>;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa1a9deb5cb1442a6956fb0642949193fa">PORT_OCCUPIED</a>;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  }</div>
+</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">   * @Brief:  DO NOT call this right after the record, control or feedback</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">   * because</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">   *          &#39;_errorCode&#39; will not be thread safe after they return, which</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">   * means that you may not get the exact error code representing the operation</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">   * state. Call this function in the case which does not worry about thread</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">   * safety.</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classrm_1_1Serial.html#a9e79924a3e50273b08ab5b3a8c12a221">getErrorCode</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">   * @Brief: 帧头帧尾</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a06fc87d81c62e9abb8790b6e5713c55ba65d1c1b97403df912c403320889e4914">  195</a></span>  <span class="keyword">enum</span> { <a class="code hl_enumvalue" href="classrm_1_1Serial.html#a06fc87d81c62e9abb8790b6e5713c55bac2bba6302854b2d2548535e5c0031472">CommSOF</a> = (uint8_t)0x66, <a class="code hl_enumvalue" href="classrm_1_1Serial.html#a06fc87d81c62e9abb8790b6e5713c55ba65d1c1b97403df912c403320889e4914">CommEOF</a> = (uint8_t)0x88 };</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="comment">/* -1 if serial port not opened */</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a3ac4e8d87bc702e48e91bc15e9639392">  199</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classrm_1_1Serial.html#a3ac4e8d87bc702e48e91bc15e9639392">_serialFd</a>;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="comment">/* 输出详细的记录至控制台 if true */</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#add3ebee1e5c469f6744a4e2ae0ba7fab">  202</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="classrm_1_1Serial.html#add3ebee1e5c469f6744a4e2ae0ba7fab">_en_debug</a>;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a2f5a1f29ab8d5bf25a19f095ba8fa58d">  204</a></span>  <a class="code hl_struct" href="structrm_1_1Serial_1_1ControlFrame.html">ControlFrame</a> <a class="code hl_variable" href="classrm_1_1Serial.html#a2f5a1f29ab8d5bf25a19f095ba8fa58d">_ControlData</a>;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a08cf729ebc14a6de51d33030237c7d94">  205</a></span>  <a class="code hl_struct" href="structrm_1_1Serial_1_1FeedBackFrame.html">FeedBackFrame</a> <a class="code hl_variable" href="classrm_1_1Serial.html#a08cf729ebc14a6de51d33030237c7d94">_FeedBackData</a>;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <span class="comment">//    std::mutex _mutex1;</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="classrm_1_1Serial.html#a1302cf337733d1d6705545520bdf7c1e">  208</a></span>  std::timed_mutex <a class="code hl_variable" href="classrm_1_1Serial.html#a1302cf337733d1d6705545520bdf7c1e">_mutex</a>;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  <span class="comment">//    std::ostream&amp; operator&lt;&lt;(ostream&amp; os, const ControlFrame&amp; cf);</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="comment">//    void print(const ControlFrame&amp; ct);</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="comment">//    void print(const FeedBackFrame&amp; fb);</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classrm_1_1Serial.html#ac601c18980affbd03586013640a8170a">control</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structrm_1_1Serial_1_1ControlFrame.html">ControlFrame</a> &amp;controlData);</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classrm_1_1Serial.html#ab49ecd71c717334edc2a402291189304">feedBack</a>(<a class="code hl_struct" href="structrm_1_1Serial_1_1FeedBackFrame.html">FeedBackFrame</a> &amp;feedBackData);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classrm_1_1Serial.html#a302e52a122f8839dec361509107fb5c6">send</a>();</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classrm_1_1Serial.html#a95896bf85602d8a44932ea04a1e4b995">receive</a>();</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>};</div>
+</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>} <span class="comment">// namespace rm</span></div>
+<div class="ttc" id="aclassrm_1_1Serial_html"><div class="ttname"><a href="classrm_1_1Serial.html">rm::Serial</a></div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00039">Serial.h:39</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a06fc87d81c62e9abb8790b6e5713c55ba65d1c1b97403df912c403320889e4914"><div class="ttname"><a href="classrm_1_1Serial.html#a06fc87d81c62e9abb8790b6e5713c55ba65d1c1b97403df912c403320889e4914">rm::Serial::CommEOF</a></div><div class="ttdeci">@ CommEOF</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00195">Serial.h:195</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a06fc87d81c62e9abb8790b6e5713c55bac2bba6302854b2d2548535e5c0031472"><div class="ttname"><a href="classrm_1_1Serial.html#a06fc87d81c62e9abb8790b6e5713c55bac2bba6302854b2d2548535e5c0031472">rm::Serial::CommSOF</a></div><div class="ttdeci">@ CommSOF</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00195">Serial.h:195</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a08cf729ebc14a6de51d33030237c7d94"><div class="ttname"><a href="classrm_1_1Serial.html#a08cf729ebc14a6de51d33030237c7d94">rm::Serial::_FeedBackData</a></div><div class="ttdeci">FeedBackFrame _FeedBackData</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00205">Serial.h:205</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a1302cf337733d1d6705545520bdf7c1e"><div class="ttname"><a href="classrm_1_1Serial.html#a1302cf337733d1d6705545520bdf7c1e">rm::Serial::_mutex</a></div><div class="ttdeci">std::timed_mutex _mutex</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00208">Serial.h:208</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a197911c12f2fb97bb7f63a156bc0d79d"><div class="ttname"><a href="classrm_1_1Serial.html#a197911c12f2fb97bb7f63a156bc0d79d">rm::Serial::openPort</a></div><div class="ttdeci">int openPort()</div><div class="ttdef"><b>Definition</b> <a href="Serial_8cpp_source.html#l00076">Serial.cpp:76</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a2d606c047fb5f5ba5519ebffbbfe7af3"><div class="ttname"><a href="classrm_1_1Serial.html#a2d606c047fb5f5ba5519ebffbbfe7af3">rm::Serial::_errorCode</a></div><div class="ttdeci">int _errorCode</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00105">Serial.h:105</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a2f5a1f29ab8d5bf25a19f095ba8fa58d"><div class="ttname"><a href="classrm_1_1Serial.html#a2f5a1f29ab8d5bf25a19f095ba8fa58d">rm::Serial::_ControlData</a></div><div class="ttdeci">ControlFrame _ControlData</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00204">Serial.h:204</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a302e52a122f8839dec361509107fb5c6"><div class="ttname"><a href="classrm_1_1Serial.html#a302e52a122f8839dec361509107fb5c6">rm::Serial::send</a></div><div class="ttdeci">int send()</div><div class="ttdef"><b>Definition</b> <a href="Serial_8cpp_source.html#l00300">Serial.cpp:300</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a31c9ea00a5ce1e5c6ec2758779228cbf"><div class="ttname"><a href="classrm_1_1Serial.html#a31c9ea00a5ce1e5c6ec2758779228cbf">rm::Serial::Serial</a></div><div class="ttdeci">Serial(const Serial &amp;right)=delete</div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a36f90bf118e9113ae398f4cf60e97d4d"><div class="ttname"><a href="classrm_1_1Serial.html#a36f90bf118e9113ae398f4cf60e97d4d">rm::Serial::Serial</a></div><div class="ttdeci">Serial()</div><div class="ttdef"><b>Definition</b> <a href="Serial_8cpp_source.html#l00041">Serial.cpp:41</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a3ac4e8d87bc702e48e91bc15e9639392"><div class="ttname"><a href="classrm_1_1Serial.html#a3ac4e8d87bc702e48e91bc15e9639392">rm::Serial::_serialFd</a></div><div class="ttdeci">int _serialFd</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00199">Serial.h:199</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a3efe62f2234ea7499fa5be666f4398b9"><div class="ttname"><a href="classrm_1_1Serial.html#a3efe62f2234ea7499fa5be666f4398b9">rm::Serial::Serial</a></div><div class="ttdeci">Serial(Serial &amp;&amp;)=delete</div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a48c32b5652ef5ff153efc6076ce26f67"><div class="ttname"><a href="classrm_1_1Serial.html#a48c32b5652ef5ff153efc6076ce26f67">rm::Serial::TeamName</a></div><div class="ttdeci">TeamName</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00078">Serial.h:78</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a48c32b5652ef5ff153efc6076ce26f67a097bdc2bb8d24f733c06f0be9b66bc3d"><div class="ttname"><a href="classrm_1_1Serial.html#a48c32b5652ef5ff153efc6076ce26f67a097bdc2bb8d24f733c06f0be9b66bc3d">rm::Serial::TEAM_RED</a></div><div class="ttdeci">@ TEAM_RED</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00078">Serial.h:78</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a48c32b5652ef5ff153efc6076ce26f67aa36a5d6a8d34fba0b01fc4e56cd2a240"><div class="ttname"><a href="classrm_1_1Serial.html#a48c32b5652ef5ff153efc6076ce26f67aa36a5d6a8d34fba0b01fc4e56cd2a240">rm::Serial::TEAM_BLUE</a></div><div class="ttdeci">@ TEAM_BLUE</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00078">Serial.h:78</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a59e56af19e754a6aa26a612ebf91d05f"><div class="ttname"><a href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05f">rm::Serial::ErrorCode</a></div><div class="ttdeci">ErrorCode</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00090">Serial.h:90</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a59e56af19e754a6aa26a612ebf91d05fa11b7484302e817858cdbece4112d7ae6"><div class="ttname"><a href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa11b7484302e817858cdbece4112d7ae6">rm::Serial::READ_WRITE_ERROR</a></div><div class="ttdeci">@ READ_WRITE_ERROR</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00094">Serial.h:94</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a59e56af19e754a6aa26a612ebf91d05fa1a9deb5cb1442a6956fb0642949193fa"><div class="ttname"><a href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa1a9deb5cb1442a6956fb0642949193fa">rm::Serial::PORT_OCCUPIED</a></div><div class="ttdeci">@ PORT_OCCUPIED</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00093">Serial.h:93</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a59e56af19e754a6aa26a612ebf91d05fa427c816b65513a159c6c1dbfc90d46b4"><div class="ttname"><a href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa427c816b65513a159c6c1dbfc90d46b4">rm::Serial::CORRUPTED_FRAME</a></div><div class="ttdeci">@ CORRUPTED_FRAME</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00095">Serial.h:95</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a59e56af19e754a6aa26a612ebf91d05fa52acca9974adc722d8bdd782fec68b55"><div class="ttname"><a href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fa52acca9974adc722d8bdd782fec68b55">rm::Serial::TIME_OUT</a></div><div class="ttdeci">@ TIME_OUT</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00097">Serial.h:96</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a59e56af19e754a6aa26a612ebf91d05faa67b06cae69cb8e07cb1a47e1508ab12"><div class="ttname"><a href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05faa67b06cae69cb8e07cb1a47e1508ab12">rm::Serial::SYSTEM_ERROR</a></div><div class="ttdeci">@ SYSTEM_ERROR</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00091">Serial.h:91</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a59e56af19e754a6aa26a612ebf91d05fac7f69f7c9e5aea9b8f54cf02870e2bf8"><div class="ttname"><a href="classrm_1_1Serial.html#a59e56af19e754a6aa26a612ebf91d05fac7f69f7c9e5aea9b8f54cf02870e2bf8">rm::Serial::SUCCESS</a></div><div class="ttdeci">@ SUCCESS</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00092">Serial.h:92</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a6403a2e2e1f4f8b27cf4da929892ff85"><div class="ttname"><a href="classrm_1_1Serial.html#a6403a2e2e1f4f8b27cf4da929892ff85">rm::Serial::isOpened</a></div><div class="ttdeci">bool isOpened() const</div><div class="ttdef"><b>Definition</b> <a href="Serial_8cpp_source.html#l00131">Serial.cpp:131</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a66d1357b5ada9dfc94c00dc86397951a"><div class="ttname"><a href="classrm_1_1Serial.html#a66d1357b5ada9dfc94c00dc86397951a">rm::Serial::~Serial</a></div><div class="ttdeci">~Serial()</div><div class="ttdef"><b>Definition</b> <a href="Serial_8cpp_source.html#l00061">Serial.cpp:61</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a677e10b0ab574a5e4126bfa037cb0ba2"><div class="ttname"><a href="classrm_1_1Serial.html#a677e10b0ab574a5e4126bfa037cb0ba2">rm::Serial::tryFeedBack</a></div><div class="ttdeci">int tryFeedBack(FeedBackFrame &amp;feedBackData, const std::chrono::duration&lt; _Rep, _Period &gt; &amp;time_duration)</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00166">Serial.h:166</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a71da41db39782cf2ad244d90dd72bc8c"><div class="ttname"><a href="classrm_1_1Serial.html#a71da41db39782cf2ad244d90dd72bc8c">rm::Serial::SerialOpened</a></div><div class="ttdeci">uint8_t SerialOpened</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00106">Serial.h:106</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a81c732793ddceba5201de90fe9f34645"><div class="ttname"><a href="classrm_1_1Serial.html#a81c732793ddceba5201de90fe9f34645">rm::Serial::closePort</a></div><div class="ttdeci">int closePort()</div><div class="ttdef"><b>Definition</b> <a href="Serial_8cpp_source.html#l00115">Serial.cpp:115</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a882260e451666bb72d2fe9c2fee2a95d"><div class="ttname"><a href="classrm_1_1Serial.html#a882260e451666bb72d2fe9c2fee2a95d">rm::Serial::setup</a></div><div class="ttdeci">int setup(int &amp;self_color)</div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a95896bf85602d8a44932ea04a1e4b995"><div class="ttname"><a href="classrm_1_1Serial.html#a95896bf85602d8a44932ea04a1e4b995">rm::Serial::receive</a></div><div class="ttdeci">int receive()</div><div class="ttdef"><b>Definition</b> <a href="Serial_8cpp_source.html#l00346">Serial.cpp:346</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_a9e79924a3e50273b08ab5b3a8c12a221"><div class="ttname"><a href="classrm_1_1Serial.html#a9e79924a3e50273b08ab5b3a8c12a221">rm::Serial::getErrorCode</a></div><div class="ttdeci">int getErrorCode() const</div><div class="ttdef"><b>Definition</b> <a href="Serial_8cpp_source.html#l00269">Serial.cpp:269</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_aac1ca691514b2277f57f13bcf31decc2"><div class="ttname"><a href="classrm_1_1Serial.html#aac1ca691514b2277f57f13bcf31decc2">rm::Serial::tryDebug</a></div><div class="ttdeci">int tryDebug(char *data, uint32_t size)</div><div class="ttdef"><b>Definition</b> <a href="Serial_8cpp_source.html#l00197">Serial.cpp:197</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_ab49ecd71c717334edc2a402291189304"><div class="ttname"><a href="classrm_1_1Serial.html#ab49ecd71c717334edc2a402291189304">rm::Serial::feedBack</a></div><div class="ttdeci">int feedBack(FeedBackFrame &amp;feedBackData)</div><div class="ttdef"><b>Definition</b> <a href="Serial_8cpp_source.html#l00255">Serial.cpp:255</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_ab915f8b61803b691597335c207a36414"><div class="ttname"><a href="classrm_1_1Serial.html#ab915f8b61803b691597335c207a36414">rm::Serial::tryControl</a></div><div class="ttdeci">int tryControl(const ControlFrame &amp;controlData, const std::chrono::duration&lt; _Rep, _Period &gt; &amp;time_duration)</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00139">Serial.h:139</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_ac601c18980affbd03586013640a8170a"><div class="ttname"><a href="classrm_1_1Serial.html#ac601c18980affbd03586013640a8170a">rm::Serial::control</a></div><div class="ttdeci">int control(const ControlFrame &amp;controlData)</div><div class="ttdef"><b>Definition</b> <a href="Serial_8cpp_source.html#l00243">Serial.cpp:243</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_add3ebee1e5c469f6744a4e2ae0ba7fab"><div class="ttname"><a href="classrm_1_1Serial.html#add3ebee1e5c469f6744a4e2ae0ba7fab">rm::Serial::_en_debug</a></div><div class="ttdeci">bool _en_debug</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00202">Serial.h:202</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_ae8d1d5b649d2b73220c431e7cee1280a"><div class="ttname"><a href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280a">rm::Serial::TaskMode</a></div><div class="ttdeci">TaskMode</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00083">Serial.h:83</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_ae8d1d5b649d2b73220c431e7cee1280aa0baf24d19dc08e54bc904247c49ea78f"><div class="ttname"><a href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280aa0baf24d19dc08e54bc904247c49ea78f">rm::Serial::BIG_BUFF</a></div><div class="ttdeci">@ BIG_BUFF</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00086">Serial.h:86</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_ae8d1d5b649d2b73220c431e7cee1280aab125963850fa5d66063b8dff563f62a0"><div class="ttname"><a href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280aab125963850fa5d66063b8dff563f62a0">rm::Serial::AUTO_SHOOT</a></div><div class="ttdeci">@ AUTO_SHOOT</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00088">Serial.h:87</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_ae8d1d5b649d2b73220c431e7cee1280aadf27135dbed4f1d82cdaa5c3c3f71aec"><div class="ttname"><a href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280aadf27135dbed4f1d82cdaa5c3c3f71aec">rm::Serial::SMALL_BUFF</a></div><div class="ttdeci">@ SMALL_BUFF</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00085">Serial.h:85</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_ae8d1d5b649d2b73220c431e7cee1280aaf1a2b164c6a01dd1290f3e79171a8f11"><div class="ttname"><a href="classrm_1_1Serial.html#ae8d1d5b649d2b73220c431e7cee1280aaf1a2b164c6a01dd1290f3e79171a8f11">rm::Serial::NO_TASK</a></div><div class="ttdeci">@ NO_TASK</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00084">Serial.h:84</a></div></div>
+<div class="ttc" id="aclassrm_1_1Serial_html_af692bf30c9c056eb2c584ddf56983b0e"><div class="ttname"><a href="classrm_1_1Serial.html#af692bf30c9c056eb2c584ddf56983b0e">rm::Serial::setDebug</a></div><div class="ttdeci">void setDebug(const bool en_debug)</div><div class="ttdef"><b>Definition</b> <a href="Serial_8cpp_source.html#l00136">Serial.cpp:136</a></div></div>
+<div class="ttc" id="anamespacerm_html"><div class="ttname"><a href="namespacerm.html">rm</a></div><div class="ttdef"><b>Definition</b> <a href="armor_8cpp_source.html#l00005">armor.cpp:5</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1ControlFrame_html"><div class="ttname"><a href="structrm_1_1Serial_1_1ControlFrame.html">rm::Serial::ControlFrame</a></div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00044">Serial.h:44</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1ControlFrame_html_a184bd7574d1161029b980dea64a3b9d5"><div class="ttname"><a href="structrm_1_1Serial_1_1ControlFrame.html#a184bd7574d1161029b980dea64a3b9d5">rm::Serial::ControlFrame::reserve2</a></div><div class="ttdeci">uint8_t reserve2</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00052">Serial.h:52</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1ControlFrame_html_a2cb8804192a060d08ae288e96d190f70"><div class="ttname"><a href="structrm_1_1Serial_1_1ControlFrame.html#a2cb8804192a060d08ae288e96d190f70">rm::Serial::ControlFrame::reserve1</a></div><div class="ttdeci">short reserve1</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00051">Serial.h:51</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1ControlFrame_html_a469a1c8bec37bb224f75fb029a9ea780"><div class="ttname"><a href="structrm_1_1Serial_1_1ControlFrame.html#a469a1c8bec37bb224f75fb029a9ea780">rm::Serial::ControlFrame::SOF</a></div><div class="ttdeci">uint8_t SOF</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00045">Serial.h:45</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1ControlFrame_html_a9565d53e4263e98a8f2744e2f4e23894"><div class="ttname"><a href="structrm_1_1Serial_1_1ControlFrame.html#a9565d53e4263e98a8f2744e2f4e23894">rm::Serial::ControlFrame::flg</a></div><div class="ttdeci">uint8_t flg</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00046">Serial.h:46</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1ControlFrame_html_ab0580f504a7428539be299fa71565f30"><div class="ttname"><a href="structrm_1_1Serial_1_1ControlFrame.html#ab0580f504a7428539be299fa71565f30">rm::Serial::ControlFrame::y</a></div><div class="ttdeci">uint16_t y</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00048">Serial.h:48</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1ControlFrame_html_ab42b0f83e39af1af41a8bf2bd652dd89"><div class="ttname"><a href="structrm_1_1Serial_1_1ControlFrame.html#ab42b0f83e39af1af41a8bf2bd652dd89">rm::Serial::ControlFrame::time_stamp</a></div><div class="ttdeci">uint32_t time_stamp</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00050">Serial.h:50</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1ControlFrame_html_abd938edbea27ed4f351dc19d69039222"><div class="ttname"><a href="structrm_1_1Serial_1_1ControlFrame.html#abd938edbea27ed4f351dc19d69039222">rm::Serial::ControlFrame::z</a></div><div class="ttdeci">int16_t z</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00049">Serial.h:49</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1ControlFrame_html_ad99ced27b7c22f0fe894d5e7ac23801c"><div class="ttname"><a href="structrm_1_1Serial_1_1ControlFrame.html#ad99ced27b7c22f0fe894d5e7ac23801c">rm::Serial::ControlFrame::EOF</a></div><div class="ttdeci">uint8_t EOF</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00053">Serial.h:53</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1ControlFrame_html_ae1c2d516777e6b42af0d281c9ecc7375"><div class="ttname"><a href="structrm_1_1Serial_1_1ControlFrame.html#ae1c2d516777e6b42af0d281c9ecc7375">rm::Serial::ControlFrame::x</a></div><div class="ttdeci">int16_t x</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00047">Serial.h:47</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1DebugFrame_html"><div class="ttname"><a href="structrm_1_1Serial_1_1DebugFrame.html">rm::Serial::DebugFrame</a></div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00056">Serial.h:56</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1DebugFrame_html_a59c57ff7ea28da104818207466a0e2e5"><div class="ttname"><a href="structrm_1_1Serial_1_1DebugFrame.html#a59c57ff7ea28da104818207466a0e2e5">rm::Serial::DebugFrame::data</a></div><div class="ttdeci">uint8_t data[100]</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00057">Serial.h:57</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1FeedBackFrame_html"><div class="ttname"><a href="structrm_1_1Serial_1_1FeedBackFrame.html">rm::Serial::FeedBackFrame</a></div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00063">Serial.h:63</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1FeedBackFrame_html_a375937c160ed8c75a1b4c3000a41b4e7"><div class="ttname"><a href="structrm_1_1Serial_1_1FeedBackFrame.html#a375937c160ed8c75a1b4c3000a41b4e7">rm::Serial::FeedBackFrame::yaw</a></div><div class="ttdeci">short yaw</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00067">Serial.h:67</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1FeedBackFrame_html_a37e90f5e3bd99fac2021fb3a326607d4"><div class="ttname"><a href="structrm_1_1Serial_1_1FeedBackFrame.html#a37e90f5e3bd99fac2021fb3a326607d4">rm::Serial::FeedBackFrame::mode</a></div><div class="ttdeci">uint8_t mode</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00071">Serial.h:71</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1FeedBackFrame_html_a469a1c8bec37bb224f75fb029a9ea780"><div class="ttname"><a href="structrm_1_1Serial_1_1FeedBackFrame.html#a469a1c8bec37bb224f75fb029a9ea780">rm::Serial::FeedBackFrame::SOF</a></div><div class="ttdeci">uint8_t SOF</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00064">Serial.h:64</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1FeedBackFrame_html_a65f0358762feff3f4c9a1c72daf30294"><div class="ttname"><a href="structrm_1_1Serial_1_1FeedBackFrame.html#a65f0358762feff3f4c9a1c72daf30294">rm::Serial::FeedBackFrame::myteam</a></div><div class="ttdeci">uint8_t myteam</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00065">Serial.h:65</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1FeedBackFrame_html_a6796a34bef353c8fc7d1ea3691fc04fe"><div class="ttname"><a href="structrm_1_1Serial_1_1FeedBackFrame.html#a6796a34bef353c8fc7d1ea3691fc04fe">rm::Serial::FeedBackFrame::reserve</a></div><div class="ttdeci">short reserve</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00070">Serial.h:70</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1FeedBackFrame_html_a8b39c7cf885dde9bead7a947b2e96964"><div class="ttname"><a href="structrm_1_1Serial_1_1FeedBackFrame.html#a8b39c7cf885dde9bead7a947b2e96964">rm::Serial::FeedBackFrame::pitch</a></div><div class="ttdeci">short pitch</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00066">Serial.h:66</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1FeedBackFrame_html_ab42b0f83e39af1af41a8bf2bd652dd89"><div class="ttname"><a href="structrm_1_1Serial_1_1FeedBackFrame.html#ab42b0f83e39af1af41a8bf2bd652dd89">rm::Serial::FeedBackFrame::time_stamp</a></div><div class="ttdeci">uint32_t time_stamp</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00069">Serial.h:69</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1FeedBackFrame_html_abc40bb0a01cd780be17eb1d7742b1711"><div class="ttname"><a href="structrm_1_1Serial_1_1FeedBackFrame.html#abc40bb0a01cd780be17eb1d7742b1711">rm::Serial::FeedBackFrame::bullet_speed</a></div><div class="ttdeci">uint16_t bullet_speed</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00068">Serial.h:68</a></div></div>
+<div class="ttc" id="astructrm_1_1Serial_1_1FeedBackFrame_html_ad99ced27b7c22f0fe894d5e7ac23801c"><div class="ttname"><a href="structrm_1_1Serial_1_1FeedBackFrame.html#ad99ced27b7c22f0fe894d5e7ac23801c">rm::Serial::FeedBackFrame::EOF</a></div><div class="ttdeci">uint8_t EOF</div><div class="ttdef"><b>Definition</b> <a href="Serial_8h_source.html#l00072">Serial.h:72</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fd140bfffbfc83c60c380a3e1f694e3.html">Serials</a></li><li class="navelem"><a class="el" href="Serial_8h.html">Serial.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

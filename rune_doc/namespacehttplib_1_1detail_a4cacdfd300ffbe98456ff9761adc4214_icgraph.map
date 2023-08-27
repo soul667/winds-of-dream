@@ -1,0 +1,14 @@
+<map id="get_ip_and_port" name="get_ip_and_port">
+<area shape="rect" id="Node000001" title=" " alt="" coords="488,67,615,92"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="587,57,577,49,551,45,530,47,519,52,517,58,523,65,518,68,511,58,515,48,529,42,551,40,579,44,590,53"/>
+<area shape="rect" id="Node000002" href="$namespacehttplib_1_1detail.html#af4d529d0004f6b871efed3385061bb49" title=" " alt="" coords="268,29,432,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="474,68,418,57,419,52,475,62"/>
+<area shape="rect" id="Node000004" href="$namespacehttplib_1_1detail.html#a99ce7731b1177f0bc09f009234b42d94" title=" " alt="" coords="260,103,440,128"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="475,96,422,105,421,100,474,90"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="386,20,376,11,350,8,329,10,318,15,315,20,321,28,317,31,310,21,314,11,327,5,350,3,378,6,389,16"/>
+<area shape="rect" id="Node000003" href="$classhttplib_1_1detail_1_1SocketStream.html#ac02151dda8beb39183084ab3d4c0ceaa" title=" " alt="" coords="5,22,212,62"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="254,45,212,45,212,39,254,39"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="386,93,376,85,350,81,329,83,318,88,315,94,321,101,317,104,310,94,314,84,327,78,350,76,378,80,389,89"/>
+<area shape="rect" id="Node000005" href="$classhttplib_1_1detail_1_1SocketStream.html#aa2f42c37054e893b8c2cb1632adb923f" title=" " alt="" coords="5,95,212,135"/>
+<area shape="poly" id="edge7_Node000004_Node000005" title=" " alt="" coords="246,118,212,118,212,113,246,113"/>
+</map>
