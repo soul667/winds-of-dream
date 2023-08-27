@@ -130,7 +130,7 @@ export default {
     },
     sidebar: getSideBar("./docs", {
       ignoreMDFiles: ['index'],
-      ignoreDirectory: ['team','img','rune_doc'],
+      ignoreDirectory: ['team','img'],
     })
     
     // sidebar: [

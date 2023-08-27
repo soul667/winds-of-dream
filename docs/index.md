@@ -12,5 +12,5 @@ hero:
     
     - theme: brand
       text: 自瞄代码文档
-      link: /rune_doc/index
+      link: https://soul667.github.io/winds-of-dream/rune_doc/index.html
 ---
