@@ -9,4 +9,8 @@ hero:
     - theme: brand
       text: Get Started
       link: /介绍/发布博客和使用
+    
+    - theme: brand
+      text: 自瞄代码文档
+      link: /rune_doc/index
 ---
