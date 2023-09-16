@@ -1,9 +1,0 @@
-<map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,55,92,80"/>
-<area shape="rect" id="Node000001" href="$classserial_1_1IOException.html" title=" " alt="" coords="183,5,283,31"/>
-<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="105,49,139,39,182,28,183,33,141,45,106,54"/>
-<area shape="rect" id="Node000002" href="$classserial_1_1PortNotOpenedException.html" title=" " alt="" coords="140,55,325,80"/>
-<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="106,65,140,65,140,70,106,70"/>
-<area shape="rect" id="Node000003" href="$classserial_1_1SerialException.html" title=" " alt="" coords="171,104,294,129"/>
-<area shape="poly" id="edge4_Node000000_Node000003" title=" " alt="" coords="106,80,185,101,184,106,105,85"/>
-</map>

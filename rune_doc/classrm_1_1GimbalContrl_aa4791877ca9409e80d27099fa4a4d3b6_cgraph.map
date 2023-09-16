@@ -1,5 +1,0 @@
-<map id="GetPitch" name="GetPitch">
-<area shape="rect" id="Node000001" title="Get the gimbal control angle" alt="" coords="5,5,83,31"/>
-<area shape="rect" id="Node000002" href="$classrm_1_1GimbalContrl.html#ae218741888641d466a47aa554c01c3b6" title="Calculate the actual y value with air resistance" alt="" coords="131,5,231,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,15,117,15,117,21,83,21"/>
-</map>

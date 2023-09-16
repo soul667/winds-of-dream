@@ -1,9 +1,0 @@
-<map id="BufferStream" name="BufferStream">
-<area shape="rect" id="Node000001" title=" " alt="" coords="74,93,182,119"/>
-<area shape="rect" id="Node000002" href="$classhttplib_1_1Stream.html" title=" " alt="" coords="5,5,75,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,38,118,91,114,95,60,42"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="99,5,157,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,45,131,93,125,93,125,45"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="182,5,242,31"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="200,44,178,71,148,95,145,91,174,67,196,40"/>
-</map>

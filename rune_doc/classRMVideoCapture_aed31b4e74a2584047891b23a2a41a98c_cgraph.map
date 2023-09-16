@@ -1,9 +1,0 @@
-<map id="startStream" name="startStream">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,104,56"/>
-<area shape="rect" id="Node000002" href="$classRMVideoCapture.html#a209e8f5fd9d7f4d51699eedc779984f2" title=" " alt="" coords="186,5,269,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,34,172,23,172,29,105,39"/>
-<area shape="rect" id="Node000003" href="$classRMVideoCapture.html#a51a34814749217f5d6731ba0d873fcfb" title=" " alt="" coords="152,55,303,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,48,139,52,138,58,104,53"/>
-<area shape="rect" id="Node000004" href="$classRMVideoCapture.html#a22cce36344ad43e1d0742f8af3ba7296" title=" " alt="" coords="351,55,409,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="303,65,337,65,337,70,303,70"/>
-</map>

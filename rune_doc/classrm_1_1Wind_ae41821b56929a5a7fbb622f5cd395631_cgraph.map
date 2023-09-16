@@ -1,5 +1,0 @@
-<map id="preprocessImageWind" name="preprocessImageWind">
-<area shape="rect" id="Node000001" title="进行图像预处理，主要是两个目的，一个是滤除噪点，一个是滤去中央靶心，防止连接。" alt="" coords="5,13,172,38"/>
-<area shape="rect" id="Node000002" href="$classrm_1_1Result__Show.html#ac025d0f8e6068d5b1acb9810f8f275b9" title=" " alt="" coords="220,5,371,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,23,206,23,206,28,172,28"/>
-</map>

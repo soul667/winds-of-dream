@@ -1,9 +1,0 @@
-<map id="parse" name="parse">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,64,38"/>
-<area shape="rect" id="Node000002" href="$namespacehttplib_1_1detail.html#a154c8da680d5f7124511865853e22bab" title=" " alt="" coords="112,13,295,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,23,98,23,98,28,64,28"/>
-<area shape="rect" id="Node000003" href="$namespacehttplib_1_1detail.html#a3600032b8bec075690d2f35d4e5f1a40" title=" " alt="" coords="343,13,487,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="295,23,329,23,329,28,295,28"/>
-<area shape="rect" id="Node000004" href="$namespacehttplib_1_1detail.html#a9da6fa66c270e03df2064aa24c52c6ed" title=" " alt="" coords="535,5,663,45"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="487,23,521,23,521,28,487,28"/>
-</map>

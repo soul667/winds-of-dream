@@ -1,9 +1,0 @@
-<map id="to_string" name="to_string">
-<area shape="rect" id="Node000001" title=" " alt="" coords="291,31,369,56"/>
-<area shape="rect" id="Node000002" href="$namespacehttplib.html#ad9484ca43f21e1035ce55d2a551295aa" title=" " alt="" coords="126,5,225,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,37,224,29,225,23,277,32"/>
-<area shape="rect" id="Node000003" href="$classrm_1_1Run.html#a24c552d2bd8a432d9984e4ef72456585" title=" " alt="" coords="108,55,243,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,54,243,60,242,54,276,49"/>
-<area shape="rect" id="Node000004" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,55,60,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,70,60,70,60,65,94,65"/>
-</map>

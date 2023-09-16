@@ -1,9 +1,0 @@
-<map id="transform_points" name="transform_points">
-<area shape="rect" id="Node000001" title="复平面以中心为原点，points_now向量旋转theta" alt="" coords="443,5,576,31"/>
-<area shape="rect" id="Node000002" href="$classrm_1_1Wind.html#ae3a55099a1a48782a45cbde27ec7465d" title="能量机关的主入口" alt="" coords="301,5,395,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="429,21,395,21,395,15,429,15"/>
-<area shape="rect" id="Node000003" href="$classrm_1_1Run.html#a34fcd32bc19052117fcca6360468d032" title=" " alt="" coords="108,5,253,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="288,21,254,21,254,15,288,15"/>
-<area shape="rect" id="Node000004" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
-</map>

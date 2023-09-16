@@ -1,9 +1,0 @@
-<map id="Others/Camera/RMVideoCapture.hpp" name="Others/Camera/RMVideoCapture.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="153,5,415,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,86,160,111"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,33,125,84,123,79,254,28"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="185,79,383,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="287,31,287,65,281,65,281,31"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="407,86,607,111"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="317,28,462,79,461,84,315,33"/>
-</map>
