@@ -6,7 +6,8 @@ install:
 script:
   - yarn docs:build # npm run docs:build
 before_deploy:
-  - cp -r ./docs/.vitepress/doc/rune_doc ./docs/.vitepress/dist
+  - echo "FUCK!"
+  # - cp -r ./docs/.vitepress/doc/rune_doc ./docs/.vitepress/dist
 deploy:
   provider: pages
   skip_cleanup: true
