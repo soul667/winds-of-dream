@@ -10,27 +10,27 @@ import {
 } from "./chunk-G3CMYKT2.js";
 
 // node_modules/vitepress/dist/client/theme-default/index.js
-import "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/styles/fonts.css";
+import "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/styles/fonts.css";
 
 // node_modules/vitepress/dist/client/theme-default/without-fonts.js
-import "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/styles/vars.css";
-import "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/styles/base.css";
-import "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/styles/utils.css";
-import "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/styles/components/custom-block.css";
-import "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/styles/components/vp-code.css";
-import "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/styles/components/vp-code-group.css";
-import "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/styles/components/vp-doc.css";
-import "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/styles/components/vp-sponsor.css";
-import VPBadge from "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/components/VPBadge.vue";
-import Layout from "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/Layout.vue";
-import { default as default2 } from "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/components/VPHomeHero.vue";
-import { default as default3 } from "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/components/VPHomeFeatures.vue";
-import { default as default4 } from "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/components/VPHomeSponsors.vue";
-import { default as default5 } from "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/components/VPDocAsideSponsors.vue";
-import { default as default6 } from "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/components/VPTeamPage.vue";
-import { default as default7 } from "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/components/VPTeamPageTitle.vue";
-import { default as default8 } from "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/components/VPTeamPageSection.vue";
-import { default as default9 } from "/home/ubuntu/rm/winds-of-dream/node_modules/vitepress/dist/client/theme-default/components/VPTeamMembers.vue";
+import "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/styles/vars.css";
+import "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/styles/base.css";
+import "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/styles/utils.css";
+import "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/styles/components/custom-block.css";
+import "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/styles/components/vp-code.css";
+import "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/styles/components/vp-code-group.css";
+import "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/styles/components/vp-doc.css";
+import "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/styles/components/vp-sponsor.css";
+import VPBadge from "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/components/VPBadge.vue";
+import Layout from "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/Layout.vue";
+import { default as default2 } from "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/components/VPHomeHero.vue";
+import { default as default3 } from "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/components/VPHomeFeatures.vue";
+import { default as default4 } from "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/components/VPHomeSponsors.vue";
+import { default as default5 } from "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/components/VPDocAsideSponsors.vue";
+import { default as default6 } from "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/components/VPTeamPage.vue";
+import { default as default7 } from "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/components/VPTeamPageTitle.vue";
+import { default as default8 } from "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/components/VPTeamPageSection.vue";
+import { default as default9 } from "D:/Data/note/winds-of-dream-main/node_modules/vitepress/dist/client/theme-default/components/VPTeamMembers.vue";
 
 // node_modules/@vueuse/shared/index.mjs
 function tryOnScopeDispose(fn) {
