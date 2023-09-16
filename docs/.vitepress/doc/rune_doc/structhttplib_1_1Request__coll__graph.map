@@ -1,7 +1,0 @@
-<map id="Request" name="Request">
-<area shape="rect" id="Node000001" title=" " alt="" coords="55,181,129,207"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,64,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="31,45,25,98,28,128,38,156,49,169,64,179,61,183,46,173,34,159,23,129,20,98,25,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="119,5,179,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,45,142,98,122,159,106,183,101,180,118,156,137,97,145,44"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="get_angle_diff" name="get_angle_diff">
-<area shape="rect" id="Node000001" title="得到两个角度差，以从x轴正向（不是相机坐标系），是二维笛卡尔坐标系。逆时针旋转为正。" alt="" coords="5,5,120,31"/>
-<area shape="rect" id="Node000002" href="$classrm_1_1Wind.html#a682074f619089cb0a4c056dcdffd628a" title="给出平面坐标系上一个向量，x轴正向逆时针转到它所需的角度（0&#45;360）" alt="" coords="168,5,255,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,15,155,15,155,21,120,21"/>
-</map>

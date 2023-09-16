@@ -1,6 +1,0 @@
-<map id="Client" name="Client">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,65,62"/>
-<area shape="rect" id="Node000002" href="$namespacehttplib_1_1detail.html#a4e123998023aa19d5b4606090c80830f" title=" " alt="" coords="113,29,267,69"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,47,100,47,100,52,66,52"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="160,29,158,20,163,11,174,5,190,3,209,6,219,13,215,17,206,11,190,8,176,10,167,14,164,21,165,28"/>
-</map>

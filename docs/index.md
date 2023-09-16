@@ -1,6 +1,5 @@
 ---
 layout: home
-
 hero:
   name: 创梦之翼
   text: WINDS OF DREAM
@@ -9,7 +8,6 @@ hero:
     - theme: brand
       text: Get Started
       link: /介绍/发布博客和使用
-    
     - theme: brand
       text: 自瞄代码文档
       link: https://soul667.github.io/winds-of-dream/rune_doc/index.html

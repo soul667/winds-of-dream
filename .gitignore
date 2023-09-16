@@ -1,1 +1,6 @@
 *.zip
+**/.vitepress/**
+**/node_moudle/**
+docs/.obsidian/*
+docs/.vitepress/cache/*
+

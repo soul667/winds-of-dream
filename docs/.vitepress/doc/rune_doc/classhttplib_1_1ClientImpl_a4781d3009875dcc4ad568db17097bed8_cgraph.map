@@ -1,7 +1,0 @@
-<map id="close_socket" name="close_socket">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,111,67"/>
-<area shape="rect" id="Node000002" href="$namespacehttplib_1_1detail.html#af6c172ae08caeae8ea2bc15a55b90673" title=" " alt="" coords="159,5,309,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,43,145,37,146,43,111,49"/>
-<area shape="rect" id="Node000003" href="$classhttplib_1_1ClientImpl.html#a37dcddfca8e97c3e9052743e39950c13" title=" " alt="" coords="202,70,266,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="111,60,189,73,188,78,110,66"/>
-</map>

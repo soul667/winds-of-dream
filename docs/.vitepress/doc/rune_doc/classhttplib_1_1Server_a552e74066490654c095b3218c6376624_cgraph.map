@@ -1,7 +1,0 @@
-<map id="set_write_timeout" name="set_write_timeout">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,145,67"/>
-<area shape="rect" id="Node000002" href="$namespacehttplib_1_1detail.html#aa3718b142c169948996eec37335674ca" title=" " alt="" coords="193,5,364,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,42,179,37,180,42,146,47"/>
-<area shape="rect" id="Node000003" href="$classhttplib_1_1Server.html#a0dda8e9c48083d8b2b68963179cc6f44" title=" " alt="" coords="209,70,349,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,62,195,69,195,74,145,67"/>
-</map>

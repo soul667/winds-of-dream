@@ -1,6 +1,6 @@
-# 使用VitePress和Github搭建个人博客网站
+# 1 使用VitePress和Github搭建个人博客网站
 
-## 搭建教程(搭建！)
+## 1.1 搭建教程(搭建！)
 1. github 创建一个仓库
 2. clone 到本地
 3. 初始化 
@@ -25,9 +25,9 @@ add below in `package.json`
 ```shell
 docs:dev
 ```
-## 添加latex公式支持
+## 1.2 添加latex公式支持
 [vitepress解析展示LaTeX数学公式](https://blog.csdn.net/woaidouya123/article/details/127275642)
-### error
+### 1.2.1 error
 
 > The engine "node" is incompatible with this module. Expected version "^14.18.0 || >=16.0.0". Got "12.22.9"
 error Found incompatible module.
@@ -43,9 +43,10 @@ yarn config set ignore-engines true
 sudo npm install n -g
 sudo n stable
 ```
-## Travis CI 挂载
-## 参考阅读
+## 1.3 Travis CI 挂载
+## 1.4 参考阅读
 + [【保姆级】VitePress 新建项目+部署Github Pages流程+常见报错处理](https://zhuanlan.zhihu.com/p/562139569)
 + [VitePress中文网教程](https://vitejs.cn/vitepress/guide/deploy.html#%E6%9E%84%E5%BB%BA%E6%96%87%E6%A1%A3)
 + [初探Travis CI: 实现VuePress自动化部署](https://www.olumel.top/docs/front-end-engineering/travis-ci-for-vuepress/)
 dff
+

@@ -101,9 +101,13 @@ export default {
     config: (md) => {
       md.use(mathjax3);
       md.use(timeline);
+      // md.use(MathpixMarkdownModel);
+
       md.use(require('markdown-it-task-lists'));
       md.use(require('markdown-it-footnote'));
+      // md.use(require('mathpix-markdown-it'));
 
+      // md.use('MathpixMarkdownModel');
     },
   },
   vue: {

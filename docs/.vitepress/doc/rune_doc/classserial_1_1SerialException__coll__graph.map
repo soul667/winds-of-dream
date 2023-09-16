@@ -1,7 +1,0 @@
-<map id="SerialException" name="SerialException">
-<area shape="rect" id="Node000001" title=" " alt="" coords="35,93,158,119"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,92,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,41,92,91,88,94,59,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="117,5,175,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,44,106,94,101,91,130,41"/>
-</map>

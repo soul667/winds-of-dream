@@ -1,7 +1,0 @@
-<map id="ThreadPool::worker" name="ThreadPool::worker">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,168,152,193"/>
-<area shape="rect" id="Node000002" href="$classhttplib_1_1ThreadPool.html" title=" " alt="" coords="31,80,126,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,119,81,167,76,167,76,119"/>
-<area shape="rect" id="Node000003" href="$classhttplib_1_1TaskQueue.html" title=" " alt="" coords="32,5,125,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,45,81,80,76,80,76,45"/>
-</map>

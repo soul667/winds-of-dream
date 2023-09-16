@@ -1,7 +1,0 @@
-<map id="MaxQueue" name="MaxQueue">
-<area shape="rect" id="Node000001" title=" " alt="" coords="81,93,173,119"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,115,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,40,119,91,115,94,75,43"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="139,5,248,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,43,138,94,134,91,174,40"/>
-</map>

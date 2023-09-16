@@ -1,9 +1,0 @@
-<map id="gradient_descent" name="gradient_descent">
-<area shape="rect" id="Node000001" title=" " alt="" coords="177,123,311,148"/>
-<area shape="rect" id="Node000002" href="$structrm_1_1gradient__descent_1_1adjustable__params.html" title=" " alt="" coords="5,5,152,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,36,229,120,226,125,105,41"/>
-<area shape="rect" id="Node000003" href="$structrm_1_1gradient__descent_1_1estimate__params.html" title=" " alt="" coords="176,5,312,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,44,247,123,241,123,241,44"/>
-<area shape="rect" id="Node000004" href="$structrm_1_1gradient__descent_1_1measure__params.html" title=" " alt="" coords="337,5,471,31"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="388,44,362,73,328,101,280,125,278,120,325,96,358,69,384,40"/>
-</map>
