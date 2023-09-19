@@ -15,10 +15,9 @@
     "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
+    "@iktakahiro/markdown-it-katex": "^4.0.1",
     "markdown-it-footnote": "^3.0.3",
-    "markdown-it-katex": "^2.0.3",
     "markdown-it-mathjax3": "^4.3.2",
-    "markdown-it-task-lists": "^2.1.1",
-    "mathpix-markdown-it": "^1.2.12"
+    "markdown-it-task-lists": "^2.1.1"
   }
 }

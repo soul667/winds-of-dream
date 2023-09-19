@@ -102,6 +102,7 @@ export default {
       md.use(mathjax3);
       md.use(timeline);
       // md.use(MathpixMarkdownModel);
+      // md.use(require('markdown-it-katex'));
 
       md.use(require('markdown-it-task-lists'));
       md.use(require('markdown-it-footnote'));
