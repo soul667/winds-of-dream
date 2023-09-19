@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./chunks/framework.587524f5.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"大三课程/激光原理/1.md","filePath":"大三课程/激光原理/1.md","lastUpdated":1695089017000}'),r={name:"大三课程/激光原理/1.md"};function o(s,c,n,d,p,_){return t(),a("div")}const f=e(r,[["render",o]]);export{m as __pageData,f as default};
